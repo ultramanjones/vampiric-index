@@ -99,8 +99,7 @@ def fetch_json(url):
         return json.load(response)
 
 
-def latest_readings(iso3_codes, module):
-    indicator = MODULES[module]["indicator_id"]
+def latest_indicator(iso3_codes, indicator, source_label, start_year=2020):
     url = API.format(codes=";".join(iso3_codes), indicator=urllib.parse.quote(indicator))
     payload = fetch_json(url)
     rows = payload[1] if isinstance(payload, list) and len(payload) > 1 and payload[1] else []
@@ -108,8 +107,34 @@ def latest_readings(iso3_codes, module):
     for row in rows:
         code, value = row.get("countryiso3code"), row.get("value")
         if code and value is not None and code not in readings:
-            readings[code] = {"value": value, "observation_year": int(row["date"]), "url": url}
+            readings[code] = {"value": value, "observation_year": int(row["date"]), "indicator_id": indicator, "source_label": source_label, "url": url}
     return readings
+
+
+def latest_readings(iso3_codes, module):
+    definition = MODULES[module]
+    return latest_indicator(iso3_codes, definition["indicator_id"], definition["source_label"])
+
+
+def apply_world_bank_fallbacks(iso3_codes, readings):
+    """Use same-family WDI alternatives before declaring an input unavailable."""
+    bank_credit = latest_indicator(iso3_codes, "FD.AST.PRVT.GD.ZS", "Domestic credit provided by banking sector (% of GDP)")
+    for code, reading in bank_credit.items():
+        readings["breathing_room_debt"].setdefault(code, reading)
+
+    consumption_total = latest_indicator(iso3_codes, "NE.CON.PRVT.KD", "Household/NPISH final consumption expenditure (constant 2015 US$)")
+    population = latest_indicator(iso3_codes, "SP.POP.TOTL", "Population, total")
+    for code, total in consumption_total.items():
+        pop = population.get(code)
+        if not pop or not pop["value"]:
+            continue
+        readings["customer_cash"].setdefault(code, {
+            "value": total["value"] / pop["value"],
+            "observation_year": min(total["observation_year"], pop["observation_year"]),
+            "indicator_id": "NE.CON.PRVT.KD / SP.POP.TOTL",
+            "source_label": "Household/NPISH consumption per person, calculated from WDI total consumption and population",
+            "url": total["url"],
+        })
 
 
 def migrate_country(country, iso3, readings, retrieved_at):
@@ -149,6 +174,7 @@ def main():
         raise ValueError("Every tracked country must exist in metadata.coverage_roster.countries")
     iso3_codes = [iso3_by_iso2[country["country_code"]] for country in countries]
     readings = {key: latest_readings(iso3_codes, key) for key in ORDER}
+    apply_world_bank_fallbacks(iso3_codes, readings)
     retrieved_at = date.today().isoformat()
     for country in countries:
         migrate_country(country, iso3_by_iso2[country["country_code"]], readings, retrieved_at)
@@ -162,7 +188,7 @@ def main():
     scorecards[SCORECARD_KEY] = {
         "label": "Household-circulation HVI (provisional v2)", "scale_max": 100, "module_max": MODULE_MAX,
         "module_order": ORDER, "modules": MODULES,
-        "rule": "A score is published only when all five World Bank readings are available. Missing data is not imputed.",
+        "rule": "A score is published only when all five source readings are available. Missing data is not imputed. The pipeline first checks documented same-family WDI fallback series for private credit and consumption per person.",
         "warning": "This is a provisional source-backed model, not a verdict on whether people in a country are doing well. It lacks globally comparable rent burden, household debt-service, disposable-income, wage, underemployment, and multiple-jobholding data.",
     }
     metadata["active_scorecard"] = SCORECARD_KEY
