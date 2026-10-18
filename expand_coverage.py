@@ -10,15 +10,15 @@ from pathlib import Path
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Botswana, verified against
+# Strict descending WDI 2024 sovereign GDP order after North Macedonia, verified against
 # the all-economies GDP API and WDI country metadata on each run. Aggregates
 # and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (129, "MDA", "MD", "Moldova", "moldova"),
-    (130, "KGZ", "KG", "Kyrgyz Republic", "kyrgyzstan"),
-    (131, "AFG", "AF", "Afghanistan", "afghanistan"),
-    (132, "MDG", "MG", "Madagascar", "madagascar"),
-    (133, "MKD", "MK", "North Macedonia", "north-macedonia"),
+    (134, "LAO", "LA", "Lao PDR", "laos"),
+    (135, "BHS", "BS", "Bahamas, The", "bahamas"),
+    (136, "COG", "CG", "Congo, Rep.", "republic-congo"),
+    (137, "BRN", "BN", "Brunei Darussalam", "brunei"),
+    (138, "RWA", "RW", "Rwanda", "rwanda"),
 ]
 BLOCKED_CANDIDATES = []
 INDICATORS = {
@@ -101,8 +101,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "BW":
-        raise ValueError("Expected the existing roster to end with Botswana")
+    if roster[-1]["country_code"] != "MK":
+        raise ValueError("Expected the existing roster to end with North Macedonia")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []

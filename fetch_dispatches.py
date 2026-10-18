@@ -737,6 +737,11 @@ SEARCHES = {
     "AF": {"query": "Afghanistan economy", "language": "en", "region": "AF", "edition": "AF:en"},
     "MG": {"query": "Madagascar economy", "language": "en", "region": "MG", "edition": "MG:en"},
     "MK": {"query": "North Macedonia economy", "language": "en", "region": "MK", "edition": "MK:en"},
+    "LA": {"query": "Laos economy", "language": "en", "region": "LA", "edition": "LA:en"},
+    "BS": {"query": "Bahamas economy", "language": "en", "region": "BS", "edition": "BS:en"},
+    "CG": {"query": "Brazzaville economy", "language": "en", "region": "CG", "edition": "CG:en"},
+    "BN": {"query": "Brunei economy", "language": "en", "region": "BN", "edition": "BN:en"},
+    "RW": {"query": "Rwanda economy", "language": "en", "region": "RW", "edition": "RW:en"},
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -873,6 +878,11 @@ COUNTRY_TERMS = {
     "AF": ("afghanistan", "afghan", "kabul"),
     "MG": ("madagascar", "malagasy", "antananarivo"),
     "MK": ("north macedonia", "macedonian", "skopje"),
+    "LA": ("laos", "lao", "vientiane"),
+    "BS": ("bahamas", "bahamian", "nassau"),
+    "CG": ("brazzaville",),
+    "BN": ("brunei", "bandar seri begawan"),
+    "RW": ("rwanda", "rwandan", "kigali"),
 }
 
 
