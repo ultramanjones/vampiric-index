@@ -37,6 +37,30 @@ SEARCHES = {
         "region": "US",
         "edition": "US:en",
     },
+    "CN": {
+        "query": "China (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "JP": {
+        "query": "Japan (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "IN": {
+        "query": "India (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en-IN",
+        "region": "IN",
+        "edition": "IN:en",
+    },
+    "IT": {
+        "query": "Italy (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "IT",
+        "edition": "IT:en",
+    },
 }
 
 
