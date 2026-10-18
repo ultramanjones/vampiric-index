@@ -667,6 +667,36 @@ SEARCHES = {
         "region": "US",
         "edition": "US:en",
     },
+    "ZM": {
+        "query": "Zambia economy",
+        "language": "en",
+        "region": "ZM",
+        "edition": "ZM:en",
+    },
+    "MT": {
+        "query": "Malta economy",
+        "language": "en",
+        "region": "MT",
+        "edition": "MT:en",
+    },
+    "GN": {
+        "query": "Guinea economy",
+        "language": "en",
+        "region": "GN",
+        "edition": "GN:en",
+    },
+    "GY": {
+        "query": "Guyana economy",
+        "language": "en",
+        "region": "GY",
+        "edition": "GY:en",
+    },
+    "HT": {
+        "query": "Haiti economy",
+        "language": "en",
+        "region": "HT",
+        "edition": "HT:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -783,6 +813,11 @@ COUNTRY_TERMS = {
     "ML": ("mali", "malian", "bamako"),
     "AM": ("armenia", "armenian", "yerevan"),
     "TT": ("trinidad and tobago", "trinidad", "tobago", "port of spain"),
+    "ZM": ("zambia", "zambian", "lusaka"),
+    "MT": ("malta", "maltese", "valletta"),
+    "GN": ("guinea", "guinean", "conakry"),
+    "GY": ("guyana", "guyanese", "georgetown"),
+    "HT": ("haiti", "haitian", "port-au-prince"),
 }
 
 

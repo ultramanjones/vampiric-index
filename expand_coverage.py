@@ -8,16 +8,17 @@ from pathlib import Path
 
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Albania. Aggregates and
+# Strict descending WDI 2024 sovereign GDP order after Trinidad and Tobago.
+# Aggregates and
 # non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (113, "MLI", "ML", "Mali", "mali", 24),
-    (115, "ARM", "AM", "Armenia", "armenia", 54),
-    (116, "TTO", "TT", "Trinidad and Tobago", "trinidad-and-tobago", 82),
+    (117, "ZMB", "ZM", "Zambia", "zambia", 53),
+    (118, "MLT", "MT", "Malta", "malta", 88),
+    (119, "GIN", "GN", "Guinea", "guinea", 28),
+    (120, "GUY", "GY", "Guyana", "guyana", 74),
+    (121, "HTI", "HT", "Haiti", "haiti", 22),
 ]
-BLOCKED_CANDIDATES = [
-    (114, "LBN", "LB", "Lebanon", "labor_retention"),
-]
+BLOCKED_CANDIDATES = []
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
     "sovereign_cannibalization": ("NY.GNP.PCAP.CD", 2024, "gni_per_capita_usd"),
@@ -67,8 +68,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "AL" or roster[-1]["rank"] != 112:
-        raise ValueError("Expected the existing roster to end with Albania at rank 112")
+    if roster[-1]["country_code"] != "TT" or roster[-1]["rank"] != 116:
+        raise ValueError("Expected the existing roster to end with Trinidad and Tobago at rank 116")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []
