@@ -762,6 +762,11 @@ SEARCHES = {
     "LR": {"query": "Liberia economy", "language": "en", "region": "LR", "edition": "LR:en"},
     "SR": {"query": "Suriname economy", "language": "en", "region": "SR", "edition": "SR:en"},
     "DJ": {"query": "Djibouti economy", "language": "en", "region": "DJ", "edition": "DJ:en"},
+    "BT": {"query": "Bhutan economy", "language": "en", "region": "BT", "edition": "BT:en"},
+    "BZ": {"query": "Belize economy", "language": "en", "region": "BZ", "edition": "BZ:en"},
+    "BI": {"query": "Burundi economy", "language": "en", "region": "BI", "edition": "BI:en"},
+    "CF": {"query": "Central African Republic economy", "language": "en", "region": "CF", "edition": "CF:en"},
+    "CV": {"query": "Cabo Verde economy", "language": "en", "region": "CV", "edition": "CV:en"},
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -923,6 +928,11 @@ COUNTRY_TERMS = {
     "LR": ("liberia", "liberian", "monrovia"),
     "SR": ("suriname", "surinamese", "paramaribo"),
     "DJ": ("djibouti", "djiboutian"),
+    "BT": ("bhutan", "bhutanese", "thimphu"),
+    "BZ": ("belize", "belizean", "belmopan"),
+    "BI": ("burundi", "burundian", "bujumbura", "gitega"),
+    "CF": ("central african republic", "central african", "bangui"),
+    "CV": ("cabo verde", "cape verde", "praia"),
 }
 
 

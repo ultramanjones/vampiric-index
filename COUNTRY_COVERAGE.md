@@ -6,7 +6,7 @@
 
 The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank all-economies API and country-metadata endpoint were retrieved on 2026-10-18; the metadata filters aggregates and non-sovereign economies. Exact values, the selected ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The prior batch ended with Fiji. The current source query ranks Eswatini at 159 (US$4.859bn), Liberia at 160 (US$4.779bn), Suriname at 161 (US$4.417bn), and Djibouti at 163 (US$4.152bn); each has complete coverage-input v1 readings and is tracked. Andorra, rank 165 (US$4.044bn), is blocked because WDI returned no required 2024 employment-to-population observation; it is recorded in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. The next eligible sovereign economies are Bhutan, Belize, Burundi, the Central African Republic, Cabo Verde, St. Lucia, the Gambia, Lesotho, and Seychelles. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, Monaco, Liechtenstein, and Andorra are blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
+The prior batch ended with Djibouti. The current source query ranks Bhutan at 167 (US$3.347bn), Belize at 168 (US$3.204bn), Burundi at 169 (US$3.038bn), the Central African Republic at 170 (US$2.751bn), and Cabo Verde at 171 (US$2.714bn); each has complete coverage-input v1 readings and is tracked. Andorra, rank 165 (US$4.044bn), remains blocked because WDI returned no required 2024 employment-to-population observation; it is recorded in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. The next eligible sovereign economies are St. Lucia, the Gambia, Lesotho, and Seychelles. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, Monaco, Liechtenstein, and Andorra are blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -169,6 +169,11 @@ The prior batch ended with Fiji. The current source query ranks Eswatini at 159 
 | 161 | Suriname | SR | $0.004tn |
 | 163 | Djibouti | DJ | $0.004tn |
 | 165 | Andorra | AD | $0.004tn (blocked: required 2024 employment reading unavailable) |
+| 167 | Bhutan | BT | $0.003tn |
+| 168 | Belize | BZ | $0.003tn |
+| 169 | Burundi | BI | $0.003tn |
+| 170 | Central African Republic | CF | $0.003tn |
+| 171 | Cabo Verde | CV | $0.003tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -344,6 +349,11 @@ On 2026-10-18 the current top 20 were re-checked against the World Bank all-econ
 | LR | 50.7 | D | New v1 record. |
 | SR | 53.8 | D | New v1 record. |
 | DJ | 30.2 | F | New v1 record. |
+| BT | 53.1 | D | New v1 record. |
+| BZ | 56.8 | D | New v1 record. |
+| BI | 38.6 | F | New v1 record. |
+| CF | 33.1 | F | New v1 record. |
+| CV | 57.1 | D | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 

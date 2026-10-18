@@ -20,7 +20,7 @@ class CoverageRosterTests(unittest.TestCase):
     def test_roster_has_expected_covered_countries_and_matches_country_data(self):
         roster = self.payload["metadata"]["coverage_roster"]
         codes = [country["country_code"] for country in self.countries]
-        self.assertEqual(len(codes), 152)
+        self.assertEqual(len(codes), 157)
         self.assertEqual(len(set(codes)), len(codes))
         self.assertEqual(codes, [item["country_code"] for item in roster["countries"]])
         self.assertEqual(roster["source"], "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)")
