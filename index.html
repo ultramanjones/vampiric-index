@@ -76,9 +76,13 @@
     .transmission-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 0 0 .4rem; }
     .transmission-heading h3 { margin: 0; }
     .transmission-total { color: #f1caca; font: 700 1.1rem/1 ui-monospace, monospace; white-space: nowrap; }
-    .phase-progress { display: grid; grid-template-columns: repeat(4, 1fr); gap: .35rem; margin: 1rem 0; }
-    .phase-step { min-height: 3.6rem; padding: .45rem; border: 1px solid #4b3944; color: var(--muted); background: #100d10; font: .68rem/1.25 ui-monospace, monospace; }
+    .phase-progress { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .5rem; margin: 1rem 0; }
+    .phase-step { min-height: 6.25rem; padding: .6rem; border: 1px solid #4b3944; color: var(--muted); background: #100d10; font: .68rem/1.25 ui-monospace, monospace; }
     .phase-step.active { border-color: #c77b55; color: #f0d5d5; background: #3a171b; }
+    .phase-title { display: block; min-height: 3.45em; color: #e9c4c4; font-weight: 700; }
+    .phase-score { display: block; margin-top: .3rem; }
+    .phase-track { height: .45rem; margin-top: .45rem; overflow: hidden; background: #352b33; }
+    .phase-fill { height: 100%; min-width: 1px; background: linear-gradient(90deg, var(--blood), #c77b55); }
     .canary-card { margin: 1rem 0; padding: .8rem; border-left: 3px solid var(--blood); background: #0e0c10; }
     .canary-card h4 { margin: 0 0 .4rem; color: #e9c4c4; font-size: .94rem; }
     .canary-card p, .transmission-narrative { margin: .4rem 0; color: var(--muted); font-size: .9rem; line-height: 1.45; }
@@ -201,8 +205,14 @@
       const progress = makeElement("div", "phase-progress");
       transmission.phases.forEach(phase => {
         const step = makeElement("div", `phase-step${phase.number <= active.number ? " active" : ""}`);
-        step.append(makeElement("strong", "", `Phase ${phase.number}`));
-        step.append(makeElement("span", "", `${phase.score.toFixed(1)} / 25`));
+        const safeScore = Math.max(0, Math.min(25, Number(phase.score) || 0));
+        step.append(makeElement("strong", "phase-title", `Phase ${phase.number}: ${phase.name}`));
+        step.append(makeElement("span", "phase-score", `${safeScore.toFixed(1)} / 25`));
+        const track = makeElement("div", "phase-track");
+        const fill = makeElement("div", "phase-fill");
+        fill.style.width = `${safeScore * 4}%`;
+        track.append(fill);
+        step.append(track);
         progress.append(step);
       });
       panel.append(progress);

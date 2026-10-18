@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T13:54:21Z",
+  "generated_at": "2026-10-18T14:04:52Z",
   "methodology": {
     "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
     "limitations": [
@@ -12,14 +12,14 @@
   "total_transmission_index": 22.0,
   "active_contagion_phase": {
     "number": 4,
-    "name": "Institutional asset repricing and liquidity drain",
+    "name": "Institutional asset repricing",
     "score": 9.0,
     "status": "monitoring signal"
   },
   "phases": [
     {
       "number": 1,
-      "name": "Base-layer consumer exhaustion",
+      "name": "Floor: QSR & discount traffic exhaustion",
       "score": 5.0,
       "diagnosis": "2 qualifying distress-language matches appeared across 8 consumer-canary headlines. This is a qualitative early-warning proxy, not company-reported traffic or unit-sales data.",
       "indicator_keys": [
@@ -28,7 +28,7 @@
     },
     {
       "number": 2,
-      "name": "Debt saturation and shadow-credit exhaustion",
+      "name": "Debt saturation & essentials borrowing",
       "score": 6.0,
       "diagnosis": "Credit-card delinquency is 2.85%; annual consumer-credit change is +2.73% when a comparable prior observation is available.",
       "indicator_keys": [
@@ -38,7 +38,7 @@
     },
     {
       "number": 3,
-      "name": "Corporate cash-flow pinch and regional credit stress",
+      "name": "Corporate & regional credit stress",
       "score": 2.0,
       "diagnosis": "US high-yield OAS is 3.23 percentage points; the 30-day change is +0.47 points when available.",
       "indicator_keys": [
@@ -47,7 +47,7 @@
     },
     {
       "number": 4,
-      "name": "Institutional asset repricing and liquidity drain",
+      "name": "Institutional asset repricing",
       "score": 9.0,
       "diagnosis": "The overnight reverse-repo balance is 1.4% of its year-earlier level; Federal Reserve total assets changed +0.00% over the prior 90 days when comparable observations are available.",
       "indicator_keys": [
@@ -144,13 +144,6 @@
         ]
       },
       {
-        "title": "Dollar General expects muted annual sales on weak spending, shares drop - Reuters",
-        "source": "Reuters",
-        "publication_date": "Thu, 12 Mar 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOemMxNk9LcnZ5bDJEalZvTWNnWndpQS1Ob0ExcFVUVjVGblBwTjFZY1lHc3dkdldDV1hkeE9SNkN5dUF4VktOQ0RpZmFDN3FHTklwUHY1VG5CUzgwd3ZyVlZpcHVZX2VHZEZZQ1k4OTY2M0RyRmNXWEZ6Tkp3THQ4ODFTUGItV1FsQ1I3Nmw2emRFRVE0c0lFbW5ncUxVZjdCYzFmTDRFNFdURS11cVNRVklRT0k?oc=5",
-        "matched_signals": []
-      },
-      {
         "title": "Dollar General Leads First-Half Visits, But Dollar Tree Rebounds in July - Store Brands",
         "source": "Store Brands",
         "publication_date": "Tue, 25 Aug 2026 07:00:00 GMT",
@@ -158,10 +151,10 @@
         "matched_signals": []
       },
       {
-        "title": "Dollar Tree (DLTR): Why the Post-Family-Dollar Reset Matters More Than the Consumer-Stress Narrative - AlphaStreet",
-        "source": "AlphaStreet",
-        "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV3A1ZGhCczdwUmdraGV3cVBlejFmaFU2Q3ljSks5SDg5Z2lZU0IwSXJaQm5SZ3hTaVZKTU10Ump1X1hXSTc2OEpnaUVwb3VIRnFuRzQ3a0lVckpRSjdZT3RCYkt0Zk9QeW9JSHhLQWZ3R0xkdmtsN1hLN0szdXRMMTQtQnduRm9KbjhsMnZnakwwY0RJWWk1bVlfWmR1NG1ITlFURFoxenBsLXY2YTFPRHBMMU5hbmxKN0FGYmFDYWhZRFdiLUHSAcsBQVVfeXFMUGZLd1RCbmQ1XzF2Wm9BNlJuZDIzTjhjWWZJUU9kd3hSNWM1QWVmdUVpSDJFZkRpQWo1NjlxMXZHN3o4bW5aaC0xY1k0U0tDc2Y4M3pWdWtDbW5YUG4yVnFjQTFqRUhvQjVJMTgwVVM2ejc1b0g0VFBjS1FXR2E4cXYyUGliZ2xXel9EYk80RmZNbUFwQmo2ZnZCaFZSdXJld0s0YmVIUFNGTzhOOU50aGRIQzFnZVI2UXRWVlJPcndoeHh3cjZEUWN4bHM?oc=5",
+        "title": "Dollar General expects muted annual sales on weak spending, shares drop - Reuters",
+        "source": "Reuters",
+        "publication_date": "Thu, 12 Mar 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOemMxNk9LcnZ5bDJEalZvTWNnWndpQS1Ob0ExcFVUVjVGblBwTjFZY1lHc3dkdldDV1hkeE9SNkN5dUF4VktOQ0RpZmFDN3FHTklwUHY1VG5CUzgwd3ZyVlZpcHVZX2VHZEZZQ1k4OTY2M0RyRmNXWEZ6Tkp3THQ4ODFTUGItV1FsQ1I3Nmw2emRFRVE0c0lFbW5ncUxVZjdCYzFmTDRFNFdURS11cVNRVklRT0k?oc=5",
         "matched_signals": []
       },
       {
@@ -169,6 +162,13 @@
         "source": "TIKR.com",
         "publication_date": "Tue, 08 Sep 2026 07:00:00 GMT",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3Y1WFpwWWZwZXJMWDV0THVuUUd6UDJqOC1jOGZENHdNWkFOZThBV3FWM1c5MzZCQnFTYWMzNmUxNHY0bXBkbnMzOUJFdTRGdzJtQzZpVm1EbGYzZlhsYlZXQ3BLa2lyOFdjaXNyMUtUMl9LOHFLZEY1bWIxYk5lSHN2c2QwcHZya2pJRlFUb2lZQQ?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Dollar Tree (DLTR): Why the Post-Family-Dollar Reset Matters More Than the Consumer-Stress Narrative - AlphaStreet",
+        "source": "AlphaStreet",
+        "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV3A1ZGhCczdwUmdraGV3cVBlejFmaFU2Q3ljSks5SDg5Z2lZU0IwSXJaQm5SZ3hTaVZKTU10Ump1X1hXSTc2OEpnaUVwb3VIRnFuRzQ3a0lVckpRSjdZT3RCYkt0Zk9QeW9JSHhLQWZ3R0xkdmtsN1hLN0szdXRMMTQtQnduRm9KbjhsMnZnakwwY0RJWWk1bVlfWmR1NG1ITlFURFoxenBsLXY2YTFPRHBMMU5hbmxKN0FGYmFDYWhZRFdiLUHSAcsBQVVfeXFMUGZLd1RCbmQ1XzF2Wm9BNlJuZDIzTjhjWWZJUU9kd3hSNWM1QWVmdUVpSDJFZkRpQWo1NjlxMXZHN3o4bW5aaC0xY1k0U0tDc2Y4M3pWdWtDbW5YUG4yVnFjQTFqRUhvQjVJMTgwVVM2ejc1b0g0VFBjS1FXR2E4cXYyUGliZ2xXel9EYk80RmZNbUFwQmo2ZnZCaFZSdXJld0s0YmVIUFNGTzhOOU50aGRIQzFnZVI2UXRWVlJPcndoeHh3cjZEUWN4bHM?oc=5",
         "matched_signals": []
       },
       {
@@ -522,6 +522,16 @@
     },
     {
       "generated_at": "2026-10-18T13:54:21Z",
+      "total_transmission_index": 22.0,
+      "phase_scores": {
+        "1": 5.0,
+        "2": 6.0,
+        "3": 2.0,
+        "4": 9.0
+      }
+    },
+    {
+      "generated_at": "2026-10-18T14:04:52Z",
       "total_transmission_index": 22.0,
       "phase_scores": {
         "1": 5.0,

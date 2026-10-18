@@ -323,28 +323,28 @@ def build_payload(history, fetched_at, series, canaries):
     phases = [
         {
             "number": 1,
-            "name": "Base-layer consumer exhaustion",
+            "name": "Floor: QSR & discount traffic exhaustion",
             "score": phase_1_score,
             "diagnosis": phase_1_diagnosis,
             "indicator_keys": ["consumer_canaries"],
         },
         {
             "number": 2,
-            "name": "Debt saturation and shadow-credit exhaustion",
+            "name": "Debt saturation & essentials borrowing",
             "score": phase_2_score,
             "diagnosis": phase_2_diagnosis,
             "indicator_keys": ["credit_card_delinquency", "consumer_credit"],
         },
         {
             "number": 3,
-            "name": "Corporate cash-flow pinch and regional credit stress",
+            "name": "Corporate & regional credit stress",
             "score": phase_3_score,
             "diagnosis": phase_3_diagnosis,
             "indicator_keys": ["high_yield_oas"],
         },
         {
             "number": 4,
-            "name": "Institutional asset repricing and liquidity drain",
+            "name": "Institutional asset repricing",
             "score": phase_4_score,
             "diagnosis": phase_4_diagnosis,
             "indicator_keys": ["fed_assets", "reverse_repo"],
