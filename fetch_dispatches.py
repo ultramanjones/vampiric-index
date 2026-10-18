@@ -307,6 +307,12 @@ SEARCHES = {
         "region": "DZ",
         "edition": "DZ:en",
     },
+    "NZ": {
+        "query": "New Zealand (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en-NZ",
+        "region": "NZ",
+        "edition": "NZ:en",
+    },
     "GR": {
         "query": "Greece (labor strike OR inflation OR sovereign debt OR protest suppression)",
         "language": "en",
@@ -336,6 +342,24 @@ SEARCHES = {
         "language": "en",
         "region": "KW",
         "edition": "KW:en",
+    },
+    "MA": {
+        "query": "Morocco (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "MA",
+        "edition": "MA:en",
+    },
+    "ET": {
+        "query": "Ethiopia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "ET",
+        "edition": "ET:en",
+    },
+    "SK": {
+        "query": "Slovakia economy",
+        "language": "en",
+        "region": "SK",
+        "edition": "SK:en",
     },
 }
 
@@ -393,11 +417,15 @@ COUNTRY_TERMS = {
     "KZ": ("kazakhstan", "kazakh", "astana", "almaty"),
     "IQ": ("iraq", "iraqi", "baghdad", "basra", "erbil"),
     "DZ": ("algeria", "algerian", "algiers"),
+    "NZ": ("new zealand", "new zealand's", "new zealander", "wellington", "auckland"),
     "GR": ("greece", "greek", "athens"),
     "NG": ("nigeria", "nigerian", "abuja", "lagos"),
     "HU": ("hungary", "hungarian", "budapest"),
     "QA": ("qatar", "qatari", "doha"),
     "KW": ("kuwait", "kuwaiti"),
+    "MA": ("morocco", "moroccan", "rabat", "casablanca"),
+    "ET": ("ethiopia", "ethiopian", "addis ababa"),
+    "SK": ("slovakia", "slovak", "bratislava"),
 }
 
 
