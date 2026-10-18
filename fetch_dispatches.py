@@ -14,7 +14,7 @@ SEARCHES = {
         "edition": "US:en",
     },
     "GB": {
-        "query": "United Kingdom (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "query": "United Kingdom economy",
         "language": "en-GB",
         "region": "GB",
         "edition": "GB:en",
@@ -217,6 +217,36 @@ SEARCHES = {
         "region": "BD",
         "edition": "BD:en",
     },
+    "DK": {
+        "query": "Denmark economy",
+        "language": "en",
+        "region": "DK",
+        "edition": "DK:en",
+    },
+    "MY": {
+        "query": "Malaysia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "MY",
+        "edition": "MY:en",
+    },
+    "CO": {
+        "query": "Colombia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "CO",
+        "edition": "CO:en",
+    },
+    "ZA": {
+        "query": "South Africa (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en-ZA",
+        "region": "ZA",
+        "edition": "ZA:en",
+    },
+    "EG": {
+        "query": "Egypt (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "EG",
+        "edition": "EG:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -258,6 +288,11 @@ COUNTRY_TERMS = {
     "IR": ("iran", "iranian", "tehran"),
     "PH": ("philippines", "philippine", "filipino", "manila"),
     "BD": ("bangladesh", "bangladeshi", "dhaka"),
+    "DK": ("denmark", "danish", "copenhagen"),
+    "MY": ("malaysia", "malaysian", "kuala lumpur"),
+    "CO": ("colombia", "colombian", "bogota", "bogotá"),
+    "ZA": ("south africa", "south african", "pretoria", "cape town", "johannesburg"),
+    "EG": ("egypt", "egyptian", "cairo"),
 }
 
 

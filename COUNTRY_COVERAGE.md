@@ -1,12 +1,12 @@
 # Country Coverage Register
 
-## Top-35 nominal-GDP roster — reviewed 2026-10-18
+## Top-40 nominal-GDP roster — reviewed 2026-10-18
 
 ### Selection rule and authoritative source
 
-The tracked roster is the top 35 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
+The tracked roster is the top 40 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates and non-sovereign economies; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The next five untracked sovereign economies after Thailand were added in strict descending WDI order: Norway, Vietnam, Iran, Philippines, and Bangladesh. The source query is [World Bank API: 35-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
+The next five untracked sovereign economies after Bangladesh were added in strict descending WDI order: Denmark, Malaysia, Colombia, South Africa, and Egypt. Hong Kong SAR, China ($408.369bn) falls between Colombia and South Africa in the WDI economy list but is not a sovereign economy and is excluded under the selection rule. The source query is [World Bank API: 40-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -45,6 +45,11 @@ The next five untracked sovereign economies after Thailand were added in strict 
 | 33 | Iran | IR | $0.475tn |
 | 34 | Philippines | PH | $0.462tn |
 | 35 | Bangladesh | BD | $0.450tn |
+| 36 | Denmark | DK | $0.425tn |
+| 37 | Malaysia | MY | $0.422tn |
+| 38 | Colombia | CO | $0.421tn |
+| 39 | South Africa | ZA | $0.401tn |
+| 40 | Egypt | EG | $0.389tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -100,6 +105,11 @@ The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Th
 | IR | 34.3 | F | New v1 record. |
 | PH | 49.2 | F | New v1 record. |
 | BD | 45.5 | F | New v1 record. |
+| DK | 85.0 | B | New v1 record. |
+| MY | 54.1 | D | New v1 record. |
+| CO | 54.5 | D | New v1 record. |
+| ZA | 49.2 | F | New v1 record. |
+| EG | 34.6 | F | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 
