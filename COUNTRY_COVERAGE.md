@@ -1,12 +1,12 @@
 # Country Coverage Register
 
-## Top-25 nominal-GDP roster — reviewed 2026-10-18
+## Top-30 nominal-GDP roster — reviewed 2026-10-18
 
 ### Selection rule and authoritative source
 
-The tracked roster is the top 25 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
+The tracked roster is the top 30 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The next five untracked sovereign economies after Switzerland were added in strict descending WDI order: Poland, Belgium, Argentina, Ireland, and Sweden. The source query is [World Bank API: 25-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
+The next five untracked sovereign economies after Sweden were added in strict descending WDI order: Singapore, United Arab Emirates, Israel, Austria, and Thailand. The source query is [World Bank API: 30-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -35,6 +35,11 @@ The next five untracked sovereign economies after Switzerland were added in stri
 | 23 | Argentina | AR | $0.638tn |
 | 24 | Ireland | IE | $0.609tn |
 | 25 | Sweden | SE | $0.605tn |
+| 26 | Singapore | SG | $0.573tn |
+| 27 | United Arab Emirates | AE | $0.552tn |
+| 28 | Israel | IL | $0.542tn |
+| 29 | Austria | AT | $0.535tn |
+| 30 | Thailand | TH | $0.529tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -80,6 +85,11 @@ The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Th
 | AR | 61.7 | D | New v1 record. |
 | IE | 85.8 | B | New v1 record. |
 | SE | 85.4 | B | New v1 record. |
+| SG | 74.6 | C | New v1 record. |
+| AE | 69.4 | C | New v1 record. |
+| IL | 79.8 | C | New v1 record. |
+| AT | 82.9 | C | New v1 record. |
+| TH | 47.9 | F | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 

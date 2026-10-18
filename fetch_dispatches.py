@@ -157,6 +157,36 @@ SEARCHES = {
         "region": "SE",
         "edition": "SE:en",
     },
+    "SG": {
+        "query": "Singapore (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en-SG",
+        "region": "SG",
+        "edition": "SG:en",
+    },
+    "AE": {
+        "query": "United Arab Emirates (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "AE",
+        "edition": "AE:en",
+    },
+    "IL": {
+        "query": "Israel (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "IL",
+        "edition": "IL:en",
+    },
+    "AT": {
+        "query": "Austria inflation",
+        "language": "en",
+        "region": "AT",
+        "edition": "AT:en",
+    },
+    "TH": {
+        "query": "Thailand inflation",
+        "language": "en",
+        "region": "TH",
+        "edition": "TH:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -188,6 +218,11 @@ COUNTRY_TERMS = {
     "AR": ("argentina", "argentine", "buenos aires"),
     "IE": ("ireland", "irish", "dublin"),
     "SE": ("sweden", "swedish", "stockholm"),
+    "SG": ("singapore", "singaporean"),
+    "AE": ("united arab emirates", "emirati", "dubai", "abu dhabi"),
+    "IL": ("israel", "israeli", "jerusalem", "tel aviv"),
+    "AT": ("austria", "austrian", "vienna"),
+    "TH": ("thailand", "thai", "bangkok"),
 }
 
 

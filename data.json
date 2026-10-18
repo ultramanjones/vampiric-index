@@ -37,17 +37,17 @@
           "life_expectancy_years": {
             "value": 78.3853658536585,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 82910,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 59.467,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 84,
@@ -96,17 +96,17 @@
           "life_expectancy_years": {
             "value": 77.953,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 13660,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 61.931,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 9,
@@ -155,17 +155,17 @@
           "life_expectancy_years": {
             "value": 81.0414634146342,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 55090,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 58.849,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 95,
@@ -214,17 +214,17 @@
           "life_expectancy_years": {
             "value": 84.0412195121951,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 37170,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 61.717,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 96,
@@ -273,17 +273,17 @@
           "life_expectancy_years": {
             "value": 72.003,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 2550,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 53.317,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 63,
@@ -332,17 +332,17 @@
           "life_expectancy_years": {
             "value": 81.2380975609756,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 49320,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 58.871,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 92,
@@ -391,17 +391,17 @@
           "life_expectancy_years": {
             "value": 82.8317073170732,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 45160,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 51.544,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 89,
@@ -438,10 +438,10 @@
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE55WmhaTVlxQXQ0OWZILTNBZjBCb0pJZXhCZVhTSlVUN3ZjWEVoWlowcXQ5aE51aXIxZ09uZ24yU2J1SU9FYkxaajFhMlZzZ1pkSzNLMXI2SGlmNC1xV2RBX09oazdsR0tx?oc=5"
         },
         {
-          "title": "‘Block everything’: Millions shut down Italy in general strike for Gaza and Global Sumud Flotilla - Liberation News",
-          "source": "Liberation News",
-          "publication_date": "Sat, 04 Oct 2025 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVkF1R0dBaWI0S1gtV0dCMWduZU1GbU1VWjlUZ2xUUmppM05KVVBQbDVHbm5hZXhCN3ZSYkRHcWwzRkhOWDBiODZJVVExU3lhYlAzZ2YzTEx1aTFwSzF6allCUGpFenI4N3hWRzVMOHFIc2FGREJLMkY1U2JBa3A5M1cyUWxFek1JMjFSRmh3MGt1NFhCRjQ3cW1pQUU3emh3VWtSQmxjNzh6Tm43RnpnV3NRT3JmNmJ0ZzczbXBDcw?oc=5"
+          "title": "We Said “We Will Block Everything” and We Did: Inside Italy’s Strike for Gaza - Truthout",
+          "source": "Truthout",
+          "publication_date": "Tue, 30 Sep 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOajhWeGZYNmlQRmRJa2lEVnpFaS1OemlqRmsyNW5CT0ladVozcU1wS0VkQW8zYWktTVhtQXRVM29aSFRhdDlkbzdZMnN4eGphc0h3VVRuSGFjTWxmZWpLdU41RGhDU1oyNksyUHZMSW5MSnBtOGlXRmZseHk3MWQ5d3NHaERQRVFaZnp6VTgyR2h6VG52UDBjal93N3BSVUJ5TWl6NmhDOA?oc=5"
         }
       ],
       "review": {
@@ -450,17 +450,17 @@
           "life_expectancy_years": {
             "value": 83.3512195121951,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 38640,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 46.365,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 90,
@@ -509,17 +509,17 @@
           "life_expectancy_years": {
             "value": 81.6263414634146,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 54110,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 60.627,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 97,
@@ -568,17 +568,17 @@
           "life_expectancy_years": {
             "value": 73.2546341463415,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 15330,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 60.322,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 12,
@@ -627,17 +627,17 @@
           "life_expectancy_years": {
             "value": 75.848,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 9930,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 59.031,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 72,
@@ -686,17 +686,17 @@
           "life_expectancy_years": {
             "value": 83.4292682926829,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 36750,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 62.67,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 81,
@@ -745,17 +745,17 @@
           "life_expectancy_years": {
             "value": 75.069,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 12760,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 59.985,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 60,
@@ -804,17 +804,17 @@
           "life_expectancy_years": {
             "value": 83.0512195121951,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 62680,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 64.089,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 95,
@@ -863,17 +863,17 @@
           "life_expectancy_years": {
             "value": 83.9341463414634,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 33550,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 51.249,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 90,
@@ -922,17 +922,17 @@
           "life_expectancy_years": {
             "value": 71.146,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 4920,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 65.685,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 56,
@@ -981,17 +981,17 @@
           "life_expectancy_years": {
             "value": 77.156,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 13430,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 49.43,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 33,
@@ -1040,17 +1040,17 @@
           "life_expectancy_years": {
             "value": 78.732,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 35990,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 62.907,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 9,
@@ -1099,17 +1099,17 @@
           "life_expectancy_years": {
             "value": 81.8634146341464,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 62500,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 64.966,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 97,
@@ -1158,17 +1158,17 @@
           "life_expectancy_years": {
             "value": 84.1560975609756,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 99920,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 64.189,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 96,
@@ -1217,17 +1217,17 @@
           "life_expectancy_years": {
             "value": 78.2585365853659,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 21590,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 57.009,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 82,
@@ -1276,17 +1276,17 @@
           "life_expectancy_years": {
             "value": 82.4,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 55290,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 51.429,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 95,
@@ -1335,17 +1335,17 @@
           "life_expectancy_years": {
             "value": 77.395,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 13530,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 57.439,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 85,
@@ -1382,10 +1382,10 @@
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE52WHdSVUJLYjYtLUZzeVFzYk9rQldmb3FMRS1OQldQVHFDUF9FdXhLbGcwZ0hPLXZPakhIX3VsdG1SNGhpdE1ia2xjQmFlUWlwZi1JMEhhMzgwR2h1XzUwRENrZ3c5eTg0d0NZY25xYjVIZw?oc=5"
         },
         {
-          "title": "Ireland is hooked on fitness, but can the gym boom survive rising costs? - Irish Examiner",
-          "source": "Irish Examiner",
-          "publication_date": "Sat, 17 Oct 2026 05:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8zRUUzYWt3bHk1WFpiR3hrcFFvVmNPQ1o3MmJiV3psUUFwMXBEbmZrajdrS2RsOExVbmU3dHFEYzQzVUdSTGw1VzFaUlJPYk1Kdnk3a0ZWZXBYa1ZFZVlNaHlyVHNRdEFYNUtkR091ak9KSXc?oc=5"
+          "title": "Minister relaunches Northern Ireland Skills Council to strengthen skills and economic growth - Department for the Economy",
+          "source": "Department for the Economy",
+          "publication_date": "Fri, 16 Oct 2026 10:17:49 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORE9nand2cXR2clZld0U2ZE5WVlp1WWNFdkJ1c3E4Slc5Q1dMb0ZkaWVOV3FZcGVjVXh3R2dIcVp2c202V0M1dGloMkZ4NUY2NFgxS0tWa3FCRDlENzVPa3NVVFlLQXZ2SWswZGYtbGlqejVYVlp0M2FjY19GckNDQVQwdjU4Um14VG02QkhKSDVyNWVYenFOSk1IY2VReVFTcklkS0ZpbGQtcXpOMVNTNXFfQkVKVVJMNFhDcm4zemdfZw?oc=5"
         }
       ],
       "review": {
@@ -1394,17 +1394,17 @@
           "life_expectancy_years": {
             "value": 82.8073170731707,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 80650,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 62.218,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 98,
@@ -1453,17 +1453,17 @@
           "life_expectancy_years": {
             "value": 83.309756097561,
             "observation_year": 2023,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
           },
           "gni_per_capita_usd": {
             "value": 58510,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
           },
           "employment_to_population_percent": {
             "value": 59.298,
             "observation_year": 2024,
-            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
           },
           "freedom_house_total": {
             "value": 99,
@@ -1474,13 +1474,308 @@
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
         "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
       }
+    },
+    {
+      "country_code": "SG",
+      "name": "Singapore",
+      "pillars": {
+        "survival_floor": 20.8,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 16.8,
+        "state_coercion": 12.0
+      },
+      "hvi_score": 74.6,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 83.098 years (World Bank WDI, 2023)",
+        "GNI per capita: US$75,820 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 67.308% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 48/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "‘Whoever governs Singapore must have that iron in him’: How Lee Kuan Yew brought an end to pilots’ protest in Singapore Airlines - OpIndia",
+          "source": "OpIndia",
+          "publication_date": "Fri, 22 Jan 2021 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV1oxQ1JBN0ZXNFBQWmRkZEx6bHRIU0NCN2RIclpTX0J1VjhMMzdmOXJIN0c1UWZxZHlyQmEwdldPSVNJTEJwUVlXakt0MHpWWjd2OUJKTklPenZjMGF3cHdvbmtvSmZPQ2R2QU5rT0psXzFLaDZ3dUtiOEROb2FLa0JONDdTU0tFd2FYMkI3TXlDekFTY2hUTTNTYUtCOWtXWlhjemRycDAyUQ?oc=5"
+        },
+        {
+          "title": "The FE - The plight of Singapore migrants from Bangladesh - The Financial Express",
+          "source": "The Financial Express",
+          "publication_date": "Sat, 09 Sep 2017 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTHVheC1aVEJtSlptS0lHWEhOZmV6SU5xTzNlVnRHZzNjV0F4YmdGQ0FYSXJNRnUtWVR1R18xcUw0TlJtUmpPNGNkemJuQVJtTF9BRGlkMFYyUmVvZmttQXpIRVpjREFheGdoMlV5czNFMTZkZVY1bDZpX05EZkVhVmJxTFA4OXJtS2M0S2ZBZ2MzWDNFeFExY0NTcFBrRUF0LXc?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 83.0975609756098,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 75820,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 67.308,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 48,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/singapore/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "AE",
+      "name": "United Arab Emirates",
+      "pillars": {
+        "survival_floor": 20.7,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 19.2,
+        "state_coercion": 4.5
+      },
+      "hvi_score": 69.4,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 82.909 years (World Bank WDI, 2023)",
+        "GNI per capita: US$51,550 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 76.789% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 18/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "United Arab Emirates: Freedom in the World 2023 Country Report - Freedom House",
+          "source": "Freedom House",
+          "publication_date": "Thu, 09 Mar 2023 08:54:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBmekxtNl9BbUEyWk1FSU81cDRHQ0k3cUpZRHQ3eXhuV0VNR05NRW8zaDk2STZyWWF4T3YzeEdDOVNRRy1xdm5LX1hrWkhDOXdHZzJzQXdzN2lKRXR5Wm9FUjU2cnpZV1JGVWw5OUhKdkZOTng4ZkpyUXN2T3A?oc=5"
+        },
+        {
+          "title": "Migrant Workers’ Rights on Saadiyat Island in the United Arab Emirates: 2015 Progress Report | HRW - Human Rights Watch",
+          "source": "Human Rights Watch",
+          "publication_date": "Tue, 10 Feb 2015 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMk1ZSWR0TFJOOFJrb3JpS0VrYWhKcXVhTlU1VXJ1bXhPRnp3dHFpYlpfdjFzX3NTajNUMTczZlIybGJqWDdBZ0s2Qm83M29lencyeUZqTFZ2bDRJeW81SUFSZXNJR1RjSDFQcG9WMGhlUDBEbU5LdmZKZUdyZ1NtaHlfa1k3ZWxYaEVUbkhYY1ZFYjM4dU9XVGRLUFlNSUVBd2djdG9UVFdzY2dwVi1jcHJSTnQ0ZGswZEE?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 82.909,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 51550,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 76.789,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 18,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/united-arab-emirates/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "IL",
+      "name": "Israel",
+      "pillars": {
+        "survival_floor": 20.8,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 15.8,
+        "state_coercion": 18.2
+      },
+      "hvi_score": 79.8,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 83.195 years (World Bank WDI, 2023)",
+        "GNI per capita: US$53,090 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 63.140% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 73/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Israel Is Blowing Up Iran’s Police State to Clear the Way for a Revolt - WSJ",
+          "source": "WSJ",
+          "publication_date": "Wed, 04 Mar 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPN3RQbGszc2ZISXlpbDNZdEdrNGk0RzJZNG9aaVFZYU9mNU1kRTF4OEdwTVNuMGRfdVkwNjdrRTU2OTZURGJRM1M0TkpFcC1xYnNQRi1nLW5ydHlveU1jQ0gycnhwNXZiOC1hZzdaUUF5aUYwQ2IycUxXWEJlU0o4cFlYMzM2aHpnNXJwekttS2ZZTzhTa1QtV0tER2gyTXpzdHZ1WGdkdlphWFRtRHBSeUh3UnpMaUE?oc=5"
+        },
+        {
+          "title": "Israel Watches Iran Protests Closely, but Is Wary of Intervening - The New York Times",
+          "source": "The New York Times",
+          "publication_date": "Thu, 15 Jan 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPU1RNa0tUVzUwNU52T3pKU1lCblVBbWI5QjFPMWp0cW5RZzNySjU3bTRZTWxXbmRsbEk1eUVWRjFXZjg0d3VocHItTzlxLWRJbXNMcjNJaVpNaFRJWC1WcGNZU1p5TC1hTXpQSENlYl82REx0TmVkNnBVWkNUdHVzc0liSWNkSHJXdlUwRkNLZGs?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 83.1951219512195,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 53090,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 63.14,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 73,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/israel/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "AT",
+      "name": "Austria",
+      "pillars": {
+        "survival_floor": 20.4,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 14.3,
+        "state_coercion": 23.2
+      },
+      "hvi_score": 82.9,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 81.793 years (World Bank WDI, 2023)",
+        "GNI per capita: US$54,760 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 57.361% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 93/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Austria Inflation September 2026: CPI Rises 3.6% on Fuel and Heating Oil - News and Statistics - IndexBox",
+          "source": "IndexBox",
+          "publication_date": "Fri, 16 Oct 2026 10:12:50 GMT",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9aMkpPTDlRWjQxcUp6MFRxcFlwcGw5cnktbFVXWms0MlQ0QkpkeGVNblZndzkyWnMtRlVNclVULW9NcmpqclFWajhWZWxDYlp3UjE0Q3Z6ZE1fZ1VIWUUtTUlldWwzMG1leGNrUTlQcTA0Q1BZbmpnRlBrNFZXUQ?oc=5"
+        },
+        {
+          "title": "Austria Inflation Confirmed at 4-Month High - TradingView",
+          "source": "TradingView",
+          "publication_date": "Fri, 16 Oct 2026 07:23:58 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNhWFg5bHNRYVBfYjVvUGhsQWNWQUpKdGgtaTd5emxlU2VyNnM2Nm1ZVHRyUGtLQkxMRDVsRUVvbkI2Sll3Y3RnVXYwc3NqV0VqSU5yRlZManlsV05zVzRpY29EdlIySlhJbUlkcF91MTRta2tuR3F2R1hDWkpqZlc4YkVQTHUtbkJ0QjRGamNvWHRhd2NTYkpn?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 81.7926829268293,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 54760,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 57.361,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 93,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/austria/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "TH",
+      "name": "Thailand",
+      "pillars": {
+        "survival_floor": 19.1,
+        "sovereign_cannibalization": 3.6,
+        "labor_retention": 16.7,
+        "state_coercion": 8.5
+      },
+      "hvi_score": 47.9,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 76.412 years (World Bank WDI, 2023)",
+        "GNI per capita: US$7,130 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 66.604% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 34/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Thailand's inflation will come down in the near-term: Bank of Thailand's Deputy Governor - CNBC",
+          "source": "CNBC",
+          "publication_date": "Wed, 14 Oct 2026 04:18:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdmwyd0tIc3JleFdfSmxtUFBqU0NQdVE2TXpNYmJsWklQdUxJU0p3MlVvQkF1Uk1wM0t2amVvYUtTSkpGUXc4NHZPdXNsOFRrT3RXT2RBZjN3bDBKaDJURWFfYUtIamRhSWl0dWU0STZ1ckQ0NlBKNDRMbHlyOFpBLUttSkN1N1hWM2I5MzQ5UXhTc3FOVVFFQnZZX2pkdjVQSzBIbklHd0hnNzU0UFZQVA?oc=5"
+        },
+        {
+          "title": "Thai Inflation Accelerates Again With Floods Adding Price Risk - Bloomberg.com",
+          "source": "Bloomberg.com",
+          "publication_date": "Mon, 05 Oct 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUEhNazlfTjUzQjI3Tk9ibG82VXRHUTBUa1ZyZEUzS0N3VHZnSFNpYTJOLVozQ0RGZERYUGlfT2p6bGdSMVBZdHhhbjdXTVRCZ1IweHVuMTNpTkwyZHhuUHpzaGlUSGFyTUFydnpmYU5EdEZwTV9wdnBQYlJxS3dBc3NVYmF3RmxTRy1UcmVXSG9JbzI0Zm5lc1M2U0NfTVVMN1pVQml5STF2ZDZDQnpKNzBYRQ?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 76.412,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 7130,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 66.604,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 34,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/thailand/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
     }
   ],
   "metadata": {
     "coverage_roster": {
-      "definition": "Top 25 sovereign economies by nominal GDP in current US dollars",
+      "definition": "Top 30 sovereign economies by nominal GDP in current US dollars",
       "source": "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)",
-      "source_url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100",
+      "source_url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100",
       "observation_year": 2024,
       "retrieved_at": "2026-10-18",
       "countries": [
@@ -1682,6 +1977,46 @@
           "country_code": "SE",
           "name": "Sweden",
           "gdp_current_usd": 604827393488.582,
+          "observation_year": 2024
+        },
+        {
+          "rank": 26,
+          "iso3": "SGP",
+          "country_code": "SG",
+          "name": "Singapore",
+          "gdp_current_usd": 572877260178.427,
+          "observation_year": 2024
+        },
+        {
+          "rank": 27,
+          "iso3": "ARE",
+          "country_code": "AE",
+          "name": "United Arab Emirates",
+          "gdp_current_usd": 552324919095.872,
+          "observation_year": 2024
+        },
+        {
+          "rank": 28,
+          "iso3": "ISR",
+          "country_code": "IL",
+          "name": "Israel",
+          "gdp_current_usd": 542284494490.778,
+          "observation_year": 2024
+        },
+        {
+          "rank": 29,
+          "iso3": "AUT",
+          "country_code": "AT",
+          "name": "Austria",
+          "gdp_current_usd": 534790720466.822,
+          "observation_year": 2024
+        },
+        {
+          "rank": 30,
+          "iso3": "THA",
+          "country_code": "TH",
+          "name": "Thailand",
+          "gdp_current_usd": 529385520941.539,
           "observation_year": 2024
         }
       ]
