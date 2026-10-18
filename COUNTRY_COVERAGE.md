@@ -110,33 +110,35 @@ For records added under coverage-input v1, each pillar is rounded to one decimal
 | `survival_floor` | WDI life expectancy at birth (`SP.DYN.LE00.IN`), 2023 / 4 |
 | `sovereign_cannibalization` | WDI GNI per capita, Atlas method/current US$ (`NY.GNP.PCAP.CD`), 2024 / 2,000, capped at 25 |
 | `labor_retention` | WDI employment-to-population ratio, ages 15+ (`SL.EMP.TOTL.SP.ZS`), ILO modeled estimate, 2024 / 4 |
-| `state_coercion` | Freedom House *Freedom in the World 2025* total score / 4 |
+| `state_coercion` | Freedom House *Freedom in the World* country-edition total score / 4 |
 
-The WDI source endpoints and Freedom House country report URL, observation/edition, and raw reading are recorded per country in `data.json.review`. The three WDI indicators were retrieved from their documented APIs on 2026-10-18. The Freedom House 2025 edition is retained as the latest country-comparable published edition used for this review. These are explicit proxy scales, not causal claims.
+The WDI source endpoints and Freedom House country report URL, observation/edition, and raw reading are recorded per country in `data.json.review`. The three WDI indicators and the sovereign GDP roster were retrieved from their documented APIs on 2026-10-18. The current top-20 review uses the country-comparable *Freedom in the World 2026* edition; the remaining covered countries retain their previously reviewed 2025-edition readings until their next full review. These are explicit proxy scales, not causal claims.
 
 The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Their current four readings were reviewed and retained in their review records, but no source-backed crosswalk from their hand-calibrated historical score to coverage-input v1 exists. Their declared pillars, total, and grade therefore remain unchanged rather than being silently recalibrated.
 
 ### Review results
 
+On 2026-10-18 the current top 20 were re-checked against the World Bank all-economies 2024 nominal-GDP query (with WDI country metadata excluding aggregates and non-sovereign economies). The ordering remains US, CN, DE, JP, IN, GB, FR, IT, CA, RU, BR, KR, MX, AU, ES, ID, TR, SA, NL, CH. All three WDI pillar readings remained available; *Freedom in the World 2026* supplied the current coercion reading. The legacy-pilot records (US, DE, GB, FR, MX) retain their declared values because no published legacy-to-v1 crosswalk exists. The coverage-input-v1 revisions are CN 44.1→44.0, IN 48.4→48.1, IT 74.2→73.5, BR 56.8→57.0, KR 75.2→75.8, AU 85.6→85.3, ES 73.1→73.4, and TR 46.6→46.4; none crosses a grade threshold. Every other top-20 v1 record reproduced its declared score. Current Google News RSS dispatches, with publisher, publication date, and link, are stored in each dossier's `acute_dispatch` array; they were reviewed as monitoring evidence only and do not automatically alter a pillar.
+
 | Code | HVI | Grade | Review determination |
 | --- | ---: | --- | --- |
 | US | 45.0 | F | Legacy pilot retained; no reproducible recalibration rule. |
-| CN | 44.1 | F | v1 readings reproduce declared score; no revision. |
+| CN | 44.0 | F | Current v1 review: Freedom House 2026 reading supports revision. |
 | DE | 65.0 | D | Legacy pilot retained; no reproducible recalibration rule. |
 | JP | 79.0 | C | v1 readings reproduce declared score; no revision. |
-| IN | 48.4 | F | v1 readings reproduce declared score; no revision. |
+| IN | 48.1 | F | Current v1 review: Freedom House 2026 reading supports revision. |
 | GB | 42.0 | F | Legacy pilot retained; no reproducible recalibration rule. |
 | FR | 49.0 | F | Legacy pilot retained; no reproducible recalibration rule. |
-| IT | 74.2 | C | v1 readings reproduce declared score; no revision. |
+| IT | 73.5 | C | Current v1 review: Freedom House 2026 reading supports revision. |
 | CA | 84.8 | C | New v1 record. |
 | RU | 44.1 | F | New v1 record. |
-| BR | 56.8 | D | New v1 record. |
-| KR | 75.2 | C | New v1 record. |
+| BR | 57.0 | D | Current v1 review: Freedom House 2026 reading supports revision. |
+| KR | 75.8 | C | Current v1 review: Freedom House 2026 reading supports revision. |
 | MX | 37.0 | F | Legacy pilot retained; no reproducible recalibration rule. |
-| AU | 85.6 | B | New v1 record. |
-| ES | 73.1 | C | New v1 record. |
+| AU | 85.3 | B | Current v1 review: Freedom House 2026 reading supports revision. |
+| ES | 73.4 | C | Current v1 review: Freedom House 2026 reading supports revision. |
 | ID | 50.7 | D | New v1 record. |
-| TR | 46.6 | F | New v1 record. |
+| TR | 46.4 | F | Current v1 review: Freedom House 2026 reading supports revision. |
 | SA | 55.6 | D | New v1 record. |
 | NL | 85.9 | B | New v1 record. |
 | CH | 86.0 | B | New v1 record. |
