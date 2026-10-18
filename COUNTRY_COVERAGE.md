@@ -6,7 +6,7 @@
 
 The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank all-economies API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates and non-sovereign economies; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The all-economies query identified a prior roster omission: New Zealand is sovereign-roster rank 51 and is now inserted after Algeria. This run adds the next eligible untracked sequence after Iceland: Senegal, Papua New Guinea, Bosnia and Herzegovina, and Albania, in that strict WDI order (ranks 109–112). Ukraine (rank 56) and Sudan (rank 93) remain blocked because WDI returned no 2024 observation for the required employment-to-population indicator; each is recorded in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. Hong Kong SAR, China (raw economy-list rank 39), Puerto Rico (raw economy-list rank 62), and Macao SAR, China (raw economy-list rank 94) are not sovereign states and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
+The all-economies query identified a prior roster omission: New Zealand is sovereign-roster rank 51 and is now inserted after Algeria. The current run advances from Albania (rank 112) through the next four sovereign positions in strict WDI order: Mali (113), Lebanon (114; blocked), Armenia (115), and Trinidad and Tobago (116). Lebanon is blocked because WDI returned no 2024 observation for the required employment-to-population indicator; it is recorded in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. Ukraine (rank 56) and Sudan (rank 93) remain blocked for the same reason. Hong Kong SAR, China (raw economy-list rank 39), Puerto Rico (raw economy-list rank 62), and Macao SAR, China (raw economy-list rank 94) are not sovereign states and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -119,6 +119,10 @@ The all-economies query identified a prior roster omission: New Zealand is sover
 | 110 | Papua New Guinea | PG | $0.031tn |
 | 111 | Bosnia and Herzegovina | BA | $0.030tn |
 | 112 | Albania | AL | $0.027tn |
+| 113 | Mali | ML | $0.027tn |
+| 114 | Lebanon | LB | $0.026tn (blocked: required 2024 employment reading unavailable) |
+| 115 | Armenia | AM | $0.026tn |
+| 116 | Trinidad and Tobago | TT | $0.026tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -250,6 +254,10 @@ On 2026-10-18 the current top 20 were re-checked against the World Bank all-econ
 | PG | 45.7 | F | New v1 record. |
 | BA | 47.9 | F | New v1 record. |
 | AL | 56.2 | D | New v1 record. |
+| ML | 37.9 | F | New v1 record. |
+| LB | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
+| AM | 49.9 | F | New v1 record. |
+| TT | 62.6 | D | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 

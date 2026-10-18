@@ -649,6 +649,24 @@ SEARCHES = {
         "region": "AL",
         "edition": "AL:en",
     },
+    "ML": {
+        "query": "Mali news",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "AM": {
+        "query": "Armenia economy",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "TT": {
+        "query": "\"Trinidad and Tobago\" government",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -762,6 +780,9 @@ COUNTRY_TERMS = {
     "PG": ("papua new guinea", "papua new guinean", "port moresby"),
     "BA": ("bosnia and herzegovina", "bosnian", "sarajevo", "bih"),
     "AL": ("albania", "albanian", "tirana", "tirane"),
+    "ML": ("mali", "malian", "bamako"),
+    "AM": ("armenia", "armenian", "yerevan"),
+    "TT": ("trinidad and tobago", "trinidad", "tobago", "port of spain"),
 }
 
 

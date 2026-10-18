@@ -8,15 +8,16 @@ from pathlib import Path
 
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Iceland. Aggregates and
+# Strict descending WDI 2024 sovereign GDP order after Albania. Aggregates and
 # non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (109, "SEN", "SN", "Senegal", "senegal", 69),
-    (110, "PNG", "PG", "Papua New Guinea", "papua-new-guinea", 61),
-    (111, "BIH", "BA", "Bosnia and Herzegovina", "bosnia-and-herzegovina", 52),
-    (112, "ALB", "AL", "Albania", "albania", 68),
+    (113, "MLI", "ML", "Mali", "mali", 24),
+    (115, "ARM", "AM", "Armenia", "armenia", 54),
+    (116, "TTO", "TT", "Trinidad and Tobago", "trinidad-and-tobago", 82),
 ]
-BLOCKED_CANDIDATES = []
+BLOCKED_CANDIDATES = [
+    (114, "LBN", "LB", "Lebanon", "labor_retention"),
+]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
     "sovereign_cannibalization": ("NY.GNP.PCAP.CD", 2024, "gni_per_capita_usd"),
@@ -66,8 +67,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "IS" or roster[-1]["rank"] != 108:
-        raise ValueError("Expected the existing roster to end with Iceland at rank 108")
+    if roster[-1]["country_code"] != "AL" or roster[-1]["rank"] != 112:
+        raise ValueError("Expected the existing roster to end with Albania at rank 112")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []
@@ -77,7 +78,8 @@ def main():
             raise ValueError(f"Expected required WDI reading to be missing for {iso3}: {raw}")
         if not gdp[iso3] or gdp[iso3] >= previous_gdp:
             raise ValueError(f"GDP ordering failed for blocked candidate {iso3}")
-        previous_gdp = gdp[iso3]
+        # Blocked economies are documented without becoming an ordering baseline:
+        # a later eligible economy can have higher GDP than this blocked slot.
         payload["metadata"]["coverage_roster"]["blocked_candidates"].append({
             "rank": rank,
             "iso3": iso3,
