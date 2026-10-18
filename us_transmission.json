@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T07:26:41Z",
+  "generated_at": "2026-10-18T07:52:45Z",
   "methodology": {
     "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
     "limitations": [
@@ -128,19 +128,47 @@
     "method": "Google News RSS title matching against published distress-language terms.",
     "items": [
       {
-        "title": "Dollar stores grow sales as grocers grapple with weak results - Grocery Dive",
-        "source": "Grocery Dive",
+        "title": "Ross Stores Expands Footprint With 51 New Store Openings - TradingView",
+        "source": "TradingView",
+        "publication_date": "Tue, 13 Oct 2026 15:46:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMlpyWGt2SkVfNGdEUHFMNlhScUlTUFZCdlMteW1ibWRVVHltMk1MZi1ERGo0UG5ScnF2YmYyMnpwN1dJVUtueW5RXzl5OWxoMkp1am5VeUlXZTlIUmRxYkRlZUgwanRweHd2ZEFBNXlwajZWMXpadDExVUVOaEpfRkVwaEZEelFNY3BBRFFxSlRJTEZBdTcwVGdpODdkdlBfY0MzVkhOanhiaVEyanE2Nzln?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Dollar Tree Leads Value Retail Traffic Growth in July - Yahoo Finance",
+        "source": "Yahoo Finance",
         "publication_date": "Fri, 28 Aug 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORzUyem5UM2xucnBRRkZVNU1mNmdsX0I1OWZIR3ZyRklkSXFtMkQ2UExEa1l1MUkzLURER2ZGZnB2UXM4UGtQQ2U1WDdaczFFTHRDeElTeDRwUW9fTUEteU5oX2pTemh1b1ZzaG1TZmtjTnBsTk90aVAtcGJnbFNxNjhaSHJUajZUaWpHejI3amtlTU54QmtRR0RtcDFpb3l1MzQ4eF93dy0yVEtGNE5n?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMFQyUVh4NmpvMURwbVZvd05hM3NwNk5iQVFxUkFQX0liZ0xRcmVvNU5SY053ZGM5NzFldXdHOW9MWXk5bUtJVWhsNHRVaExHUFJoY2VEMjd3c2ZBc19UQi1hN09WU1V2U3g4VGZrNk9hM0lLZ0VvVjVObDY5N0tTU1Fsa3MwZHFYd01MMERsSFRFNHpwSExBVENuUQ?oc=5",
         "matched_signals": [
-          "dollar store"
+          "traffic"
         ]
+      },
+      {
+        "title": "Dollar General Leads First-Half Visits, But Dollar Tree Rebounds in July - Store Brands",
+        "source": "Store Brands",
+        "publication_date": "Tue, 25 Aug 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRUtlMkZFNkFtLVdTLTR2SzFiNG05LURId0diX1FFZDR5S29ZRS1WcDNPNVE1TXdrXzNDVXhDU3JrcTFqSERPYVRPX1hkQzd4ZWJRSUs3UldFbEhULXM0aGJQMnd1SnVwZlFNVkIyakg5V1Y1QW1Ca2o2NTNtbkF4MWpaTmRpbEZGczE5SWFXeDVCdw?oc=5",
+        "matched_signals": []
       },
       {
         "title": "Dollar General expects muted annual sales on weak spending, shares drop - Reuters",
         "source": "Reuters",
         "publication_date": "Thu, 12 Mar 2026 07:00:00 GMT",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOemMxNk9LcnZ5bDJEalZvTWNnWndpQS1Ob0ExcFVUVjVGblBwTjFZY1lHc3dkdldDV1hkeE9SNkN5dUF4VktOQ0RpZmFDN3FHTklwUHY1VG5CUzgwd3ZyVlZpcHVZX2VHZEZZQ1k4OTY2M0RyRmNXWEZ6Tkp3THQ4ODFTUGItV1FsQ1I3Nmw2emRFRVE0c0lFbW5ncUxVZjdCYzFmTDRFNFdURS11cVNRVklRT0k?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Why Is Dollar Tree Stock Up 31% in the Last 12 Months - TIKR.com",
+        "source": "TIKR.com",
+        "publication_date": "Tue, 08 Sep 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3Y1WFpwWWZwZXJMWDV0THVuUUd6UDJqOC1jOGZENHdNWkFOZThBV3FWM1c5MzZCQnFTYWMzNmUxNHY0bXBkbnMzOUJFdTRGdzJtQzZpVm1EbGYzZlhsYlZXQ3BLa2lyOFdjaXNyMUtUMl9LOHFLZEY1bWIxYk5lSHN2c2QwcHZya2pJRlFUb2lZQQ?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Dollar Tree (DLTR): Why the Post-Family-Dollar Reset Matters More Than the Consumer-Stress Narrative - AlphaStreet",
+        "source": "AlphaStreet",
+        "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV3A1ZGhCczdwUmdraGV3cVBlejFmaFU2Q3ljSks5SDg5Z2lZU0IwSXJaQm5SZ3hTaVZKTU10Ump1X1hXSTc2OEpnaUVwb3VIRnFuRzQ3a0lVckpRSjdZT3RCYkt0Zk9QeW9JSHhLQWZ3R0xkdmtsN1hLN0szdXRMMTQtQnduRm9KbjhsMnZnakwwY0RJWWk1bVlfWmR1NG1ITlFURFoxenBsLXY2YTFPRHBMMU5hbmxKN0FGYmFDYWhZRFdiLUHSAcsBQVVfeXFMUGZLd1RCbmQ1XzF2Wm9BNlJuZDIzTjhjWWZJUU9kd3hSNWM1QWVmdUVpSDJFZkRpQWo1NjlxMXZHN3o4bW5aaC0xY1k0U0tDc2Y4M3pWdWtDbW5YUG4yVnFjQTFqRUhvQjVJMTgwVVM2ejc1b0g0VFBjS1FXR2E4cXYyUGliZ2xXel9EYk80RmZNbUFwQmo2ZnZCaFZSdXJld0s0YmVIUFNGTzhOOU50aGRIQzFnZVI2UXRWVlJPcndoeHh3cjZEUWN4bHM?oc=5",
         "matched_signals": []
       },
       {
@@ -158,34 +186,6 @@
         "matched_signals": [
           "dollar store"
         ]
-      },
-      {
-        "title": "Dollar Tree Inc. stock extends pullback after Q2 2026 guidance update - ad-hoc-news.de",
-        "source": "ad-hoc-news.de",
-        "publication_date": "Thu, 17 Sep 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMVItS01TdnJ5LUdMMlR4b1VnM2hxWDBpY0tOZ25oaDVmMTNOSTRZeUp3NlhGelRqSkpSY2FKVWtkYWttUUtQaFgzbi1iUmhPMlB6NC0zMFFsN0dYaktZa2xXWHZRRGVKTXZ2OUlhNVRlbTJaRG9JTk9iT0hRcUViOW83Y3lNQ2NESTNuY0p0V3l5TC1aVkQ1c292UDl1SHpXSzVwd2IwZk51QmtoSS1Ib3c3VjJUem1BZXVfNEE0QVF2RWhDNm5tVHE0WQ?oc=5",
-        "matched_signals": []
-      },
-      {
-        "title": "India gold market update: Mixed demand signals | Post by Kavita Chacko | Insights - World Gold Council",
-        "source": "World Gold Council",
-        "publication_date": "Fri, 17 Jul 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWVJ0b1BMMkZuVkYtYWw5cFBtNHRXR0VTa0NjT2l4NHp2MHV5eXlqRTVuNjh4S29yeHBacWZvcnU2RHlydlZQckNuYkZDcFZFalNLMzRJTkZQZ3VFeEpnREFaRUd6Y0NnREFaVF8tR0pYc2pJZFcxZjYzT09MMWlIeVJBbFdkbDRSY3U1NFVBVUFoT0V2dkxNeA?oc=5",
-        "matched_signals": []
-      },
-      {
-        "title": "Fewer burritos, more bargains: Consumers flash holiday warning signs - CNBC",
-        "source": "CNBC",
-        "publication_date": "Fri, 14 Nov 2025 08:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdl91aEtYR0YyM3pjZ1F5eENWSURmQk1USDRWdGhLNms0QzZTNzJvX25qaXRRODdQYmJDdFBzdTl0VFNHaHVWS3FUd2MzelpmN002ZG1vNnYxR1BvWWpDRWFuZzBQck5ZQTY4T2RLcDZsRERGWlotRXBHTURZcmtKcG5WSTk4a0d2TTlWaFhCdG1wSV83MXBEWXA2VG1sNmZGeEtkV2JB0gGrAUFVX3lxTE1HV3M4UDFySzNvSmxVZndEZUIyeE5IeDUtQ1E1NEV3LWxoVmlpdVhUOXI5ZkZhQzFDLVVzZ3k5U0xMU1BodDlhT1NOVmVZc2lZMEVYWHowYWtxVVFIUHlBMWtFR19vd0RUUXl2V2VTSkZibjRXZDRyZWZOYjZjdDVpMXlSZWwxbDA5cWNnQjdwbFVMQk5va05OTmJMNl9yUzQwX0I3TVVOVzZ5TQ?oc=5",
-        "matched_signals": []
-      },
-      {
-        "title": "Apple set to lose nearly $500 billion in value after weak forecast - Reuters",
-        "source": "Reuters",
-        "publication_date": "Fri, 31 Jul 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZi0ya0lkQWtBRjNSR0o0YkFvMnVrZUx6N3EzRHBnTEtva0gtc2RwajIxM0ZXY2hLN2h1eUl3THBILVBrbTNrNHRDVmpLUmxBWWtQeUNuTURRa2xMZXktdG55Ymd3YzZmR296U3lTLVFSZjQ3eS01QzFwZExkVDN5Mk9PWjROR3hDZlRja0YxNGM2Tm5MUE9CRjNYWUtuR19RQUxPc0FoZEdaVGsyQUtiQmdqQmFGUmhqV0l0SXZqUzRoRHhzckpv?oc=5",
-        "matched_signals": []
       }
     ]
   },
@@ -342,6 +342,16 @@
     },
     {
       "generated_at": "2026-10-18T07:26:41Z",
+      "total_transmission_index": 22.0,
+      "phase_scores": {
+        "1": 5.0,
+        "2": 6.0,
+        "3": 2.0,
+        "4": 9.0
+      }
+    },
+    {
+      "generated_at": "2026-10-18T07:52:45Z",
       "total_transmission_index": 22.0,
       "phase_scores": {
         "1": 5.0,

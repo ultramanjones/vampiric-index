@@ -361,6 +361,36 @@ SEARCHES = {
         "region": "SK",
         "edition": "SK:en",
     },
+    "DO": {
+        "query": "Dominican Republic economy",
+        "language": "en",
+        "region": "DO",
+        "edition": "DO:en",
+    },
+    "EC": {
+        "query": "Ecuador (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "EC",
+        "edition": "EC:en",
+    },
+    "UZ": {
+        "query": "Uzbekistan economy",
+        "language": "en",
+        "region": "UZ",
+        "edition": "UZ:en",
+    },
+    "VE": {
+        "query": "Venezuela (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "VE",
+        "edition": "VE:en",
+    },
+    "KE": {
+        "query": "Kenya (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "KE",
+        "edition": "KE:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -426,6 +456,11 @@ COUNTRY_TERMS = {
     "MA": ("morocco", "moroccan", "rabat", "casablanca"),
     "ET": ("ethiopia", "ethiopian", "addis ababa"),
     "SK": ("slovakia", "slovak", "bratislava"),
+    "DO": ("dominican republic", "dominican", "santo domingo"),
+    "EC": ("ecuador", "ecuadorian", "quito", "guayaquil"),
+    "UZ": ("uzbekistan", "uzbek", "tashkent"),
+    "VE": ("venezuela", "venezuelan", "caracas"),
+    "KE": ("kenya", "kenyan", "nairobi"),
 }
 
 
