@@ -391,6 +391,36 @@ SEARCHES = {
         "region": "KE",
         "edition": "KE:en",
     },
+    "BG": {
+        "query": "Bulgaria",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "GT": {
+        "query": "Guatemala",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "OM": {
+        "query": "Oman",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "AO": {
+        "query": "Angola",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "LK": {
+        "query": "Sri Lanka (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "LK",
+        "edition": "LK:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -461,6 +491,11 @@ COUNTRY_TERMS = {
     "UZ": ("uzbekistan", "uzbek", "tashkent"),
     "VE": ("venezuela", "venezuelan", "caracas"),
     "KE": ("kenya", "kenyan", "nairobi"),
+    "BG": ("bulgaria", "bulgarian", "sofia"),
+    "GT": ("guatemala", "guatemalan", "guatemala city"),
+    "OM": ("oman", "omani", "muscat"),
+    "AO": ("angola", "angolan", "luanda"),
+    "LK": ("sri lanka", "sri lankan", "colombo"),
 }
 
 
