@@ -115,7 +115,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
       }
     },
     {
@@ -292,7 +292,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
       }
     },
     {
@@ -469,7 +469,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
       }
     },
     {
@@ -646,7 +646,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
       }
     },
     {
@@ -705,7 +705,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
       }
     },
     {
@@ -823,7 +823,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
       }
     },
     {
@@ -882,7 +882,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
       }
     },
     {
@@ -1000,7 +1000,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
       }
     },
     {

@@ -136,7 +136,7 @@ def main():
             if country["hvi_score"] == old_score:
                 review["decision"] = "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
             else:
-                review["decision"] = "coverage-input v1 score revised because the latest cited reading changes its published transformed pillar"
+                review["decision"] = "coverage-input v1 score revised after applying the published transform to the current cited readings"
                 changed_scores.append(f"{country['country_code']} {old_score:.1f}->{country['hvi_score']:.1f}")
         country["review"] = review
 
