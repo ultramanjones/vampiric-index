@@ -187,6 +187,36 @@ SEARCHES = {
         "region": "TH",
         "edition": "TH:en",
     },
+    "NO": {
+        "query": "Norway inflation",
+        "language": "en",
+        "region": "NO",
+        "edition": "NO:en",
+    },
+    "VN": {
+        "query": "Vietnam inflation",
+        "language": "en",
+        "region": "VN",
+        "edition": "VN:en",
+    },
+    "IR": {
+        "query": "Iran (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "IR",
+        "edition": "IR:en",
+    },
+    "PH": {
+        "query": "Philippines inflation",
+        "language": "en",
+        "region": "PH",
+        "edition": "PH:en",
+    },
+    "BD": {
+        "query": "Bangladesh (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "BD",
+        "edition": "BD:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -223,6 +253,11 @@ COUNTRY_TERMS = {
     "IL": ("israel", "israeli", "jerusalem", "tel aviv"),
     "AT": ("austria", "austrian", "vienna"),
     "TH": ("thailand", "thai", "bangkok"),
+    "NO": ("norway", "norwegian", "oslo"),
+    "VN": ("vietnam", "vietnamese", "hanoi", "ho chi minh"),
+    "IR": ("iran", "iranian", "tehran"),
+    "PH": ("philippines", "philippine", "filipino", "manila"),
+    "BD": ("bangladesh", "bangladeshi", "dhaka"),
 }
 
 

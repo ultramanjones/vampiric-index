@@ -1,4 +1,4 @@
-"""Build the documented World Bank 2024 nominal-GDP top-30 HVI coverage roster.
+"""Build the documented World Bank 2024 nominal-GDP top-35 HVI coverage roster.
 
 This is an explicit intake tool: it adds missing roster countries with the published
 coverage-input v1 transforms and preserves every already-declared legacy score.
@@ -50,6 +50,11 @@ COUNTRIES = {
     "ISR": ("IL", "Israel", "israel", 73),
     "AUT": ("AT", "Austria", "austria", 93),
     "THA": ("TH", "Thailand", "thailand", 34),
+    "NOR": ("NO", "Norway", "norway", 99),
+    "VNM": ("VN", "Vietnam", "vietnam", 20),
+    "IRN": ("IR", "Iran", "iran", 11),
+    "PHL": ("PH", "Philippines", "philippines", 58),
+    "BGD": ("BD", "Bangladesh", "bangladesh", 45),
 }
 
 
@@ -140,7 +145,7 @@ def main():
 
     payload["metadata"] = {
         "coverage_roster": {
-            "definition": "Top 30 sovereign economies by nominal GDP in current US dollars",
+            "definition": "Top 35 sovereign economies by nominal GDP in current US dollars",
             "source": "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)",
             "source_url": gdp_url,
             "observation_year": 2024,
@@ -151,7 +156,7 @@ def main():
     }
     payload["countries"] = output
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(output)} top-30 countries; added {sum(1 for c in output if not c['acute_dispatch'])} records awaiting dispatch refresh.")
+    print(f"Wrote {len(output)} top-35 countries; added {sum(1 for c in output if not c['acute_dispatch'])} records awaiting dispatch refresh.")
     return 0
 
 

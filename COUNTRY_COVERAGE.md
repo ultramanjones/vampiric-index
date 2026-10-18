@@ -1,12 +1,12 @@
 # Country Coverage Register
 
-## Top-30 nominal-GDP roster — reviewed 2026-10-18
+## Top-35 nominal-GDP roster — reviewed 2026-10-18
 
 ### Selection rule and authoritative source
 
-The tracked roster is the top 30 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
+The tracked roster is the top 35 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The next five untracked sovereign economies after Sweden were added in strict descending WDI order: Singapore, United Arab Emirates, Israel, Austria, and Thailand. The source query is [World Bank API: 30-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
+The next five untracked sovereign economies after Thailand were added in strict descending WDI order: Norway, Vietnam, Iran, Philippines, and Bangladesh. The source query is [World Bank API: 35-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -40,6 +40,11 @@ The next five untracked sovereign economies after Sweden were added in strict de
 | 28 | Israel | IL | $0.542tn |
 | 29 | Austria | AT | $0.535tn |
 | 30 | Thailand | TH | $0.529tn |
+| 31 | Norway | NO | $0.501tn |
+| 32 | Vietnam | VN | $0.476tn |
+| 33 | Iran | IR | $0.475tn |
+| 34 | Philippines | PH | $0.462tn |
+| 35 | Bangladesh | BD | $0.450tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -90,6 +95,11 @@ The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Th
 | IL | 79.8 | C | New v1 record. |
 | AT | 82.9 | C | New v1 record. |
 | TH | 47.9 | F | New v1 record. |
+| NO | 86.4 | B | New v1 record. |
+| VN | 43.8 | F | New v1 record. |
+| IR | 34.3 | F | New v1 record. |
+| PH | 49.2 | F | New v1 record. |
+| BD | 45.5 | F | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 
