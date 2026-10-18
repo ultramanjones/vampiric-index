@@ -727,6 +727,11 @@ SEARCHES = {
         "region": "BJ",
         "edition": "BJ:en",
     },
+    "GA": {"query": "Gabon economy", "language": "en", "region": "GA", "edition": "GA:en"},
+    "TD": {"query": "Chad economy", "language": "en", "region": "TD", "edition": "TD:en"},
+    "NE": {"query": "Niger economy", "language": "en", "region": "NE", "edition": "NE:en"},
+    "NI": {"query": "Nicaragua economy", "language": "en", "region": "NI", "edition": "NI:en"},
+    "BW": {"query": "Botswana economy", "language": "en", "region": "BW", "edition": "BW:en"},
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -853,6 +858,11 @@ COUNTRY_TERMS = {
     "MZ": ("mozambique", "mozambican", "maputo"),
     "JM": ("jamaica", "jamaican", "kingston"),
     "BJ": ("benin", "beninese", "porto-novo", "cotonou"),
+    "GA": ("gabon", "gabonese", "libreville"),
+    "TD": ("chad", "chadian", "n'djamena", "ndjamena"),
+    "NE": ("niger", "nigerien", "niamey"),
+    "NI": ("nicaragua", "nicaraguan", "managua"),
+    "BW": ("botswana", "botswanan", "gaborone"),
 }
 
 

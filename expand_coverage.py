@@ -1,22 +1,24 @@
 """Add the next verified sovereign economies from the documented WDI GDP roster."""
 
 import json
+import re
 import sys
 import urllib.request
 from datetime import date
 from pathlib import Path
 
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
+COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Haiti.
-# Aggregates and
-# non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
+# Strict descending WDI 2024 sovereign GDP order after Benin, verified against
+# the all-economies GDP API and WDI country metadata on each run. Aggregates
+# and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (122, "MNG", "MN", "Mongolia", "mongolia", 84),
-    (123, "BFA", "BF", "Burkina Faso", "burkina-faso", 20),
-    (124, "MOZ", "MZ", "Mozambique", "mozambique", 42),
-    (125, "JAM", "JM", "Jamaica", "jamaica", 81),
-    (126, "BEN", "BJ", "Benin", "benin", 61),
+    (124, "GAB", "GA", "Gabon", "gabon"),
+    (125, "TCD", "TD", "Chad", "chad"),
+    (126, "NER", "NE", "Niger", "niger"),
+    (127, "NIC", "NI", "Nicaragua", "nicaragua"),
+    (128, "BWA", "BW", "Botswana", "botswana"),
 ]
 BLOCKED_CANDIDATES = []
 INDICATORS = {
@@ -44,6 +46,22 @@ def grade(score):
     return "F"
 
 
+def freedom_house_score(slug):
+    """Read the documented Freedom in the World 2026 country total."""
+    url = f"https://freedomhouse.org/country/{slug}/freedom-world/2026"
+    request = urllib.request.Request(url, headers={"User-Agent": "VampiricIndex/1.0"})
+    with urllib.request.urlopen(request, timeout=60) as response:
+        page = response.read().decode("utf-8")
+    match = re.search(
+        r'<div class="scorecard fiw 2026">.*?<div class="country-score">(\d+)</div>',
+        page,
+        re.DOTALL,
+    )
+    if not match:
+        raise ValueError(f"Unable to parse Freedom in the World 2026 total from {url}")
+    return int(match.group(1)), url
+
+
 def main():
     path = Path(sys.argv[1]) if len(sys.argv) == 2 else Path("data.json")
     if len(sys.argv) > 2:
@@ -59,6 +77,21 @@ def main():
 
     gdp_rows = fetch(GDP_URL)[1]
     gdp = {row["countryiso3code"]: row["value"] for row in gdp_rows}
+    country_metadata = fetch(COUNTRIES_URL)[1]
+    sovereign_codes = {
+        item["id"] for item in country_metadata
+        if item["region"]["id"] != "NA" and item["capitalCity"]
+    }
+    ranked = sorted(
+        (row for row in gdp_rows if row["countryiso3code"] in sovereign_codes and row["value"] is not None),
+        key=lambda row: row["value"],
+        reverse=True,
+    )
+    source_ranks = {row["countryiso3code"]: index for index, row in enumerate(ranked, start=1)}
+    expected_ranks = [item[0] for item in CANDIDATES]
+    actual_ranks = [source_ranks.get(item[1]) for item in CANDIDATES]
+    if actual_ranks != expected_ranks:
+        raise ValueError(f"World Bank candidate ordering changed: expected {expected_ranks}, got {actual_ranks}")
     iso3_codes = [item[1] for item in CANDIDATES] + [item[1] for item in BLOCKED_CANDIDATES]
     readings, reading_urls = {}, {}
     for pillar, (indicator, year, _) in INDICATORS.items():
@@ -68,8 +101,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "HT" or roster[-1]["rank"] != 121:
-        raise ValueError("Expected the existing roster to end with Haiti at rank 121")
+    if roster[-1]["country_code"] != "BJ":
+        raise ValueError("Expected the existing roster to end with Benin")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []
@@ -91,13 +124,14 @@ def main():
             "source_urls": {missing_pillar: reading_urls[missing_pillar]},
         })
         blocked.append(name)
-    for rank, iso3, iso2, name, slug, freedom_score in CANDIDATES:
+    for rank, iso3, iso2, name, slug in CANDIDATES:
         raw = {pillar: readings[pillar][iso3] for pillar in INDICATORS}
         if any(value is None for value in raw.values()):
             raise ValueError(f"Required WDI reading missing for {iso3}: {raw}")
         if not gdp[iso3] or gdp[iso3] >= previous_gdp:
             raise ValueError(f"GDP ordering failed for {iso3}")
         previous_gdp = gdp[iso3]
+        freedom_score, freedom_url = freedom_house_score(slug)
         pillars = {
             "survival_floor": round(raw["survival_floor"] / 4, 1),
             "sovereign_cannibalization": round(min(raw["sovereign_cannibalization"] / 2000, 25), 1),
@@ -115,7 +149,7 @@ def main():
                 f"Life expectancy at birth: {raw['survival_floor']:.3f} years (World Bank WDI, 2023)",
                 f"GNI per capita: US${raw['sovereign_cannibalization']:,.0f} (World Bank WDI, 2024)",
                 f"Employment-to-population ratio: {raw['labor_retention']:.3f}% (World Bank WDI/ILO, 2024)",
-                f"Freedom in the World 2025 total score: {freedom_score}/100 (Freedom House)",
+                f"Freedom in the World 2026 total score: {freedom_score}/100 (Freedom House)",
             ],
             "acute_dispatch": [],
             "review": {
@@ -124,7 +158,7 @@ def main():
                     "life_expectancy_years": {"value": raw["survival_floor"], "observation_year": 2023, "url": reading_urls["survival_floor"]},
                     "gni_per_capita_usd": {"value": raw["sovereign_cannibalization"], "observation_year": 2024, "url": reading_urls["sovereign_cannibalization"]},
                     "employment_to_population_percent": {"value": raw["labor_retention"], "observation_year": 2024, "url": reading_urls["labor_retention"]},
-                    "freedom_house_total": {"value": freedom_score, "edition": "Freedom in the World 2025", "url": f"https://freedomhouse.org/country/{slug}/freedom-world/2025"},
+                    "freedom_house_total": {"value": freedom_score, "edition": "Freedom in the World 2026", "url": freedom_url},
                 },
                 "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
                 "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings",
