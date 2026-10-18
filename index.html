@@ -102,9 +102,9 @@
 </head>
 <body>
   <header class="masthead">
-    <p class="eyebrow">Sovereign diagnostic dashboard</p>
+    <p class="eyebrow">Household-circulation diagnostic dashboard</p>
     <h1>Vampiric Index</h1>
-    <p class="subtitle">Host Viability Index: a deterministic view of macroeconomic extraction and institutional strain.</p>
+    <p class="subtitle">Can households still cover the basics, retain leverage, and keep consumer demand alive? Provisional v2 uses transparent World Bank source proxies and exposes its data gaps.</p>
     <div class="rule"></div>
   </header>
 
@@ -168,12 +168,14 @@
       if (score >= 50) return "D";
       return "F";
     }
-    const pillarLabels = {
-      survival_floor: "Survival",
-      sovereign_cannibalization: "Sovereign",
-      labor_retention: "Labor",
-      state_coercion: "Coercion"
-    };
+    let scorecards = {};
+    let activeScorecardKey = "household_circulation_v2";
+    function activeScorecard(country) {
+      return country.scorecards && country.scorecards[activeScorecardKey];
+    }
+    function activeDefinition() {
+      return scorecards[activeScorecardKey];
+    }
     const status = document.getElementById("status");
     const drawer = document.getElementById("drawer");
     const drawerContent = document.getElementById("drawer-content");
@@ -251,33 +253,49 @@
     }
 
     function openDossier(country) {
-      const grade = calculateGrade(country.hvi_score);
+      const scorecard = activeScorecard(country);
+      const definition = activeDefinition();
       document.getElementById("drawer-code").textContent = country.country_code;
       document.getElementById("drawer-name").textContent = country.name;
       drawerContent.replaceChildren();
 
-      const score = makeElement("div", "score", `${country.hvi_score.toFixed(1)} `);
-      score.append(makeElement("small", "", "/ 100"));
-      const badge = makeElement("span", "grade", grade);
-      badge.style.background = gradeColors[grade];
-      score.append(document.createTextNode(" "));
-      score.append(badge);
-      drawerContent.append(score);
+      drawerContent.append(makeElement("p", "eyebrow", definition.label));
+      if (!scorecard || scorecard.status !== "complete") {
+        const missing = (scorecard && scorecard.missing_modules || [])
+          .map(key => definition.modules[key].label).join(", ");
+        drawerContent.append(makeElement("div", "notice", `No comparable provisional v2 score. Missing source input: ${missing || "unavailable data"}. The dashboard will not invent a zero or reuse a legacy value.`));
+      } else {
+        const grade = scorecard.grade;
+        const score = makeElement("div", "score", `${scorecard.hvi_score.toFixed(1)} `);
+        score.append(makeElement("small", "", "/ 100"));
+        const badge = makeElement("span", "grade", grade);
+        badge.style.background = gradeColors[grade];
+        score.append(document.createTextNode(" "));
+        score.append(badge);
+        drawerContent.append(score);
+
+        drawerContent.append(makeElement("h3", "section-title", "Household-circulation modules"));
+        definition.module_order.forEach(key => {
+          const module = definition.modules[key];
+          const value = scorecard.modules[key];
+          const gauge = makeElement("div", "gauge");
+          gauge.append(makeElement("span", "", module.label));
+          const track = makeElement("div", "gauge-track");
+          const fill = makeElement("div", "gauge-fill");
+          fill.style.width = `${value / definition.module_max * 100}%`;
+          track.append(fill);
+          gauge.append(track);
+          gauge.append(makeElement("span", "", `${value.toFixed(1)}/${definition.module_max}`));
+          drawerContent.append(gauge);
+          drawerContent.append(makeElement("p", "dispatch-meta", module.description));
+        });
+        drawerContent.append(makeElement("p", "notice", definition.warning));
+      }
+
+      const legacy = country.scorecards && country.scorecards.legacy_four_pillar_v1;
+      if (legacy) drawerContent.append(makeElement("p", "dispatch-meta", `Legacy four-pillar v1 baseline: ${legacy.hvi_score.toFixed(1)} / 100 · Grade ${legacy.grade}. It is retained for comparison, not mixed into v2.`));
 
       if (country.country_code === "US") appendTransmissionGauge(transmissionData);
-
-      drawerContent.append(makeElement("h3", "section-title", "Pillar gauges"));
-      for (const [key, label] of Object.entries(pillarLabels)) {
-        const gauge = makeElement("div", "gauge");
-        gauge.append(makeElement("span", "", label));
-        const track = makeElement("div", "gauge-track");
-        const fill = makeElement("div", "gauge-fill");
-        fill.style.width = `${country.pillars[key] * 4}%`;
-        track.append(fill);
-        gauge.append(track);
-        gauge.append(makeElement("span", "", `${country.pillars[key].toFixed(1)}/25`));
-        drawerContent.append(gauge);
-      }
 
       drawerContent.append(makeElement("h3", "section-title", "Chronic pathologies"));
       const pathologies = makeElement("ul");
@@ -307,13 +325,15 @@
     function renderSummary(countries) {
       const summary = document.getElementById("country-summary");
       countries.forEach(country => {
-        const grade = calculateGrade(country.hvi_score);
+        const scorecard = activeScorecard(country);
+        const complete = scorecard && scorecard.status === "complete";
+        const grade = complete ? scorecard.grade : null;
         const button = makeElement("button", "country-button");
         button.type = "button";
-        button.title = `HVI score: ${country.hvi_score.toFixed(1)} / 100`;
+        button.title = complete ? `Provisional household-circulation HVI: ${scorecard.hvi_score.toFixed(1)} / 100` : "No comparable provisional v2 score: required source data is missing.";
         button.append(makeElement("strong", "", country.country_code));
-        button.append(makeElement("span", "", `${country.hvi_score.toFixed(1)} · Grade ${grade}`));
-        button.style.borderLeft = `4px solid ${gradeColors[grade]}`;
+        button.append(makeElement("span", "", complete ? `${scorecard.hvi_score.toFixed(1)} · Grade ${grade}` : "v2 data gap"));
+        button.style.borderLeft = `4px solid ${complete ? gradeColors[grade] : "#55515a"}`;
         button.addEventListener("click", () => openDossier(country));
         summary.append(button);
       });
@@ -337,15 +357,17 @@
         .attr("class", feature => trackedByMapId.has(String(feature.id)) ? "country tracked" : "country untracked")
         .attr("fill", feature => {
           const country = trackedByMapId.get(String(feature.id));
-          return country ? gradeColors[calculateGrade(country.hvi_score)] : null;
+          const scorecard = country && activeScorecard(country);
+          return scorecard && scorecard.status === "complete" ? gradeColors[scorecard.grade] : null;
         })
         .attr("d", path)
         .attr("tabindex", feature => trackedByMapId.has(String(feature.id)) ? 0 : null)
         .attr("aria-label", feature => {
           const country = trackedByMapId.get(String(feature.id));
-          return country
-            ? `${country.name}, HVI ${country.hvi_score}, grade ${calculateGrade(country.hvi_score)}`
-            : null;
+          const scorecard = country && activeScorecard(country);
+          return country ? (scorecard && scorecard.status === "complete"
+            ? `${country.name}, provisional HVI ${scorecard.hvi_score}, grade ${scorecard.grade}`
+            : `${country.name}, no comparable provisional v2 score`) : null;
         })
         .on("click", (_, feature) => {
           const country = trackedByMapId.get(String(feature.id));
@@ -362,7 +384,10 @@
         .append("title")
         .text(feature => {
           const country = trackedByMapId.get(String(feature.id));
-          return `${country.name}: HVI score ${country.hvi_score.toFixed(1)} / 100`;
+          const scorecard = activeScorecard(country);
+          return scorecard && scorecard.status === "complete"
+            ? `${country.name}: provisional HVI ${scorecard.hvi_score.toFixed(1)} / 100`
+            : `${country.name}: no comparable provisional v2 score`;
         });
     }
 
@@ -380,6 +405,10 @@
           })
         ]);
         if (!Array.isArray(dataResponse.countries)) throw new Error("data.json does not contain a countries array");
+        if (!dataResponse.metadata || !dataResponse.metadata.scorecards || !dataResponse.metadata.active_scorecard) throw new Error("data.json does not contain scorecard metadata");
+        activeScorecardKey = dataResponse.metadata.active_scorecard;
+        scorecards = dataResponse.metadata.scorecards;
+        if (!activeDefinition()) throw new Error(`Unknown active scorecard: ${activeScorecardKey}`);
         if (!Array.isArray(transmissionResponse.phases)) throw new Error("us_transmission.json does not contain transmission phases");
         transmissionData = transmissionResponse;
         renderMap(world, dataResponse.countries);
