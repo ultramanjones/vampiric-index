@@ -697,6 +697,36 @@ SEARCHES = {
         "region": "HT",
         "edition": "HT:en",
     },
+    "MN": {
+        "query": "Mongolia economy",
+        "language": "en",
+        "region": "MN",
+        "edition": "MN:en",
+    },
+    "BF": {
+        "query": "Burkina Faso economy",
+        "language": "en",
+        "region": "BF",
+        "edition": "BF:en",
+    },
+    "MZ": {
+        "query": "Mozambique economy",
+        "language": "en",
+        "region": "MZ",
+        "edition": "MZ:en",
+    },
+    "JM": {
+        "query": "Jamaica economy",
+        "language": "en-JM",
+        "region": "JM",
+        "edition": "JM:en",
+    },
+    "BJ": {
+        "query": "Benin economy",
+        "language": "en",
+        "region": "BJ",
+        "edition": "BJ:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -818,6 +848,11 @@ COUNTRY_TERMS = {
     "GN": ("guinea", "guinean", "conakry"),
     "GY": ("guyana", "guyanese", "georgetown"),
     "HT": ("haiti", "haitian", "port-au-prince"),
+    "MN": ("mongolia", "mongolian", "ulaanbaatar", "ulaan baatar"),
+    "BF": ("burkina faso", "burkinabe", "ouagadougou"),
+    "MZ": ("mozambique", "mozambican", "maputo"),
+    "JM": ("jamaica", "jamaican", "kingston"),
+    "BJ": ("benin", "beninese", "porto-novo", "cotonou"),
 }
 
 

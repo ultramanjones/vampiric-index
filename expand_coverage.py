@@ -8,15 +8,15 @@ from pathlib import Path
 
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Trinidad and Tobago.
+# Strict descending WDI 2024 sovereign GDP order after Haiti.
 # Aggregates and
 # non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (117, "ZMB", "ZM", "Zambia", "zambia", 53),
-    (118, "MLT", "MT", "Malta", "malta", 88),
-    (119, "GIN", "GN", "Guinea", "guinea", 28),
-    (120, "GUY", "GY", "Guyana", "guyana", 74),
-    (121, "HTI", "HT", "Haiti", "haiti", 22),
+    (122, "MNG", "MN", "Mongolia", "mongolia", 84),
+    (123, "BFA", "BF", "Burkina Faso", "burkina-faso", 20),
+    (124, "MOZ", "MZ", "Mozambique", "mozambique", 42),
+    (125, "JAM", "JM", "Jamaica", "jamaica", 81),
+    (126, "BEN", "BJ", "Benin", "benin", 61),
 ]
 BLOCKED_CANDIDATES = []
 INDICATORS = {
@@ -68,8 +68,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "TT" or roster[-1]["rank"] != 116:
-        raise ValueError("Expected the existing roster to end with Trinidad and Tobago at rank 116")
+    if roster[-1]["country_code"] != "HT" or roster[-1]["rank"] != 121:
+        raise ValueError("Expected the existing roster to end with Haiti at rank 121")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []
