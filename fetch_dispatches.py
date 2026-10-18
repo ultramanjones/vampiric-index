@@ -61,6 +61,72 @@ SEARCHES = {
         "region": "IT",
         "edition": "IT:en",
     },
+    "CA": {
+        "query": "Canada (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en-CA",
+        "region": "CA",
+        "edition": "CA:en",
+    },
+    "RU": {
+        "query": "Russia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "BR": {
+        "query": "Brazil (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "BR",
+        "edition": "BR:en",
+    },
+    "KR": {
+        "query": "South Korea (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "KR",
+        "edition": "KR:en",
+    },
+    "AU": {
+        "query": "Australia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en-AU",
+        "region": "AU",
+        "edition": "AU:en",
+    },
+    "ES": {
+        "query": "Spain (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "ES",
+        "edition": "ES:en",
+    },
+    "ID": {
+        "query": "Indonesia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "ID",
+        "edition": "ID:en",
+    },
+    "NL": {
+        "query": "Netherlands (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "NL",
+        "edition": "NL:en",
+    },
+    "TR": {
+        "query": "Turkey (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "TR",
+        "edition": "TR:en",
+    },
+    "SA": {
+        "query": "Saudi Arabia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "SA",
+        "edition": "SA:en",
+    },
+    "CH": {
+        "query": "Switzerland (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "CH",
+        "edition": "CH:en",
+    },
 }
 
 

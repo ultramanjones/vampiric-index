@@ -1,70 +1,94 @@
 # Country Coverage Register
 
-## 2026-10-17 expansion: China, Japan, India, and Italy
+## Top-20 nominal-GDP roster — reviewed 2026-10-18
 
-### Selection rule and nominal-GDP source
+### Selection rule and authoritative source
 
-The coverage queue is descending **nominal GDP in current US dollars**.  The selection
-source for this batch is World Bank World Development Indicators (WDI), indicator
+The tracked roster is the top 20 **sovereign economies by nominal GDP in current US
+dollars**. It is taken from the World Bank World Development Indicators (WDI)
 [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD),
-reference year **2024**, retrieved 2026-10-17 through the [World Bank API](https://api.worldbank.org/v2/country/US;CN;DE;JP;IN;GB;FR;IT;CA;RU;BR;MX/indicator/NY.GDP.MKTP.CD?date=2024&format=json).
+reference year **2024**. The machine-readable source query and the exact values are
+stored in `data.json` under `metadata.coverage_roster`; it was retrieved on
+2026-10-18 from the [World Bank API](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;BRA;RUS;KOR;MEX;AUS;ESP;IDN;NLD;TUR;SAU;CHE/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
 
-Existing tracked countries were excluded. The relevant ordered sovereign-economy
-observations in that source are: United States (US$29.298tn; already tracked), China
-(US$18.730tn), Germany (US$4.686tn; already tracked), Japan (US$4.190tn), India
-(US$3.761tn), United Kingdom (US$3.696tn; already tracked), France (US$3.160tn;
-already tracked), Italy (US$2.383tn), Canada (US$2.270tn), Russian Federation
-(US$2.186tn), Brazil (US$2.186tn), and Mexico (US$1.830tn; already tracked).
+| Rank | Economy | ISO-2 | 2024 GDP (current US$) |
+| ---: | --- | --- | ---: |
+| 1 | United States | US | $29.298tn |
+| 2 | China | CN | $18.730tn |
+| 3 | Germany | DE | $4.686tn |
+| 4 | Japan | JP | $4.190tn |
+| 5 | India | IN | $3.761tn |
+| 6 | United Kingdom | GB | $3.696tn |
+| 7 | France | FR | $3.160tn |
+| 8 | Italy | IT | $2.383tn |
+| 9 | Canada | CA | $2.270tn |
+| 10 | Russian Federation | RU | $2.186tn |
+| 11 | Brazil | BR | $2.186tn |
+| 12 | Republic of Korea | KR | $1.875tn |
+| 13 | Mexico | MX | $1.830tn |
+| 14 | Australia | AU | $1.757tn |
+| 15 | Spain | ES | $1.726tn |
+| 16 | Indonesia | ID | $1.396tn |
+| 17 | Türkiye | TR | $1.359tn |
+| 18 | Saudi Arabia | SA | $1.254tn |
+| 19 | Netherlands | NL | $1.214tn |
+| 20 | Switzerland | CH | $0.970tn |
 
-Accordingly, this batch adds the next four untracked countries: **CN, JP, IN, IT**.
-The next candidate countries, if the same 2024 WDI ordering remains the chosen
-reference, are **Canada, Russian Federation, and Brazil** (Russia slightly exceeds
-Brazil in the cited observation).
+### Published score rubric: coverage-input v1
 
-### Score-input method and provenance
+For records added under coverage-input v1, each pillar is rounded to one decimal
+**before** summing. `calculate_hvi.py` validates the declared score and strict grade;
+it never recalculates and writes either field.
 
-The original five-country dashboard is an explicitly hand-calibrated pilot. To avoid
-silently presenting a different method as identical, these four records are marked in
-this register as **coverage-input v1**. It is a deterministic, source-linked intake
-method; it does not revise or retroactively compare the legacy pilot scores.
-
-For each new record, pillars are rounded to one decimal from these fixed transforms:
-
-| Pillar | Input and transform |
+| Pillar | Source reading and transform |
 | --- | --- |
-| `survival_floor` | World Bank WDI life expectancy at birth (`SP.DYN.LE00.IN`), 2023 / 4 |
-| `sovereign_cannibalization` | World Bank WDI GNI per capita, Atlas method/current US$ (`NY.GNP.PCAP.CD`), 2024 / 2,000, capped at 25 |
-| `labor_retention` | World Bank WDI employment-to-population ratio, ages 15+ (`SL.EMP.TOTL.SP.ZS`), ILO modeled estimate, 2024 / 4 |
+| `survival_floor` | WDI life expectancy at birth (`SP.DYN.LE00.IN`), 2023 / 4 |
+| `sovereign_cannibalization` | WDI GNI per capita, Atlas method/current US$ (`NY.GNP.PCAP.CD`), 2024 / 2,000, capped at 25 |
+| `labor_retention` | WDI employment-to-population ratio, ages 15+ (`SL.EMP.TOTL.SP.ZS`), ILO modeled estimate, 2024 / 4 |
 | `state_coercion` | Freedom House *Freedom in the World 2025* total score / 4 |
 
-The labels are legacy HVI pillar names. The first three transforms are explicit proxy
-scales rather than causal claims; the fourth uses a published civil-liberties and
-political-rights score. HVI remains the sum of the four declared, rounded pillars;
-`calculate_hvi.py` validates but never overwrites declared scores or grades. Its strict
-scale is A ≥93, B ≥85, C ≥66, D ≥50, F <50.
+The WDI source endpoints and the Freedom House country report URL, observation/edition,
+and raw reading are recorded per country in `data.json.review`. The three WDI indicators
+were retrieved from their documented APIs on 2026-10-18. The Freedom House 2025 edition
+is retained as the latest country-comparable published edition used for this review.
+These are explicit proxy scales, not causal claims.
 
-WDI inputs were retrieved from the indicator API endpoints for the four ISO-3 codes:
+The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Their
+current four readings were reviewed and retained in their review records, but no
+source-backed crosswalk from their hand-calibrated historical score to coverage-input
+v1 exists. Their declared pillars, total, and grade therefore remain unchanged rather
+than being silently recalibrated.
 
-- [Life expectancy, 2023](https://api.worldbank.org/v2/country/CHN;JPN;IND;ITA/indicator/SP.DYN.LE00.IN?date=2023&format=json)
-- [GNI per capita, 2024](https://api.worldbank.org/v2/country/CHN;JPN;IND;ITA/indicator/NY.GNP.PCAP.CD?date=2024&format=json)
-- [Employment-to-population ratio, 2024](https://api.worldbank.org/v2/country/CHN;JPN;IND;ITA/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json)
+### Review results
 
-Freedom House country reports used for the 2025 total-score input:
-[China](https://freedomhouse.org/country/china/freedom-world/2025),
-[Japan](https://freedomhouse.org/country/japan/freedom-world/2025),
-[India](https://freedomhouse.org/country/india/freedom-world/2025), and
-[Italy](https://freedomhouse.org/country/italy/freedom-world/2025).
+| Code | HVI | Grade | Review determination |
+| --- | ---: | --- | --- |
+| US | 45.0 | F | Legacy pilot retained; no reproducible recalibration rule. |
+| CN | 44.1 | F | v1 readings reproduce declared score; no revision. |
+| DE | 65.0 | D | Legacy pilot retained; no reproducible recalibration rule. |
+| JP | 79.0 | C | v1 readings reproduce declared score; no revision. |
+| IN | 48.4 | F | v1 readings reproduce declared score; no revision. |
+| GB | 42.0 | F | Legacy pilot retained; no reproducible recalibration rule. |
+| FR | 49.0 | F | Legacy pilot retained; no reproducible recalibration rule. |
+| IT | 74.2 | C | v1 readings reproduce declared score; no revision. |
+| CA | 84.8 | C | New v1 record. |
+| RU | 44.1 | F | New v1 record. |
+| BR | 56.8 | D | New v1 record. |
+| KR | 75.2 | C | New v1 record. |
+| MX | 37.0 | F | Legacy pilot retained; no reproducible recalibration rule. |
+| AU | 85.6 | B | New v1 record. |
+| ES | 73.1 | C | New v1 record. |
+| ID | 50.7 | D | New v1 record. |
+| TR | 46.6 | F | New v1 record. |
+| SA | 55.6 | D | New v1 record. |
+| NL | 85.9 | B | New v1 record. |
+| CH | 86.0 | B | New v1 record. |
 
-| Code | Survival | Sovereign | Labor | State | HVI | Grade |
-| --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CN | 19.5 | 6.8 | 15.5 | 2.3 | 44.1 | F |
-| JP | 21.0 | 18.6 | 15.4 | 24.0 | 79.0 | C |
-| IN | 18.0 | 1.3 | 13.3 | 15.8 | 48.4 | F |
-| IT | 20.8 | 19.3 | 11.6 | 22.5 | 74.2 | C |
+### Acute dispatches and dashboard integration
 
-### Dispatch and map integration
-
-Each added ISO-2 code has a country-specific Google News RSS query in
-`fetch_dispatches.py` and its ISO numeric ID in `index.html` (`CN` 156, `JP` 392,
-`IN` 356, `IT` 380). Acute dispatches are intentionally fetched atomically by the
-pipeline, so a failed country feed leaves `data.json` unchanged.
+Every roster country has a country-specific Google News RSS query in
+`fetch_dispatches.py`, a current-run dispatch list with title, publisher, publication
+date, and URL in `data.json`, and a World Atlas numeric identifier in `index.html`.
+The fetcher is atomic: if any country feed fails, it leaves the dataset unchanged.
+Dispatches are evidence for current monitoring, not automatic score inputs; the review
+rule above governs score changes.

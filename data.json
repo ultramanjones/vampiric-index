@@ -30,135 +30,34 @@
           "publication_date": "Mon, 25 May 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcTVVamtUYUVBTXRCbF9GcWFJS2VnZDJDUk5PckhUdDFZel81SDBwT3NVekJfZXV1UG5jVDRCcTNhV3BXYkxUdHZWRExVc0w4dUVMYnJpakVJeklKUmkwS0lTNEoyb29GREJCbDVtemZFSlVzZ3VXZkljOHAwZkl4NkdncFNtNnZ0OE1EYS04TTBaU19tMDJNNl80OXN2NVVWa1hnZkppcUZnQ0M1ODduYVE0YlhMY0dmelFjUlc5NA?oc=5"
         }
-      ]
-    },
-    {
-      "country_code": "GB",
-      "name": "United Kingdom",
-      "pillars": {
-        "survival_floor": 10.0,
-        "sovereign_cannibalization": 9.0,
-        "labor_retention": 12.0,
-        "state_coercion": 11.0
-      },
-      "hvi_score": 42.0,
-      "grade": "F",
-      "chronic_pathologies": [
-        "NHS wait times and healthcare access decay",
-        "Energy price volatility and persistent rental inflation",
-        "Stagnant real wage growth since 2008 financial crisis",
-        "Public order policing acts restricting collective protest"
       ],
-      "acute_dispatch": [
-        {
-          "title": "UN rapporteur joins hunger strike over Iran death penalty and protest crackdown - The Jerusalem Post",
-          "source": "The Jerusalem Post",
-          "publication_date": "Mon, 12 Oct 2026 15:35:22 GMT",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRNmc5Z19sR0ZaMENFenZTT2YtYnBqNy1JZ1hjMzFXTVpyUDJ5UG8tWVRJcVUzOEY3QjRqdnlRNm5QN0d0TGxhOHZhMG41NGtxMlNkLTR4d2Y4UXdzOXJ1U2tfZU1wTTNjb2c?oc=5"
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 78.3853658536585,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 82910,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 59.467,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 84,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/united-states/freedom-world/2025"
+          }
         },
-        {
-          "title": "Inflate Away the Debt? Strategic Logic and Risks of a Weak Dollar Regime - Geopolitical Monitor",
-          "source": "Geopolitical Monitor",
-          "publication_date": "Tue, 02 Jun 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTU5PZlNTRzlxRV93MmhtbnZGVTZHMzJRNTNvb0ktNTFTR3YyYW5iZEdVY214aDJNQ2VtY1JYV2E0ZHFkRTEyLXF1N2xncktidUd4Q1pZUzhKV3U1bGpGeFFtYm10bVpGREJSYi1fenptT182T1pQcm9CQXRvWmlndmd4LTF4NEhuUndFZTc3S3dHZG1TYXVETjQwc0xxSXdqRGFIX0RqdGhScUxJ?oc=5"
-        }
-      ]
-    },
-    {
-      "country_code": "FR",
-      "name": "France",
-      "pillars": {
-        "survival_floor": 14.0,
-        "sovereign_cannibalization": 10.0,
-        "labor_retention": 15.0,
-        "state_coercion": 10.0
-      },
-      "hvi_score": 49.0,
-      "grade": "F",
-      "chronic_pathologies": [
-        "Sovereign debt to GDP ratio exceeding 110%",
-        "Pension reform tensions and recurring civil strikes",
-        "Heavy municipal and transport utility tax extraction",
-        "Aggressive riot police deployment (CRS) during labor unrest"
-      ],
-      "acute_dispatch": [
-        {
-          "title": "Why Germany needs to leave the Euro - Robin J Brooks | Substack",
-          "source": "Robin J Brooks | Substack",
-          "publication_date": "Sun, 02 Aug 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWFybnhjejNRRmtSeFBSVFRaNnlLYVVNNmg5Y3Fvc1kxZnVFZWpkV05JQUNVeTZZS0ROV01sb29vREVFcmRhUWlqU1BETUhWN09TdTFad1BJdUExMDVIVEpLSkZGSVJQQzRjU29odXBJcmVsX09LZ1pJci1fYVhpdQ?oc=5"
-        },
-        {
-          "title": "Iran News in Brief – June 18, 2026 - National Council of Resistance of Iran - NCRI",
-          "source": "National Council of Resistance of Iran - NCRI",
-          "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMEJOa3FNck1JazFsSjc5eEpnNlFFQzNIc3JyWGFpaGtTc1Q4bTNnd0NNVmVuaVdjLU5ySjNoNE8zOGJEWVJ1TERBMEZ4aTZDNHVMTVBEMWQ2SjhlMVFGd0VFY0NERWpxZUFTc3pyM2YxM05tMnh6ckVTek1jZmk3ODZrRzgyT25qTGFid3NYR3Z0M1U?oc=5"
-        }
-      ]
-    },
-    {
-      "country_code": "DE",
-      "name": "Germany",
-      "pillars": {
-        "survival_floor": 15.0,
-        "sovereign_cannibalization": 16.0,
-        "labor_retention": 16.0,
-        "state_coercion": 18.0
-      },
-      "hvi_score": 65.0,
-      "grade": "D",
-      "chronic_pathologies": [
-        "De-industrialization driven by structural energy cost shocks",
-        "Severe demographic aging and structural pension shortfalls",
-        "Strict constitutional debt brake (Schuldenbremse) choking infrastructure spend",
-        "Rising domestic political polarization and surveillance tracking"
-      ],
-      "acute_dispatch": [
-        {
-          "title": "Trouble for the High-Debt Euro Zone - Robin J Brooks | Substack",
-          "source": "Robin J Brooks | Substack",
-          "publication_date": "Sun, 20 Sep 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd216MHVsVHNnLUExYkIxY1gxVUpFSGtSUHhCbDNsdzg4RnJFOTV0YUtrZHhnR0M1NFV3SnJCQTdieWJLclN5SmdmYU93WVdxWmRNVDBuczZMU2NmWEJxOW1FQ3BZZ0JfWDY3WVJfRWRPNFRMTUpXZ1RuYnluV3IzRFZjTQ?oc=5"
-        },
-        {
-          "title": "Why Germany needs to leave the Euro - Robin J Brooks | Substack",
-          "source": "Robin J Brooks | Substack",
-          "publication_date": "Sun, 02 Aug 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWFybnhjejNRRmtSeFBSVFRaNnlLYVVNNmg5Y3Fvc1kxZnVFZWpkV05JQUNVeTZZS0ROV01sb29vREVFcmRhUWlqU1BETUhWN09TdTFad1BJdUExMDVIVEpLSkZGSVJQQzRjU29odXBJcmVsX09LZ1pJci1fYVhpdQ?oc=5"
-        }
-      ]
-    },
-    {
-      "country_code": "MX",
-      "name": "Mexico",
-      "pillars": {
-        "survival_floor": 9.0,
-        "sovereign_cannibalization": 13.0,
-        "labor_retention": 8.0,
-        "state_coercion": 7.0
-      },
-      "hvi_score": 37.0,
-      "grade": "F",
-      "chronic_pathologies": [
-        "Pervasive informal economy bypassing basic social safety nets",
-        "Organized crime extortion tax across supply and logistics chains",
-        "Severe public infrastructure and potable water deficits",
-        "Compromised municipal police forces and military internal security dependencies"
-      ],
-      "acute_dispatch": [
-        {
-          "title": "Mexican truckers call for national strike to free driver jailed after crash with federal agents - World Socialist Web Site",
-          "source": "World Socialist Web Site",
-          "publication_date": "Tue, 06 Oct 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NdjR0YUpncloyNU5sdWdob05BXzNGQllGNXpXRjRPeENQNWEzV3NUMjhpWUJBM1NMVFllZG9oM1E5ZUF0d01OdDhsRFlvbjdZRHIwZm1MMUlwMHM5LWFlYV9jUkl5Z3Fl?oc=5"
-        },
-        {
-          "title": "Major Banks Settle US$86 Million Mexican Bond Antitrust Lawsuit - Mexico Business News",
-          "source": "Mexico Business News",
-          "publication_date": "Mon, 17 Aug 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaEoxRXRYNXZOak5INEU4aUpxMGFxdV9rZklMd0F2UHhYVEtrcnJ1anRpdlFjSmQ3YW9JRjNjTlAtcEdveHRZVy02TlFhSHpLd092MXEwYUZxWm5CLUMyOXdWVTRCWGJFWFdoTDJFdkU0dDVKSDI2LW1ZRDJoYjVFY3cyZjBDbzhCTFBqQmptTmtNTS1JOERHU3BMdHZBTW1PN0hoWnJn?oc=5"
-        }
-      ]
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "legacy pilot score retained: current published readings were reviewed, but the repository has no source-backed legacy-to-v1 crosswalk that justifies changing a declared pilot score"
+      }
     },
     {
       "country_code": "CN",
@@ -190,7 +89,93 @@
           "publication_date": "Mon, 07 Sep 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOTB5TGJpajRMa2FoN1lsWDVKZzlnaVRNa1RHUXhxZ1Y2bkdvd1lQd21HMzZrUnpfUUNHRlJpM25RNkxORWtyb2NyaE9ma3EzOFc1NExnY010TnJkWHRFN01XeXV0UHAwUWVhM1FvbEltR01UcVRzM2JMaC1WVzdoSm9hT1gwMmZ2MHdDYUg3V0N4NnM?oc=5"
         }
-      ]
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 77.953,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 13660,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 61.931,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 9,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/china/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
+      }
+    },
+    {
+      "country_code": "DE",
+      "name": "Germany",
+      "pillars": {
+        "survival_floor": 15.0,
+        "sovereign_cannibalization": 16.0,
+        "labor_retention": 16.0,
+        "state_coercion": 18.0
+      },
+      "hvi_score": 65.0,
+      "grade": "D",
+      "chronic_pathologies": [
+        "De-industrialization driven by structural energy cost shocks",
+        "Severe demographic aging and structural pension shortfalls",
+        "Strict constitutional debt brake (Schuldenbremse) choking infrastructure spend",
+        "Rising domestic political polarization and surveillance tracking"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Trouble for the High-Debt Euro Zone - Robin J Brooks | Substack",
+          "source": "Robin J Brooks | Substack",
+          "publication_date": "Sun, 20 Sep 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd216MHVsVHNnLUExYkIxY1gxVUpFSGtSUHhCbDNsdzg4RnJFOTV0YUtrZHhnR0M1NFV3SnJCQTdieWJLclN5SmdmYU93WVdxWmRNVDBuczZMU2NmWEJxOW1FQ3BZZ0JfWDY3WVJfRWRPNFRMTUpXZ1RuYnluV3IzRFZjTQ?oc=5"
+        },
+        {
+          "title": "Why Germany needs to leave the Euro - Robin J Brooks | Substack",
+          "source": "Robin J Brooks | Substack",
+          "publication_date": "Sun, 02 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWFybnhjejNRRmtSeFBSVFRaNnlLYVVNNmg5Y3Fvc1kxZnVFZWpkV05JQUNVeTZZS0ROV01sb29vREVFcmRhUWlqU1BETUhWN09TdTFad1BJdUExMDVIVEpLSkZGSVJQQzRjU29odXBJcmVsX09LZ1pJci1fYVhpdQ?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 81.0414634146342,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 55090,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 58.849,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 95,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/germany/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "legacy pilot score retained: current published readings were reviewed, but the repository has no source-backed legacy-to-v1 crosswalk that justifies changing a declared pilot score"
+      }
     },
     {
       "country_code": "JP",
@@ -222,7 +207,34 @@
           "publication_date": "Thu, 13 Aug 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMVhrajlySXBWeW1JRVl1T3N1cVFDRUxYZjNzLTVmdXppNGw4cXg2MDhYcEk5NG9fN1lYRjNISDRVNUtVcllzRi1Tc0ZzaHptV1l3TVBHWUtJTzN3eDM2d1dLWWpPU0dBZUpoczJBOVJ0akZ3MWVBc1BVR3RlSHlReXlaeWRwa1gtUlE4REg2SV82UTIyNFplN3BTbw?oc=5"
         }
-      ]
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 84.0412195121951,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 37170,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 61.717,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 96,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/japan/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
+      }
     },
     {
       "country_code": "IN",
@@ -254,7 +266,152 @@
           "publication_date": "Tue, 12 May 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTDVKU1RzR1A2U3BDa0l0eW02dnlpS1U5eWdjUlpONFJVUTI1V21IMFc5TjFMUkhOS0xXS1F5NHZrcndMYWdPYnphLVZKUG9iM0lSNlIwRnV1eEtrY21QaVc5VW1qRzQ3bW1od0R3MmFvUDJwX0hZOTQyX2NnTGhiVHpLQXhkRnp5dlo2cmtBWEg1OVJrc0p1ZG5GMGVwSmFpeUV4VFlqLTM5dlJ3eTIxMtIBtwFBVV95cUxOLXRoMlhlUk9fZEtsa1Z5bUVNbzlyd1V6ekU1RlJpbWQtM3VZY2tMc0NiNlZxOG5taFk5MXk0UXdwLVd1UmNfbzROeEp3aUF5RzZkQWlsYTBDR0VOZjZjRWp0R2JXd0hNR0NWWXlFQS1uWDFXMGRTNzZmMVZQcTV0SnU0YkNKWjFUYlRMdXhHSTJzeWFxbW50NFpDeG1hQVVCZjAwdDA4QWNtbGNCSENFWFFJOG9DR00?oc=5"
         }
-      ]
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 72.003,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 2550,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 53.317,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 63,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/india/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
+      }
+    },
+    {
+      "country_code": "GB",
+      "name": "United Kingdom",
+      "pillars": {
+        "survival_floor": 10.0,
+        "sovereign_cannibalization": 9.0,
+        "labor_retention": 12.0,
+        "state_coercion": 11.0
+      },
+      "hvi_score": 42.0,
+      "grade": "F",
+      "chronic_pathologies": [
+        "NHS wait times and healthcare access decay",
+        "Energy price volatility and persistent rental inflation",
+        "Stagnant real wage growth since 2008 financial crisis",
+        "Public order policing acts restricting collective protest"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "UN rapporteur joins hunger strike over Iran death penalty and protest crackdown - The Jerusalem Post",
+          "source": "The Jerusalem Post",
+          "publication_date": "Mon, 12 Oct 2026 15:35:22 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRNmc5Z19sR0ZaMENFenZTT2YtYnBqNy1JZ1hjMzFXTVpyUDJ5UG8tWVRJcVUzOEY3QjRqdnlRNm5QN0d0TGxhOHZhMG41NGtxMlNkLTR4d2Y4UXdzOXJ1U2tfZU1wTTNjb2c?oc=5"
+        },
+        {
+          "title": "Inflate Away the Debt? Strategic Logic and Risks of a Weak Dollar Regime - Geopolitical Monitor",
+          "source": "Geopolitical Monitor",
+          "publication_date": "Tue, 02 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTU5PZlNTRzlxRV93MmhtbnZGVTZHMzJRNTNvb0ktNTFTR3YyYW5iZEdVY214aDJNQ2VtY1JYV2E0ZHFkRTEyLXF1N2xncktidUd4Q1pZUzhKV3U1bGpGeFFtYm10bVpGREJSYi1fenptT182T1pQcm9CQXRvWmlndmd4LTF4NEhuUndFZTc3S3dHZG1TYXVETjQwc0xxSXdqRGFIX0RqdGhScUxJ?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 81.2380975609756,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 49320,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 58.871,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 92,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/united-kingdom/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "legacy pilot score retained: current published readings were reviewed, but the repository has no source-backed legacy-to-v1 crosswalk that justifies changing a declared pilot score"
+      }
+    },
+    {
+      "country_code": "FR",
+      "name": "France",
+      "pillars": {
+        "survival_floor": 14.0,
+        "sovereign_cannibalization": 10.0,
+        "labor_retention": 15.0,
+        "state_coercion": 10.0
+      },
+      "hvi_score": 49.0,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Sovereign debt to GDP ratio exceeding 110%",
+        "Pension reform tensions and recurring civil strikes",
+        "Heavy municipal and transport utility tax extraction",
+        "Aggressive riot police deployment (CRS) during labor unrest"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Why Germany needs to leave the Euro - Robin J Brooks | Substack",
+          "source": "Robin J Brooks | Substack",
+          "publication_date": "Sun, 02 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWFybnhjejNRRmtSeFBSVFRaNnlLYVVNNmg5Y3Fvc1kxZnVFZWpkV05JQUNVeTZZS0ROV01sb29vREVFcmRhUWlqU1BETUhWN09TdTFad1BJdUExMDVIVEpLSkZGSVJQQzRjU29odXBJcmVsX09LZ1pJci1fYVhpdQ?oc=5"
+        },
+        {
+          "title": "Iran News in Brief – June 18, 2026 - National Council of Resistance of Iran - NCRI",
+          "source": "National Council of Resistance of Iran - NCRI",
+          "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMEJOa3FNck1JazFsSjc5eEpnNlFFQzNIc3JyWGFpaGtTc1Q4bTNnd0NNVmVuaVdjLU5ySjNoNE8zOGJEWVJ1TERBMEZ4aTZDNHVMTVBEMWQ2SjhlMVFGd0VFY0NERWpxZUFTc3pyM2YxM05tMnh6ckVTek1jZmk3ODZrRzgyT25qTGFid3NYR3Z0M1U?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 82.8317073170732,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 45160,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 51.544,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 89,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/france/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "legacy pilot score retained: current published readings were reviewed, but the repository has no source-backed legacy-to-v1 crosswalk that justifies changing a declared pilot score"
+      }
     },
     {
       "country_code": "IT",
@@ -286,7 +443,914 @@
           "publication_date": "Sun, 02 Aug 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWFybnhjejNRRmtSeFBSVFRaNnlLYVVNNmg5Y3Fvc1kxZnVFZWpkV05JQUNVeTZZS0ROV01sb29vREVFcmRhUWlqU1BETUhWN09TdTFad1BJdUExMDVIVEpLSkZGSVJQQzRjU29odXBJcmVsX09LZ1pJci1fYVhpdQ?oc=5"
         }
-      ]
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 83.3512195121951,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 38640,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 46.365,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 90,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/italy/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
+      }
+    },
+    {
+      "country_code": "CA",
+      "name": "Canada",
+      "pillars": {
+        "survival_floor": 20.4,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 15.2,
+        "state_coercion": 24.2
+      },
+      "hvi_score": 84.8,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 81.626 years (World Bank WDI, 2023)",
+        "GNI per capita: US$54,110 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 60.627% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 97/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Police mobilized to break picket lines in 6-week Ontario community services workers’ strike - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Mon, 29 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83WXdWN01pMXRudDJNYl9fMzZwVFBMakQwdlhHcXBlbEdoWFhiZGpSN01sdllsVG82U3E5RG1XbVlSanJGYkg4LTdubm9SSW13RGFxMzJKZlpLYnN0bUN6Vm83cFNsUU9X?oc=5"
+        },
+        {
+          "title": "It's 'unfair': 13-week strike gets louder in downtown Midland - MidlandToday.ca",
+          "source": "MidlandToday.ca",
+          "publication_date": "Thu, 20 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMVJ3T1hFUVNHRGg2UTUzM3h3NmF0UExwY1pNLVZlYnJHeFlXazlrTWVMd1lJNHJfVGdiVHVEU3F2Uk1jeDR6VkNMTmJRV0pzT0g2VGdUTTNPR3RXdlNCb0NzYU5sQ0tTaXRkckxzTTFuZUE0dzFITTlJUkJNSVJvRTAyZE9YZHgySXFzTk5GSFRxQU5NVk5LdlBRUjk5VTEyd1E?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 81.6263414634146,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 54110,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 60.627,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 97,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/canada/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "RU",
+      "name": "Russia",
+      "pillars": {
+        "survival_floor": 18.3,
+        "sovereign_cannibalization": 7.7,
+        "labor_retention": 15.1,
+        "state_coercion": 3.0
+      },
+      "hvi_score": 44.1,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 73.255 years (World Bank WDI, 2023)",
+        "GNI per capita: US$15,330 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 60.322% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 12/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Occupied Donetsk Miners Threaten Strike Action Ahead of Russian Elections - UNITED24 Media",
+          "source": "UNITED24 Media",
+          "publication_date": "Mon, 14 Sep 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVHJiWEJvaFJyMnM5ejBZLWF1WTk4ZG16eE9VUkVJNkMtdjBRVU1LTmt0eWVGSUY1UFJvR0oweTk1QTVBamVCUnFqVVB3aGM2V1pVZGQxSFNtTVVNaWNDZ2k4ZHQwUVd3V0I0ZzdCM0Vmd2dJOXRYdFluWGtNTWFPOE1HajNrMVljeHBrNmRBNzhFQ19RVm9jdkY4MWwxRE1seEEwb0hnSnNoeU1fenFwUQ?oc=5"
+        },
+        {
+          "title": "Russian man self-immolated to protest Ukraine war, but authorities suppressed the story, investigation finds - Новая газета Европа",
+          "source": "Новая газета Европа",
+          "publication_date": "Wed, 06 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNVhabmU1ZkYwSzFyTVY4ajg1R0VYSFg1d01tSEM3aE9TSnBwa00wcWY2dWlyTzVXWjZmZk1vSV9GMmNNWXdwT25fUEN0dk9kTHYyMFRaa3Fpb3U0NGVDODRzZWF2RTBac3FPeFpnMmZmWEtCc2hBWjYxbDAxcHZOWU5vMlVIT2ZuZTR5SFhYQ2hLa1lpWVhSTUFaM3dDZ3IxTm9ySHloTlRxLVpOVE5WeW85dFdabmktTzF5eGhXOWpMaVlxVEczMUUxam0tRlkwNFAzWG80YWhlNGlYZFJzNURJTFl1S3dKSmswcW5HRXFZWFHSAfgBQVVfeXFMTm1TMHYzcFpfVThQVFZub09fTlRydjd4dWFOUlFDemVnV1JDaUE5aE5yMGpnQUJoN3o3V3JrUHUwUXZQMmg2d0I5QkgzSkozZDdtbG9EaE5wOGMzRmRWd3RkZF9wQlVkaGtVbEh1c0hlNlo2WTIzLTc5TWhQVXloazladEpKSG5aVTgtdU5FZGpza080RWxUVW9WdE5nbEtsaERFdzBPZEx6SDcxTjViV0Q3SVNVQmpTb0o1WGR6V2ZFOWl3MUc5eHhTTG5BZFlSXzVob2NmM3NLSF9ZdGJnY053WHFKY21rd3UyRGVYcjJjZkpUdUJxZ0o?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 73.2546341463415,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 15330,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 60.322,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 12,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/russia/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "BR",
+      "name": "Brazil",
+      "pillars": {
+        "survival_floor": 19.0,
+        "sovereign_cannibalization": 5.0,
+        "labor_retention": 14.8,
+        "state_coercion": 18.0
+      },
+      "hvi_score": 56.8,
+      "grade": "D",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 75.848 years (World Bank WDI, 2023)",
+        "GNI per capita: US$9,930 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 59.031% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 72/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Costly oil enriches Brazil, tests Central Bank - Valor International",
+          "source": "Valor International",
+          "publication_date": "Tue, 05 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSGZvS2Q2alZoZC1KazVZOFVZT3RRZVlwd3E4anlQblF4Q1FEdHZUcWFnOWxkckxPZUtUdG4tUXVERi1xVXdBRU4zYVB2QUZsX1lkQ2F1QWEycXdWakt1ZF9BVzktYmJSdUtINHNuWHpHTnp3SmZnTXJPdFFXZWw2NS1HcGEyS1lCNlBTVUo5VUdWcWRvS3hxNG9CZWhvRHJsMlBSaVE4MlRBXzZVaWpGS1paNFJsc3VJdnI0VHpiNzNKUdIB0AFBVV95cUxPc25MeUZZdDBxaXFaNEZEYjl3WlRSWXJqeUxpNmZkT28yZmZUN1FpODAtNy1vUGhhUzJkQzRMd2lPOGcwMnZWX0cteXJUcE1kWTZhdU0xczZOTEw3MElzSy1tZ1JZb3FlZGJEaWd1STF6TG1WZmlFQXhKZTVHRmdFNUttZDA3Nlk1UHpZTDRkVkVMNm81ODZ4N0Z3TlhzQ1NCNG1HdHlJcVc3LTRDN0dDQWJjMDRKejRGSzVVcjhIYjJFejJkOEh1UDRNQmVZQVBY?oc=5"
+        },
+        {
+          "title": "Union leaders meet with Lula amid strike wave in Brazil - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Fri, 24 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBCeXZxaE5wWlgwMHBGUjNJbllDbWwwTENrZVFhRVBrTWtXSnl4M2J5WXZQWldwVC1UdjAyN3VVakRrXzZVZGpTRVlJQ05yRUNjaFlialFteXFlSk9DejVCZ2RtcmFEWm4t?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 75.848,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 9930,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 59.031,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 72,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/brazil/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "KR",
+      "name": "South Korea",
+      "pillars": {
+        "survival_floor": 20.9,
+        "sovereign_cannibalization": 18.4,
+        "labor_retention": 15.7,
+        "state_coercion": 20.2
+      },
+      "hvi_score": 75.2,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 83.429 years (World Bank WDI, 2023)",
+        "GNI per capita: US$36,750 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 62.670% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 81/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "GGM union launches hunger strike, calls on Gwangju mayor to resolve labor dispute - 헤럴드경제",
+          "source": "헤럴드경제",
+          "publication_date": "Mon, 12 Oct 2026 07:38:07 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8tZlhYenpzS3FqT3M4UnNkRWpudFpCenNHelljVnlDWHg2TGxQZk5YdVZPOWlYSFlHMERrQmZ6U0lxZ1RTWlVxaGNMa0lEblpPOURIMmdCaw?oc=5"
+        },
+        {
+          "title": "Samsung workers protest over huge pay gap with SK Hynix, threaten long strike - Reuters",
+          "source": "Reuters",
+          "publication_date": "Fri, 24 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY0xMYkJBaHhuU3JlaXJIRGNDQ2xVdF9EY3d2N2wwbXNQS0dGalRBUHZTeFE0Z0ppeG5Pb2hKaUhHY0hIZnRIUFlnWFZPTEs1WExNWG1pdlJBQndCUjZ4NzNBcDVZUV9YcllRbTBIaUNfWjNTYl9BcUpZMnJ0MWY2NXpoRHplWXBFR3dibTczZ1p3eEVxa2g1OFZ1ckdMQjJlc1l6RGFpbzdTWC1hOHpTNVdHdzVVWTVtc3ZubW0yRTZFSXNvS0E?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 83.4292682926829,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 36750,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 62.67,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 81,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/south-korea/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "MX",
+      "name": "Mexico",
+      "pillars": {
+        "survival_floor": 9.0,
+        "sovereign_cannibalization": 13.0,
+        "labor_retention": 8.0,
+        "state_coercion": 7.0
+      },
+      "hvi_score": 37.0,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Pervasive informal economy bypassing basic social safety nets",
+        "Organized crime extortion tax across supply and logistics chains",
+        "Severe public infrastructure and potable water deficits",
+        "Compromised municipal police forces and military internal security dependencies"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Mexican truckers call for national strike to free driver jailed after crash with federal agents - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Tue, 06 Oct 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NdjR0YUpncloyNU5sdWdob05BXzNGQllGNXpXRjRPeENQNWEzV3NUMjhpWUJBM1NMVFllZG9oM1E5ZUF0d01OdDhsRFlvbjdZRHIwZm1MMUlwMHM5LWFlYV9jUkl5Z3Fl?oc=5"
+        },
+        {
+          "title": "Major Banks Settle US$86 Million Mexican Bond Antitrust Lawsuit - Mexico Business News",
+          "source": "Mexico Business News",
+          "publication_date": "Mon, 17 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaEoxRXRYNXZOak5INEU4aUpxMGFxdV9rZklMd0F2UHhYVEtrcnJ1anRpdlFjSmQ3YW9JRjNjTlAtcEdveHRZVy02TlFhSHpLd092MXEwYUZxWm5CLUMyOXdWVTRCWGJFWFdoTDJFdkU0dDVKSDI2LW1ZRDJoYjVFY3cyZjBDbzhCTFBqQmptTmtNTS1JOERHU3BMdHZBTW1PN0hoWnJn?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 75.069,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 12760,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 59.985,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 60,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/mexico/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "legacy pilot score retained: current published readings were reviewed, but the repository has no source-backed legacy-to-v1 crosswalk that justifies changing a declared pilot score"
+      }
+    },
+    {
+      "country_code": "AU",
+      "name": "Australia",
+      "pillars": {
+        "survival_floor": 20.8,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 16.0,
+        "state_coercion": 23.8
+      },
+      "hvi_score": 85.6,
+      "grade": "B",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 83.051 years (World Bank WDI, 2023)",
+        "GNI per capita: US$62,680 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 64.089% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 95/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Student protests against the far-right in Australia: The fight against One Nation is a fight against the Labor government and capitalism! - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Wed, 12 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaQndOQ25sX3RzalZiMkJqOVNIQXE4QTZ3Skt3QU0tVkRPTERsXzhWRVpvMzgzQVpoRXBoSHhFcDhRcUhha2YyS2tuLWE1V3dDWTROU1RVWmwwMTFhWXAybGlCZkVSMkNu?oc=5"
+        },
+        {
+          "title": "Council Workers Strike! ASU Mass Rally - Green Left",
+          "source": "Green Left",
+          "publication_date": "Tue, 05 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQY3RkVm1DelhFZ1BxRURyZFNrWTQ5a21iVzVnN1VSZE5HX3RzWEtEd2RmM1k3cVpybVBEem4tSUx6VFZGNENxdWEyNlRUbWZyWUo3Z2hBT2JtMWZnYktKNEFubENnV1V1VlpfdHFxOTU3d0xyWVVZQW8tZTNTb1dWdFVQbS1yUzQ?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 83.0512195121951,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 62680,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 64.089,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 95,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/australia/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "ES",
+      "name": "Spain",
+      "pillars": {
+        "survival_floor": 21.0,
+        "sovereign_cannibalization": 16.8,
+        "labor_retention": 12.8,
+        "state_coercion": 22.5
+      },
+      "hvi_score": 73.1,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 83.934 years (World Bank WDI, 2023)",
+        "GNI per capita: US$33,550 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 51.249% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 90/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Spanish government falls amid mass nationwide protests over housing costs - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Sun, 04 Oct 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hZnZxMmJHdkpKcWEtOWktbUxwamgzSHA4TDJNWFl1ckY0elJ1QjQtVWhnMHNnclRsbFVwS05palUwLTlHQTNjNmN3YnVhclp1bDdoanN4bFBxOWo3M1ZQUUtHblpraXAy?oc=5"
+        },
+        {
+          "title": "Why Germany needs to leave the Euro - Robin J Brooks | Substack",
+          "source": "Robin J Brooks | Substack",
+          "publication_date": "Sun, 02 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWFybnhjejNRRmtSeFBSVFRaNnlLYVVNNmg5Y3Fvc1kxZnVFZWpkV05JQUNVeTZZS0ROV01sb29vREVFcmRhUWlqU1BETUhWN09TdTFad1BJdUExMDVIVEpLSkZGSVJQQzRjU29odXBJcmVsX09LZ1pJci1fYVhpdQ?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 83.9341463414634,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 33550,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 51.249,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 90,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/spain/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "ID",
+      "name": "Indonesia",
+      "pillars": {
+        "survival_floor": 17.8,
+        "sovereign_cannibalization": 2.5,
+        "labor_retention": 16.4,
+        "state_coercion": 14.0
+      },
+      "hvi_score": 50.7,
+      "grade": "D",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 71.146 years (World Bank WDI, 2023)",
+        "GNI per capita: US$4,920 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 65.685% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 56/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Protecting the Right to Protest: International Solidarity with Indonesia - YLBHI",
+          "source": "YLBHI",
+          "publication_date": "Sun, 31 Aug 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeDIzWWNqZHNzWlNBS0NmN3F3OVdqc0wyN3BXMmVCa0xXZ3Jsd25NMUpUUDRoRTAzejhRRDRLOFFuT2NzWHRidU1NWWk5SF9wOFpGTWdqZURzbjY3UlZ1bWp2Mm9NdENReXF1ZWJUVE9pYTEzU2lXTk5iaTFNMS1hMW9PR0laMzk3aXh1SVdvemdQcjlSRkZEN2RWS0E3X2JnU0xUcHh5a2pxXzBQNlYwVVpuXzU?oc=5"
+        },
+        {
+          "title": "International Media Highlights 'Gejayan Memanggil' Movement - Tempo.co English",
+          "source": "Tempo.co English",
+          "publication_date": "Tue, 13 Feb 2024 05:26:46 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTHJQOGdHb1ZmSmZvclRsVTZKdTdnUnZpMS11Vnd0Wnh1VEZaYTJVcnRtNHJlZkVESU5DMlBnbmxOWUY0ajBGNE5JMEZwck95YnViWHI5amptamRfdkpaU013T015RDlLWG1iRXZSYnVaLUhldEhiNU5ldmt2UTNvOHBhc0c0M0Z5UzQ4VTQ0eTdpTkpZ?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 71.146,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 4920,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 65.685,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 56,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/indonesia/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "TR",
+      "name": "Turkey",
+      "pillars": {
+        "survival_floor": 19.3,
+        "sovereign_cannibalization": 6.7,
+        "labor_retention": 12.4,
+        "state_coercion": 8.2
+      },
+      "hvi_score": 46.6,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 77.156 years (World Bank WDI, 2023)",
+        "GNI per capita: US$13,430 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 49.430% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 33/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Turkey arrests 2 union leaders over social media posts as miners protest unpaid wages - Stockholm Center for Freedom",
+          "source": "Stockholm Center for Freedom",
+          "publication_date": "Thu, 27 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQkk4ZFNpS1ZZbURQVVlPd0FiZGdHNm0tMTRveFVXYVRUUDNzX2pnYlNjQkNnR2lmOGluQzJOYkVaSHFjTWxDRkNxQ1JZbUFFb3RTUHIzZ2JBZzcyOEhMN2VfLVZ1NTg2a0MtTUwzcllZdDNvc183N2I5WllXZW5XUi15NFQ2XzFycjlaejRuak8xeUpiWDB2a0Q1c3NpakVTVUNobFphQ0RQUnlzYTZJ?oc=5"
+        },
+        {
+          "title": "Factory occupation against union-related layoffs at Smart Solar in Türkiye - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Thu, 17 Sep 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GQWlpOXRDa3BDeW5URjhndWRQRmhEaGpoSTdaSHRNaGoxbktGQjZ2MFQyRXJVcWJqVDFSTkdwU0hlU3ktX2ppNC1UWDNXTW5uYTRreElVUDRqSmd6U3ducllJUXl6bVFX?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 77.156,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 13430,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 49.43,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 33,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/turkey/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "SA",
+      "name": "Saudi Arabia",
+      "pillars": {
+        "survival_floor": 19.7,
+        "sovereign_cannibalization": 18.0,
+        "labor_retention": 15.7,
+        "state_coercion": 2.2
+      },
+      "hvi_score": 55.6,
+      "grade": "D",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 78.732 years (World Bank WDI, 2023)",
+        "GNI per capita: US$35,990 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 62.907% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 9/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Saudi Household Debt: 1.6 Million Collection Cases and SAR165bn Unpaid - vision2030.ai",
+          "source": "vision2030.ai",
+          "publication_date": "Fri, 31 Jul 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8yblhVdHFuT2l0WW9MYnEybGswVmNNcjFaMUE3S2VESmJoallQNVczY2o1UHlONy1WUkgwaHNTZDMta1VJVGRJU3B1dnhFSlMxSkh2MW56d2F0VWNQN3AwR1dMRURMR1dPNVAzcEtyQVBqVlhyRWFzcA?oc=5"
+        },
+        {
+          "title": "UIC graduate workers launch third strike in seven years against poverty wages - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Fri, 01 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SNldLWW5sMWhDcVlDeFZjUTNscFdRckpVSHMxVzZNZlJIRVppN2tfalhuMmlOTFVFczlFX0ZWdTFpUGR6SnVITHowSHZOSTVWaVZPMmd1MGd6QUsyRjVlV0c5ZU5aWm5v?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 78.732,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 35990,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 62.907,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 9,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/saudi-arabia/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "NL",
+      "name": "Netherlands",
+      "pillars": {
+        "survival_floor": 20.5,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 16.2,
+        "state_coercion": 24.2
+      },
+      "hvi_score": 85.9,
+      "grade": "B",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 81.863 years (World Bank WDI, 2023)",
+        "GNI per capita: US$62,500 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 64.966% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 97/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "The June 24 national transport strike in the Netherlands: The political questions - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Fri, 26 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBEeVE1N3dHZE9ud29XWEw1UUtQX2d1dHhOMnNtVDN6YUpsYVFSYXVMTlZWQ2xJNWE2eUxlbnduU3NPa0NnM29jZHEwa0c4cHFUZHlHZ0wwdV80QmFIdmpieEFXcElFYkdN?oc=5"
+        },
+        {
+          "title": "UIC graduate workers launch third strike in seven years against poverty wages - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Fri, 01 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SNldLWW5sMWhDcVlDeFZjUTNscFdRckpVSHMxVzZNZlJIRVppN2tfalhuMmlOTFVFczlFX0ZWdTFpUGR6SnVITHowSHZOSTVWaVZPMmd1MGd6QUsyRjVlV0c5ZU5aWm5v?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 81.8634146341464,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 62500,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 64.966,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 97,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/netherlands/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "CH",
+      "name": "Switzerland",
+      "pillars": {
+        "survival_floor": 21.0,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 16.0,
+        "state_coercion": 24.0
+      },
+      "hvi_score": 86.0,
+      "grade": "B",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 84.156 years (World Bank WDI, 2023)",
+        "GNI per capita: US$99,920 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 64.189% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 96/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Iran News in Brief – June 18, 2026 - National Council of Resistance of Iran - NCRI",
+          "source": "National Council of Resistance of Iran - NCRI",
+          "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMEJOa3FNck1JazFsSjc5eEpnNlFFQzNIc3JyWGFpaGtTc1Q4bTNnd0NNVmVuaVdjLU5ySjNoNE8zOGJEWVJ1TERBMEZ4aTZDNHVMTVBEMWQ2SjhlMVFGd0VFY0NERWpxZUFTc3pyM2YxM05tMnh6ckVTek1jZmk3ODZrRzgyT25qTGFid3NYR3Z0M1U?oc=5"
+        },
+        {
+          "title": "UIC graduate workers launch third strike in seven years against poverty wages - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Fri, 01 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SNldLWW5sMWhDcVlDeFZjUTNscFdRckpVSHMxVzZNZlJIRVppN2tfalhuMmlOTFVFczlFX0ZWdTFpUGR6SnVITHowSHZOSTVWaVZPMmd1MGd6QUsyRjVlV0c5ZU5aWm5v?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 84.1560975609756,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 99920,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 64.189,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 96,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/switzerland/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
     }
-  ]
+  ],
+  "metadata": {
+    "coverage_roster": {
+      "definition": "Top 20 sovereign economies by nominal GDP in current US dollars",
+      "source": "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)",
+      "source_url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100",
+      "observation_year": 2024,
+      "retrieved_at": "2026-10-18",
+      "countries": [
+        {
+          "rank": 1,
+          "iso3": "USA",
+          "country_code": "US",
+          "name": "United States",
+          "gdp_current_usd": 29298013000000,
+          "observation_year": 2024
+        },
+        {
+          "rank": 2,
+          "iso3": "CHN",
+          "country_code": "CN",
+          "name": "China",
+          "gdp_current_usd": 18729668435848,
+          "observation_year": 2024
+        },
+        {
+          "rank": 3,
+          "iso3": "DEU",
+          "country_code": "DE",
+          "name": "Germany",
+          "gdp_current_usd": 4685592577804.69,
+          "observation_year": 2024
+        },
+        {
+          "rank": 4,
+          "iso3": "JPN",
+          "country_code": "JP",
+          "name": "Japan",
+          "gdp_current_usd": 4190008188358.57,
+          "observation_year": 2024
+        },
+        {
+          "rank": 5,
+          "iso3": "IND",
+          "country_code": "IN",
+          "name": "India",
+          "gdp_current_usd": 3760813470500.86,
+          "observation_year": 2024
+        },
+        {
+          "rank": 6,
+          "iso3": "GBR",
+          "country_code": "GB",
+          "name": "United Kingdom",
+          "gdp_current_usd": 3695539513534.15,
+          "observation_year": 2024
+        },
+        {
+          "rank": 7,
+          "iso3": "FRA",
+          "country_code": "FR",
+          "name": "France",
+          "gdp_current_usd": 3160442622465.08,
+          "observation_year": 2024
+        },
+        {
+          "rank": 8,
+          "iso3": "ITA",
+          "country_code": "IT",
+          "name": "Italy",
+          "gdp_current_usd": 2383435562458.12,
+          "observation_year": 2024
+        },
+        {
+          "rank": 9,
+          "iso3": "CAN",
+          "country_code": "CA",
+          "name": "Canada",
+          "gdp_current_usd": 2270076189683.46,
+          "observation_year": 2024
+        },
+        {
+          "rank": 10,
+          "iso3": "RUS",
+          "country_code": "RU",
+          "name": "Russia",
+          "gdp_current_usd": 2186462268813.08,
+          "observation_year": 2024
+        },
+        {
+          "rank": 11,
+          "iso3": "BRA",
+          "country_code": "BR",
+          "name": "Brazil",
+          "gdp_current_usd": 2185821610689.31,
+          "observation_year": 2024
+        },
+        {
+          "rank": 12,
+          "iso3": "KOR",
+          "country_code": "KR",
+          "name": "South Korea",
+          "gdp_current_usd": 1875388209406.8,
+          "observation_year": 2024
+        },
+        {
+          "rank": 13,
+          "iso3": "MEX",
+          "country_code": "MX",
+          "name": "Mexico",
+          "gdp_current_usd": 1830489311088.89,
+          "observation_year": 2024
+        },
+        {
+          "rank": 14,
+          "iso3": "AUS",
+          "country_code": "AU",
+          "name": "Australia",
+          "gdp_current_usd": 1757022451652.83,
+          "observation_year": 2024
+        },
+        {
+          "rank": 15,
+          "iso3": "ESP",
+          "country_code": "ES",
+          "name": "Spain",
+          "gdp_current_usd": 1725671652742.19,
+          "observation_year": 2024
+        },
+        {
+          "rank": 16,
+          "iso3": "IDN",
+          "country_code": "ID",
+          "name": "Indonesia",
+          "gdp_current_usd": 1396301788461.69,
+          "observation_year": 2024
+        },
+        {
+          "rank": 17,
+          "iso3": "TUR",
+          "country_code": "TR",
+          "name": "Turkey",
+          "gdp_current_usd": 1359123768774.12,
+          "observation_year": 2024
+        },
+        {
+          "rank": 18,
+          "iso3": "SAU",
+          "country_code": "SA",
+          "name": "Saudi Arabia",
+          "gdp_current_usd": 1254140800000,
+          "observation_year": 2024
+        },
+        {
+          "rank": 19,
+          "iso3": "NLD",
+          "country_code": "NL",
+          "name": "Netherlands",
+          "gdp_current_usd": 1213936238063.28,
+          "observation_year": 2024
+        },
+        {
+          "rank": 20,
+          "iso3": "CHE",
+          "country_code": "CH",
+          "name": "Switzerland",
+          "gdp_current_usd": 969919786394.884,
+          "observation_year": 2024
+        }
+      ]
+    },
+    "score_method": "coverage-input v1; legacy pilot records are retained unless a documented source-backed recalibration is available"
+  }
 }

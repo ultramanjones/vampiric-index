@@ -30,8 +30,8 @@ def is_number(value):
 
 
 def calculate_hvi(pillars):
-    """Return the deterministic sum of the four 0--25 HVI pillars."""
-    return sum(pillars[name] for name in PILLARS)
+    """Return the declared one-decimal HVI sum without binary-float artifacts."""
+    return round(sum(pillars[name] for name in PILLARS), 1)
 
 
 def validate_country(country):

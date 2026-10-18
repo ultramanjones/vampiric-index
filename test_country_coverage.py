@@ -1,0 +1,37 @@
+"""Coverage invariants for the documented nominal-GDP top-20 roster."""
+
+import json
+import unittest
+from pathlib import Path
+
+import calculate_hvi
+import fetch_dispatches
+
+
+ROOT = Path(__file__).parent
+
+
+class Top20CoverageTests(unittest.TestCase):
+    def setUp(self):
+        self.payload = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
+        self.countries = self.payload["countries"]
+
+    def test_roster_is_exactly_twenty_and_matches_country_data(self):
+        roster = self.payload["metadata"]["coverage_roster"]
+        codes = [country["country_code"] for country in self.countries]
+        self.assertEqual(len(codes), 20)
+        self.assertEqual(codes, [item["country_code"] for item in roster["countries"]])
+        self.assertEqual(roster["source"], "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)")
+
+    def test_every_roster_country_has_fetch_dashboard_and_review_support(self):
+        for country in self.countries:
+            code = country["country_code"]
+            self.assertIn(code, fetch_dispatches.SEARCHES)
+            self.assertEqual(calculate_hvi.validate_country(country), [])
+            self.assertEqual(len(country["acute_dispatch"]), 2)
+            self.assertIn("observed_readings", country["review"])
+            self.assertTrue(country["review"]["decision"])
+
+
+if __name__ == "__main__":
+    unittest.main()
