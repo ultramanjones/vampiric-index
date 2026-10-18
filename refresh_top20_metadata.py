@@ -1,4 +1,4 @@
-"""Build the documented World Bank 2024 nominal-GDP top-50 HVI coverage roster.
+"""Build the documented World Bank 2024 nominal-GDP HVI coverage roster.
 
 This is an explicit intake tool: it adds missing roster countries with the published
 coverage-input v1 transforms and preserves every already-declared legacy score.
@@ -70,6 +70,12 @@ COUNTRIES = {
     "KAZ": ("KZ", "Kazakhstan", "kazakhstan", 23),
     "IRQ": ("IQ", "Iraq", "iraq", 31),
     "DZA": ("DZ", "Algeria", "algeria", 31),
+    "GRC": ("GR", "Greece", "greece", 85),
+    "NGA": ("NG", "Nigeria", "nigeria", 44),
+    "HUN": ("HU", "Hungary", "hungary", 65),
+    "QAT": ("QA", "Qatar", "qatar", 25),
+    "UKR": ("UA", "Ukraine", "ukraine", 51),
+    "KWT": ("KW", "Kuwait", "kuwait", 31),
 }
 
 
@@ -111,9 +117,22 @@ def main():
     existing = {country["country_code"]: country for country in payload["countries"]}
     output = []
     roster = []
+    blocked = []
     for rank, iso3 in enumerate(ranked, 1):
         iso2, name, slug, freedom_score = COUNTRIES[iso3]
         raw = {pillar: readings[pillar][iso3] for pillar in INDICATORS}
+        missing_indicators = [pillar for pillar, value in raw.items() if value is None]
+        if missing_indicators:
+            blocked.append({
+                "rank": rank,
+                "iso3": iso3,
+                "country_code": iso2,
+                "name": name,
+                "reason": "Required coverage-input v1 indicator has no World Bank observation; no HVI record was fabricated.",
+                "missing_indicators": missing_indicators,
+                "source_urls": {pillar: urls[pillar] for pillar in missing_indicators},
+            })
+            continue
         computed = {
             "survival_floor": round(raw["survival_floor"] / 4, 1),
             "sovereign_cannibalization": round(min(raw["sovereign_cannibalization"] / 2000, 25), 1),
@@ -160,18 +179,19 @@ def main():
 
     payload["metadata"] = {
         "coverage_roster": {
-            "definition": "Top 50 sovereign economies by nominal GDP in current US dollars",
+            "definition": "Tracked sovereign economies by nominal GDP in current US dollars; candidates missing a required coverage-input v1 reading are explicitly excluded and documented",
             "source": "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)",
             "source_url": gdp_url,
             "observation_year": 2024,
             "retrieved_at": TODAY,
             "countries": roster,
+            "blocked_candidates": blocked,
         },
         "score_method": "coverage-input v1; legacy pilot records are retained unless a documented source-backed recalibration is available",
     }
     payload["countries"] = output
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(output)} top-50 countries; added {sum(1 for c in output if not c['acute_dispatch'])} records awaiting dispatch refresh.")
+    print(f"Wrote {len(output)} countries; skipped {len(blocked)} candidates with missing required inputs; added {sum(1 for c in output if not c['acute_dispatch'])} records awaiting dispatch refresh.")
     return 0
 
 

@@ -1,4 +1,4 @@
-"""Coverage invariants for the documented nominal-GDP top-50 roster."""
+"""Coverage invariants for the documented nominal-GDP coverage roster."""
 
 import json
 import re
@@ -12,18 +12,19 @@ import fetch_dispatches
 ROOT = Path(__file__).parent
 
 
-class Top50CoverageTests(unittest.TestCase):
+class CoverageRosterTests(unittest.TestCase):
     def setUp(self):
         self.payload = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
         self.countries = self.payload["countries"]
 
-    def test_roster_is_exactly_fifty_and_matches_country_data(self):
+    def test_roster_has_expected_covered_countries_and_matches_country_data(self):
         roster = self.payload["metadata"]["coverage_roster"]
         codes = [country["country_code"] for country in self.countries]
-        self.assertEqual(len(codes), 50)
+        self.assertEqual(len(codes), 55)
         self.assertEqual(len(set(codes)), len(codes))
         self.assertEqual(codes, [item["country_code"] for item in roster["countries"]])
         self.assertEqual(roster["source"], "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)")
+        self.assertEqual([candidate["country_code"] for candidate in roster["blocked_candidates"]], ["UA"])
 
     def test_every_roster_country_has_fetch_dashboard_and_review_support(self):
         dashboard = (ROOT / "index.html").read_text(encoding="utf-8")

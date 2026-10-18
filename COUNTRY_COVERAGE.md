@@ -1,12 +1,12 @@
 # Country Coverage Register
 
-## Top-50 nominal-GDP roster — reviewed 2026-10-18
+## Nominal-GDP coverage roster — reviewed 2026-10-18
 
 ### Selection rule and authoritative source
 
-The tracked roster is the top 50 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates and non-sovereign economies; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
+The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates and non-sovereign economies; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The next five untracked sovereign economies after Portugal were added in strict descending WDI order: Finland, Peru, Kazakhstan, Iraq, and Algeria. Hong Kong SAR, China ($408.369bn) falls between Colombia and South Africa in the WDI economy list but is not a sovereign economy and is excluded under the selection rule. The source query is [World Bank API: 50-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
+The next candidate sequence after Algeria is Greece, Nigeria, Hungary, Qatar, Ukraine, and Kuwait. Greece, Nigeria, Hungary, Qatar, and Kuwait were added in that strict WDI order. Ukraine is rank 55 but was not assigned a record: WDI returned no 2024 observation for the required employment-to-population indicator. It is recorded as a blocker in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. Kuwait (rank 56) was therefore the fifth complete record in this batch. Hong Kong SAR, China ($408.369bn) falls between Colombia and South Africa in the WDI economy list but is not a sovereign economy and is excluded under the selection rule. The source query is [World Bank API: batch GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;GRC;NGA;HUN;QAT;UKR;KWT/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -60,6 +60,12 @@ The next five untracked sovereign economies after Portugal were added in strict 
 | 48 | Kazakhstan | KZ | $0.291tn |
 | 49 | Iraq | IQ | $0.280tn |
 | 50 | Algeria | DZ | $0.269tn |
+| 51 | Greece | GR | $0.256tn |
+| 52 | Nigeria | NG | $0.252tn |
+| 53 | Hungary | HU | $0.223tn |
+| 54 | Qatar | QA | $0.216tn |
+| 55 | Ukraine | UA | $0.191tn (blocked: required 2024 employment reading unavailable) |
+| 56 | Kuwait | KW | $0.161tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -130,7 +136,13 @@ The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Th
 | KZ | 47.2 | F | New v1 record. |
 | IQ | 37.7 | F | New v1 record. |
 | DZ | 38.7 | F | New v1 record. |
+| GR | 64.8 | D | New v1 record. |
+| NG | 45.5 | F | New v1 record. |
+| HU | 60.2 | D | New v1 record. |
+| QA | 73.6 | C | New v1 record. |
+| UA | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
+| KW | 67.2 | C | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 
-Every roster country has a country-specific Google News RSS query in `fetch_dispatches.py`, a current-run dispatch list with title, publisher, publication date, and URL in `data.json`, and a World Atlas numeric identifier in `index.html`. The fetcher is atomic: if any country feed fails, it leaves the dataset unchanged. Dispatches are evidence for current monitoring, not automatic score inputs; the review rule above governs score changes.
+Every tracked roster country has a country-specific Google News RSS query in `fetch_dispatches.py`, a current-run dispatch list with title, publisher, publication date, and URL in `data.json`, and a World Atlas numeric identifier in `index.html`. The fetcher is atomic: if any country feed fails, it leaves the dataset unchanged. Dispatches are evidence for current monitoring, not automatic score inputs; the review rule above governs score changes.

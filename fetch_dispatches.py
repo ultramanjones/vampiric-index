@@ -307,6 +307,36 @@ SEARCHES = {
         "region": "DZ",
         "edition": "DZ:en",
     },
+    "GR": {
+        "query": "Greece (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "GR",
+        "edition": "GR:en",
+    },
+    "NG": {
+        "query": "Nigeria (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "NG",
+        "edition": "NG:en",
+    },
+    "HU": {
+        "query": "Hungary (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "HU",
+        "edition": "HU:en",
+    },
+    "QA": {
+        "query": "Qatar debt",
+        "language": "en",
+        "region": "QA",
+        "edition": "QA:en",
+    },
+    "KW": {
+        "query": "Kuwait debt",
+        "language": "en",
+        "region": "KW",
+        "edition": "KW:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -363,6 +393,11 @@ COUNTRY_TERMS = {
     "KZ": ("kazakhstan", "kazakh", "astana", "almaty"),
     "IQ": ("iraq", "iraqi", "baghdad", "basra", "erbil"),
     "DZ": ("algeria", "algerian", "algiers"),
+    "GR": ("greece", "greek", "athens"),
+    "NG": ("nigeria", "nigerian", "abuja", "lagos"),
+    "HU": ("hungary", "hungarian", "budapest"),
+    "QA": ("qatar", "qatari", "doha"),
+    "KW": ("kuwait", "kuwaiti"),
 }
 
 
