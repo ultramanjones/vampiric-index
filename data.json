@@ -115,7 +115,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
       }
     },
     {
@@ -292,7 +292,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
       }
     },
     {
@@ -469,7 +469,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
       }
     },
     {
@@ -646,7 +646,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
       }
     },
     {
@@ -705,7 +705,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
       }
     },
     {
@@ -823,7 +823,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
       }
     },
     {
@@ -882,7 +882,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
       }
     },
     {
@@ -1000,7 +1000,7 @@
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
-        "decision": "coverage-input v1 score revised after applying the published transform to the current cited readings"
+        "decision": "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
       }
     },
     {
@@ -3447,10 +3447,10 @@
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWWZaWXk4Y1pydjdNZUxOUHdnd0R4WUwxVXh2eS1IaE1vbW5HYkVtSTViYW9kbWp3Z3laU1Q2WEl0TkJhSXZYeUpKU3NpM1Z0X21rNzhOTFhDTmlFRjVOYVpqMzJ3Qk1RSXdJd1U4ZmJvZ21weThETDBmZTlwRW8zWUpRSWVXcVVuTy1sVEFGR0YtbmY5TWM1YzlfWQ?oc=5"
         },
         {
-          "title": "Slovak Lawmakers Back Wider Deficit as Fico Readies for Election - Bloomberg.com",
-          "source": "Bloomberg.com",
-          "publication_date": "Wed, 14 Oct 2026 09:48:31 GMT",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQS0RfeW9lQjZ1VEd3RUJFT2NCbEpIQld1RVowaVpCelE0SWstYVFnR1FDOWFUdVZzOVk2Zk93TWdtQUo4UzdUYnVOV0FLaWJ6YlBKcExqZDdab2dSOU41MVRnVEg0U1QtbFFTNFR4NUVzM3NSU0hzYVZyOGlRWHRGSkFXVDIwUjlONHdFbWhZRjdXV29rMGdjS0FIWWVpaFpaUW1hclNWMXB1ZlR5Uk9QTGpXZ0htUQ?oc=5"
+          "title": "Slovakia to hold talks with Ukraine, revive economic meetings with Russia - The Kyiv Independent",
+          "source": "The Kyiv Independent",
+          "publication_date": "Thu, 15 Oct 2026 09:18:37 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTmJPU0thRS1URUZxc28xU1IwQjhCQVdKNmhLTXFnXzdpV0E5VFY3NTJpWmhYQkZiVVpNRnN5UzFyN24wUFFVZUtnakVaTVltMUltWnFRMDdjYmZ3TndGek1CNWtvZDJzaGY3ZjRVSXA0SEZCS1czZXpDcFZjdWxkZUl5dkNpZFRHMjd4bS1adWxyMjY4amtxNmFOM2ZhLTlKTE5N?oc=5"
         }
       ],
       "review": {
@@ -4214,10 +4214,10 @@
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdktCcjBBZ1FsYWFJTVNwbTRZLUpIWktaWWlGdkt0ejRfQ1ZMZUlxVnRia3FZZjE2WWJsMjd6VzQwMC14TGc3Y2xYdlkxSnFaMXYwc2NhMllpNV9YdGZWTTRoNnV4VWtTLTFCaDE0aEh3am45a0lTZDZONWoya25ZbDJTUk1GeTl3MGxMVi1OMXJvQnpP?oc=5"
         },
         {
-          "title": "Croatian soccer fans arrested over antisemitic slurs during match with Amsterdam team - AP News",
-          "source": "AP News",
-          "publication_date": "Fri, 16 Oct 2026 17:16:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTXVON0xTa2Y0RDE0LXJhOXVqeUx3RTloWEZOTEFPdWt2aWFCWl9RV19XYlZBVVZxRVlCYzJubnQ3bTEzXzk2bnI5aHRtVEV0Wmx2blJqcXZ0SEpMMXRlZ0dBVGRnQUNkWHBfdE1kQlZvaWw3X3phV1QzWTFzLVh3cFNlaXNqWUJjYmdZOThfa3kya0xmTVJqUzJR?oc=5"
+          "title": "Arrests made for pro-Nazi chants at Hajduk Split-Ajax match in Croatia - Al Jazeera",
+          "source": "Al Jazeera",
+          "publication_date": "Sat, 17 Oct 2026 07:51:36 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWXg5YlV2R0Q5V1NUWGg4RXliS2FhU2pZYkd1V1ZOSHlwZXZibjA1ZHByV3p1d29YSFNsemxiZm9VMHFxYjFlQzN3OHlPeVlGZUNNN1ZHbFQ5X2lKbUtkSU5zWDc5X1I2WGZlUlp2bEduNnFpRHQ3U1ZQUXAtcWRSZWFicG5hUFY3Ym1yaWgyMnlUclV4aVgySmd5WjFlOTZ1M1p4MjBCVnRycXNKc2pCbGRvSzJHS29rUnVZ0gHAAUFVX3lxTE9yT3l2YUJMVjBGZVJaREZWZi1Ea1V1d0o4Uk1PZTZpMEE5WnBqZWRzQnlZcGJ0WG4yVzV0c2t6REhSeFVBbExBaXdQeVgwQ3dMeHVjT0s0VlVIeHd2Vkh6SjFKQW1EWWZJMmU3RmZ1ZmRxN1k1QWhpbm9FZ0NPUGZGdXZmbjRZUEZHTlNKQjVBLTRiOHQ5eHBGbG1hZkV5ekRrUXZ4V1pNT2ZORC1zN1hUWUJiaDNUaktsd3p0bnM5Mw?oc=5"
         }
       ],
       "review": {
@@ -6397,10 +6397,10 @@
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNFlmOTRNbktIT2hZN2x5TVEzWng4MjdwcU5XQzZRb3QyNWwwT1Z6UnU5V3dvRzFSN3dYQUNfYmxPZFhad2Yta1dpcks4QUVld2lXWnBNYkdTeEU4SXNvQ3BaeEdTTzE3MWNfZFdGSkhiZHVtcTloRUw5NmRRNk5jVzlqR25jQlpCa2Z0Mmc3Q3NJU1F5aFNzT1Q1T3k?oc=5"
         },
         {
-          "title": "Russia Ready to Turn Screws on Armenia - The Armenian Mirror-Spectator",
-          "source": "The Armenian Mirror-Spectator",
-          "publication_date": "Tue, 13 Oct 2026 17:15:40 GMT",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSXlGN2t0a19rS2lkTzdCbFF6ZU9oUHpud2dGVFg1N01hX2VrWTFtWVhzZUZYQWJBQWtCTkU3bTdCRUZmRHhoMXBBYTZQRVM0TVFsNnNBU21meldodlRVSzQwYnFUSF9XVDBadHZnS0hnOUZTWWpYajUyWUJOQTEwSTUtRHA?oc=5"
+          "title": "Armenia's Economic Pulse - World Bank Group",
+          "source": "World Bank Group",
+          "publication_date": "Fri, 24 Jul 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdHp3UDZEbEZrdkx5TzlreDFtTUJidlR2b3RZUURnTFdkc0lpX0x1VTRMMzNQdjVjTnVvckF1Slc4NEtDNDZwZVY4QmR0R2JnZnIzVlhCRExMUVhBQzRoQjNnQVFwemhvVWNfMHJ2am0yY1lpRTNMaU5aekpzSE16VVRDN05DUzcz?oc=5"
         }
       ],
       "review": {
@@ -7925,16 +7925,16 @@
       ],
       "acute_dispatch": [
         {
-          "title": "Rwanda’s grand prix: Kagame’s most expensive advert yet - The Africa Report",
-          "source": "The Africa Report",
-          "publication_date": "Wed, 14 Oct 2026 07:03:27 GMT",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdXBISFp3cnBzSVktN1NpdHlEWGF2emhWTmt2cHBnZ2loUDROZHIxSEFfNWl0SEpBWE4xYk1ENXYza2RndUdidlNMRzhLWkRRdGl5WE0zVmZwZVJFRzljc1U4RW5YZF8zTHZJOUt3cTlMeHJYT3RUdlJYM3YxWVpHUDBJN1pHNGptQTJRSnE2TzVYODYxNGc4?oc=5"
-        },
-        {
           "title": "Rwanda’s national pension fund has helped power the economy, but it faces new challenges - The Conversation",
           "source": "The Conversation",
           "publication_date": "Tue, 25 Aug 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPclpTRWpXaHoySlAwd2FsNmRuYnJveGRZOWdTYTNXNk0xeFAydUhhUExtQk5jOTh3WDBOTVgtTE5VSDZyaUFRaEgzWkZudnl6VU4yQWZOblowVWpQeTNscDk4cTNJOHBzaVlKeUFiRnRhLXMxVUdUS2xNUGdjcFdBUTF1NlZzV3FFUlZ5Wm5TUHV6NC15WXRoc2c0LUVxblBDZS1oaXNEZkpKTlctUFc5NnBfNGVQTUJJeEtXQ0xn?oc=5"
+        },
+        {
+          "title": "Rwanda’s grand prix: Kagame’s most expensive advert yet - The Africa Report",
+          "source": "The Africa Report",
+          "publication_date": "Wed, 14 Oct 2026 07:03:27 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdXBISFp3cnBzSVktN1NpdHlEWGF2emhWTmt2cHBnZ2loUDROZHIxSEFfNWl0SEpBWE4xYk1ENXYza2RndUdidlNMRzhLWkRRdGl5WE0zVmZwZVJFRzljc1U4RW5YZF8zTHZJOUt3cTlMeHJYT3RUdlJYM3YxWVpHUDBJN1pHNGptQTJRSnE2TzVYODYxNGc4?oc=5"
         }
       ],
       "review": {
@@ -7984,16 +7984,16 @@
       ],
       "acute_dispatch": [
         {
-          "title": "Mauritius - Independence, Economy, Culture - Britannica",
-          "source": "Britannica",
-          "publication_date": "Fri, 16 Oct 2026 05:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE93bFR5dFlHdzJCNU5nelI5alVMUDJfYUp0V193Z0ZvcUxUeGhGOE1EbUNiVEtrZWptMk5fSDM4NFhMenNNV1VaQ1pnd3kxcUZEU1ZaRnFGWlQ3Nlc0VlNzN2JoSG14dw?oc=5"
-        },
-        {
           "title": "Mauritius imposes curfew to calm days of protests after woman shot by police - The Washington Post",
           "source": "The Washington Post",
           "publication_date": "Thu, 15 Oct 2026 00:22:43 GMT",
           "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcUJaODFnVXhRZ3R1WmJmOTV2UDcxRWJWc0Z0Y0NlbUgzT1FYYTJhdkh3dlVJT1ZuLXBDM1phb3kxWU5zbkh4ekktOEJIUVZpeDRCcHVZdHJvdEwydjZkQ0xockNjOUI5UVVDREFoOUw4NjRtd0UtNm1IM3VvalRudWdNMFZLTl9FVGU1eTYwV0xreTBHa1B0Ml9maVhGNExrSG1XWElMcW5CdVZTQUJrRTlMdnhZUkpueVB3VmdzeHJqU3BnaV9SR3d3cFVCTDlVdU9QN050Q2t5M0l1cDlv?oc=5"
+        },
+        {
+          "title": "Rodrigues Island | Mauritius, Map, & Facts - Britannica",
+          "source": "Britannica",
+          "publication_date": "Fri, 09 Oct 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5oNHN0NHVrOHZ4OTI3Q09lUHlnc2JHRE1kTFJBc2VUTmVtVlRxbDdGWURUeFhzSHpBQzN3YTFuR2ItT290SFVLcE9KZnV6ajdZUTQ4VXNtcUdvS3kzOFE?oc=5"
         }
       ],
       "review": {
@@ -8226,10 +8226,10 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZ3dvYlNGZGV6RnE0V0xNNUFTYl9SVThKRFlaQmJlX1NVVW5qREVuSWpSQkoyRGtIR1VvdGR1dFNqbFg3OFpWLWU5TWRMVHNmcFVvRy1HZmd3QzMxM1ppdDB0MVdRWVg4U3VQSnI0UUh1d1ZyV3l4VjAwby16czlRMzU0ekNFZU42czdER0JMcVpVQXc3dlNEY2hEbGlEZm00THplUkN4aHNyMEV5Umc?oc=5"
         },
         {
-          "title": "Somalia objects to IOTC conservation proposals, claims they violate “sovereign rights and obligations” - SeafoodSource",
-          "source": "SeafoodSource",
-          "publication_date": "Mon, 28 Sep 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNnZwbzFrRE00QXFfcTFUak1DYUxSdURmbHZvUGZucm83OEdhWlRaWk1HUzVVTXhxckhKQ1JOMDYzVnA2ZEE5bzlkMDNBQU12ZzFIcTJTNWpaclZtWVNHNWdvLXdOWkdqbzBUUENKMVZFRXpiU3BQcS1qV2ZTQjRZaG5zdHZ4RDdObmNWdkRzMldoX2FkLXd4SDM1VW5zU2tXaWhaQm1UX0E1a04td09ha0RzSWZmcWxvUENXMm82dE9YQ2hqX1dZY1QtbUxmUDA?oc=5"
+          "title": "What Is Causing The Famine In Somalia? - The World Economic Forum",
+          "source": "The World Economic Forum",
+          "publication_date": "Wed, 07 Oct 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbk5xOUNCVTdqcDR1em42aEZBV01oaDU1aHFOdFN1VnFhNzNPUGczOEtYcmdrUUJVVVYyZjNuajBFR0VmcXZ6bFhaSW5rQUNhZzNzZVVvRUJ5YTUtcm90WVp0cFI0cmhLVkc3Z2pTTjZjS1A1TGp1aXhyRWp3dTRjclRFSThlZw?oc=5"
         }
       ],
       "review": {
@@ -8403,10 +8403,10 @@
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUDFaRV9LRHFoUUhBaTRlRjhNT3Z2N3A2MnRBWEJmTFQwWGhCZllTWmw5S0N2VDYxNDh6VXJObzREcmlzUF9NOW1OQS1LRFd5SjduVmRqR2xsYjBsaDIyYlVZQVhjVEtCV2tjeWNFZGUyT0p4LWpRMFBVOFZRbDJXeHdidENDcG1k?oc=5"
         },
         {
-          "title": "Togo and China Sign 13 Agreements on Trade, Technology and Debt Relief - Togo First",
-          "source": "Togo First",
-          "publication_date": "Sat, 17 Oct 2026 16:30:58 GMT",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZHJjXzZzMWhuV2lfdUphbHMwUkE0cTlfZW1iVUpIX0MteVU0VUlRN1NpLUlhQ3VlMXZ3b2dVVG5lNy1UamFfclNoT2dwNU9PMjVCVVg2M183MXBSQVNuSXFITjlPdlhWTjBTTVV6RGE2bWZjZzQ0TVNkNXpNdlZ5VFpoTlBuZkdSXzFleWJySmJxLVo0OVFTUTJjZ1NtQXZaSnNOMEFhRTZBUzAwQUlUOTdJTVF3Zm5yM1lpYnhZcWozb01pZG9RQg?oc=5"
+          "title": "China, Togo to deepen cooperation - China Daily Global Edition",
+          "source": "China Daily Global Edition",
+          "publication_date": "Thu, 15 Oct 2026 23:08:06 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNEtsa1k5MTZka0R2ckhJZXl5QnBYZndJUlpMQ3FzQmhtU1NLOVdtRnBDMmpEM3BRQWZMRVY2bW40RnBBOTE3akhjTS1ZX3pYYmUzS0ExNUtCV2ZfTFRSb0NsdzhSMjhJeklYMV9JLTNjZUQ0ZGlzMEhOeDYxQkVqdDhR?oc=5"
         }
       ],
       "review": {
