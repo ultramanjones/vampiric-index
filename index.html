@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A diagnostic dashboard for sovereign institutional strain.">
+  <title>Vampiric Index — Host Viability Index</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+  <style>
+    :root {
+      --ink: #0a0a0c;
+      --panel: #151116;
+      --panel-raised: #201820;
+      --blood: #8a0303;
+      --bone: #e2e8f0;
+      --muted: #9e9aa3;
+      --line: #3d2d38;
+      --grade-a: #4c8063;
+      --grade-b: #a28a3b;
+      --grade-c: #c77729;
+      --grade-d: #9c3429;
+      --grade-f: #620000;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--ink); color-scheme: dark; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--bone);
+      background:
+        radial-gradient(circle at 50% -20%, #30202c 0, transparent 42rem),
+        var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    button { font: inherit; }
+    .masthead, main, footer { max-width: 1240px; margin: auto; padding-inline: 1.5rem; }
+    .masthead { padding-top: 3rem; padding-bottom: 2.25rem; text-align: center; }
+    .eyebrow { margin: 0; color: #c78b8b; font: 700 .75rem/1.2 ui-monospace, monospace; letter-spacing: .22em; text-transform: uppercase; }
+    h1 { margin: .4rem 0; color: #f5e8e8; font-size: clamp(2.5rem, 8vw, 5.7rem); font-weight: 700; letter-spacing: .035em; line-height: .92; text-shadow: 0 0 24px #8a030370; }
+    .subtitle { max-width: 50rem; margin: 1rem auto 0; color: var(--muted); font-size: 1.05rem; line-height: 1.55; }
+    .rule { width: min(30rem, 85%); height: 2px; margin: 1.8rem auto 0; background: linear-gradient(90deg, transparent, var(--blood), transparent); }
+    .notice { border: 1px solid var(--line); border-left: 4px solid var(--blood); padding: .85rem 1rem; color: var(--muted); background: #120e12cc; font-size: .9rem; }
+    .notice[hidden] { display: none; }
+    .map-panel { position: relative; margin-top: 1rem; overflow: hidden; border: 1px solid var(--line); background: #0d0d10; box-shadow: 0 1.5rem 4rem #0008; }
+    #world-map { display: block; width: 100%; min-height: 25rem; }
+    .country { stroke: #4a3947; stroke-width: .45px; transition: opacity .15s, stroke-width .15s; }
+    .country.tracked { cursor: pointer; stroke: #dfb9b9; stroke-width: .8px; }
+    .country.tracked:hover, .country.tracked:focus { opacity: .82; stroke: #fff; stroke-width: 1.4px; outline: none; }
+    .country.untracked { fill: #27242a; }
+    .legend { display: flex; flex-wrap: wrap; gap: .7rem 1.25rem; padding: .95rem 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font: .78rem/1.2 ui-monospace, monospace; }
+    .legend span { display: inline-flex; align-items: center; gap: .4rem; }
+    .swatch { width: .85rem; height: .85rem; border: 1px solid #ffffff42; }
+    .summary { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .7rem; margin: 1rem 0 3rem; }
+    .country-button { min-height: 4.6rem; padding: .65rem; border: 1px solid var(--line); color: var(--bone); background: var(--panel); cursor: pointer; text-align: left; }
+    .country-button:hover, .country-button:focus { border-color: #c28b8b; background: var(--panel-raised); }
+    .country-button strong { display: block; font: 700 .75rem/1.1 ui-monospace, monospace; letter-spacing: .08em; }
+    .country-button span { display: block; margin-top: .3rem; font-size: 1.05rem; }
+    .grade { display: inline-block; min-width: 1.75rem; padding: .17rem .4rem; color: #fff; font: 700 .8rem/1 ui-monospace, monospace; text-align: center; }
+    .drawer-backdrop { position: fixed; inset: 0; z-index: 10; background: #000a; opacity: 0; pointer-events: none; transition: opacity .2s; }
+    .drawer { position: fixed; top: 0; right: 0; z-index: 11; display: flex; flex-direction: column; width: min(34rem, 100vw); height: 100dvh; padding: 1.5rem; overflow-y: auto; border-left: 1px solid #69404d; background: #120e12; box-shadow: -1rem 0 4rem #000b; transform: translateX(102%); transition: transform .25s ease; }
+    body.drawer-open .drawer { transform: translateX(0); }
+    body.drawer-open .drawer-backdrop { opacity: 1; pointer-events: auto; }
+    .drawer-header { display: flex; gap: 1rem; align-items: flex-start; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+    .drawer-header h2 { margin: .25rem 0 0; font-size: 2rem; }
+    .close { width: 2.25rem; height: 2.25rem; border: 1px solid var(--line); color: var(--bone); background: transparent; cursor: pointer; font-size: 1.5rem; }
+    .close:hover, .close:focus { border-color: #fff; }
+    .score { margin: 1.5rem 0; font: 700 3.75rem/.9 ui-monospace, monospace; }
+    .score small { color: var(--muted); font-size: 1rem; }
+    .section-title { margin: 1.6rem 0 .75rem; color: #d9baba; font: 700 .76rem/1 ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; }
+    .gauge { display: grid; grid-template-columns: 6.2rem 1fr 2.5rem; gap: .6rem; align-items: center; margin: .65rem 0; color: var(--muted); font: .78rem/1.1 ui-monospace, monospace; }
+    .gauge-track { height: .5rem; overflow: hidden; background: #352b33; }
+    .gauge-fill { height: 100%; background: linear-gradient(90deg, var(--blood), #c77b55); }
+    ul { padding-left: 1.2rem; color: var(--muted); line-height: 1.45; }
+    li + li { margin-top: .6rem; }
+    .dispatch { border-top: 1px solid var(--line); padding: .8rem 0; }
+    .dispatch a { color: #e1b0b0; font-weight: 700; text-decoration-color: var(--blood); }
+    .dispatch-meta { margin-top: .35rem; color: var(--muted); font: .72rem/1.35 ui-monospace, monospace; }
+    footer { padding-top: .5rem; padding-bottom: 2.5rem; color: #77727b; font-size: .8rem; text-align: center; }
+    @media (max-width: 640px) { .masthead, main, footer { padding-inline: 1rem; } .summary { grid-template-columns: repeat(2, 1fr); } .drawer { padding: 1rem; } }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <p class="eyebrow">Sovereign diagnostic dashboard</p>
+    <h1>Vampiric Index</h1>
+    <p class="subtitle">Host Viability Index: a deterministic view of macroeconomic extraction and institutional strain.</p>
+    <div class="rule"></div>
+  </header>
+
+  <main>
+    <p id="status" class="notice">Loading pilot dossier data and world geometry…</p>
+    <section class="map-panel" aria-label="Interactive Host Viability Index world map">
+      <svg id="world-map" role="img" aria-label="World map with tracked countries colored by HVI grade"></svg>
+      <div class="legend" aria-label="HVI grade legend">
+        <span><i class="swatch" style="background: var(--grade-a)"></i>A 85–100</span>
+        <span><i class="swatch" style="background: var(--grade-b)"></i>B 70–84</span>
+        <span><i class="swatch" style="background: var(--grade-c)"></i>C 55–69</span>
+        <span><i class="swatch" style="background: var(--grade-d)"></i>D 40–54</span>
+        <span><i class="swatch" style="background: var(--grade-f)"></i>F &lt;40</span>
+      </div>
+    </section>
+    <section id="country-summary" class="summary" aria-label="Tracked country dossiers"></section>
+  </main>
+
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+  <aside id="drawer" class="drawer" aria-label="Country dossier" aria-hidden="true" role="dialog">
+    <div class="drawer-header">
+      <div><p id="drawer-code" class="eyebrow"></p><h2 id="drawer-name"></h2></div>
+      <button id="close-drawer" class="close" type="button" aria-label="Close dossier">×</button>
+    </div>
+    <div id="drawer-content"></div>
+  </aside>
+
+  <footer>Data refreshes through the project’s Google News RSS pipeline. Scores are deterministic pilot baseline values.</footer>
+
+  <script>
+    const countryIds = { US: "840", GB: "826", FR: "250", DE: "276", MX: "484" };
+    const gradeColors = { A: "#4c8063", B: "#a28a3b", C: "#c77729", D: "#9c3429", F: "#620000" };
+    const pillarLabels = {
+      survival_floor: "Survival",
+      sovereign_cannibalization: "Sovereign",
+      labor_retention: "Labor",
+      state_coercion: "Coercion"
+    };
+    const status = document.getElementById("status");
+    const drawer = document.getElementById("drawer");
+    const drawerContent = document.getElementById("drawer-content");
+    const trackedByMapId = new Map();
+
+    function makeElement(tag, className, text) {
+      const element = document.createElement(tag);
+      if (className) element.className = className;
+      if (text !== undefined) element.textContent = text;
+      return element;
+    }
+
+    function closeDrawer() {
+      document.body.classList.remove("drawer-open");
+      drawer.setAttribute("aria-hidden", "true");
+    }
+
+    function openDossier(country) {
+      document.getElementById("drawer-code").textContent = country.country_code;
+      document.getElementById("drawer-name").textContent = country.name;
+      drawerContent.replaceChildren();
+
+      const score = makeElement("div", "score", `${country.hvi_score.toFixed(1)} `);
+      score.append(makeElement("small", "", "/ 100"));
+      const badge = makeElement("span", "grade", country.grade);
+      badge.style.background = gradeColors[country.grade];
+      score.append(document.createTextNode(" "));
+      score.append(badge);
+      drawerContent.append(score);
+
+      drawerContent.append(makeElement("h3", "section-title", "Pillar gauges"));
+      for (const [key, label] of Object.entries(pillarLabels)) {
+        const gauge = makeElement("div", "gauge");
+        gauge.append(makeElement("span", "", label));
+        const track = makeElement("div", "gauge-track");
+        const fill = makeElement("div", "gauge-fill");
+        fill.style.width = `${country.pillars[key] * 4}%`;
+        track.append(fill);
+        gauge.append(track);
+        gauge.append(makeElement("span", "", `${country.pillars[key].toFixed(1)}/25`));
+        drawerContent.append(gauge);
+      }
+
+      drawerContent.append(makeElement("h3", "section-title", "Chronic pathologies"));
+      const pathologies = makeElement("ul");
+      country.chronic_pathologies.forEach(item => pathologies.append(makeElement("li", "", item)));
+      drawerContent.append(pathologies);
+
+      drawerContent.append(makeElement("h3", "section-title", "Acute wire"));
+      if (country.acute_dispatch.length === 0) {
+        drawerContent.append(makeElement("p", "notice", "No current dispatches were available during the last pipeline run."));
+      } else {
+        country.acute_dispatch.forEach(dispatch => {
+          const item = makeElement("article", "dispatch");
+          const link = makeElement("a", "", dispatch.title);
+          link.href = dispatch.url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          item.append(link);
+          item.append(makeElement("div", "dispatch-meta", `${dispatch.source} | ${dispatch.publication_date}`));
+          drawerContent.append(item);
+        });
+      }
+      document.body.classList.add("drawer-open");
+      drawer.setAttribute("aria-hidden", "false");
+      document.getElementById("close-drawer").focus();
+    }
+
+    function renderSummary(countries) {
+      const summary = document.getElementById("country-summary");
+      countries.forEach(country => {
+        const button = makeElement("button", "country-button");
+        button.type = "button";
+        button.append(makeElement("strong", "", country.country_code));
+        button.append(makeElement("span", "", `${country.hvi_score.toFixed(1)} · Grade ${country.grade}`));
+        button.style.borderLeft = `4px solid ${gradeColors[country.grade]}`;
+        button.addEventListener("click", () => openDossier(country));
+        summary.append(button);
+      });
+    }
+
+    function renderMap(world, countries) {
+      countries.forEach(country => trackedByMapId.set(countryIds[country.country_code], country));
+      const svg = d3.select("#world-map");
+      const width = 1200;
+      const height = 610;
+      svg.attr("viewBox", `0 0 ${width} ${height}`);
+      const projection = d3.geoEqualEarth().fitExtent([[18, 18], [width - 18, height - 18]], { type: "Sphere" });
+      const path = d3.geoPath(projection);
+      const features = topojson.feature(world, world.objects.countries).features;
+
+      svg.append("path").attr("d", path({ type: "Sphere" })).attr("fill", "#111218");
+      svg.append("g")
+        .selectAll("path")
+        .data(features)
+        .join("path")
+        .attr("class", feature => trackedByMapId.has(String(feature.id)) ? "country tracked" : "country untracked")
+        .attr("fill", feature => {
+          const country = trackedByMapId.get(String(feature.id));
+          return country ? gradeColors[country.grade] : null;
+        })
+        .attr("d", path)
+        .attr("tabindex", feature => trackedByMapId.has(String(feature.id)) ? 0 : null)
+        .attr("aria-label", feature => {
+          const country = trackedByMapId.get(String(feature.id));
+          return country ? `${country.name}, HVI ${country.hvi_score}, grade ${country.grade}` : null;
+        })
+        .on("click", (_, feature) => {
+          const country = trackedByMapId.get(String(feature.id));
+          if (country) openDossier(country);
+        })
+        .on("keydown", (event, feature) => {
+          if ((event.key === "Enter" || event.key === " ") && trackedByMapId.has(String(feature.id))) {
+            event.preventDefault();
+            openDossier(trackedByMapId.get(String(feature.id)));
+          }
+        });
+    }
+
+    async function initialize() {
+      try {
+        const [dataResponse, world] = await Promise.all([
+          fetch("./data.json").then(response => {
+            if (!response.ok) throw new Error(`data.json returned HTTP ${response.status}`);
+            return response.json();
+          }),
+          d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json")
+        ]);
+        if (!Array.isArray(dataResponse.countries)) throw new Error("data.json does not contain a countries array");
+        renderMap(world, dataResponse.countries);
+        renderSummary(dataResponse.countries);
+        status.hidden = true;
+      } catch (error) {
+        status.textContent = `Dashboard data could not be loaded: ${error.message}. Serve this directory over HTTP rather than opening index.html directly.`;
+      }
+    }
+
+    document.getElementById("close-drawer").addEventListener("click", closeDrawer);
+    document.getElementById("drawer-backdrop").addEventListener("click", closeDrawer);
+    document.addEventListener("keydown", event => { if (event.key === "Escape") closeDrawer(); });
+    initialize();
+  </script>
+</body>
+</html>
