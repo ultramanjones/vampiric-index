@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-18T02:00:50Z",
+  "methodology": {
+    "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
+    "limitations": [
+      "Phase 1 uses title-level news canaries because free, comparable QSR transaction data is not consistently available.",
+      "The index is a monitoring instrument, not a recession forecast or investment recommendation.",
+      "A phase score does not establish causation between consumer stress and asset prices."
+    ]
+  },
+  "total_transmission_index": 22.0,
+  "active_contagion_phase": {
+    "number": 4,
+    "name": "Institutional asset repricing and liquidity drain",
+    "score": 9.0,
+    "status": "monitoring signal"
+  },
+  "phases": [
+    {
+      "number": 1,
+      "name": "Base-layer consumer exhaustion",
+      "score": 5.0,
+      "diagnosis": "2 qualifying distress-language matches appeared across 8 consumer-canary headlines. This is a qualitative early-warning proxy, not company-reported traffic or unit-sales data.",
+      "indicator_keys": [
+        "consumer_canaries"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Debt saturation and shadow-credit exhaustion",
+      "score": 6.0,
+      "diagnosis": "Credit-card delinquency is 2.85%; annual consumer-credit change is +2.73% when a comparable prior observation is available.",
+      "indicator_keys": [
+        "credit_card_delinquency",
+        "consumer_credit"
+      ]
+    },
+    {
+      "number": 3,
+      "name": "Corporate cash-flow pinch and regional credit stress",
+      "score": 2.0,
+      "diagnosis": "US high-yield OAS is 3.23 percentage points; the 30-day change is +0.47 points when available.",
+      "indicator_keys": [
+        "high_yield_oas"
+      ]
+    },
+    {
+      "number": 4,
+      "name": "Institutional asset repricing and liquidity drain",
+      "score": 9.0,
+      "diagnosis": "The overnight reverse-repo balance is 1.4% of its year-earlier level; Federal Reserve total assets changed +0.00% over the prior 90 days when comparable observations are available.",
+      "indicator_keys": [
+        "fed_assets",
+        "reverse_repo"
+      ]
+    }
+  ],
+  "indicators": {
+    "credit_card_delinquency": {
+      "series_id": "DRCCLACBS",
+      "label": "Credit-card delinquency rate",
+      "unit": "Percent of loans",
+      "description": "Delinquency rate on credit cards at all commercial banks.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DRCCLACBS",
+      "value": 2.85,
+      "observation_date": "2026-04-01",
+      "prior_value": 3.04,
+      "prior_observation_date": "2025-04-01",
+      "change": -0.19,
+      "percent_change": -6.25
+    },
+    "consumer_credit": {
+      "series_id": "TOTALSL",
+      "label": "Total consumer credit",
+      "unit": "Millions of dollars",
+      "description": "Consumer credit owned and securitized, seasonally adjusted.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TOTALSL",
+      "value": 5196778.44,
+      "observation_date": "2026-08-01",
+      "prior_value": 5058589.77,
+      "prior_observation_date": "2025-08-01",
+      "change": 138188.67,
+      "percent_change": 2.73
+    },
+    "high_yield_oas": {
+      "series_id": "BAMLH0A0HYM2",
+      "label": "US high-yield option-adjusted spread",
+      "unit": "Percentage points",
+      "description": "ICE BofA US High Yield Index option-adjusted spread.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLH0A0HYM2",
+      "value": 3.23,
+      "observation_date": "2026-10-15",
+      "prior_value": 2.76,
+      "prior_observation_date": "2026-09-15",
+      "change": 0.47,
+      "percent_change": 17.03
+    },
+    "fed_assets": {
+      "series_id": "WALCL",
+      "label": "Federal Reserve total assets",
+      "unit": "Millions of dollars",
+      "description": "Total assets held by the Federal Reserve.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WALCL",
+      "value": 6755639.0,
+      "observation_date": "2026-10-14",
+      "prior_value": 6743028.0,
+      "prior_observation_date": "2026-07-15",
+      "change": 12611.0,
+      "percent_change": 0.19
+    },
+    "reverse_repo": {
+      "series_id": "RRPONTSYD",
+      "label": "Overnight reverse-repo facility balance",
+      "unit": "Billions of dollars",
+      "description": "Fed overnight reverse-repurchase agreements, a liquidity-buffer proxy.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RRPONTSYD",
+      "value": 0.1,
+      "observation_date": "2026-10-16",
+      "prior_value": 6.96,
+      "prior_observation_date": "2025-10-16",
+      "change": -6.86,
+      "percent_change": -98.56
+    }
+  },
+  "consumer_canaries": {
+    "source_url": "https://news.google.com/rss/search?q=%28McDonald%27s+OR+Wendy%27s+OR+Domino%27s+OR+Dollar+General+OR+Dollar+Tree%29+%28traffic+OR+transactions+OR+value+menu+OR+discount+OR+low-income+OR+consumer+pullback+OR+weak+demand%29&hl=en-US&gl=US&ceid=US%3Aen",
+    "method": "Google News RSS title matching against published distress-language terms.",
+    "items": [
+      {
+        "title": "Ross Stores Expands Footprint With 51 New Store Openings - TradingView",
+        "source": "TradingView",
+        "publication_date": "Tue, 13 Oct 2026 15:46:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMlpyWGt2SkVfNGdEUHFMNlhScUlTUFZCdlMteW1ibWRVVHltMk1MZi1ERGo0UG5ScnF2YmYyMnpwN1dJVUtueW5RXzl5OWxoMkp1am5VeUlXZTlIUmRxYkRlZUgwanRweHd2ZEFBNXlwajZWMXpadDExVUVOaEpfRkVwaEZEelFNY3BBRFFxSlRJTEZBdTcwVGdpODdkdlBfY0MzVkhOanhiaVEyanE2Nzln?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Dollar Tree Leads Value Retail Traffic Growth in July - Yahoo Finance",
+        "source": "Yahoo Finance",
+        "publication_date": "Fri, 28 Aug 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMFQyUVh4NmpvMURwbVZvd05hM3NwNk5iQVFxUkFQX0liZ0xRcmVvNU5SY053ZGM5NzFldXdHOW9MWXk5bUtJVWhsNHRVaExHUFJoY2VEMjd3c2ZBc19UQi1hN09WU1V2U3g4VGZrNk9hM0lLZ0VvVjVObDY5N0tTU1Fsa3MwZHFYd01MMERsSFRFNHpwSExBVENuUQ?oc=5",
+        "matched_signals": [
+          "traffic"
+        ]
+      },
+      {
+        "title": "Dollar General Leads First-Half Visits, But Dollar Tree Rebounds in July - Store Brands",
+        "source": "Store Brands",
+        "publication_date": "Tue, 25 Aug 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRUtlMkZFNkFtLVdTLTR2SzFiNG05LURId0diX1FFZDR5S29ZRS1WcDNPNVE1TXdrXzNDVXhDU3JrcTFqSERPYVRPX1hkQzd4ZWJRSUs3UldFbEhULXM0aGJQMnd1SnVwZlFNVkIyakg5V1Y1QW1Ca2o2NTNtbkF4MWpaTmRpbEZGczE5SWFXeDVCdw?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Dollar General expects muted annual sales on weak spending, shares drop - Reuters",
+        "source": "Reuters",
+        "publication_date": "Thu, 12 Mar 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOemMxNk9LcnZ5bDJEalZvTWNnWndpQS1Ob0ExcFVUVjVGblBwTjFZY1lHc3dkdldDV1hkeE9SNkN5dUF4VktOQ0RpZmFDN3FHTklwUHY1VG5CUzgwd3ZyVlZpcHVZX2VHZEZZQ1k4OTY2M0RyRmNXWEZ6Tkp3THQ4ODFTUGItV1FsQ1I3Nmw2emRFRVE0c0lFbW5ncUxVZjdCYzFmTDRFNFdURS11cVNRVklRT0k?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Why Is Dollar Tree Stock Up 31% in the Last 12 Months - TIKR.com",
+        "source": "TIKR.com",
+        "publication_date": "Tue, 08 Sep 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3Y1WFpwWWZwZXJMWDV0THVuUUd6UDJqOC1jOGZENHdNWkFOZThBV3FWM1c5MzZCQnFTYWMzNmUxNHY0bXBkbnMzOUJFdTRGdzJtQzZpVm1EbGYzZlhsYlZXQ3BLa2lyOFdjaXNyMUtUMl9LOHFLZEY1bWIxYk5lSHN2c2QwcHZya2pJRlFUb2lZQQ?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Dollar Tree (DLTR): Why the Post-Family-Dollar Reset Matters More Than the Consumer-Stress Narrative - AlphaStreet",
+        "source": "AlphaStreet",
+        "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV3A1ZGhCczdwUmdraGV3cVBlejFmaFU2Q3ljSks5SDg5Z2lZU0IwSXJaQm5SZ3hTaVZKTU10Ump1X1hXSTc2OEpnaUVwb3VIRnFuRzQ3a0lVckpRSjdZT3RCYkt0Zk9QeW9JSHhLQWZ3R0xkdmtsN1hLN0szdXRMMTQtQnduRm9KbjhsMnZnakwwY0RJWWk1bVlfWmR1NG1ITlFURFoxenBsLXY2YTFPRHBMMU5hbmxKN0FGYmFDYWhZRFdiLUHSAcsBQVVfeXFMUGZLd1RCbmQ1XzF2Wm9BNlJuZDIzTjhjWWZJUU9kd3hSNWM1QWVmdUVpSDJFZkRpQWo1NjlxMXZHN3o4bW5aaC0xY1k0U0tDc2Y4M3pWdWtDbW5YUG4yVnFjQTFqRUhvQjVJMTgwVVM2ejc1b0g0VFBjS1FXR2E4cXYyUGliZ2xXel9EYk80RmZNbUFwQmo2ZnZCaFZSdXJld0s0YmVIUFNGTzhOOU50aGRIQzFnZVI2UXRWVlJPcndoeHh3cjZEUWN4bHM?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Dollar General: Weak Consumer Sentiment Driving Low-Ticket Sales (NYSE:DG) - Seeking Alpha",
+        "source": "Seeking Alpha",
+        "publication_date": "Wed, 17 Jun 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGpvOFhtZEFjZXNIWHNmWkw1YV9GTjluUUlKbnhPT0U4Nl9FaktHdldveTFDYnFkZ1JpYURFNUdOV1FCMmJ1dnl2R0M4clJhRzhRN1ZFUkpvT0ozWG8zX0JZQWRwQThZLVJtdzF2ck8xOWNXN3VnSU9sUXJlejMxcGlXaEw5VUF3ZF9xRGd1YW90RkpoMnp0RngxMl82aXhFZk02czU4VQ?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Best Dollar Store Stocks for 2026 and How to Invest - The Motley Fool",
+        "source": "The Motley Fool",
+        "publication_date": "Wed, 09 Sep 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVUdFQmFCbmpGMjdrUlJFRF9tWWhkbE9NT3F1REdqNEFUQlhFazF1RllsRllHbmxFTHFEdkh2NFB4RUROTnZUX2N5WFpJTVdqRkttUjhoaUstdTZ4dnlqZE9oTUxyV2Q2NDQ0MWd5X2JDTmRaekl1UjFWQXVYRGcxWlNVOC1PXzc4NExUdE5YcWRMckRybTdWTmlOcW8?oc=5",
+        "matched_signals": [
+          "dollar store"
+        ]
+      }
+    ]
+  },
+  "historical_snapshots": [
+    {
+      "generated_at": "2026-10-18T01:58:38Z",
+      "total_transmission_index": 22.0,
+      "phase_scores": {
+        "1": 5.0,
+        "2": 6.0,
+        "3": 2.0,
+        "4": 9.0
+      }
+    },
+    {
+      "generated_at": "2026-10-18T02:00:50Z",
+      "total_transmission_index": 22.0,
+      "phase_scores": {
+        "1": 5.0,
+        "2": 6.0,
+        "3": 2.0,
+        "4": 9.0
+      }
+    }
+  ]
+}
