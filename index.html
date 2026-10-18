@@ -91,6 +91,15 @@
     .metric strong, .metric span { display: block; }
     .metric strong { color: #e9c4c4; font: .7rem/1.3 ui-monospace, monospace; }
     .metric span { margin-top: .3rem; color: var(--bone); font: .88rem/1.25 ui-monospace, monospace; }
+    .history { margin: 1.1rem 0; padding: .8rem; border: 1px solid #4b3944; background: #0d0d12; }
+    .history h3 { margin: 0 0 .35rem; }
+    .history-controls { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; margin: .65rem 0; }
+    .history-controls select { padding: .35rem .5rem; color: var(--bone); border: 1px solid #594653; background: #201722; }
+    .history-toggles { display: grid; gap: .3rem; margin: .7rem 0; font-size: .8rem; }
+    .history-toggle { display: flex; gap: .45rem; align-items: center; }
+    .history-swatch { width: .7rem; height: .7rem; display: inline-block; border-radius: 50%; }
+    .history-chart { width: 100%; height: auto; min-height: 13rem; border: 1px solid #352935; background: #0a0a0e; }
+    .history-note { margin: .6rem 0 0; color: var(--muted); font-size: .76rem; line-height: 1.4; }
     ul { padding-left: 1.2rem; color: var(--muted); line-height: 1.45; }
     li + li { margin-top: .6rem; }
     .dispatch { border-top: 1px solid var(--line); padding: .8rem 0; }
@@ -182,6 +191,7 @@
     const drawerContent = document.getElementById("drawer-content");
     const trackedByMapId = new Map();
     let transmissionData = null;
+    let usHistoryData = null;
 
     function makeElement(tag, className, text) {
       const element = document.createElement(tag);
@@ -253,6 +263,83 @@
       drawerContent.append(panel);
     }
 
+    function svgElement(name, attributes = {}) {
+      const node = document.createElementNS("http://www.w3.org/2000/svg", name);
+      Object.entries(attributes).forEach(([key, value]) => node.setAttribute(key, value));
+      return node;
+    }
+
+    function appendUSHistoricalChart(history) {
+      if (!history || !Array.isArray(history.series)) return;
+      const panel = makeElement("section", "history");
+      panel.append(makeElement("h3", "section-title", "United States: change over time"));
+      panel.append(makeElement("p", "history-note", "Each visible line is indexed to 100 at its first observation inside the selected window. This compares direction and change, not raw dollar levels. Points are official source observations; missing periods are not filled in."));
+      const controls = makeElement("div", "history-controls");
+      const range = makeElement("select");
+      [["all", "Since 1970"], ["25", "25 years"], ["10", "10 years"], ["5", "5 years"]].forEach(([value, label]) => {
+        const option = makeElement("option", "", label); option.value = value; range.append(option);
+      });
+      const frequency = makeElement("select");
+      [["annual", "Annual"], ["quarterly", "Quarterly"], ["monthly", "Monthly"]].forEach(([value, label]) => {
+        const option = makeElement("option", "", label); option.value = value; frequency.append(option);
+      });
+      controls.append(makeElement("span", "", "Window:"), range, makeElement("span", "", "Display:"), frequency);
+      panel.append(controls);
+      const toggles = makeElement("div", "history-toggles");
+      const visible = new Set(history.series.map(item => item.key));
+      history.series.forEach(series => {
+        const label = makeElement("label", "history-toggle");
+        const checkbox = makeElement("input"); checkbox.type = "checkbox"; checkbox.checked = true;
+        checkbox.addEventListener("change", () => { checkbox.checked ? visible.add(series.key) : visible.delete(series.key); draw(); });
+        const swatch = makeElement("i", "history-swatch"); swatch.style.background = series.color;
+        label.append(checkbox, swatch, document.createTextNode(`${series.label} (${series.frequency})`));
+        toggles.append(label);
+      });
+      panel.append(toggles);
+      const chart = svgElement("svg", { class: "history-chart", viewBox: "0 0 640 320", role: "img", "aria-label": "United States household-circulation history chart" });
+      panel.append(chart);
+      const note = makeElement("p", "history-note"); panel.append(note);
+
+      function bucket(date, display) {
+        if (display === "annual") return date.slice(0, 4);
+        if (display === "quarterly") return `${date.slice(0, 4)}-Q${Math.floor((Number(date.slice(5, 7)) - 1) / 3) + 1}`;
+        return date.slice(0, 7);
+      }
+      function draw() {
+        const display = frequency.value;
+        const latest = Math.max(...history.series.flatMap(series => series.observations.map(point => Date.parse(point[0]))));
+        const years = range.value === "all" ? 56 : Number(range.value);
+        const start = range.value === "all" ? Date.parse("1970-01-01") : latest - years * 365.25 * 24 * 60 * 60 * 1000;
+        const plotted = history.series.filter(series => visible.has(series.key)).map(series => {
+          const grouped = new Map();
+          series.observations.forEach(point => { if (Date.parse(point[0]) >= start) grouped.set(bucket(point[0], display), point); });
+          const points = [...grouped.values()];
+          const base = points.length ? points[0][1] : null;
+          return { ...series, points: points.map(([date, value]) => [Date.parse(date), value / base * 100]) };
+        }).filter(series => series.points.length);
+        chart.replaceChildren();
+        if (!plotted.length) { chart.append(svgElement("text", { x: 24, y: 40, fill: "#9e9aa3" })); chart.lastChild.textContent = "Select at least one metric with available observations."; return; }
+        const all = plotted.flatMap(series => series.points);
+        const minX = Math.min(...all.map(point => point[0])), maxX = Math.max(...all.map(point => point[0]));
+        const values = all.map(point => point[1]); const minY = Math.floor(Math.min(...values) / 10) * 10 - 5, maxY = Math.ceil(Math.max(...values) / 10) * 10 + 5;
+        const x = value => 54 + (value - minX) / Math.max(1, maxX - minX) * 568;
+        const y = value => 276 - (value - minY) / Math.max(1, maxY - minY) * 234;
+        [minY, (minY + maxY) / 2, maxY].forEach(value => {
+          chart.append(svgElement("line", { x1: 54, x2: 622, y1: y(value), y2: y(value), stroke: "#352935", "stroke-width": 1 }));
+          const text = svgElement("text", { x: 4, y: y(value) + 4, fill: "#9e9aa3", "font-size": 11 }); text.textContent = value.toFixed(0); chart.append(text);
+        });
+        plotted.forEach(series => {
+          const points = series.points.map(point => `${x(point[0]).toFixed(1)},${y(point[1]).toFixed(1)}`).join(" ");
+          chart.append(svgElement("polyline", { points, fill: "none", stroke: series.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+          series.points.forEach(point => chart.append(svgElement("circle", { cx: x(point[0]), cy: y(point[1]), r: 1.7, fill: series.color })));
+        });
+        const startLabel = new Date(minX).getUTCFullYear(), endLabel = new Date(maxX).getUTCFullYear();
+        [[54, startLabel], [570, endLabel]].forEach(([xPos, textValue]) => { const text = svgElement("text", { x: xPos, y: 303, fill: "#9e9aa3", "font-size": 11 }); text.textContent = textValue; chart.append(text); });
+        note.textContent = `Indexed trend, 100 = first available observation in this window. ${display} display selects the last official observation in each ${display === "annual" ? "year" : display === "quarterly" ? "quarter" : "month"}; it does not interpolate. Debt-pressure history begins in 2005 because that is the first published TDSP observation.`;
+      }
+      range.addEventListener("change", draw); frequency.addEventListener("change", draw); draw(); drawerContent.append(panel);
+    }
+
     function openDossier(country) {
       const scorecard = activeScorecard(country);
       const definition = activeDefinition();
@@ -296,7 +383,10 @@
       const legacy = country.scorecards && country.scorecards.legacy_four_pillar_v1;
       if (legacy) drawerContent.append(makeElement("p", "dispatch-meta", `Legacy four-pillar v1 baseline: ${legacy.hvi_score.toFixed(1)} / 100 · Grade ${legacy.grade}. It is retained for comparison, not mixed into v2.`));
 
-      if (country.country_code === "US") appendTransmissionGauge(transmissionData);
+      if (country.country_code === "US") {
+        appendTransmissionGauge(transmissionData);
+        appendUSHistoricalChart(usHistoryData);
+      }
 
       drawerContent.append(makeElement("h3", "section-title", "Chronic pathologies"));
       const pathologies = makeElement("ul");
@@ -394,7 +484,7 @@
 
     async function initialize() {
       try {
-        const [dataResponse, world, transmissionResponse] = await Promise.all([
+        const [dataResponse, world, transmissionResponse, historyResponse] = await Promise.all([
           fetch("./data.json").then(response => {
             if (!response.ok) throw new Error(`data.json returned HTTP ${response.status}`);
             return response.json();
@@ -402,6 +492,10 @@
           d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"),
           fetch("./us_transmission.json").then(response => {
             if (!response.ok) throw new Error(`us_transmission.json returned HTTP ${response.status}`);
+            return response.json();
+          }),
+          fetch("./us_history.json").then(response => {
+            if (!response.ok) throw new Error(`us_history.json returned HTTP ${response.status}`);
             return response.json();
           })
         ]);
@@ -411,7 +505,9 @@
         scorecards = dataResponse.metadata.scorecards;
         if (!activeDefinition()) throw new Error(`Unknown active scorecard: ${activeScorecardKey}`);
         if (!Array.isArray(transmissionResponse.phases)) throw new Error("us_transmission.json does not contain transmission phases");
+        if (!Array.isArray(historyResponse.series)) throw new Error("us_history.json does not contain time series");
         transmissionData = transmissionResponse;
+        usHistoryData = historyResponse;
         renderMap(world, dataResponse.countries);
         renderSummary(dataResponse.countries);
         status.hidden = true;
