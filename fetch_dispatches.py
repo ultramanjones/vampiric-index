@@ -481,6 +481,36 @@ SEARCHES = {
         "region": "TZ",
         "edition": "TZ:en",
     },
+    "BY": {
+        "query": "Belarus (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "BY",
+        "edition": "BY:en",
+    },
+    "CD": {
+        "query": "Democratic Republic of the Congo economy",
+        "language": "en",
+        "region": "CD",
+        "edition": "CD:en",
+    },
+    "AZ": {
+        "query": "Azerbaijan economy",
+        "language": "en",
+        "region": "AZ",
+        "edition": "AZ:en",
+    },
+    "MM": {
+        "query": "Myanmar (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "MM",
+        "edition": "MM:en",
+    },
+    "SI": {
+        "query": "Slovenia economy",
+        "language": "en",
+        "region": "SI",
+        "edition": "SI:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -566,6 +596,11 @@ COUNTRY_TERMS = {
     "GH": ("ghana", "ghanaian", "accra"),
     "UY": ("uruguay", "uruguayan", "montevideo"),
     "TZ": ("tanzania", "tanzanian", "dar es salaam", "dodoma"),
+    "BY": ("belarus", "belarusian", "minsk"),
+    "CD": ("democratic republic of the congo", "d.r. congo", "dr congo", "congolese", "kinshasa"),
+    "AZ": ("azerbaijan", "azerbaijani", "baku"),
+    "MM": ("myanmar", "burmese", "yangon", "naypyidaw"),
+    "SI": ("slovenia", "slovenian", "ljubljana"),
 }
 
 

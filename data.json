@@ -4332,10 +4332,10 @@
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1kNnlvbTFoaG84SlU4YVJFdlI4NlZYdDk1OEJWTWcxWDlTVk9hcXhwNUNfQXMtZzlXQnFUZlZLOHN4MmFQYWtXTEFtRnZXX0lWTm1QbzhndnFxd0ZRY19Pay1lQllTX3lObXhKOE5rcVI2cS1pb3lkc1dULUo?oc=5"
         },
         {
-          "title": "Watch Somalia vs Côte d'Ivoire - TOD",
-          "source": "TOD",
-          "publication_date": "Fri, 16 Oct 2026 04:21:09 GMT",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaGo3TzhZdklsdnFqaW9MYkNkbExFNkVPb2Q4S2lYMFlOc3BhZ0xSYm5QOUdFWGVBcnJPNTN5WkJJZHdFSGhyZExKaDlNYXBWT21QUnJWMXJxc0NoODN2amJURm5CQzBwUkFKTHBrM2hhSDJDUVFwSklnZ1lTMGZJU1JlR1BsSjhJeWZPVXdleGktZXRfUXh1TkgtbndlUFpUT1MxVHN2V3dEa0I1cGxEVUhHNXBQZW5qVkE?oc=5"
+          "title": "Production - Cote d'Ivoire - USDA Foreign Agricultural Service (.gov)",
+          "source": "USDA Foreign Agricultural Service (.gov)",
+          "publication_date": "Thu, 12 Feb 2026 23:03:24 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9BQmQtLTNWZ1VQUGd2TmNsQ0dtcnh6b3hGWmN1SWUyc3d0bU9weXczbFBKZDRwSnJpaW1WSHZremtKUWR5YlQwX0cwWTJrZE0ycFQ0M1NB?oc=5"
         }
       ],
       "review": {
@@ -4655,6 +4655,301 @@
             "value": 28,
             "edition": "Freedom in the World 2025",
             "url": "https://freedomhouse.org/country/tanzania/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "BY",
+      "name": "Belarus",
+      "pillars": {
+        "survival_floor": 18.5,
+        "sovereign_cannibalization": 4.2,
+        "labor_retention": 15.3,
+        "state_coercion": 1.8
+      },
+      "hvi_score": 39.8,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 74.184 years (World Bank WDI, 2023)",
+        "GNI per capita: US$8,380 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 61.069% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 7/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Partisans or Workers? Figures of Belarusian Protest and Their Prospects - Lefteast",
+          "source": "Lefteast",
+          "publication_date": "Sat, 15 Aug 2020 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE84RmV4aUF6SUU3cVJ5WTZfb0JOcVltaWhwcFc0RF9IX2Z4QWZVeTRMdjdsY1hqdVktYkYxUUtiYTdyVHFJT040UGZpS1AydndySGg4bWpjQW0xcTRRWXlLY0JuWTFXTzNKUFBjUVVR?oc=5"
+        },
+        {
+          "title": "Belarus opposition threatens Lukashenko with mass strike - BBC",
+          "source": "BBC",
+          "publication_date": "Tue, 13 Oct 2020 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE53ZVh2QjVqTVk3OVctTGl4RVh3X2pKdDh2ZHBkbUd5MmlaWUUzQmVJQktyWXFlWHVYcXNEejNfNXlzVUd4VGI0YlZxeUxYUjViYTV1MWVGbHNQdw?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 74.1837804878049,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 8380,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 61.069,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 7,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/belarus/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "pillars": {
+        "survival_floor": 15.5,
+        "sovereign_cannibalization": 0.3,
+        "labor_retention": 15.4,
+        "state_coercion": 4.5
+      },
+      "hvi_score": 35.7,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 61.895 years (World Bank WDI, 2023)",
+        "GNI per capita: US$680 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 61.564% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 18/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Democratic Republic of the Congo - Resources, Power, Economy - Britannica",
+          "source": "Britannica",
+          "publication_date": "Thu, 15 Oct 2026 05:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVGU3TWZYVXMxX0lwZ3B3YVIzX2p1MjVNVExCdnpEb2dKbHdSS25GWjBaVTNGNFVibTd1eFV3a3FCQ2VDYzlNWllKeDQzVzVPT2szUDRqdUczWmg0NDlXc08wdWtEUWFiMWRiSHM4alJfTG0wQkstVnFWeWlLUGowb0hnajZrX1BxblFxSE1B?oc=5"
+        },
+        {
+          "title": "Democratic Republic of the Congo (COD) Exports, Imports, and Trade Partners - The Observatory of Economic Complexity",
+          "source": "The Observatory of Economic Complexity",
+          "publication_date": "Fri, 02 Oct 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IYXlXV3pJdk00ekVMN0pBTEkxemRmZVZHcUxXS0N5Um1pSVo0ZjJZMmp2OTlaSE95SWRKZ2o4WXRNemdRNUpXUnRGeENpOW13dmc?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 61.895,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 680,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 61.564,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 18,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/democratic-republic-congo/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "AZ",
+      "name": "Azerbaijan",
+      "pillars": {
+        "survival_floor": 18.6,
+        "sovereign_cannibalization": 3.7,
+        "labor_retention": 15.1,
+        "state_coercion": 1.8
+      },
+      "hvi_score": 39.2,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 74.429 years (World Bank WDI, 2023)",
+        "GNI per capita: US$7,340 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 60.292% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 7/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Azerbaijan and Central Asia Are Building a New Economic Space: Why $20 Billion Matters - Caspian Post",
+          "source": "Caspian Post",
+          "publication_date": "Sat, 17 Oct 2026 02:29:48 GMT",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTGN1dzlpX3ZtajdqdkpMRHFIdGF1cXBHWThOcTdHWU5zSl9vYldrT3dhZ1BIdHQyb0NuZ2hJZXV5YVRPaUo4Wk9pbWl5ZXhmTThEUWhGZllzakV0dFBORWFLRDRXSUJ3aTV5RnVpRUl5Rm13WXVpVGZONTVtT2xNa3R1ZlBranQwVFBRZlRuQ0I0UDQwLS1fSGZzb2tXVHkwQk1MUm4yV3VicnE4eGN0ckNGSFJTVEk?oc=5"
+        },
+        {
+          "title": "ING forecasts Azerbaijan’s economic growth at 1.5% in 2026 - Latest news from Azerbaijan",
+          "source": "Latest news from Azerbaijan",
+          "publication_date": "Thu, 15 Oct 2026 13:46:49 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMVNZSHU4RHRCVkhIWUNvZmthMFhTdUE2d2hhemo0alBzakY2N09LUEdITGtOZFRDNzZPcC1kV2xhV0t5UlQwZ2FhdnFObExQM2t3d0JOcHZUd2wxTVpPekVOUnI3NFNPeDhjX1dOMmRVLUlPcV9QQlRhWFZkYUNLbTdR?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 74.429,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 7340,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 60.292,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 7,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/azerbaijan/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "MM",
+      "name": "Myanmar",
+      "pillars": {
+        "survival_floor": 16.7,
+        "sovereign_cannibalization": 0.6,
+        "labor_retention": 13.4,
+        "state_coercion": 1.8
+      },
+      "hvi_score": 32.5,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 66.889 years (World Bank WDI, 2023)",
+        "GNI per capita: US$1,210 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 53.537% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 7/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Workers in Myanmar Are Launching General Strikes to Resist the Military Coup - Progressive International",
+          "source": "Progressive International",
+          "publication_date": "Wed, 31 Mar 2021 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWnhvX01ZRExNTzBBZE5XNUhtMHNVSm9wZklkR3lhLXdCUUNUVndyeFgwTHE1SnZKcVFONURmUDB1ODhIQmxBUU9raGlua1RSdTg4NmZ1Q0lNQmNDNWtGcmpWY1J0R1pFdHhseVczRHV0WWlDa21ReXYxdHNKREhXNFl1Yzl3TjZ0dWRvSGg1Uk9kS25iUVNvQW5mekQyM0J3ZWZHS3VoSnNsb3lxSXBzdFh3cmFiN3VJS055OEFNdm9KLVlERkN5WkdR?oc=5"
+        },
+        {
+          "title": "Opponents of Myanmar military rule hold ‘silent strike’ - Reuters",
+          "source": "Reuters",
+          "publication_date": "Fri, 16 Apr 2021 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNM0VtMGppQnRXWFRSMzlNVDlVWVM1TTFISFgzSmtTUnB5UzRfbUN2aDBvT3Z3WHFYS1BGQjl3Sk51YlJRRVlIY2I5Z0Ruek14blYwQmt1MkNoOUhpeFVTeFN3WmxIUWtkbTl4MVhaM09kUjRiaUVCM05iaVVzVzM2LWgyQlUwbHZOOHhuX19tOFp3aU8xSFN0NkwzbDVoRFMwUlFUcE1GdGk?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 66.889,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 1210,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 53.537,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 7,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/myanmar/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "SI",
+      "name": "Slovenia",
+      "pillars": {
+        "survival_floor": 20.5,
+        "sovereign_cannibalization": 15.9,
+        "labor_retention": 14.0,
+        "state_coercion": 24.0
+      },
+      "hvi_score": 74.4,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 81.929 years (World Bank WDI, 2023)",
+        "GNI per capita: US$31,790 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 55.809% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 96/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "IMF lifts Slovenia's 2026 growth f'cast to 3.2% - SeeNews",
+          "source": "SeeNews",
+          "publication_date": "Tue, 13 Oct 2026 12:17:07 GMT",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVmhsREJyWWc1Y0RxOHlJdE1SVF9rUTBfODA0c2xSSTdHdE45am5TRThiNE9MZDJ2TFk0TDNGcE5TNkdqQ0hfMGhteDRWRzh6TW9hdnFQSGFRWFpqV0RudGszNmljM2JQY3g1VWhLVnl1dThUbE5VNzBFcUJIckJPSUY1UG5PdVBYRVdqWG9B?oc=5"
+        },
+        {
+          "title": "Slovenia (SVN) Exports, Imports, and Trade Partners - The Observatory of Economic Complexity",
+          "source": "The Observatory of Economic Complexity",
+          "publication_date": "Fri, 02 Oct 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Fb1NCSjdXNU5oMWh6MmYwQk44OXJTSmFJSUFMVklOUEgxdjF2VC1XVDJXb241X0ZDaTNNRzFsWHRVQ1FHTURpWk9pU1kwNnBIV0E?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 81.9292682926829,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 31790,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 55.809,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/BLR;COD;AZE;MMR;SVN/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 96,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/slovenia/freedom-world/2025"
           }
         },
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
@@ -5300,6 +5595,46 @@
           "country_code": "TZ",
           "name": "Tanzania",
           "gdp_current_usd": 79235713444.9777,
+          "observation_year": 2024
+        },
+        {
+          "rank": 83,
+          "iso3": "BLR",
+          "country_code": "BY",
+          "name": "Belarus",
+          "gdp_current_usd": 78591839299.7087,
+          "observation_year": 2024
+        },
+        {
+          "rank": 84,
+          "iso3": "COD",
+          "country_code": "CD",
+          "name": "Democratic Republic of the Congo",
+          "gdp_current_usd": 75716176105.0704,
+          "observation_year": 2024
+        },
+        {
+          "rank": 85,
+          "iso3": "AZE",
+          "country_code": "AZ",
+          "name": "Azerbaijan",
+          "gdp_current_usd": 74426000000,
+          "observation_year": 2024
+        },
+        {
+          "rank": 86,
+          "iso3": "MMR",
+          "country_code": "MM",
+          "name": "Myanmar",
+          "gdp_current_usd": 74068349523.8095,
+          "observation_year": 2024
+        },
+        {
+          "rank": 87,
+          "iso3": "SVN",
+          "country_code": "SI",
+          "name": "Slovenia",
+          "gdp_current_usd": 72972015197.3859,
           "observation_year": 2024
         }
       ],
