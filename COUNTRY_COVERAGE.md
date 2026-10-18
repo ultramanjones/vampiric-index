@@ -1,15 +1,12 @@
 # Country Coverage Register
 
-## Top-20 nominal-GDP roster — reviewed 2026-10-18
+## Top-25 nominal-GDP roster — reviewed 2026-10-18
 
 ### Selection rule and authoritative source
 
-The tracked roster is the top 20 **sovereign economies by nominal GDP in current US
-dollars**. It is taken from the World Bank World Development Indicators (WDI)
-[`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD),
-reference year **2024**. The machine-readable source query and the exact values are
-stored in `data.json` under `metadata.coverage_roster`; it was retrieved on
-2026-10-18 from the [World Bank API](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;BRA;RUS;KOR;MEX;AUS;ESP;IDN;NLD;TUR;SAU;CHE/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
+The tracked roster is the top 25 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
+
+The next five untracked sovereign economies after Switzerland were added in strict descending WDI order: Poland, Belgium, Argentina, Ireland, and Sweden. The source query is [World Bank API: 25-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -33,12 +30,15 @@ stored in `data.json` under `metadata.coverage_roster`; it was retrieved on
 | 18 | Saudi Arabia | SA | $1.254tn |
 | 19 | Netherlands | NL | $1.214tn |
 | 20 | Switzerland | CH | $0.970tn |
+| 21 | Poland | PL | $0.918tn |
+| 22 | Belgium | BE | $0.671tn |
+| 23 | Argentina | AR | $0.638tn |
+| 24 | Ireland | IE | $0.609tn |
+| 25 | Sweden | SE | $0.605tn |
 
 ### Published score rubric: coverage-input v1
 
-For records added under coverage-input v1, each pillar is rounded to one decimal
-**before** summing. `calculate_hvi.py` validates the declared score and strict grade;
-it never recalculates and writes either field.
+For records added under coverage-input v1, each pillar is rounded to one decimal **before** summing. `calculate_hvi.py` validates the declared score and strict grade; it never recalculates and writes either field.
 
 | Pillar | Source reading and transform |
 | --- | --- |
@@ -47,17 +47,9 @@ it never recalculates and writes either field.
 | `labor_retention` | WDI employment-to-population ratio, ages 15+ (`SL.EMP.TOTL.SP.ZS`), ILO modeled estimate, 2024 / 4 |
 | `state_coercion` | Freedom House *Freedom in the World 2025* total score / 4 |
 
-The WDI source endpoints and the Freedom House country report URL, observation/edition,
-and raw reading are recorded per country in `data.json.review`. The three WDI indicators
-were retrieved from their documented APIs on 2026-10-18. The Freedom House 2025 edition
-is retained as the latest country-comparable published edition used for this review.
-These are explicit proxy scales, not causal claims.
+The WDI source endpoints and Freedom House country report URL, observation/edition, and raw reading are recorded per country in `data.json.review`. The three WDI indicators were retrieved from their documented APIs on 2026-10-18. The Freedom House 2025 edition is retained as the latest country-comparable published edition used for this review. These are explicit proxy scales, not causal claims.
 
-The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Their
-current four readings were reviewed and retained in their review records, but no
-source-backed crosswalk from their hand-calibrated historical score to coverage-input
-v1 exists. Their declared pillars, total, and grade therefore remain unchanged rather
-than being silently recalibrated.
+The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Their current four readings were reviewed and retained in their review records, but no source-backed crosswalk from their hand-calibrated historical score to coverage-input v1 exists. Their declared pillars, total, and grade therefore remain unchanged rather than being silently recalibrated.
 
 ### Review results
 
@@ -83,12 +75,12 @@ than being silently recalibrated.
 | SA | 55.6 | D | New v1 record. |
 | NL | 85.9 | B | New v1 record. |
 | CH | 86.0 | B | New v1 record. |
+| PL | 65.2 | D | New v1 record. |
+| BE | 82.3 | C | New v1 record. |
+| AR | 61.7 | D | New v1 record. |
+| IE | 85.8 | B | New v1 record. |
+| SE | 85.4 | B | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 
-Every roster country has a country-specific Google News RSS query in
-`fetch_dispatches.py`, a current-run dispatch list with title, publisher, publication
-date, and URL in `data.json`, and a World Atlas numeric identifier in `index.html`.
-The fetcher is atomic: if any country feed fails, it leaves the dataset unchanged.
-Dispatches are evidence for current monitoring, not automatic score inputs; the review
-rule above governs score changes.
+Every roster country has a country-specific Google News RSS query in `fetch_dispatches.py`, a current-run dispatch list with title, publisher, publication date, and URL in `data.json`, and a World Atlas numeric identifier in `index.html`. The fetcher is atomic: if any country feed fails, it leaves the dataset unchanged. Dispatches are evidence for current monitoring, not automatic score inputs; the review rule above governs score changes.

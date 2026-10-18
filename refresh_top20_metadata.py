@@ -1,4 +1,4 @@
-"""Build the documented World Bank 2024 nominal-GDP top-20 HVI coverage roster.
+"""Build the documented World Bank 2024 nominal-GDP top-25 HVI coverage roster.
 
 This is an explicit intake tool: it adds missing roster countries with the published
 coverage-input v1 transforms and preserves every already-declared legacy score.
@@ -40,6 +40,11 @@ COUNTRIES = {
     "SAU": ("SA", "Saudi Arabia", "saudi-arabia", 9),
     "NLD": ("NL", "Netherlands", "netherlands", 97),
     "CHE": ("CH", "Switzerland", "switzerland", 96),
+    "POL": ("PL", "Poland", "poland", 82),
+    "BEL": ("BE", "Belgium", "belgium", 95),
+    "ARG": ("AR", "Argentina", "argentina", 85),
+    "IRL": ("IE", "Ireland", "ireland", 98),
+    "SWE": ("SE", "Sweden", "sweden", 99),
 }
 
 
@@ -120,14 +125,17 @@ def main():
         elif iso2 in {"US", "GB", "FR", "DE", "MX"}:
             decision = "legacy pilot score retained: current published readings were reviewed, but the repository has no source-backed legacy-to-v1 crosswalk that justifies changing a declared pilot score"
         else:
-            decision = "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it"
+            decision = country.get("review", {}).get(
+                "decision",
+                "coverage-input v1 readings reviewed; declared score unchanged because the cited transform reproduces it",
+            )
         country["review"] = {**metric_evidence, "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md", "decision": decision}
         output.append(country)
         roster.append({"rank": rank, "iso3": iso3, "country_code": iso2, "name": name, "gdp_current_usd": gdp[iso3], "observation_year": 2024})
 
     payload["metadata"] = {
         "coverage_roster": {
-            "definition": "Top 20 sovereign economies by nominal GDP in current US dollars",
+            "definition": "Top 25 sovereign economies by nominal GDP in current US dollars",
             "source": "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)",
             "source_url": gdp_url,
             "observation_year": 2024,
@@ -138,7 +146,7 @@ def main():
     }
     payload["countries"] = output
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(output)} top-20 countries; added {sum(1 for c in output if not c['acute_dispatch'])} records awaiting dispatch refresh.")
+    print(f"Wrote {len(output)} top-25 countries; added {sum(1 for c in output if not c['acute_dispatch'])} records awaiting dispatch refresh.")
     return 0
 
 

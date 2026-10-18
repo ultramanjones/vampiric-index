@@ -127,6 +127,36 @@ SEARCHES = {
         "region": "CH",
         "edition": "CH:en",
     },
+    "PL": {
+        "query": "Poland (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "PL",
+        "edition": "PL:en",
+    },
+    "BE": {
+        "query": "Belgium inflation",
+        "language": "en",
+        "region": "BE",
+        "edition": "BE:en",
+    },
+    "AR": {
+        "query": "Argentina (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "AR",
+        "edition": "AR:en",
+    },
+    "IE": {
+        "query": "Ireland economy",
+        "language": "en-IE",
+        "region": "IE",
+        "edition": "IE:en",
+    },
+    "SE": {
+        "query": "Sweden inflation",
+        "language": "en",
+        "region": "SE",
+        "edition": "SE:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -153,6 +183,11 @@ COUNTRY_TERMS = {
     "SA": ("saudi", "saudi arabia", "riyadh"),
     "NL": ("netherlands", "dutch", "amsterdam", "the hague"),
     "CH": ("switzerland", "swiss", "geneva", "zurich", "bern"),
+    "PL": ("poland", "polish", "warsaw"),
+    "BE": ("belgium", "belgian", "brussels"),
+    "AR": ("argentina", "argentine", "buenos aires"),
+    "IE": ("ireland", "irish", "dublin"),
+    "SE": ("sweden", "swedish", "stockholm"),
 }
 
 
