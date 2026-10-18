@@ -197,6 +197,7 @@
       countries.forEach(country => {
         const button = makeElement("button", "country-button");
         button.type = "button";
+        button.title = `HVI score: ${country.hvi_score.toFixed(1)} / 100`;
         button.append(makeElement("strong", "", country.country_code));
         button.append(makeElement("span", "", `${country.hvi_score.toFixed(1)} · Grade ${country.grade}`));
         button.style.borderLeft = `4px solid ${gradeColors[country.grade]}`;
@@ -240,6 +241,13 @@
             event.preventDefault();
             openDossier(trackedByMapId.get(String(feature.id)));
           }
+        });
+
+      svg.selectAll("path.country.tracked")
+        .append("title")
+        .text(feature => {
+          const country = trackedByMapId.get(String(feature.id));
+          return `${country.name}: HVI score ${country.hvi_score.toFixed(1)} / 100`;
         });
     }
 
