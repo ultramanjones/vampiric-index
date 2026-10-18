@@ -6,7 +6,7 @@
 
 The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank all-economies API and country-metadata endpoint were retrieved on 2026-10-18; the metadata filters aggregates and non-sovereign economies. Exact values, the selected ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The prior batch ended with Djibouti. The current source query ranks Bhutan at 167 (US$3.347bn), Belize at 168 (US$3.204bn), Burundi at 169 (US$3.038bn), the Central African Republic at 170 (US$2.751bn), and Cabo Verde at 171 (US$2.714bn); each has complete coverage-input v1 readings and is tracked. Andorra, rank 165 (US$4.044bn), remains blocked because WDI returned no required 2024 employment-to-population observation; it is recorded in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. The next eligible sovereign economies are St. Lucia, the Gambia, Lesotho, and Seychelles. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, Monaco, Liechtenstein, and Andorra are blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
+The prior batch ended with Cabo Verde. The current source query ranks St. Lucia at 172 (US$2.605bn), the Gambia at 173 (US$2.405bn), Lesotho at 174 (US$2.391bn), Guinea-Bissau at 176 (US$2.198bn), and Timor-Leste at 178 (US$1.866bn); each has complete coverage-input v1 readings and is tracked. Seychelles, rank 175 (US$2.229bn), and Antigua and Barbuda, rank 177 (US$2.162bn), are blocked because WDI returned no required 2024 employment-to-population observation; they are recorded in `metadata.coverage_roster.blocked_candidates`, with the source URL, rather than receiving invented scores. The next eligible sovereign economy is Comoros (rank 181); Sint Maarten and Turks and Caicos Islands at ranks 179–180 are non-sovereign and excluded. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, Monaco, Liechtenstein, and Andorra are also blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -174,6 +174,13 @@ The prior batch ended with Djibouti. The current source query ranks Bhutan at 16
 | 169 | Burundi | BI | $0.003tn |
 | 170 | Central African Republic | CF | $0.003tn |
 | 171 | Cabo Verde | CV | $0.003tn |
+| 172 | St. Lucia | LC | $0.003tn |
+| 173 | The Gambia | GM | $0.002tn |
+| 174 | Lesotho | LS | $0.002tn |
+| 175 | Seychelles | SC | $0.002tn (blocked: required 2024 employment reading unavailable) |
+| 176 | Guinea-Bissau | GW | $0.002tn |
+| 177 | Antigua and Barbuda | AG | $0.002tn (blocked: required 2024 employment reading unavailable) |
+| 178 | Timor-Leste | TL | $0.002tn |
 
 ### Published score rubric: coverage-input v1
 

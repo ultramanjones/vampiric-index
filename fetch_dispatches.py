@@ -767,6 +767,11 @@ SEARCHES = {
     "BI": {"query": "Burundi economy", "language": "en", "region": "BI", "edition": "BI:en"},
     "CF": {"query": "Central African Republic economy", "language": "en", "region": "CF", "edition": "CF:en"},
     "CV": {"query": "Cabo Verde economy", "language": "en", "region": "CV", "edition": "CV:en"},
+    "LC": {"query": "Saint Lucia economy", "language": "en", "region": "LC", "edition": "LC:en"},
+    "GM": {"query": "Gambia economy", "language": "en", "region": "GM", "edition": "GM:en"},
+    "LS": {"query": "Lesotho economy", "language": "en", "region": "LS", "edition": "LS:en"},
+    "GW": {"query": "Guinea-Bissau economy", "language": "en", "region": "GW", "edition": "GW:en"},
+    "TL": {"query": "Timor-Leste economy", "language": "en", "region": "TL", "edition": "TL:en"},
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -933,6 +938,11 @@ COUNTRY_TERMS = {
     "BI": ("burundi", "burundian", "bujumbura", "gitega"),
     "CF": ("central african republic", "central african", "bangui"),
     "CV": ("cabo verde", "cape verde", "praia"),
+    "LC": ("saint lucia", "st. lucia", "st lucia", "lucian", "castries"),
+    "GM": ("gambia", "gambian", "banjul"),
+    "LS": ("lesotho", "mosotho", "maseru"),
+    "GW": ("guinea-bissau", "guinea bissau", "bissau-guinean", "bissau"),
+    "TL": ("timor-leste", "timor leste", "east timor", "timorese", "dili"),
 }
 
 
