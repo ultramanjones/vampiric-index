@@ -8,14 +8,13 @@ from pathlib import Path
 
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Zimbabwe. Aggregates and
+# Strict descending WDI 2024 sovereign GDP order after Iceland. Aggregates and
 # non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (104, "CYP", "CY", "Cyprus", "cyprus", 90),
-    (105, "HND", "HN", "Honduras", "honduras", 47),
-    (106, "SLV", "SV", "El Salvador", "el-salvador", 42),
-    (107, "GEO", "GE", "Georgia", "georgia", 51),
-    (108, "ISL", "IS", "Iceland", "iceland", 95),
+    (109, "SEN", "SN", "Senegal", "senegal", 69),
+    (110, "PNG", "PG", "Papua New Guinea", "papua-new-guinea", 61),
+    (111, "BIH", "BA", "Bosnia and Herzegovina", "bosnia-and-herzegovina", 52),
+    (112, "ALB", "AL", "Albania", "albania", 68),
 ]
 BLOCKED_CANDIDATES = []
 INDICATORS = {
@@ -67,8 +66,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "ZW" or roster[-1]["rank"] != 103:
-        raise ValueError("Expected the existing roster to end with Zimbabwe at rank 103")
+    if roster[-1]["country_code"] != "IS" or roster[-1]["rank"] != 108:
+        raise ValueError("Expected the existing roster to end with Iceland at rank 108")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []

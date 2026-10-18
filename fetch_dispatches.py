@@ -625,6 +625,30 @@ SEARCHES = {
         "region": "IS",
         "edition": "IS:en",
     },
+    "SN": {
+        "query": "Senegal (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "SN",
+        "edition": "SN:en",
+    },
+    "PG": {
+        "query": "Papua New Guinea",
+        "language": "en",
+        "region": "PG",
+        "edition": "PG:en",
+    },
+    "BA": {
+        "query": "Bosnia and Herzegovina",
+        "language": "en",
+        "region": "BA",
+        "edition": "BA:en",
+    },
+    "AL": {
+        "query": "Albania",
+        "language": "en",
+        "region": "AL",
+        "edition": "AL:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -734,6 +758,10 @@ COUNTRY_TERMS = {
     "SV": ("el salvador", "salvadoran", "san salvador"),
     "GE": ("georgia", "georgian", "tbilisi"),
     "IS": ("iceland", "icelandic", "reykjavik", "reykjavík"),
+    "SN": ("senegal", "senegalese", "dakar"),
+    "PG": ("papua new guinea", "papua new guinean", "port moresby"),
+    "BA": ("bosnia and herzegovina", "bosnian", "sarajevo", "bih"),
+    "AL": ("albania", "albanian", "tirana", "tirane"),
 }
 
 
