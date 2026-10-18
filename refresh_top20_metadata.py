@@ -1,4 +1,4 @@
-"""Build the documented World Bank 2024 nominal-GDP top-40 HVI coverage roster.
+"""Build the documented World Bank 2024 nominal-GDP top-45 HVI coverage roster.
 
 This is an explicit intake tool: it adds missing roster countries with the published
 coverage-input v1 transforms and preserves every already-declared legacy score.
@@ -60,6 +60,11 @@ COUNTRIES = {
     "COL": ("CO", "Colombia", "colombia", 69),
     "ZAF": ("ZA", "South Africa", "south-africa", 81),
     "EGY": ("EG", "Egypt", "egypt", 18),
+    "ROU": ("RO", "Romania", "romania", 83),
+    "PAK": ("PK", "Pakistan", "pakistan", 32),
+    "CZE": ("CZ", "Czechia", "czechia", 95),
+    "CHL": ("CL", "Chile", "chile", 95),
+    "PRT": ("PT", "Portugal", "portugal", 96),
 }
 
 
@@ -161,7 +166,7 @@ def main():
     }
     payload["countries"] = output
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(output)} top-40 countries; added {sum(1 for c in output if not c['acute_dispatch'])} records awaiting dispatch refresh.")
+    print(f"Wrote {len(output)} top-45 countries; added {sum(1 for c in output if not c['acute_dispatch'])} records awaiting dispatch refresh.")
     return 0
 
 

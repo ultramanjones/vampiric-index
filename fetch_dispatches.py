@@ -247,6 +247,36 @@ SEARCHES = {
         "region": "EG",
         "edition": "EG:en",
     },
+    "RO": {
+        "query": "Romania (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "RO",
+        "edition": "RO:en",
+    },
+    "PK": {
+        "query": "Pakistan (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "PK",
+        "edition": "PK:en",
+    },
+    "CZ": {
+        "query": "Czechia economy",
+        "language": "en",
+        "region": "CZ",
+        "edition": "CZ:en",
+    },
+    "CL": {
+        "query": "Chile economy",
+        "language": "en",
+        "region": "CL",
+        "edition": "CL:en",
+    },
+    "PT": {
+        "query": "Portugal (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "PT",
+        "edition": "PT:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -293,6 +323,11 @@ COUNTRY_TERMS = {
     "CO": ("colombia", "colombian", "bogota", "bogotá"),
     "ZA": ("south africa", "south african", "pretoria", "cape town", "johannesburg"),
     "EG": ("egypt", "egyptian", "cairo"),
+    "RO": ("romania", "romanian", "bucharest"),
+    "PK": ("pakistan", "pakistani", "islamabad", "karachi", "lahore"),
+    "CZ": ("czechia", "czech republic", "czech", "prague"),
+    "CL": ("chile", "chilean", "santiago"),
+    "PT": ("portugal", "portuguese", "lisbon"),
 }
 
 
