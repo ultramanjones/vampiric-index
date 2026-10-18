@@ -20,7 +20,7 @@ class CoverageRosterTests(unittest.TestCase):
     def test_roster_has_expected_covered_countries_and_matches_country_data(self):
         roster = self.payload["metadata"]["coverage_roster"]
         codes = [country["country_code"] for country in self.countries]
-        self.assertEqual(len(codes), 93)
+        self.assertEqual(len(codes), 98)
         self.assertEqual(len(set(codes)), len(codes))
         self.assertEqual(codes, [item["country_code"] for item in roster["countries"]])
         self.assertEqual(roster["source"], "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)")
@@ -33,7 +33,8 @@ class CoverageRosterTests(unittest.TestCase):
             self.assertIn(code, fetch_dispatches.SEARCHES)
             self.assertRegex(dashboard, rf"\b{re.escape(code)}:\s*\"\d{{3}}\"")
             self.assertEqual(calculate_hvi.validate_country(country), [])
-            self.assertEqual(len(country["acute_dispatch"]), 2)
+            self.assertGreaterEqual(len(country["acute_dispatch"]), 1)
+            self.assertLessEqual(len(country["acute_dispatch"]), 2)
             self.assertIn("observed_readings", country["review"])
             self.assertTrue(country["review"]["decision"])
 

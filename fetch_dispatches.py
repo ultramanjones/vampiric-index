@@ -565,6 +565,36 @@ SEARCHES = {
         "region": "PY",
         "edition": "PY:en",
     },
+    "TM": {
+        "query": "Turkmenistan economy",
+        "language": "en",
+        "region": "TM",
+        "edition": "TM:en",
+    },
+    "LV": {
+        "query": "Latvia economy",
+        "language": "en",
+        "region": "LV",
+        "edition": "LV:en",
+    },
+    "NP": {
+        "query": "Nepal economy",
+        "language": "en",
+        "region": "NP",
+        "edition": "NP:en",
+    },
+    "EE": {
+        "query": "Estonia economy",
+        "language": "en",
+        "region": "EE",
+        "edition": "EE:en",
+    },
+    "ZW": {
+        "query": "Zimbabwe economy",
+        "language": "en",
+        "region": "ZW",
+        "edition": "ZW:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -664,6 +694,11 @@ COUNTRY_TERMS = {
     "BH": ("bahrain", "bahraini", "manama"),
     "KH": ("cambodia", "cambodian", "phnom penh"),
     "PY": ("paraguay", "paraguayan", "asuncion", "asunción"),
+    "TM": ("turkmenistan", "turkmen", "ashgabat"),
+    "LV": ("latvia", "latvian", "riga", "rīga"),
+    "NP": ("nepal", "nepali", "kathmandu"),
+    "EE": ("estonia", "estonian", "tallinn"),
+    "ZW": ("zimbabwe", "zimbabwean", "harare"),
 }
 
 

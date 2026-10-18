@@ -8,19 +8,16 @@ from pathlib import Path
 
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Tunisia. Aggregates and
-# non-sovereign economies are excluded under COUNTRY_COVERAGE.md. Sudan is
-# considered before Libya but is recorded as blocked below because the required
-# 2024 employment observation is unavailable.
+# Strict descending WDI 2024 sovereign GDP order after Paraguay. Aggregates and
+# non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (94, "LBY", "LY", "Libya", "libya", 10),
-    (95, "BHR", "BH", "Bahrain", "bahrain", 12),
-    (96, "KHM", "KH", "Cambodia", "cambodia", 23),
-    (97, "PRY", "PY", "Paraguay", "paraguay", 63),
+    (98, "TKM", "TM", "Turkmenistan", "turkmenistan", 1),
+    (99, "LVA", "LV", "Latvia", "latvia", 89),
+    (100, "NPL", "NP", "Nepal", "nepal", 62),
+    (101, "EST", "EE", "Estonia", "estonia", 96),
+    (102, "ZWE", "ZW", "Zimbabwe", "zimbabwe", 26),
 ]
-BLOCKED_CANDIDATES = [
-    (93, "SDN", "SD", "Sudan", "labor_retention"),
-]
+BLOCKED_CANDIDATES = []
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
     "sovereign_cannibalization": ("NY.GNP.PCAP.CD", 2024, "gni_per_capita_usd"),
@@ -70,8 +67,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "TN" or roster[-1]["rank"] != 92:
-        raise ValueError("Expected the existing roster to end with Tunisia at rank 92")
+    if roster[-1]["country_code"] != "PY" or roster[-1]["rank"] != 97:
+        raise ValueError("Expected the existing roster to end with Paraguay at rank 97")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []

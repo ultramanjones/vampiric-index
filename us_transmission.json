@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T10:26:22Z",
+  "generated_at": "2026-10-18T10:52:01Z",
   "methodology": {
     "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
     "limitations": [
@@ -151,17 +151,17 @@
         "matched_signals": []
       },
       {
-        "title": "Dollar General expects muted annual sales on weak spending, shares drop - Reuters",
-        "source": "Reuters",
-        "publication_date": "Thu, 12 Mar 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOemMxNk9LcnZ5bDJEalZvTWNnWndpQS1Ob0ExcFVUVjVGblBwTjFZY1lHc3dkdldDV1hkeE9SNkN5dUF4VktOQ0RpZmFDN3FHTklwUHY1VG5CUzgwd3ZyVlZpcHVZX2VHZEZZQ1k4OTY2M0RyRmNXWEZ6Tkp3THQ4ODFTUGItV1FsQ1I3Nmw2emRFRVE0c0lFbW5ncUxVZjdCYzFmTDRFNFdURS11cVNRVklRT0k?oc=5",
-        "matched_signals": []
-      },
-      {
         "title": "Why Is Dollar Tree Stock Up 31% in the Last 12 Months - TIKR.com",
         "source": "TIKR.com",
         "publication_date": "Tue, 08 Sep 2026 07:00:00 GMT",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3Y1WFpwWWZwZXJMWDV0THVuUUd6UDJqOC1jOGZENHdNWkFOZThBV3FWM1c5MzZCQnFTYWMzNmUxNHY0bXBkbnMzOUJFdTRGdzJtQzZpVm1EbGYzZlhsYlZXQ3BLa2lyOFdjaXNyMUtUMl9LOHFLZEY1bWIxYk5lSHN2c2QwcHZya2pJRlFUb2lZQQ?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Dollar General expects muted annual sales on weak spending, shares drop - Reuters",
+        "source": "Reuters",
+        "publication_date": "Thu, 12 Mar 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOemMxNk9LcnZ5bDJEalZvTWNnWndpQS1Ob0ExcFVUVjVGblBwTjFZY1lHc3dkdldDV1hkeE9SNkN5dUF4VktOQ0RpZmFDN3FHTklwUHY1VG5CUzgwd3ZyVlZpcHVZX2VHZEZZQ1k4OTY2M0RyRmNXWEZ6Tkp3THQ4ODFTUGItV1FsQ1I3Nmw2emRFRVE0c0lFbW5ncUxVZjdCYzFmTDRFNFdURS11cVNRVklRT0k?oc=5",
         "matched_signals": []
       },
       {
@@ -442,6 +442,16 @@
     },
     {
       "generated_at": "2026-10-18T10:26:22Z",
+      "total_transmission_index": 22.0,
+      "phase_scores": {
+        "1": 5.0,
+        "2": 6.0,
+        "3": 2.0,
+        "4": 9.0
+      }
+    },
+    {
+      "generated_at": "2026-10-18T10:52:01Z",
       "total_transmission_index": 22.0,
       "phase_scores": {
         "1": 5.0,
