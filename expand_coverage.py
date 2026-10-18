@@ -12,17 +12,17 @@ import build_circulation_v2
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Samoa, verified
+# Strict descending WDI 2024 sovereign GDP order after Tonga, verified
 # against the all-economies GDP API and WDI country metadata on each run.
 # Aggregates and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (186, "VCT", "VC", "St. Vincent and the Grenadines", "st-vincent-and-grenadines"),
-    (188, "STP", "ST", "Sao Tome and Principe", "sao-tome-and-principe"),
-    (190, "TON", "TO", "Tonga", "tonga"),
 ]
 BLOCKED_CANDIDATES = [
-    (187, "KNA", "KN", "St. Kitts and Nevis", ["labor_retention"]),
-    (189, "DMA", "DM", "Dominica", ["labor_retention"]),
+    (191, "FSM", "FM", "Micronesia, Fed. Sts.", ["labor_retention"]),
+    (192, "KIR", "KI", "Kiribati", ["labor_retention"]),
+    (193, "PLW", "PW", "Palau", ["labor_retention"]),
+    (194, "MHL", "MH", "Marshall Islands", ["labor_retention"]),
+    (195, "NRU", "NR", "Naoero", ["labor_retention"]),
 ]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
@@ -104,17 +104,21 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "WS":
-        raise ValueError("Expected the existing roster to end with Samoa")
+    if roster[-1]["country_code"] != "TO":
+        raise ValueError("Expected the existing roster to end with Tonga")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []
-    circulation_readings = {
-        key: build_circulation_v2.latest_readings(
-            [item[1] for item in CANDIDATES], key
-        )
-        for key in build_circulation_v2.ORDER
-    }
+    circulation_readings = (
+        {
+            key: build_circulation_v2.latest_readings(
+                [item[1] for item in CANDIDATES], key
+            )
+            for key in build_circulation_v2.ORDER
+        }
+        if CANDIDATES
+        else {}
+    )
     for rank, iso3, iso2, name, missing_pillars in BLOCKED_CANDIDATES:
         raw = {pillar: readings[pillar][iso3] for pillar in INDICATORS}
         if any(raw[pillar] is not None for pillar in missing_pillars):

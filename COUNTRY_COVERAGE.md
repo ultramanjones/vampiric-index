@@ -6,7 +6,7 @@
 
 The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank all-economies API and country-metadata endpoint were retrieved on 2026-10-18; the metadata filters aggregates and non-sovereign economies. Exact values, the selected ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The prior batch ended with Samoa. The current source query ranks St. Vincent and the Grenadines at 186 (US$1.157bn), Sao Tome and Principe at 188 (US$0.825bn), and Tonga at 190 (US$0.647bn); each has complete coverage-input v1 readings and is tracked. St. Kitts and Nevis, rank 187 (US$1.122bn), and Dominica, rank 189 (US$0.689bn), are blocked because WDI returned no required 2024 employment-to-population observation; they are recorded in `metadata.coverage_roster.blocked_candidates`, with the source URL, rather than receiving invented scores. Grenada, rank 183 (US$1.351bn), is blocked for the same reason. Sint Maarten and Turks and Caicos Islands at ranks 179–180 are non-sovereign and excluded. The next eligible sovereign economy is Micronesia, Fed. Sts. (rank 191). This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, Monaco, Liechtenstein, Andorra, Seychelles, and Antigua and Barbuda are also blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
+The prior batch ended with Tonga. The current source query ranks Micronesia, Fed. Sts. at 191 (US$0.481bn), Kiribati at 192 (US$0.343bn), Palau at 193 (US$0.322bn), Marshall Islands at 194 (US$0.285bn), and Naoero at 195 (US$0.168bn). All five are blocked because WDI returned no required 2024 employment-to-population observation; they are recorded in `metadata.coverage_roster.blocked_candidates`, with the source URL, rather than receiving invented scores. St. Kitts and Nevis, rank 187 (US$1.122bn), Dominica, rank 189 (US$0.689bn), and Grenada, rank 183 (US$1.351bn), are blocked for the same reason. Sint Maarten and Turks and Caicos Islands at ranks 179–180 are non-sovereign and excluded. The next sovereign economy to assess is Tuvalu (rank 196). This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, Monaco, Liechtenstein, Andorra, Seychelles, and Antigua and Barbuda are also blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -193,6 +193,11 @@ The prior batch ended with Samoa. The current source query ranks St. Vincent and
 | 188 | Sao Tome and Principe | ST | $0.001tn |
 | 189 | Dominica | DM | $0.001tn (blocked: required 2024 employment reading unavailable) |
 | 190 | Tonga | TO | $0.001tn |
+| 191 | Micronesia, Fed. Sts. | FM | $0.000481tn (blocked: required 2024 employment reading unavailable) |
+| 192 | Kiribati | KI | $0.000343tn (blocked: required 2024 employment reading unavailable) |
+| 193 | Palau | PW | $0.000322tn (blocked: required 2024 employment reading unavailable) |
+| 194 | Marshall Islands | MH | $0.000285tn (blocked: required 2024 employment reading unavailable) |
+| 195 | Naoero | NR | $0.000168tn (blocked: required 2024 employment reading unavailable) |
 
 ### Published score rubric: coverage-input v1
 
@@ -383,6 +388,11 @@ On 2026-10-18 the current top 20 were re-checked against the World Bank all-econ
 | ST | 45.2 | F | New v1 record. |
 | DM | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
 | TO | 53.4 | D | New v1 record. |
+| FM | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
+| KI | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
+| PW | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
+| MH | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
+| NR | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
 
 ### Acute dispatches and dashboard integration
 
