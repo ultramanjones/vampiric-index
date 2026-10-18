@@ -6,7 +6,7 @@
 
 The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank all-economies API and country-metadata endpoint were retrieved on 2026-10-18; the metadata filters aggregates and non-sovereign economies. Exact values, the selected ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The prior batch ended with Somalia, Fed. Rep. The current source query places the next source-ranked economies at Malawi (rank 144; US$11.312bn), Kosovo (145; US$11.203bn), Monaco (146; US$11.126bn), Mauritania (147; US$10.879bn), and Togo (148; US$10.643bn). Malawi, Mauritania, and Togo have complete coverage-input v1 readings and are tracked. Kosovo is blocked because WDI returned no 2024 employment-to-population observation; Monaco is blocked because WDI returned neither the required 2024 GNI-per-capita nor employment-to-population observation. Both are recorded in `metadata.coverage_roster.blocked_candidates`, with source URLs, rather than receiving invented scores. The next eligible sovereign economies after excluding non-sovereign territories are Liechtenstein, Montenegro, Barbados, Maldives, Sierra Leone, Fiji, and Eswatini. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, and Lebanon remain blocked because WDI returned no 2024 observation for the required employment-to-population indicator; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
+The prior batch ended with Togo. The current source query ranks Liechtenstein at 150 (US$8.906bn), Montenegro at 152 (US$8.274bn), Barbados at 154 (US$7.598bn), Maldives at 155 (US$7.062bn), Sierra Leone at 156 (US$6.971bn), and Fiji at 158 (US$5.968bn). Montenegro, Barbados, Maldives, Sierra Leone, and Fiji have complete coverage-input v1 readings and are tracked. Liechtenstein is blocked because WDI returned neither the required 2024 GNI-per-capita nor employment-to-population observation; it is recorded in `metadata.coverage_roster.blocked_candidates`, with source URLs, rather than receiving an invented score. The next eligible sovereign economies are Eswatini, Liberia, Suriname, Djibouti, Andorra, Bhutan, Belize, Burundi, and the Central African Republic. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, and Monaco remain blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -158,6 +158,12 @@ The prior batch ended with Somalia, Fed. Rep. The current source query places th
 | 146 | Monaco | MC | $0.011tn (blocked: required 2024 GNI-per-capita and employment readings unavailable) |
 | 147 | Mauritania | MR | $0.011tn |
 | 148 | Togo | TG | $0.011tn |
+| 150 | Liechtenstein | LI | $0.009tn (blocked: required 2024 GNI-per-capita and employment readings unavailable) |
+| 152 | Montenegro | ME | $0.008tn |
+| 154 | Barbados | BB | $0.008tn |
+| 155 | Maldives | MV | $0.007tn |
+| 156 | Sierra Leone | SL | $0.007tn |
+| 158 | Fiji | FJ | $0.006tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -323,6 +329,12 @@ On 2026-10-18 the current top 20 were re-checked against the World Bank all-econ
 | MC | — | — | Blocked: World Bank WDI has no 2024 `NY.GNP.PCAP.CD` or `SL.EMP.TOTL.SP.ZS` reading. |
 | MR | 36.9 | F | New v1 record. |
 | TG | 39.7 | F | New v1 record. |
+| LI | — | — | Blocked: World Bank WDI has no 2024 `NY.GNP.PCAP.CD` or `SL.EMP.TOTL.SP.ZS` reading. |
+| ME | 55.1 | D | New v1 record. |
+| BB | 70.4 | C | New v1 record. |
+| MV | 51.4 | D | New v1 record. |
+| SL | 44.0 | F | New v1 record. |
+| FJ | 51.2 | D | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 

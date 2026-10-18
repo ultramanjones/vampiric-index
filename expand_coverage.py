@@ -10,19 +10,20 @@ from pathlib import Path
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Somalia, verified against
+# Strict descending WDI 2024 sovereign GDP order after Togo, verified against
 # the all-economies GDP API and WDI country metadata on each run. Aggregates
 # and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (144, "MWI", "MW", "Malawi", "malawi"),
-    (147, "MRT", "MR", "Mauritania", "mauritania"),
-    (148, "TGO", "TG", "Togo", "togo"),
+    (152, "MNE", "ME", "Montenegro", "montenegro"),
+    (154, "BRB", "BB", "Barbados", "barbados"),
+    (155, "MDV", "MV", "Maldives", "maldives"),
+    (156, "SLE", "SL", "Sierra Leone", "sierra-leone"),
+    (158, "FJI", "FJ", "Fiji", "fiji"),
 ]
-# Kosovo and Monaco are documented rather than scored because required
+# Liechtenstein is documented rather than scored because required
 # coverage-input v1 observations are absent.
 BLOCKED_CANDIDATES = [
-    (145, "XKX", "XK", "Kosovo", ["labor_retention"]),
-    (146, "MCO", "MC", "Monaco", ["sovereign_cannibalization", "labor_retention"]),
+    (150, "LIE", "LI", "Liechtenstein", ["sovereign_cannibalization", "labor_retention"]),
 ]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
@@ -33,7 +34,7 @@ INDICATORS = {
 
 def fetch(url):
     request = urllib.request.Request(url, headers={"User-Agent": "VampiricIndex/1.0"})
-    with urllib.request.urlopen(request, timeout=30) as response:
+    with urllib.request.urlopen(request, timeout=90) as response:
         return json.load(response)
 
 
@@ -104,8 +105,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "SO":
-        raise ValueError("Expected the existing roster to end with Somalia")
+    if roster[-1]["country_code"] != "TG":
+        raise ValueError("Expected the existing roster to end with Togo")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []

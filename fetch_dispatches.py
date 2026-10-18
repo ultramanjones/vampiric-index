@@ -752,6 +752,12 @@ SEARCHES = {
     "MC": {"query": "Monaco economy", "language": "en", "region": "MC", "edition": "MC:en"},
     "MR": {"query": "Mauritania economy", "language": "en", "region": "MR", "edition": "MR:en"},
     "TG": {"query": "Togo economy", "language": "en", "region": "TG", "edition": "TG:en"},
+    "LI": {"query": "Liechtenstein economy", "language": "en", "region": "LI", "edition": "LI:en"},
+    "ME": {"query": "Montenegro economy", "language": "en", "region": "ME", "edition": "ME:en"},
+    "BB": {"query": "Barbados economy", "language": "en", "region": "BB", "edition": "BB:en"},
+    "MV": {"query": "Maldives economy", "language": "en", "region": "MV", "edition": "MV:en"},
+    "SL": {"query": "Sierra Leone economy", "language": "en", "region": "SL", "edition": "SL:en"},
+    "FJ": {"query": "Fiji economy", "language": "en", "region": "FJ", "edition": "FJ:en"},
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -903,6 +909,12 @@ COUNTRY_TERMS = {
     "MC": ("monaco", "monegasque", "monte carlo"),
     "MR": ("mauritania", "mauritanian", "nouakchott"),
     "TG": ("togo", "togolese", "lomé", "lome"),
+    "LI": ("liechtenstein", "liechtensteiner", "vaduz"),
+    "ME": ("montenegro", "montenegrin", "podgorica"),
+    "BB": ("barbados", "barbadian", "bridgetown"),
+    "MV": ("maldives", "maldivian", "malé", "male"),
+    "SL": ("sierra leone", "sierra leonean", "freetown"),
+    "FJ": ("fiji", "fijian", "suva"),
 }
 
 
