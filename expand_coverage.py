@@ -10,17 +10,20 @@ from pathlib import Path
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Rwanda, verified against
+# Strict descending WDI 2024 sovereign GDP order after Somalia, verified against
 # the all-economies GDP API and WDI country metadata on each run. Aggregates
 # and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (139, "MUS", "MU", "Mauritius", "mauritius"),
-    (140, "TJK", "TJ", "Tajikistan", "tajikistan"),
-    (141, "NAM", "NA", "Namibia", "namibia"),
-    (142, "GNQ", "GQ", "Equatorial Guinea", "equatorial-guinea"),
-    (143, "SOM", "SO", "Somalia, Fed. Rep.", "somalia"),
+    (144, "MWI", "MW", "Malawi", "malawi"),
+    (147, "MRT", "MR", "Mauritania", "mauritania"),
+    (148, "TGO", "TG", "Togo", "togo"),
 ]
-BLOCKED_CANDIDATES = []
+# Kosovo and Monaco are documented rather than scored because required
+# coverage-input v1 observations are absent.
+BLOCKED_CANDIDATES = [
+    (145, "XKX", "XK", "Kosovo", ["labor_retention"]),
+    (146, "MCO", "MC", "Monaco", ["sovereign_cannibalization", "labor_retention"]),
+]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
     "sovereign_cannibalization": ("NY.GNP.PCAP.CD", 2024, "gni_per_capita_usd"),
@@ -101,14 +104,14 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "RW":
-        raise ValueError("Expected the existing roster to end with Rwanda")
+    if roster[-1]["country_code"] != "SO":
+        raise ValueError("Expected the existing roster to end with Somalia")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []
-    for rank, iso3, iso2, name, missing_pillar in BLOCKED_CANDIDATES:
+    for rank, iso3, iso2, name, missing_pillars in BLOCKED_CANDIDATES:
         raw = {pillar: readings[pillar][iso3] for pillar in INDICATORS}
-        if raw[missing_pillar] is not None:
+        if any(raw[pillar] is not None for pillar in missing_pillars):
             raise ValueError(f"Expected required WDI reading to be missing for {iso3}: {raw}")
         if not gdp[iso3] or gdp[iso3] >= previous_gdp:
             raise ValueError(f"GDP ordering failed for blocked candidate {iso3}")
@@ -120,8 +123,8 @@ def main():
             "country_code": iso2,
             "name": name,
             "reason": "Required coverage-input v1 indicator has no World Bank observation; no HVI record was fabricated.",
-            "missing_indicators": [missing_pillar],
-            "source_urls": {missing_pillar: reading_urls[missing_pillar]},
+            "missing_indicators": missing_pillars,
+            "source_urls": {pillar: reading_urls[pillar] for pillar in missing_pillars},
         })
         blocked.append(name)
     for rank, iso3, iso2, name, slug in CANDIDATES:

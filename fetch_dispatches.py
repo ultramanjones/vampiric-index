@@ -747,6 +747,11 @@ SEARCHES = {
     "NA": {"query": "Namibia economy", "language": "en", "region": "NA", "edition": "NA:en"},
     "GQ": {"query": "Equatorial Guinea economy", "language": "en", "region": "GQ", "edition": "GQ:en"},
     "SO": {"query": "Somalia economy", "language": "en", "region": "SO", "edition": "SO:en"},
+    "MW": {"query": "Malawi economy", "language": "en", "region": "MW", "edition": "MW:en"},
+    "XK": {"query": "Kosovo economy", "language": "en", "region": "XK", "edition": "XK:en"},
+    "MC": {"query": "Monaco economy", "language": "en", "region": "MC", "edition": "MC:en"},
+    "MR": {"query": "Mauritania economy", "language": "en", "region": "MR", "edition": "MR:en"},
+    "TG": {"query": "Togo economy", "language": "en", "region": "TG", "edition": "TG:en"},
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -893,6 +898,11 @@ COUNTRY_TERMS = {
     "NA": ("namibia", "namibian", "windhoek"),
     "GQ": ("equatorial guinea", "malabo"),
     "SO": ("somalia", "somali", "mogadishu"),
+    "MW": ("malawi", "malawian", "lilongwe"),
+    "XK": ("kosovo", "kosovar", "pristina", "prishtina"),
+    "MC": ("monaco", "monegasque", "monte carlo"),
+    "MR": ("mauritania", "mauritanian", "nouakchott"),
+    "TG": ("togo", "togolese", "lomé", "lome"),
 }
 
 
