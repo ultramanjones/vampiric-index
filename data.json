@@ -2438,16 +2438,16 @@
       ],
       "acute_dispatch": [
         {
-          "title": "The Other Side of Paradise: How Pakistan Crushed Protests in Kashmir - Time Magazine",
-          "source": "Time Magazine",
-          "publication_date": "Mon, 17 Aug 2026 07:00:00 GMT",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNS0cyYUk1Wl9VZ1l2TlZETFdhdVNpZFVna3V5VXoyM2tzOUxoOU5Mb2hicTUzcXBMaU1GNHoycjRmcTVaQ2szVVREeDVNZmpYMGdhQmhieDlNSHJjMnRzT3o5QkVwM0M4SXFydVNucEFSMWk3Rk52eW9sX255RnZ0dmpYVy1LOC1DQkhN?oc=5"
-        },
-        {
           "title": "State-Sponsored Terror in PoJK: How Islamabad uses brutal military force to crush the citizens’ rightful revolt - Organiser",
           "source": "Organiser",
           "publication_date": "Sat, 20 Jun 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxONDFBZGI2VE13d29LSnJieEFzMEFMM2lMajgydzZBUmJqZmNHZkctRnBtbmRBYTlFUnl0cWZnMWpNTkdHZ1BCZ1FIXzVfazdiY1lZd2tOVVRvd0RVaWVCbVcyVDJPN19nNWJLQm85aGdMWWlRSHpYQXhRc3NLVjZIRlNXS0tOR25VWFAyTmVndUl1WWJRVlFILU9zUEduR1dzblQzeWNMUnVIcllaOVJmWXNDZFZ0XzA4V1dXUmphdXBna2lnT3BPRmw1M2c4T0VPQ2VLMlM5Y2dzMjVpX2hfUTJiQmpxeElwV2E0bdIB8gFBVV95cUxQTVQ4Vy14eFZhdGNUYVY5NnN4aVhQYTZacjZRM2ZaWjZab3NUUWJXaGk1Yklsa3FzakZIdzJ2V254QlNXcHVENkpUblE0RFBKU2tIODh5QURUd1hXNkNBV1Jza2JWZU5qaXR5UHRWQ2RBY05mVWl4azFFUzhLTm5iX3FnVFUzazNBRHp6bkplWlpPeGpGVm1yYmoxVS1nbFJaUlpkZC02Rl9VLWQ5WE9YZHMzT1hmNllmdm5qa29MaFY5QVp4Zkl6XzJkcUlTZFl2NkJNTzE0TVp2aE9SMFgxUUpaN1Y2ZU5RU3ZSRmhQM09Pdw?oc=5"
+        },
+        {
+          "title": "23 PTI leaders, workers arrested as police scuttle protest near Karachi Press Club - Dawn",
+          "source": "Dawn",
+          "publication_date": "Sun, 05 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9LZEVtc1RvRHMzeGU2RmhPeE9Fc003NGRSS2swbHZnRUpod1R0N3BScjNVN1J2Z1l5MXdGM1dYZUE2bHNEUWx0TA?oc=5"
         }
       ],
       "review": {
@@ -4070,6 +4070,301 @@
         "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
         "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
       }
+    },
+    {
+      "country_code": "CR",
+      "name": "Costa Rica",
+      "pillars": {
+        "survival_floor": 20.2,
+        "sovereign_cannibalization": 7.9,
+        "labor_retention": 13.4,
+        "state_coercion": 22.8
+      },
+      "hvi_score": 64.3,
+      "grade": "D",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 80.799 years (World Bank WDI, 2023)",
+        "GNI per capita: US$15,710 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 53.686% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 91/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Economía de Costa Rica pierde fuerza: crecimiento cae al 2.2% y registra una fuerte desaceleración en agosto de 2026 - Infobae",
+          "source": "Infobae",
+          "publication_date": "Thu, 15 Oct 2026 02:30:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNd0ZDNjF0YVRkOU5aS0FublhmTnc3akRxd1dJM051bDdlUmpEZUpjanp0Qjh5dTM5MkNPanJpUUpEN1FmTHNmSGRNTlF3VzZiWnFFWkJfT2JweHI2MjNZSnhmNjM5VTNSc2tzOXRSR3VRMWpOOWNYTmhNd1l2YVlJU0p4YXFrYThxMDI0Q2hFZzBWbHM0bkxndW1DM19IdTkzVHNUUnVncGsydlF3UVpCaVFiNE1CQnVPMnozUmhHbWZ3UEpFWVVfTHc5dFFrUXJTMU1ZakdLanJ0cDJEY1RUZUw1dFZpaXUtc1I3VlplNTRjUdIBjAJBVV95cUxNNWl6NGhOUi1rSUszVUplVmI0MDFTeEpZXzY2SFNFSkY0bFk0OVpXWVB5Ml91YUVYdl9SOHVOWVQwVGxGTFpJNFJpNTJQUS1KcDBqRDFRdFNmNEd6Q2VzSEZhbV83dy1JaGhMVWhFaWoyclZPVkxJMk5udGVzcFdhbjZRMEFYTC1NYlZrMkM3TEM4dmFTQ0szV0h3R0tHTjBZRUowV1I2TUxDLWlmYnc4cnpjYnJxczdtaWZQWTJISlJrRGFEQk1nM3ZSd0N0ODRpT1dKTldwUVpLdjItM0dhOGt4aFpyOURaSFlpNXdmSWh1TG1NRmRNa3c2VkZHenl0MVRmQlFTUmhSeTJh?oc=5"
+        },
+        {
+          "title": "PIB per cápita de México: FMI advierte que no superará a Uruguay, Costa Rica y otras economías de LATAM - EL CEO",
+          "source": "EL CEO",
+          "publication_date": "Sat, 17 Oct 2026 17:01:22 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQnUwcEtzZ2t1dUV4N1NBbzJLamF2VmRTc3ljT3ZnUllIWWFGZXA0ZWdyTmhZY2FKdDNTdUEzTzJ1WEN4SzM3TXoxSDVjYWwwYjNTSUdLXzdjcTFCR0s1clFBZ1ZoT3EyeGcxUzNlby1HSDNmTjZvVnlhM29aeV9YejN1MUZ5Y2hpalByaU5GT3lsTFhqajdUSTZWNHVPa05MLWpLTGdUTFFlRTU5WS03SVVicHZDY042Qmc2QmVraWd6ZW5vT2dWZQ?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 80.799,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 15710,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 53.686,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 91,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/costa-rica/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "LU",
+      "name": "Luxembourg",
+      "pillars": {
+        "survival_floor": 20.8,
+        "sovereign_cannibalization": 25,
+        "labor_retention": 14.5,
+        "state_coercion": 24.2
+      },
+      "hvi_score": 84.5,
+      "grade": "C",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 83.310 years (World Bank WDI, 2023)",
+        "GNI per capita: US$84,650 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 57.811% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 97/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "🇱🇺 Luxembourg: Luxembourg Song Contest 2027 Artist Auditions Conclude - Eurovoix",
+          "source": "Eurovoix",
+          "publication_date": "Sun, 18 Oct 2026 07:55:51 GMT",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNkpHNUhvaXZRUjRCeG1vNWdkTllsS3NVN1RZS0QzanpUSWwtSzdfbmNtWlc4LVp4WE5WRkt5SUpzU3laV2JRS1pqYlNTQTM5bDE1VDVvdFhLMlo1cVlBT05uRk50emlRd0dEc3dsWkZvZHdPX0FGOS16NVpkb1Z1aG9oNWNYR3FQSmpoZ0NEaTU?oc=5"
+        },
+        {
+          "title": "Christine Sun Kim \"FOR EVER\" Mudam / Luxembourg - Flash Art International",
+          "source": "Flash Art International",
+          "publication_date": "Wed, 14 Oct 2026 10:44:17 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE04WWlzdWhkdHJLaTA0d002NDNRck1BeTEzMV9yZ21fdDZ5T2FHM0hSRWtESFpHN0hKNW1ral9LMUxIdUU2bjUtbEtsN3hEVTlyd0RMdVRKNDRtSjc3YVo4?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 83.309756097561,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 84650,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 57.811,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 97,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/luxembourg/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "HR",
+      "name": "Croatia",
+      "pillars": {
+        "survival_floor": 19.6,
+        "sovereign_cannibalization": 11.1,
+        "labor_retention": 12.4,
+        "state_coercion": 20.5
+      },
+      "hvi_score": 63.6,
+      "grade": "D",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 78.473 years (World Bank WDI, 2023)",
+        "GNI per capita: US$22,230 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 49.739% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 82/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Croatian soccer fans arrested over antisemitic slurs during match with Amsterdam team - AP News",
+          "source": "AP News",
+          "publication_date": "Fri, 16 Oct 2026 17:16:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTXVON0xTa2Y0RDE0LXJhOXVqeUx3RTloWEZOTEFPdWt2aWFCWl9RV19XYlZBVVZxRVlCYzJubnQ3bTEzXzk2bnI5aHRtVEV0Wmx2blJqcXZ0SEpMMXRlZ0dBVGRnQUNkWHBfdE1kQlZvaWw3X3phV1QzWTFzLVh3cFNlaXNqWUJjYmdZOThfa3kya0xmTVJqUzJR?oc=5"
+        },
+        {
+          "title": "Croatian Football Fans’ Pro-Nazi Chants Prompt Arrests - Balkan Insight",
+          "source": "Balkan Insight",
+          "publication_date": "Fri, 16 Oct 2026 11:26:06 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQ1oxRlhGTk1TWU1Jb2FHMnZlRG5XTUJzR1l6MWV4SmhHNmRpZTlkM1E5MGRJS01VamtBd2J6NmkxLXh6eUM0dUZXU203bEpDTGhlNmhvV2VjVGhFaGFCNzBxaUdZQjIzMm5UNVEwcmprcVZ3OUZXVjJCOU9uVjkwaUlhRHN0bDA0bVlmcDRfQ2k4b2N4Zlc5bThB?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 78.4731707317073,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 22230,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 49.739,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 82,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/croatia/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "RS",
+      "name": "Serbia",
+      "pillars": {
+        "survival_floor": 19.0,
+        "sovereign_cannibalization": 5.8,
+        "labor_retention": 13.7,
+        "state_coercion": 13.2
+      },
+      "hvi_score": 51.7,
+      "grade": "D",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 76.141 years (World Bank WDI, 2023)",
+        "GNI per capita: US$11,610 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 54.879% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 53/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Is Serbia on the brink of a general strike? - DW.com",
+          "source": "DW.com",
+          "publication_date": "Tue, 21 Jan 2025 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNV2drTmZlS05hbE43X3Jhc3Z6UnIxWWppbmxLZllIZ0lIVGFYc2hPdFVwRThNaHFRRXVRbjczZjN5ZE0wcjc3YVAtdzZ1ZlRoTy1tMll3OXlTYVR0MUJYWngzZFVtRzl5dlpLc0pmamVNeklkdS1rVlFIZkdtRFFYd9IBgAFBVV95cUxNQ0tacGZsMS1NM3ZtSnM0RVJsWGVvNkw5MjY3VGtrZkctQXRGZTZYeGJhUzJYMlZOemV4ckQ0ZTRGaDUyZHBDNk96WkxqOXh3YzczZDczcHUtejd6dWRYZ28wOTFfeTRPVEg0aWhhSEFiZTRxTk03U0VXckRyZG1iYw?oc=5"
+        },
+        {
+          "title": "Student protests grow in Serbia - Peoples Dispatch",
+          "source": "Peoples Dispatch",
+          "publication_date": "Tue, 18 Mar 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9zdHY5YW9zM2taa3hiQ2FFUEU5UG84aWFITlJCX2toakdsQjNJZXBXdXVLN2U0aVo1SG1xTFVfNjhWU1JzV0g5TVhwcVNGRnFaOE51V1BCd2UyUUtnN2QyV1NMcWZVaGZFcUZIOUNkSTVzLUlGTjJWVTFrWQ?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 76.1414634146341,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 11610,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 54.879,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 53,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/serbia/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
+    },
+    {
+      "country_code": "CI",
+      "name": "Cote d'Ivoire",
+      "pillars": {
+        "survival_floor": 15.5,
+        "sovereign_cannibalization": 1.3,
+        "labor_retention": 16.4,
+        "state_coercion": 11.5
+      },
+      "hvi_score": 44.7,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Life expectancy at birth: 61.944 years (World Bank WDI, 2023)",
+        "GNI per capita: US$2,520 (World Bank WDI, 2024)",
+        "Employment-to-population ratio: 65.583% (World Bank WDI/ILO, 2024)",
+        "Freedom in the World 2025 total score: 46/100 (Freedom House)"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Chinese navy hospital ship arrives in Cote d'Ivoire on medical mission - Xinhua",
+          "source": "Xinhua",
+          "publication_date": "Thu, 15 Oct 2026 13:18:30 GMT",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1kNnlvbTFoaG84SlU4YVJFdlI4NlZYdDk1OEJWTWcxWDlTVk9hcXhwNUNfQXMtZzlXQnFUZlZLOHN4MmFQYWtXTEFtRnZXX0lWTm1QbzhndnFxd0ZRY19Pay1lQllTX3lObXhKOE5rcVI2cS1pb3lkc1dULUo?oc=5"
+        },
+        {
+          "title": "Watch Somalia vs Côte d'Ivoire - TOD",
+          "source": "TOD",
+          "publication_date": "Fri, 16 Oct 2026 04:21:09 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaGo3TzhZdklsdnFqaW9MYkNkbExFNkVPb2Q4S2lYMFlOc3BhZ0xSYm5QOUdFWGVBcnJPNTN5WkJJZHdFSGhyZExKaDlNYXBWT21QUnJWMXJxc0NoODN2amJURm5CQzBwUkFKTHBrM2hhSDJDUVFwSklnZ1lTMGZJU1JlR1BsSjhJeWZPVXdleGktZXRfUXh1TkgtbndlUFpUT1MxVHN2V3dEa0I1cGxEVUhHNXBQZW5qVkE?oc=5"
+        }
+      ],
+      "review": {
+        "reviewed_at": "2026-10-18",
+        "observed_readings": {
+          "life_expectancy_years": {
+            "value": 61.944,
+            "observation_year": 2023,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SP.DYN.LE00.IN?date=2023&format=json&per_page=100"
+          },
+          "gni_per_capita_usd": {
+            "value": 2520,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/NY.GNP.PCAP.CD?date=2024&format=json&per_page=100"
+          },
+          "employment_to_population_percent": {
+            "value": 65.583,
+            "observation_year": 2024,
+            "url": "https://api.worldbank.org/v2/country/CRI;LUX;HRV;SRB;CIV/indicator/SL.EMP.TOTL.SP.ZS?date=2024&format=json&per_page=100"
+          },
+          "freedom_house_total": {
+            "value": 46,
+            "edition": "Freedom in the World 2025",
+            "url": "https://freedomhouse.org/country/cote-divoire/freedom-world/2025"
+          }
+        },
+        "rule": "coverage-input v1: round each pillar to one decimal before summing; see COUNTRY_COVERAGE.md",
+        "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings"
+      }
     }
   ],
   "metadata": {
@@ -4630,6 +4925,46 @@
           "country_code": "LK",
           "name": "Sri Lanka",
           "gdp_current_usd": 99616111265.7633,
+          "observation_year": 2024
+        },
+        {
+          "rank": 71,
+          "iso3": "CRI",
+          "country_code": "CR",
+          "name": "Costa Rica",
+          "gdp_current_usd": 96715644330.6612,
+          "observation_year": 2024
+        },
+        {
+          "rank": 72,
+          "iso3": "LUX",
+          "country_code": "LU",
+          "name": "Luxembourg",
+          "gdp_current_usd": 93279851863.4062,
+          "observation_year": 2024
+        },
+        {
+          "rank": 73,
+          "iso3": "HRV",
+          "country_code": "HR",
+          "name": "Croatia",
+          "gdp_current_usd": 92981894167.9687,
+          "observation_year": 2024
+        },
+        {
+          "rank": 74,
+          "iso3": "SRB",
+          "country_code": "RS",
+          "name": "Serbia",
+          "gdp_current_usd": 90088366320.4062,
+          "observation_year": 2024
+        },
+        {
+          "rank": 75,
+          "iso3": "CIV",
+          "country_code": "CI",
+          "name": "Cote d'Ivoire",
+          "gdp_current_usd": 87113179149.284,
           "observation_year": 2024
         }
       ],

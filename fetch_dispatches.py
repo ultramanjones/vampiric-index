@@ -421,6 +421,36 @@ SEARCHES = {
         "region": "LK",
         "edition": "LK:en",
     },
+    "CR": {
+        "query": "Costa Rica economía",
+        "language": "es-419",
+        "region": "CR",
+        "edition": "CR:es-419",
+    },
+    "LU": {
+        "query": "Luxembourg",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "HR": {
+        "query": "Croatia",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
+    "RS": {
+        "query": "Serbia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "RS",
+        "edition": "RS:en",
+    },
+    "CI": {
+        "query": "Cote d'Ivoire",
+        "language": "en-US",
+        "region": "US",
+        "edition": "US:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -496,6 +526,11 @@ COUNTRY_TERMS = {
     "OM": ("oman", "omani", "muscat"),
     "AO": ("angola", "angolan", "luanda"),
     "LK": ("sri lanka", "sri lankan", "colombo"),
+    "CR": ("costa rica", "costa rican", "san jose", "san josé"),
+    "LU": ("luxembourg", "luxembourgish"),
+    "HR": ("croatia", "croatian", "zagreb"),
+    "RS": ("serbia", "serbian", "belgrade"),
+    "CI": ("cote d'ivoire", "côte d'ivoire", "ivory coast", "ivoirian", "abidjan"),
 }
 
 
