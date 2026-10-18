@@ -94,11 +94,11 @@
     <section class="map-panel" aria-label="Interactive Host Viability Index world map">
       <svg id="world-map" role="img" aria-label="World map with tracked countries colored by HVI grade"></svg>
       <div class="legend" aria-label="HVI grade legend">
-        <span><i class="swatch" style="background: var(--grade-a)"></i>A 85–100</span>
-        <span><i class="swatch" style="background: var(--grade-b)"></i>B 70–84</span>
-        <span><i class="swatch" style="background: var(--grade-c)"></i>C 55–69</span>
-        <span><i class="swatch" style="background: var(--grade-d)"></i>D 40–54</span>
-        <span><i class="swatch" style="background: var(--grade-f)"></i>F &lt;40</span>
+        <span><i class="swatch" style="background: var(--grade-a)"></i>A 93–100</span>
+        <span><i class="swatch" style="background: var(--grade-b)"></i>B 85–92.9</span>
+        <span><i class="swatch" style="background: var(--grade-c)"></i>C 66–84.9</span>
+        <span><i class="swatch" style="background: var(--grade-d)"></i>D 50–65.9</span>
+        <span><i class="swatch" style="background: var(--grade-f)"></i>F &lt;50</span>
       </div>
     </section>
     <section id="country-summary" class="summary" aria-label="Tracked country dossiers"></section>
@@ -118,6 +118,13 @@
   <script>
     const countryIds = { US: "840", GB: "826", FR: "250", DE: "276", MX: "484" };
     const gradeColors = { A: "#4c8063", B: "#a28a3b", C: "#c77729", D: "#9c3429", F: "#620000" };
+    function calculateGrade(score) {
+      if (score >= 93) return "A";
+      if (score >= 85) return "B";
+      if (score >= 66) return "C";
+      if (score >= 50) return "D";
+      return "F";
+    }
     const pillarLabels = {
       survival_floor: "Survival",
       sovereign_cannibalization: "Sovereign",
@@ -142,14 +149,15 @@
     }
 
     function openDossier(country) {
+      const grade = calculateGrade(country.hvi_score);
       document.getElementById("drawer-code").textContent = country.country_code;
       document.getElementById("drawer-name").textContent = country.name;
       drawerContent.replaceChildren();
 
       const score = makeElement("div", "score", `${country.hvi_score.toFixed(1)} `);
       score.append(makeElement("small", "", "/ 100"));
-      const badge = makeElement("span", "grade", country.grade);
-      badge.style.background = gradeColors[country.grade];
+      const badge = makeElement("span", "grade", grade);
+      badge.style.background = gradeColors[grade];
       score.append(document.createTextNode(" "));
       score.append(badge);
       drawerContent.append(score);
@@ -195,12 +203,13 @@
     function renderSummary(countries) {
       const summary = document.getElementById("country-summary");
       countries.forEach(country => {
+        const grade = calculateGrade(country.hvi_score);
         const button = makeElement("button", "country-button");
         button.type = "button";
         button.title = `HVI score: ${country.hvi_score.toFixed(1)} / 100`;
         button.append(makeElement("strong", "", country.country_code));
-        button.append(makeElement("span", "", `${country.hvi_score.toFixed(1)} · Grade ${country.grade}`));
-        button.style.borderLeft = `4px solid ${gradeColors[country.grade]}`;
+        button.append(makeElement("span", "", `${country.hvi_score.toFixed(1)} · Grade ${grade}`));
+        button.style.borderLeft = `4px solid ${gradeColors[grade]}`;
         button.addEventListener("click", () => openDossier(country));
         summary.append(button);
       });
@@ -224,13 +233,15 @@
         .attr("class", feature => trackedByMapId.has(String(feature.id)) ? "country tracked" : "country untracked")
         .attr("fill", feature => {
           const country = trackedByMapId.get(String(feature.id));
-          return country ? gradeColors[country.grade] : null;
+          return country ? gradeColors[calculateGrade(country.hvi_score)] : null;
         })
         .attr("d", path)
         .attr("tabindex", feature => trackedByMapId.has(String(feature.id)) ? 0 : null)
         .attr("aria-label", feature => {
           const country = trackedByMapId.get(String(feature.id));
-          return country ? `${country.name}, HVI ${country.hvi_score}, grade ${country.grade}` : null;
+          return country
+            ? `${country.name}, HVI ${country.hvi_score}, grade ${calculateGrade(country.hvi_score)}`
+            : null;
         })
         .on("click", (_, feature) => {
           const country = trackedByMapId.get(String(feature.id));

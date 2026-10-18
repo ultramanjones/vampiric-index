@@ -12,15 +12,15 @@ PILLARS = (
 )
 
 
-def grade_for(score):
-    """Return the letter grade for an HVI score in the inclusive 0--100 range."""
-    if score >= 85:
+def calculate_grade(score):
+    """Return the strict classic letter grade for an HVI score from 0 to 100."""
+    if score >= 93:
         return "A"
-    if score >= 70:
+    if score >= 85:
         return "B"
-    if score >= 55:
+    if score >= 66:
         return "C"
-    if score >= 40:
+    if score >= 50:
         return "D"
     return "F"
 
@@ -81,7 +81,7 @@ def validate_country(country):
 
     if not errors:
         computed_score = calculate_hvi(pillars)
-        computed_grade = grade_for(computed_score)
+        computed_grade = calculate_grade(computed_score)
         if country.get("hvi_score") != computed_score:
             errors.append(
                 f"{name}: hvi_score is {country.get('hvi_score')!r}, expected {computed_score:.1f}"
@@ -108,7 +108,7 @@ def print_table(countries):
             f"{pillars['labor_retention']:.1f}",
             f"{pillars['state_coercion']:.1f}",
             f"{score:.1f}",
-            grade_for(score),
+            calculate_grade(score),
         ])
 
     widths = [max(len(row[index]) for row in rows) for index in range(len(headers))]
