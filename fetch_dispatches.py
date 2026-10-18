@@ -595,6 +595,36 @@ SEARCHES = {
         "region": "ZW",
         "edition": "ZW:en",
     },
+    "CY": {
+        "query": "Cyprus economy",
+        "language": "en",
+        "region": "CY",
+        "edition": "CY:en",
+    },
+    "HN": {
+        "query": "Honduras economy",
+        "language": "en",
+        "region": "HN",
+        "edition": "HN:en",
+    },
+    "SV": {
+        "query": "El Salvador economy",
+        "language": "en",
+        "region": "SV",
+        "edition": "SV:en",
+    },
+    "GE": {
+        "query": "Georgia country (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "GE",
+        "edition": "GE:en",
+    },
+    "IS": {
+        "query": "Iceland economy",
+        "language": "en",
+        "region": "IS",
+        "edition": "IS:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -699,6 +729,11 @@ COUNTRY_TERMS = {
     "NP": ("nepal", "nepali", "kathmandu"),
     "EE": ("estonia", "estonian", "tallinn"),
     "ZW": ("zimbabwe", "zimbabwean", "harare"),
+    "CY": ("cyprus", "cypriot", "nicosia"),
+    "HN": ("honduras", "honduran", "tegucigalpa", "san pedro sula"),
+    "SV": ("el salvador", "salvadoran", "san salvador"),
+    "GE": ("georgia", "georgian", "tbilisi"),
+    "IS": ("iceland", "icelandic", "reykjavik", "reykjavík"),
 }
 
 
