@@ -277,6 +277,36 @@ SEARCHES = {
         "region": "PT",
         "edition": "PT:en",
     },
+    "FI": {
+        "query": "Finland economy",
+        "language": "en",
+        "region": "FI",
+        "edition": "FI:en",
+    },
+    "PE": {
+        "query": "Peru economy",
+        "language": "en",
+        "region": "PE",
+        "edition": "PE:en",
+    },
+    "KZ": {
+        "query": "Kazakhstan (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "KZ",
+        "edition": "KZ:en",
+    },
+    "IQ": {
+        "query": "Iraq economy",
+        "language": "en",
+        "region": "IQ",
+        "edition": "IQ:en",
+    },
+    "DZ": {
+        "query": "Algeria economy",
+        "language": "en",
+        "region": "DZ",
+        "edition": "DZ:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -328,6 +358,11 @@ COUNTRY_TERMS = {
     "CZ": ("czechia", "czech republic", "czech", "prague"),
     "CL": ("chile", "chilean", "santiago"),
     "PT": ("portugal", "portuguese", "lisbon"),
+    "FI": ("finland", "finnish", "helsinki"),
+    "PE": ("peru", "peruvian", "lima"),
+    "KZ": ("kazakhstan", "kazakh", "astana", "almaty"),
+    "IQ": ("iraq", "iraqi", "baghdad", "basra", "erbil"),
+    "DZ": ("algeria", "algerian", "algiers"),
 }
 
 

@@ -1,12 +1,12 @@
 # Country Coverage Register
 
-## Top-45 nominal-GDP roster — reviewed 2026-10-18
+## Top-50 nominal-GDP roster — reviewed 2026-10-18
 
 ### Selection rule and authoritative source
 
-The tracked roster is the top 45 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates and non-sovereign economies; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
+The tracked roster is the top 50 **sovereign economies by nominal GDP in current US dollars**. It is drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates and non-sovereign economies; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The next five untracked sovereign economies after Egypt were added in strict descending WDI order: Romania, Pakistan, Czechia, Chile, and Portugal. Hong Kong SAR, China ($408.369bn) falls between Colombia and South Africa in the WDI economy list but is not a sovereign economy and is excluded under the selection rule. The source query is [World Bank API: 45-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
+The next five untracked sovereign economies after Portugal were added in strict descending WDI order: Finland, Peru, Kazakhstan, Iraq, and Algeria. Hong Kong SAR, China ($408.369bn) falls between Colombia and South Africa in the WDI economy list but is not a sovereign economy and is excluded under the selection rule. The source query is [World Bank API: 50-country GDP readings](https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=100).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -55,6 +55,11 @@ The next five untracked sovereign economies after Egypt were added in strict des
 | 43 | Czechia | CZ | $0.347tn |
 | 44 | Chile | CL | $0.329tn |
 | 45 | Portugal | PT | $0.314tn |
+| 46 | Finland | FI | $0.299tn |
+| 47 | Peru | PE | $0.292tn |
+| 48 | Kazakhstan | KZ | $0.291tn |
+| 49 | Iraq | IQ | $0.280tn |
+| 50 | Algeria | DZ | $0.269tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -120,6 +125,11 @@ The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Th
 | CZ | 73.4 | C | New v1 record. |
 | CL | 66.2 | C | New v1 record. |
 | PT | 71.8 | C | New v1 record. |
+| FI | 84.1 | C | New v1 record. |
+| PE | 57.0 | D | New v1 record. |
+| KZ | 47.2 | F | New v1 record. |
+| IQ | 37.7 | F | New v1 record. |
+| DZ | 38.7 | F | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 
