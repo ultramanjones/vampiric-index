@@ -7,22 +7,22 @@ import urllib.request
 from datetime import date
 from pathlib import Path
 
+import build_circulation_v2
+
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Cabo Verde, verified against
-# the all-economies GDP API and WDI country metadata on each run. Aggregates
-# and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
+# Strict descending WDI 2024 sovereign GDP order after Timor-Leste, verified
+# against the all-economies GDP API and WDI country metadata on each run.
+# Aggregates and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (172, "LCA", "LC", "St. Lucia", "st-lucia"),
-    (173, "GMB", "GM", "The Gambia", "gambia"),
-    (174, "LSO", "LS", "Lesotho", "lesotho"),
-    (176, "GNB", "GW", "Guinea-Bissau", "guinea-bissau"),
-    (178, "TLS", "TL", "Timor-Leste", "timor-leste"),
+    (181, "COM", "KM", "Comoros", "comoros"),
+    (182, "SLB", "SB", "Solomon Islands", "solomon-islands"),
+    (184, "VUT", "VU", "Vanuatu", "vanuatu"),
+    (185, "WSM", "WS", "Samoa", "samoa"),
 ]
 BLOCKED_CANDIDATES = [
-    (175, "SYC", "SC", "Seychelles", ["labor_retention"]),
-    (177, "ATG", "AG", "Antigua and Barbuda", ["labor_retention"]),
+    (183, "GRD", "GD", "Grenada", ["labor_retention"]),
 ]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
@@ -104,11 +104,17 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "CV":
-        raise ValueError("Expected the existing roster to end with Cabo Verde")
+    if roster[-1]["country_code"] != "TL":
+        raise ValueError("Expected the existing roster to end with Timor-Leste")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []
+    circulation_readings = {
+        key: build_circulation_v2.latest_readings(
+            [item[1] for item in CANDIDATES], key
+        )
+        for key in build_circulation_v2.ORDER
+    }
     for rank, iso3, iso2, name, missing_pillars in BLOCKED_CANDIDATES:
         raw = {pillar: readings[pillar][iso3] for pillar in INDICATORS}
         if any(raw[pillar] is not None for pillar in missing_pillars):
@@ -167,6 +173,11 @@ def main():
                 "decision": "new coverage-input v1 record; declared score is the published transform of the cited readings",
             },
         }
+        # Add the active v2 scorecard only from its own documented source inputs.
+        # migrate_country marks unavailable data explicitly rather than imputing it.
+        build_circulation_v2.migrate_country(
+            country, iso3, circulation_readings, date.today().isoformat()
+        )
         payload["countries"].append(country)
         roster.append({"rank": rank, "iso3": iso3, "country_code": iso2, "name": name, "gdp_current_usd": gdp[iso3], "observation_year": 2024})
         added.append(name)

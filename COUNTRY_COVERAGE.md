@@ -6,7 +6,7 @@
 
 The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank all-economies API and country-metadata endpoint were retrieved on 2026-10-18; the metadata filters aggregates and non-sovereign economies. Exact values, the selected ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The prior batch ended with Cabo Verde. The current source query ranks St. Lucia at 172 (US$2.605bn), the Gambia at 173 (US$2.405bn), Lesotho at 174 (US$2.391bn), Guinea-Bissau at 176 (US$2.198bn), and Timor-Leste at 178 (US$1.866bn); each has complete coverage-input v1 readings and is tracked. Seychelles, rank 175 (US$2.229bn), and Antigua and Barbuda, rank 177 (US$2.162bn), are blocked because WDI returned no required 2024 employment-to-population observation; they are recorded in `metadata.coverage_roster.blocked_candidates`, with the source URL, rather than receiving invented scores. The next eligible sovereign economy is Comoros (rank 181); Sint Maarten and Turks and Caicos Islands at ranks 179–180 are non-sovereign and excluded. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, Monaco, Liechtenstein, and Andorra are also blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
+The prior batch ended with Timor-Leste. The current source query ranks Comoros at 181 (US$1.610bn), Solomon Islands at 182 (US$1.584bn), Vanuatu at 184 (US$1.298bn), and Samoa at 185 (US$1.176bn); each has complete coverage-input v1 readings and is tracked. Grenada, rank 183 (US$1.351bn), is blocked because WDI returned no required 2024 employment-to-population observation; it is recorded in `metadata.coverage_roster.blocked_candidates`, with the source URL, rather than receiving an invented score. Sint Maarten and Turks and Caicos Islands at ranks 179–180 are non-sovereign and excluded. The next eligible sovereign economy is St. Vincent and the Grenadines (rank 186). This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, Lebanon, Kosovo, Monaco, Liechtenstein, Andorra, Seychelles, and Antigua and Barbuda are also blocked because required WDI readings are unavailable; each is documented the same way. Hong Kong SAR, China, Puerto Rico, Macao SAR, China, Bermuda, New Caledonia, the Cayman Islands, French Polynesia, Aruba, the Faroe Islands, and Curaçao are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -181,6 +181,13 @@ The prior batch ended with Cabo Verde. The current source query ranks St. Lucia 
 | 176 | Guinea-Bissau | GW | $0.002tn |
 | 177 | Antigua and Barbuda | AG | $0.002tn (blocked: required 2024 employment reading unavailable) |
 | 178 | Timor-Leste | TL | $0.002tn |
+| 179 | Sint Maarten (Dutch part) | SX | $0.002tn (non-sovereign; excluded) |
+| 180 | Turks and Caicos Islands | TC | $0.002tn (non-sovereign; excluded) |
+| 181 | Comoros | KM | $0.002tn |
+| 182 | Solomon Islands | SB | $0.002tn |
+| 183 | Grenada | GD | $0.001tn (blocked: required 2024 employment reading unavailable) |
+| 184 | Vanuatu | VU | $0.001tn |
+| 185 | Samoa | WS | $0.001tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -361,7 +368,12 @@ On 2026-10-18 the current top 20 were re-checked against the World Bank all-econ
 | BI | 38.6 | F | New v1 record. |
 | CF | 33.1 | F | New v1 record. |
 | CV | 57.1 | D | New v1 record. |
+| KM | 41.1 | F | New v1 record. |
+| SB | 57.9 | D | New v1 record. |
+| GD | — | — | Blocked: World Bank WDI has no 2024 `SL.EMP.TOTL.SP.ZS` reading; no score declared. |
+| VU | 54.4 | D | New v1 record. |
+| WS | 51.6 | D | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 
-Every tracked roster country has a country-specific Google News RSS query in `fetch_dispatches.py`, a current-run dispatch list with title, publisher, publication date, and URL in `data.json`, and a World Atlas numeric identifier in `index.html`. The fetcher is atomic: if any country feed fails, it leaves the dataset unchanged. Dispatches are evidence for current monitoring, not automatic score inputs; the review rule above governs score changes.
+Every tracked roster country has a country-specific Google News RSS query in `fetch_dispatches.py`, a current-run dispatch list with title, publisher, publication date, and URL in `data.json`, and a World Atlas numeric identifier in `index.html`. The fetcher is atomic: if any country feed fails, it leaves the dataset unchanged. Dispatches are evidence for current monitoring, not automatic score inputs; the review rule above governs score changes. The active household-circulation v2 scorecard is also populated only where all five of its documented World Bank readings are available; the four new records have complete v2 inputs, while a missing input would be explicitly labelled unavailable rather than imputed.
