@@ -122,11 +122,37 @@ SEARCHES = {
         "edition": "SA:en",
     },
     "CH": {
-        "query": "Switzerland (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "query": "Switzerland labor OR strike OR inflation OR debt",
         "language": "en",
         "region": "CH",
         "edition": "CH:en",
     },
+}
+
+# Google News search is not a structured country filter. A panel must not
+# receive a generic or neighboring-country result merely because it matched a
+# broad risk term, so publish only headlines that identify the country itself.
+COUNTRY_TERMS = {
+    "US": ("united states", "u.s.", "u.s.a.", "america", "american"),
+    "CN": ("china", "chinese"),
+    "DE": ("germany", "german"),
+    "JP": ("japan", "japanese"),
+    "IN": ("india", "indian"),
+    "GB": ("united kingdom", "britain", "british", "england", "english"),
+    "FR": ("france", "french", "paris"),
+    "IT": ("italy", "italian", "rome"),
+    "CA": ("canada", "canadian"),
+    "RU": ("russia", "russian", "moscow"),
+    "BR": ("brazil", "brazilian"),
+    "KR": ("south korea", "korea", "korean", "seoul"),
+    "MX": ("mexico", "mexican"),
+    "AU": ("australia", "australian"),
+    "ES": ("spain", "spanish", "madrid"),
+    "ID": ("indonesia", "indonesian", "jakarta"),
+    "TR": ("turkey", "turkish", "turkiye", "ankara"),
+    "SA": ("saudi", "saudi arabia", "riyadh"),
+    "NL": ("netherlands", "dutch", "amsterdam", "the hague"),
+    "CH": ("switzerland", "swiss", "geneva", "zurich", "bern"),
 }
 
 
@@ -139,6 +165,23 @@ def rss_url(search):
         "ceid": search["edition"],
     })
     return f"https://news.google.com/rss/search?{parameters}"
+
+
+def article_headline(title, source):
+    """Return the article headline without Google News' publisher suffix."""
+    source_suffix = f" - {source}"
+    return title[:-len(source_suffix)] if title.endswith(source_suffix) else title
+
+
+def is_country_relevant(country_code, title, source):
+    """Return whether the article headline identifies its assigned country.
+
+    Google News appends `` - Publisher`` to titles. Strip that suffix first so
+    a publisher such as France 24 cannot make unrelated Iran coverage appear in
+    France's panel.
+    """
+    normalized_headline = article_headline(title, source).casefold()
+    return any(term in normalized_headline for term in COUNTRY_TERMS[country_code])
 
 
 def text_of(item, tag):
@@ -157,6 +200,7 @@ def fetch_dispatches(country_code):
         root = ET.fromstring(response.read())
 
     dispatches = []
+    seen_headlines = set()
     for item in root.findall("./channel/item"):
         title = text_of(item, "title")
         url = text_of(item, "link")
@@ -164,6 +208,12 @@ def fetch_dispatches(country_code):
         source = text_of(item, "source")
         if not all((title, source, publication_date, url)):
             continue
+        if not is_country_relevant(country_code, title, source):
+            continue
+        normalized_headline = article_headline(title, source).casefold()
+        if normalized_headline in seen_headlines:
+            continue
+        seen_headlines.add(normalized_headline)
         dispatches.append({
             "title": title,
             "source": source,
