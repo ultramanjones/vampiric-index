@@ -9,13 +9,13 @@ from pathlib import Path
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
 CANDIDATES = [
-    # Strict descending WDI 2024 sovereign GDP order after Tanzania. Aggregates
+    # Strict descending WDI 2024 sovereign GDP order after Slovenia. Aggregates
     # and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
-    (83, "BLR", "BY", "Belarus", "belarus", 7),
-    (84, "COD", "CD", "Democratic Republic of the Congo", "democratic-republic-congo", 18),
-    (85, "AZE", "AZ", "Azerbaijan", "azerbaijan", 7),
-    (86, "MMR", "MM", "Myanmar", "myanmar", 7),
-    (87, "SVN", "SI", "Slovenia", "slovenia", 96),
+    (88, "JOR", "JO", "Jordan", "jordan", 34),
+    (89, "BOL", "BO", "Bolivia", "bolivia", 65),
+    (90, "UGA", "UG", "Uganda", "uganda", 34),
+    (91, "CMR", "CM", "Cameroon", "cameroon", 15),
+    (92, "TUN", "TN", "Tunisia", "tunisia", 44),
 ]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
@@ -66,8 +66,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "TZ" or roster[-1]["rank"] != 80:
-        raise ValueError("Expected the existing roster to end with Tanzania at rank 80")
+    if roster[-1]["country_code"] != "SI" or roster[-1]["rank"] != 87:
+        raise ValueError("Expected the existing roster to end with Slovenia at rank 87")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     for rank, iso3, iso2, name, slug, freedom_score in CANDIDATES:

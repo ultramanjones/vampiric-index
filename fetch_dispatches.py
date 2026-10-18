@@ -511,6 +511,36 @@ SEARCHES = {
         "region": "SI",
         "edition": "SI:en",
     },
+    "JO": {
+        "query": "Jordan economy",
+        "language": "en",
+        "region": "JO",
+        "edition": "JO:en",
+    },
+    "BO": {
+        "query": "Bolivia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "BO",
+        "edition": "BO:en",
+    },
+    "UG": {
+        "query": "Uganda (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "UG",
+        "edition": "UG:en",
+    },
+    "CM": {
+        "query": "Cameroon economy",
+        "language": "en",
+        "region": "CM",
+        "edition": "CM:en",
+    },
+    "TN": {
+        "query": "Tunisia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "TN",
+        "edition": "TN:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -601,6 +631,11 @@ COUNTRY_TERMS = {
     "AZ": ("azerbaijan", "azerbaijani", "baku"),
     "MM": ("myanmar", "burmese", "yangon", "naypyidaw"),
     "SI": ("slovenia", "slovenian", "ljubljana"),
+    "JO": ("jordan", "jordanian", "amman"),
+    "BO": ("bolivia", "bolivian", "la paz", "sucre"),
+    "UG": ("uganda", "ugandan", "kampala"),
+    "CM": ("cameroon", "cameroonian", "yaounde", "yaoundé", "douala"),
+    "TN": ("tunisia", "tunisian", "tunis"),
 }
 
 
