@@ -24,7 +24,7 @@ class CoverageRosterTests(unittest.TestCase):
         self.assertEqual(len(set(codes)), len(codes))
         self.assertEqual(codes, [item["country_code"] for item in roster["countries"]])
         self.assertEqual(roster["source"], "World Bank World Development Indicators, NY.GDP.MKTP.CD — GDP (current US$)")
-        self.assertEqual([candidate["country_code"] for candidate in roster["blocked_candidates"]], ["UA", "SD", "LB", "XK", "MC", "LI", "AD", "SC", "AG", "GD", "KN", "DM", "FM", "KI", "PW", "MH", "NR"])
+        self.assertEqual([candidate["country_code"] for candidate in roster["blocked_candidates"]], ["UA", "SD", "LB", "XK", "MC", "LI", "AD", "SC", "AG", "GD", "KN", "DM", "FM", "KI", "PW", "MH", "NR", "TV"])
 
     def test_every_roster_country_has_fetch_dashboard_and_review_support(self):
         dashboard = (ROOT / "index.html").read_text(encoding="utf-8")

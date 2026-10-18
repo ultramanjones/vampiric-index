@@ -12,7 +12,8 @@ import build_circulation_v2
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Tonga, verified
+# Strict descending WDI 2024 sovereign GDP order through the final WDI-listed
+# sovereign economy, verified
 # against the all-economies GDP API and WDI country metadata on each run.
 # Aggregates and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
@@ -23,6 +24,7 @@ BLOCKED_CANDIDATES = [
     (193, "PLW", "PW", "Palau", ["labor_retention"]),
     (194, "MHL", "MH", "Marshall Islands", ["labor_retention"]),
     (195, "NRU", "NR", "Naoero", ["labor_retention"]),
+    (196, "TUV", "TV", "Tuvalu", ["labor_retention"]),
 ]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
