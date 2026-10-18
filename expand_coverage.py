@@ -10,20 +10,19 @@ from pathlib import Path
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Togo, verified against
+# Strict descending WDI 2024 sovereign GDP order after Fiji, verified against
 # the all-economies GDP API and WDI country metadata on each run. Aggregates
 # and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (152, "MNE", "ME", "Montenegro", "montenegro"),
-    (154, "BRB", "BB", "Barbados", "barbados"),
-    (155, "MDV", "MV", "Maldives", "maldives"),
-    (156, "SLE", "SL", "Sierra Leone", "sierra-leone"),
-    (158, "FJI", "FJ", "Fiji", "fiji"),
+    (159, "SWZ", "SZ", "Eswatini", "eswatini"),
+    (160, "LBR", "LR", "Liberia", "liberia"),
+    (161, "SUR", "SR", "Suriname", "suriname"),
+    (163, "DJI", "DJ", "Djibouti", "djibouti"),
 ]
-# Liechtenstein is documented rather than scored because required
-# coverage-input v1 observations are absent.
+# Andorra is documented rather than scored because its required
+# coverage-input v1 employment observation is absent.
 BLOCKED_CANDIDATES = [
-    (150, "LIE", "LI", "Liechtenstein", ["sovereign_cannibalization", "labor_retention"]),
+    (165, "AND", "AD", "Andorra", ["labor_retention"]),
 ]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
@@ -105,8 +104,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "TG":
-        raise ValueError("Expected the existing roster to end with Togo")
+    if roster[-1]["country_code"] != "FJ":
+        raise ValueError("Expected the existing roster to end with Fiji")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []

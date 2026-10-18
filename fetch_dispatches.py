@@ -758,6 +758,10 @@ SEARCHES = {
     "MV": {"query": "Maldives economy", "language": "en", "region": "MV", "edition": "MV:en"},
     "SL": {"query": "Sierra Leone economy", "language": "en", "region": "SL", "edition": "SL:en"},
     "FJ": {"query": "Fiji economy", "language": "en", "region": "FJ", "edition": "FJ:en"},
+    "SZ": {"query": "Eswatini economy", "language": "en", "region": "SZ", "edition": "SZ:en"},
+    "LR": {"query": "Liberia economy", "language": "en", "region": "LR", "edition": "LR:en"},
+    "SR": {"query": "Suriname economy", "language": "en", "region": "SR", "edition": "SR:en"},
+    "DJ": {"query": "Djibouti economy", "language": "en", "region": "DJ", "edition": "DJ:en"},
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -915,6 +919,10 @@ COUNTRY_TERMS = {
     "MV": ("maldives", "maldivian", "malé", "male"),
     "SL": ("sierra leone", "sierra leonean", "freetown"),
     "FJ": ("fiji", "fijian", "suva"),
+    "SZ": ("eswatini", "swazi", "mbabane"),
+    "LR": ("liberia", "liberian", "monrovia"),
+    "SR": ("suriname", "surinamese", "paramaribo"),
+    "DJ": ("djibouti", "djiboutian"),
 }
 
 
