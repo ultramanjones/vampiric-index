@@ -8,14 +8,18 @@ from pathlib import Path
 
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
+# Strict descending WDI 2024 sovereign GDP order after Tunisia. Aggregates and
+# non-sovereign economies are excluded under COUNTRY_COVERAGE.md. Sudan is
+# considered before Libya but is recorded as blocked below because the required
+# 2024 employment observation is unavailable.
 CANDIDATES = [
-    # Strict descending WDI 2024 sovereign GDP order after Slovenia. Aggregates
-    # and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
-    (88, "JOR", "JO", "Jordan", "jordan", 34),
-    (89, "BOL", "BO", "Bolivia", "bolivia", 65),
-    (90, "UGA", "UG", "Uganda", "uganda", 34),
-    (91, "CMR", "CM", "Cameroon", "cameroon", 15),
-    (92, "TUN", "TN", "Tunisia", "tunisia", 44),
+    (94, "LBY", "LY", "Libya", "libya", 10),
+    (95, "BHR", "BH", "Bahrain", "bahrain", 12),
+    (96, "KHM", "KH", "Cambodia", "cambodia", 23),
+    (97, "PRY", "PY", "Paraguay", "paraguay", 63),
+]
+BLOCKED_CANDIDATES = [
+    (93, "SDN", "SD", "Sudan", "labor_retention"),
 ]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
@@ -50,14 +54,14 @@ def main():
 
     payload = json.loads(path.read_text(encoding="utf-8"))
     existing = {country["country_code"] for country in payload["countries"]}
-    wanted_codes = {item[2] for item in CANDIDATES}
+    wanted_codes = {item[2] for item in CANDIDATES} | {item[2] for item in BLOCKED_CANDIDATES}
     overlap = existing & wanted_codes
     if overlap:
         raise ValueError(f"Candidates already tracked: {sorted(overlap)}")
 
     gdp_rows = fetch(GDP_URL)[1]
     gdp = {row["countryiso3code"]: row["value"] for row in gdp_rows}
-    iso3_codes = [item[1] for item in CANDIDATES]
+    iso3_codes = [item[1] for item in CANDIDATES] + [item[1] for item in BLOCKED_CANDIDATES]
     readings, reading_urls = {}, {}
     for pillar, (indicator, year, _) in INDICATORS.items():
         url = WDI_URL.format(codes=";".join(iso3_codes), indicator=indicator, year=year)
@@ -66,10 +70,28 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "SI" or roster[-1]["rank"] != 87:
-        raise ValueError("Expected the existing roster to end with Slovenia at rank 87")
+    if roster[-1]["country_code"] != "TN" or roster[-1]["rank"] != 92:
+        raise ValueError("Expected the existing roster to end with Tunisia at rank 92")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
+    blocked = []
+    for rank, iso3, iso2, name, missing_pillar in BLOCKED_CANDIDATES:
+        raw = {pillar: readings[pillar][iso3] for pillar in INDICATORS}
+        if raw[missing_pillar] is not None:
+            raise ValueError(f"Expected required WDI reading to be missing for {iso3}: {raw}")
+        if not gdp[iso3] or gdp[iso3] >= previous_gdp:
+            raise ValueError(f"GDP ordering failed for blocked candidate {iso3}")
+        previous_gdp = gdp[iso3]
+        payload["metadata"]["coverage_roster"]["blocked_candidates"].append({
+            "rank": rank,
+            "iso3": iso3,
+            "country_code": iso2,
+            "name": name,
+            "reason": "Required coverage-input v1 indicator has no World Bank observation; no HVI record was fabricated.",
+            "missing_indicators": [missing_pillar],
+            "source_urls": {missing_pillar: reading_urls[missing_pillar]},
+        })
+        blocked.append(name)
     for rank, iso3, iso2, name, slug, freedom_score in CANDIDATES:
         raw = {pillar: readings[pillar][iso3] for pillar in INDICATORS}
         if any(value is None for value in raw.values()):
@@ -117,6 +139,7 @@ def main():
     payload["metadata"]["coverage_roster"]["retrieved_at"] = date.today().isoformat()
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print("Added: " + ", ".join(added))
+    print("Blocked: " + ", ".join(blocked))
     return 0
 
 

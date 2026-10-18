@@ -541,6 +541,30 @@ SEARCHES = {
         "region": "TN",
         "edition": "TN:en",
     },
+    "LY": {
+        "query": "Libya economy",
+        "language": "en",
+        "region": "LY",
+        "edition": "LY:en",
+    },
+    "BH": {
+        "query": "Bahrain (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "BH",
+        "edition": "BH:en",
+    },
+    "KH": {
+        "query": "Cambodia (labor strike OR inflation OR sovereign debt OR protest suppression)",
+        "language": "en",
+        "region": "KH",
+        "edition": "KH:en",
+    },
+    "PY": {
+        "query": "Paraguay economy",
+        "language": "en",
+        "region": "PY",
+        "edition": "PY:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -636,6 +660,10 @@ COUNTRY_TERMS = {
     "UG": ("uganda", "ugandan", "kampala"),
     "CM": ("cameroon", "cameroonian", "yaounde", "yaoundé", "douala"),
     "TN": ("tunisia", "tunisian", "tunis"),
+    "LY": ("libya", "libyan", "tripoli", "benghazi"),
+    "BH": ("bahrain", "bahraini", "manama"),
+    "KH": ("cambodia", "cambodian", "phnom penh"),
+    "PY": ("paraguay", "paraguayan", "asuncion", "asunción"),
 }
 
 
