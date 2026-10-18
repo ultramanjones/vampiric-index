@@ -1,0 +1,164 @@
+{
+  "countries": [
+    {
+      "country_code": "US",
+      "name": "United States",
+      "pillars": {
+        "survival_floor": 12.0,
+        "sovereign_cannibalization": 8.0,
+        "labor_retention": 11.0,
+        "state_coercion": 14.0
+      },
+      "hvi_score": 45.0,
+      "grade": "D",
+      "chronic_pathologies": [
+        "Mass medical and student debt burdens",
+        "Net federal interest payments surpassing defense spending",
+        "Decoupling of median wages from financial asset inflation",
+        "High per-capita incarceration and militarized municipal policing"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Half of Every Dollar: How Household Debt Eats Into Workers’ Income Gains - The Century Foundation",
+          "source": "The Century Foundation",
+          "publication_date": "Tue, 29 Sep 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRGpzQzFpVDJwM01fYVN0LTd4Ykt1WU5TbThPNVZOQ0JtU0dSdTBCcng5YmNjUkV3TDdEZkVvMUNlME1uYXlMUWZNbEdqSFJIYWtqN3dMcEdIU2UxSldNOS1xVFl6WC1FNElBZHIwZE9VelgtYkptbE15N3c3ZmlOaUprRTFOVE5fM3NEa0xJWko3YmRXVi1wM1lTR2d4aEZ5QzhfWA?oc=5"
+        },
+        {
+          "title": "\"Student Speech Under Attack: Suppression of Pro-Palestine Speech and Dissent on Campus\" - American Civil Liberties Union",
+          "source": "American Civil Liberties Union",
+          "publication_date": "Wed, 23 Sep 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTFJ5VmY4MlEzQVpUQ2c1Y05JN1I1NzBSUFVlcUxVdHJWUmZlYkZxZ0xJNlg5MVVmajI4MGtPUVFPdHo3a29BaUV6aUE1RXlqakxOdEQwQjlEeWFmSkVQMC15UWozalV5bTNxcDUxZEVXM1U5Y29veEZZN2ZrUkJvU2VEaVc0Y19BRFEtYmtRMm5VLVk5dzl5QUR0Z0ZjX0RFQW4wa2MwRzlESFE3OU0zUk81UV8wSE1FNWhV?oc=5"
+        }
+      ]
+    },
+    {
+      "country_code": "GB",
+      "name": "United Kingdom",
+      "pillars": {
+        "survival_floor": 10.0,
+        "sovereign_cannibalization": 9.0,
+        "labor_retention": 12.0,
+        "state_coercion": 11.0
+      },
+      "hvi_score": 42.0,
+      "grade": "D",
+      "chronic_pathologies": [
+        "NHS wait times and healthcare access decay",
+        "Energy price volatility and persistent rental inflation",
+        "Stagnant real wage growth since 2008 financial crisis",
+        "Public order policing acts restricting collective protest"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "UN rapporteur joins hunger strike over Iran death penalty and protest crackdown - The Jerusalem Post",
+          "source": "The Jerusalem Post",
+          "publication_date": "Mon, 12 Oct 2026 15:35:22 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRNmc5Z19sR0ZaMENFenZTT2YtYnBqNy1JZ1hjMzFXTVpyUDJ5UG8tWVRJcVUzOEY3QjRqdnlRNm5QN0d0TGxhOHZhMG41NGtxMlNkLTR4d2Y4UXdzOXJ1U2tfZU1wTTNjb2c?oc=5"
+        },
+        {
+          "title": "Inflate Away the Debt? Strategic Logic and Risks of a Weak Dollar Regime - Geopolitical Monitor",
+          "source": "Geopolitical Monitor",
+          "publication_date": "Tue, 02 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTU5PZlNTRzlxRV93MmhtbnZGVTZHMzJRNTNvb0ktNTFTR3YyYW5iZEdVY214aDJNQ2VtY1JYV2E0ZHFkRTEyLXF1N2xncktidUd4Q1pZUzhKV3U1bGpGeFFtYm10bVpGREJSYi1fenptT182T1pQcm9CQXRvWmlndmd4LTF4NEhuUndFZTc3S3dHZG1TYXVETjQwc0xxSXdqRGFIX0RqdGhScUxJ?oc=5"
+        }
+      ]
+    },
+    {
+      "country_code": "FR",
+      "name": "France",
+      "pillars": {
+        "survival_floor": 14.0,
+        "sovereign_cannibalization": 10.0,
+        "labor_retention": 15.0,
+        "state_coercion": 10.0
+      },
+      "hvi_score": 49.0,
+      "grade": "D",
+      "chronic_pathologies": [
+        "Sovereign debt to GDP ratio exceeding 110%",
+        "Pension reform tensions and recurring civil strikes",
+        "Heavy municipal and transport utility tax extraction",
+        "Aggressive riot police deployment (CRS) during labor unrest"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Why Germany needs to leave the Euro - Robin J Brooks | Substack",
+          "source": "Robin J Brooks | Substack",
+          "publication_date": "Sun, 02 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWFybnhjejNRRmtSeFBSVFRaNnlLYVVNNmg5Y3Fvc1kxZnVFZWpkV05JQUNVeTZZS0ROV01sb29vREVFcmRhUWlqU1BETUhWN09TdTFad1BJdUExMDVIVEpLSkZGSVJQQzRjU29odXBJcmVsX09LZ1pJci1fYVhpdQ?oc=5"
+        },
+        {
+          "title": "Iran News in Brief – June 18, 2026 - National Council of Resistance of Iran - NCRI",
+          "source": "National Council of Resistance of Iran - NCRI",
+          "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMEJOa3FNck1JazFsSjc5eEpnNlFFQzNIc3JyWGFpaGtTc1Q4bTNnd0NNVmVuaVdjLU5ySjNoNE8zOGJEWVJ1TERBMEZ4aTZDNHVMTVBEMWQ2SjhlMVFGd0VFY0NERWpxZUFTc3pyM2YxM05tMnh6ckVTek1jZmk3ODZrRzgyT25qTGFid3NYR3Z0M1U?oc=5"
+        }
+      ]
+    },
+    {
+      "country_code": "DE",
+      "name": "Germany",
+      "pillars": {
+        "survival_floor": 15.0,
+        "sovereign_cannibalization": 16.0,
+        "labor_retention": 16.0,
+        "state_coercion": 18.0
+      },
+      "hvi_score": 65.0,
+      "grade": "C",
+      "chronic_pathologies": [
+        "De-industrialization driven by structural energy cost shocks",
+        "Severe demographic aging and structural pension shortfalls",
+        "Strict constitutional debt brake (Schuldenbremse) choking infrastructure spend",
+        "Rising domestic political polarization and surveillance tracking"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Trouble for the High-Debt Euro Zone - Robin J Brooks | Substack",
+          "source": "Robin J Brooks | Substack",
+          "publication_date": "Sun, 20 Sep 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd216MHVsVHNnLUExYkIxY1gxVUpFSGtSUHhCbDNsdzg4RnJFOTV0YUtrZHhnR0M1NFV3SnJCQTdieWJLclN5SmdmYU93WVdxWmRNVDBuczZMU2NmWEJxOW1FQ3BZZ0JfWDY3WVJfRWRPNFRMTUpXZ1RuYnluV3IzRFZjTQ?oc=5"
+        },
+        {
+          "title": "Why Germany needs to leave the Euro - Robin J Brooks | Substack",
+          "source": "Robin J Brooks | Substack",
+          "publication_date": "Sun, 02 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWFybnhjejNRRmtSeFBSVFRaNnlLYVVNNmg5Y3Fvc1kxZnVFZWpkV05JQUNVeTZZS0ROV01sb29vREVFcmRhUWlqU1BETUhWN09TdTFad1BJdUExMDVIVEpLSkZGSVJQQzRjU29odXBJcmVsX09LZ1pJci1fYVhpdQ?oc=5"
+        }
+      ]
+    },
+    {
+      "country_code": "MX",
+      "name": "Mexico",
+      "pillars": {
+        "survival_floor": 9.0,
+        "sovereign_cannibalization": 13.0,
+        "labor_retention": 8.0,
+        "state_coercion": 7.0
+      },
+      "hvi_score": 37.0,
+      "grade": "F",
+      "chronic_pathologies": [
+        "Pervasive informal economy bypassing basic social safety nets",
+        "Organized crime extortion tax across supply and logistics chains",
+        "Severe public infrastructure and potable water deficits",
+        "Compromised municipal police forces and military internal security dependencies"
+      ],
+      "acute_dispatch": [
+        {
+          "title": "Mexican truckers call for national strike to free driver jailed after crash with federal agents - World Socialist Web Site",
+          "source": "World Socialist Web Site",
+          "publication_date": "Tue, 06 Oct 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NdjR0YUpncloyNU5sdWdob05BXzNGQllGNXpXRjRPeENQNWEzV3NUMjhpWUJBM1NMVFllZG9oM1E5ZUF0d01OdDhsRFlvbjdZRHIwZm1MMUlwMHM5LWFlYV9jUkl5Z3Fl?oc=5"
+        },
+        {
+          "title": "Major Banks Settle US$86 Million Mexican Bond Antitrust Lawsuit - Mexico Business News",
+          "source": "Mexico Business News",
+          "publication_date": "Mon, 17 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaEoxRXRYNXZOak5INEU4aUpxMGFxdV9rZklMd0F2UHhYVEtrcnJ1anRpdlFjSmQ3YW9JRjNjTlAtcEdveHRZVy02TlFhSHpLd092MXEwYUZxWm5CLUMyOXdWVTRCWGJFWFdoTDJFdkU0dDVKSDI2LW1ZRDJoYjVFY3cyZjBDbzhCTFBqQmptTmtNTS1JOERHU3BMdHZBTW1PN0hoWnJn?oc=5"
+        }
+      ]
+    }
+  ]
+}
