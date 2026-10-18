@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T13:29:55Z",
+  "generated_at": "2026-10-18T13:54:21Z",
   "methodology": {
     "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
     "limitations": [
@@ -144,13 +144,6 @@
         ]
       },
       {
-        "title": "Dollar General Leads First-Half Visits, But Dollar Tree Rebounds in July - Store Brands",
-        "source": "Store Brands",
-        "publication_date": "Tue, 25 Aug 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRUtlMkZFNkFtLVdTLTR2SzFiNG05LURId0diX1FFZDR5S29ZRS1WcDNPNVE1TXdrXzNDVXhDU3JrcTFqSERPYVRPX1hkQzd4ZWJRSUs3UldFbEhULXM0aGJQMnd1SnVwZlFNVkIyakg5V1Y1QW1Ca2o2NTNtbkF4MWpaTmRpbEZGczE5SWFXeDVCdw?oc=5",
-        "matched_signals": []
-      },
-      {
         "title": "Dollar General expects muted annual sales on weak spending, shares drop - Reuters",
         "source": "Reuters",
         "publication_date": "Thu, 12 Mar 2026 07:00:00 GMT",
@@ -158,10 +151,10 @@
         "matched_signals": []
       },
       {
-        "title": "Why Is Dollar Tree Stock Up 31% in the Last 12 Months - TIKR.com",
-        "source": "TIKR.com",
-        "publication_date": "Tue, 08 Sep 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3Y1WFpwWWZwZXJMWDV0THVuUUd6UDJqOC1jOGZENHdNWkFOZThBV3FWM1c5MzZCQnFTYWMzNmUxNHY0bXBkbnMzOUJFdTRGdzJtQzZpVm1EbGYzZlhsYlZXQ3BLa2lyOFdjaXNyMUtUMl9LOHFLZEY1bWIxYk5lSHN2c2QwcHZya2pJRlFUb2lZQQ?oc=5",
+        "title": "Dollar General Leads First-Half Visits, But Dollar Tree Rebounds in July - Store Brands",
+        "source": "Store Brands",
+        "publication_date": "Tue, 25 Aug 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRUtlMkZFNkFtLVdTLTR2SzFiNG05LURId0diX1FFZDR5S29ZRS1WcDNPNVE1TXdrXzNDVXhDU3JrcTFqSERPYVRPX1hkQzd4ZWJRSUs3UldFbEhULXM0aGJQMnd1SnVwZlFNVkIyakg5V1Y1QW1Ca2o2NTNtbkF4MWpaTmRpbEZGczE5SWFXeDVCdw?oc=5",
         "matched_signals": []
       },
       {
@@ -169,6 +162,13 @@
         "source": "AlphaStreet",
         "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV3A1ZGhCczdwUmdraGV3cVBlejFmaFU2Q3ljSks5SDg5Z2lZU0IwSXJaQm5SZ3hTaVZKTU10Ump1X1hXSTc2OEpnaUVwb3VIRnFuRzQ3a0lVckpRSjdZT3RCYkt0Zk9QeW9JSHhLQWZ3R0xkdmtsN1hLN0szdXRMMTQtQnduRm9KbjhsMnZnakwwY0RJWWk1bVlfWmR1NG1ITlFURFoxenBsLXY2YTFPRHBMMU5hbmxKN0FGYmFDYWhZRFdiLUHSAcsBQVVfeXFMUGZLd1RCbmQ1XzF2Wm9BNlJuZDIzTjhjWWZJUU9kd3hSNWM1QWVmdUVpSDJFZkRpQWo1NjlxMXZHN3o4bW5aaC0xY1k0U0tDc2Y4M3pWdWtDbW5YUG4yVnFjQTFqRUhvQjVJMTgwVVM2ejc1b0g0VFBjS1FXR2E4cXYyUGliZ2xXel9EYk80RmZNbUFwQmo2ZnZCaFZSdXJld0s0YmVIUFNGTzhOOU50aGRIQzFnZVI2UXRWVlJPcndoeHh3cjZEUWN4bHM?oc=5",
+        "matched_signals": []
+      },
+      {
+        "title": "Why Is Dollar Tree Stock Up 31% in the Last 12 Months - TIKR.com",
+        "source": "TIKR.com",
+        "publication_date": "Tue, 08 Sep 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3Y1WFpwWWZwZXJMWDV0THVuUUd6UDJqOC1jOGZENHdNWkFOZThBV3FWM1c5MzZCQnFTYWMzNmUxNHY0bXBkbnMzOUJFdTRGdzJtQzZpVm1EbGYzZlhsYlZXQ3BLa2lyOFdjaXNyMUtUMl9LOHFLZEY1bWIxYk5lSHN2c2QwcHZya2pJRlFUb2lZQQ?oc=5",
         "matched_signals": []
       },
       {
@@ -512,6 +512,16 @@
     },
     {
       "generated_at": "2026-10-18T13:29:55Z",
+      "total_transmission_index": 22.0,
+      "phase_scores": {
+        "1": 5.0,
+        "2": 6.0,
+        "3": 2.0,
+        "4": 9.0
+      }
+    },
+    {
+      "generated_at": "2026-10-18T13:54:21Z",
       "total_transmission_index": 22.0,
       "phase_scores": {
         "1": 5.0,

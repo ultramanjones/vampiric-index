@@ -6,7 +6,7 @@
 
 The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank all-economies API and country-metadata endpoint were retrieved on 2026-10-18; the metadata filters aggregates and non-sovereign economies. Exact values, the selected ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The prior batch ended with Benin. The current source query places the next eligible sovereign economies in this order: Gabon (US$20.896bn), Chad (US$19.907bn), Niger (US$19.730bn), Nicaragua (US$19.696bn), and Botswana (US$19.286bn). The source's current sovereign-only rank positions are 124–128, respectively. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, and Lebanon remain blocked because WDI returned no 2024 observation for the required employment-to-population indicator; each is recorded in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. Hong Kong SAR, China, Puerto Rico, and Macao SAR, China are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
+The prior batch ended with Botswana. The current source query places the next eligible sovereign economies in this order: Moldova (US$18.207bn), Kyrgyz Republic (US$18.162bn), Afghanistan (US$17.779bn), Madagascar (US$17.593bn), and North Macedonia (US$16.952bn). The source's current sovereign-only rank positions are 129–133, respectively. This is a later WDI ranking snapshot than the historic rank labels in the table below; source ordering and exact values in `data.json` are authoritative where WDI revisions change a historical position. Ukraine, Sudan, and Lebanon remain blocked because WDI returned no 2024 observation for the required employment-to-population indicator; each is recorded in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. Hong Kong SAR, China, Puerto Rico, and Macao SAR, China are non-sovereign economies and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -138,6 +138,11 @@ The prior batch ended with Benin. The current source query places the next eligi
 | 126 | Niger | NE | $0.020tn |
 | 127 | Nicaragua | NI | $0.020tn |
 | 128 | Botswana | BW | $0.019tn |
+| 129 | Moldova | MD | $0.018tn |
+| 130 | Kyrgyz Republic | KG | $0.018tn |
+| 131 | Afghanistan | AF | $0.018tn |
+| 132 | Madagascar | MG | $0.018tn |
+| 133 | North Macedonia | MK | $0.017tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -288,6 +293,11 @@ On 2026-10-18 the current top 20 were re-checked against the World Bank all-econ
 | NE | 42.2 | F | New v1 record. |
 | NI | 39.2 | F | New v1 record. |
 | BW | 53.0 | D | New v1 record. |
+| MD | 54.0 | D | New v1 record. |
+| KG | 39.3 | F | New v1 record. |
+| AF | 26.8 | F | New v1 record. |
+| MG | 49.4 | F | New v1 record. |
+| MK | 51.2 | D | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 
