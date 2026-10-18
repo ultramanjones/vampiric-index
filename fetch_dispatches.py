@@ -776,6 +776,9 @@ SEARCHES = {
     "SB": {"query": "Solomon Islands economy", "language": "en", "region": "SB", "edition": "SB:en"},
     "VU": {"query": "Vanuatu economy", "language": "en", "region": "VU", "edition": "VU:en"},
     "WS": {"query": "Samoa economy", "language": "en", "region": "WS", "edition": "WS:en"},
+    "VC": {"query": "Saint Vincent and the Grenadines economy", "language": "en", "region": "VC", "edition": "VC:en"},
+    "ST": {"query": "Sao Tome and Principe economy", "language": "en", "region": "ST", "edition": "ST:en"},
+    "TO": {"query": "Tonga economy", "language": "en", "region": "TO", "edition": "TO:en"},
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -951,6 +954,9 @@ COUNTRY_TERMS = {
     "SB": ("solomon islands", "solomon island", "honiara"),
     "VU": ("vanuatu", "vanuatuan", "port vila"),
     "WS": ("samoa", "samoan", "apia"),
+    "VC": ("saint vincent", "st. vincent", "st vincent", "vincentian", "kingstown"),
+    "ST": ("sao tome", "são tomé", "sao tome and principe", "são tomé and príncipe", "santomean"),
+    "TO": ("tonga", "tongan", "nuku'alofa", "nukualofa"),
 }
 
 

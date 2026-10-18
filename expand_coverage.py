@@ -12,17 +12,17 @@ import build_circulation_v2
 GDP_URL = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400"
 COUNTRIES_URL = "https://api.worldbank.org/v2/country?format=json&per_page=400"
 WDI_URL = "https://api.worldbank.org/v2/country/{codes}/indicator/{indicator}?date={year}&format=json&per_page=100"
-# Strict descending WDI 2024 sovereign GDP order after Timor-Leste, verified
+# Strict descending WDI 2024 sovereign GDP order after Samoa, verified
 # against the all-economies GDP API and WDI country metadata on each run.
 # Aggregates and non-sovereign economies are excluded under COUNTRY_COVERAGE.md.
 CANDIDATES = [
-    (181, "COM", "KM", "Comoros", "comoros"),
-    (182, "SLB", "SB", "Solomon Islands", "solomon-islands"),
-    (184, "VUT", "VU", "Vanuatu", "vanuatu"),
-    (185, "WSM", "WS", "Samoa", "samoa"),
+    (186, "VCT", "VC", "St. Vincent and the Grenadines", "st-vincent-and-grenadines"),
+    (188, "STP", "ST", "Sao Tome and Principe", "sao-tome-and-principe"),
+    (190, "TON", "TO", "Tonga", "tonga"),
 ]
 BLOCKED_CANDIDATES = [
-    (183, "GRD", "GD", "Grenada", ["labor_retention"]),
+    (187, "KNA", "KN", "St. Kitts and Nevis", ["labor_retention"]),
+    (189, "DMA", "DM", "Dominica", ["labor_retention"]),
 ]
 INDICATORS = {
     "survival_floor": ("SP.DYN.LE00.IN", 2023, "life_expectancy_years"),
@@ -91,8 +91,8 @@ def main():
         reverse=True,
     )
     source_ranks = {row["countryiso3code"]: index for index, row in enumerate(ranked, start=1)}
-    expected_ranks = [item[0] for item in CANDIDATES]
-    actual_ranks = [source_ranks.get(item[1]) for item in CANDIDATES]
+    expected_ranks = [item[0] for item in CANDIDATES] + [item[0] for item in BLOCKED_CANDIDATES]
+    actual_ranks = [source_ranks.get(item[1]) for item in CANDIDATES + BLOCKED_CANDIDATES]
     if actual_ranks != expected_ranks:
         raise ValueError(f"World Bank candidate ordering changed: expected {expected_ranks}, got {actual_ranks}")
     iso3_codes = [item[1] for item in CANDIDATES] + [item[1] for item in BLOCKED_CANDIDATES]
@@ -104,8 +104,8 @@ def main():
         reading_urls[pillar] = url
 
     roster = payload["metadata"]["coverage_roster"]["countries"]
-    if roster[-1]["country_code"] != "TL":
-        raise ValueError("Expected the existing roster to end with Timor-Leste")
+    if roster[-1]["country_code"] != "WS":
+        raise ValueError("Expected the existing roster to end with Samoa")
     previous_gdp = roster[-1]["gdp_current_usd"]
     added = []
     blocked = []
