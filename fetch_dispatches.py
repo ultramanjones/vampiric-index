@@ -451,6 +451,36 @@ SEARCHES = {
         "region": "US",
         "edition": "US:en",
     },
+    "PA": {
+        "query": "Panama economy",
+        "language": "en-US",
+        "region": "PA",
+        "edition": "PA:en",
+    },
+    "LT": {
+        "query": "Lithuania economy",
+        "language": "en-US",
+        "region": "LT",
+        "edition": "LT:en",
+    },
+    "GH": {
+        "query": "Ghana economy",
+        "language": "en-US",
+        "region": "GH",
+        "edition": "GH:en",
+    },
+    "UY": {
+        "query": "Uruguay economy",
+        "language": "en-US",
+        "region": "UY",
+        "edition": "UY:en",
+    },
+    "TZ": {
+        "query": "Tanzania economy",
+        "language": "en-US",
+        "region": "TZ",
+        "edition": "TZ:en",
+    },
 }
 
 # Google News search is not a structured country filter. A panel must not
@@ -531,6 +561,11 @@ COUNTRY_TERMS = {
     "HR": ("croatia", "croatian", "zagreb"),
     "RS": ("serbia", "serbian", "belgrade"),
     "CI": ("cote d'ivoire", "côte d'ivoire", "ivory coast", "ivoirian", "abidjan"),
+    "PA": ("panama", "panamanian", "panama city"),
+    "LT": ("lithuania", "lithuanian", "vilnius"),
+    "GH": ("ghana", "ghanaian", "accra"),
+    "UY": ("uruguay", "uruguayan", "montevideo"),
+    "TZ": ("tanzania", "tanzanian", "dar es salaam", "dodoma"),
 }
 
 

@@ -6,7 +6,7 @@
 
 The tracked roster contains sovereign economies in descending nominal GDP order, drawn from the World Bank World Development Indicators (WDI) [`NY.GDP.MKTP.CD` — GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD), reference year **2024**. The World Bank all-economies API was retrieved on 2026-10-18. Its country metadata endpoint was used to exclude aggregates and non-sovereign economies; exact values, ordering, source URL, and retrieval date are stored in `data.json` under `metadata.coverage_roster`.
 
-The all-economies query identified a prior roster omission: New Zealand is sovereign-roster rank 51 and is now inserted after Algeria. This run adds the next eligible untracked sequence after Sri Lanka: Costa Rica, Luxembourg, Croatia, Serbia, and Cote d'Ivoire, in that strict WDI order. Ukraine is sovereign-roster rank 56 but was not assigned a record: WDI returned no 2024 observation for the required employment-to-population indicator. It is recorded as a blocker in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. Hong Kong SAR, China (raw economy-list rank 39) and Puerto Rico (raw economy-list rank 62) are not sovereign states and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
+The all-economies query identified a prior roster omission: New Zealand is sovereign-roster rank 51 and is now inserted after Algeria. This run adds the next eligible untracked sequence after Cote d'Ivoire: Panama, Lithuania, Ghana, Uruguay, and Tanzania, in that strict WDI order. Ukraine is sovereign-roster rank 56 but was not assigned a record: WDI returned no 2024 observation for the required employment-to-population indicator. It is recorded as a blocker in `metadata.coverage_roster.blocked_candidates`, with its source URL, rather than receiving an invented score. Hong Kong SAR, China (raw economy-list rank 39) and Puerto Rico (raw economy-list rank 62) are not sovereign states and are excluded under the selection rule. The source query is [World Bank API: all-economies GDP readings](https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?date=2024&format=json&per_page=400).
 
 | Rank | Economy | ISO-2 | 2024 GDP (current US$) |
 | ---: | --- | --- | ---: |
@@ -85,6 +85,11 @@ The all-economies query identified a prior roster omission: New Zealand is sover
 | 73 | Croatia | HR | $0.093tn |
 | 74 | Serbia | RS | $0.090tn |
 | 75 | Cote d'Ivoire | CI | $0.087tn |
+| 76 | Panama | PA | $0.087tn |
+| 77 | Lithuania | LT | $0.086tn |
+| 78 | Ghana | GH | $0.083tn |
+| 79 | Uruguay | UY | $0.082tn |
+| 80 | Tanzania | TZ | $0.079tn |
 
 ### Published score rubric: coverage-input v1
 
@@ -180,6 +185,11 @@ The original US, GB, FR, DE, and MX entries remain labelled **legacy pilot**. Th
 | HR | 63.6 | D | New v1 record. |
 | RS | 51.7 | D | New v1 record. |
 | CI | 44.7 | F | New v1 record. |
+| PA | 64.6 | D | New v1 record. |
+| LT | 70.1 | C | New v1 record. |
+| GH | 51.8 | D | New v1 record. |
+| UY | 69.6 | C | New v1 record. |
+| TZ | 44.9 | F | New v1 record. |
 
 ### Acute dispatches and dashboard integration
 
