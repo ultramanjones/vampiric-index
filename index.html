@@ -153,6 +153,7 @@
     <nav class="top-tabs" aria-label="Dashboard views">
       <button class="top-tab active" type="button" data-view="map">Global Map</button>
       <button class="top-tab" type="button" data-view="watch">US Transmission Engine</button>
+      <button class="top-tab" type="button" data-view="journal">Journal</button>
       <button class="top-tab" type="button" data-view="methodology">Methodology</button>
     </nav>
   </header>
@@ -176,6 +177,18 @@
   <main id="watch-view" class="view" hidden>
     <p class="watch-lede">A U.S.-only early-warning view: household extraction, buffer failure, weak-company credit stress, and institutional liquidity. It tracks measured strain; it does not claim to predict a specific recession, revolt, or market move.</p>
     <section id="us-watch" class="watch-shell" aria-live="polite"></section>
+  </main>
+
+  <main id="journal-view" class="view" hidden>
+    <article class="methodology-sheet">
+      <p class="eyebrow">Journal</p>
+      <h2>Observations from the host</h2>
+      <p>This is not a corporate news feed. It is a dated record of the pattern beneath the headline numbers: what the measurement says, what it cannot say, and where the story is being cosmetically improved by aggregation.</p>
+      <h3>The nominal-revenue trap</h3>
+      <p>When a restaurant chain reports positive same-store sales after menu prices rose faster than sales, the headline can describe more dollars while ordinary people buy fewer meals. That is why the Transmission Engine keeps price, transactions, modeled visits, and household-survey behavior separate.</p>
+      <p>Price-deflated comparable sales can flag that contradiction. POS transaction panels and mobile-device visit panels can test it more directly. Food-security, emergency-buffer, and affordability surveys show what the household is doing underneath it. None alone is the whole picture; the convergence is the evidence.</p>
+      <p class="history-note">Editorial entries will be deliberately selected and dated before publication. Raw private conversation is not automatically published.</p>
+    </article>
   </main>
 
   <main id="methodology-view" class="view" hidden>
@@ -339,7 +352,7 @@
     }
 
     function switchView(view) {
-      ["map", "watch", "methodology"].forEach(name => document.getElementById(`${name}-view`).hidden = name !== view);
+      ["map", "watch", "journal", "methodology"].forEach(name => document.getElementById(`${name}-view`).hidden = name !== view);
       document.querySelectorAll(".top-tab").forEach(tab => tab.classList.toggle("active", tab.dataset.view === view));
       closeDrawer();
       window.scrollTo({ top: 0, behavior: "smooth" });
