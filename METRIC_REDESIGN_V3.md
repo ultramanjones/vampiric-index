@@ -37,9 +37,9 @@ The public question should become:
 - World Bank Poverty and Inequality Platform only as a clearly labeled survey-based supplement
 
 **WID machine-readable core:**
-- `sptinc992j`, `p0p50`: bottom-50 share of pre-tax national income
-- `sptinc992j`, `p90p100`: top-10 share of pre-tax national income
-- `sdiinc992j` where available: post-tax national-income distribution
+- `sptincj992`, `p0p50`: bottom-50 share of pre-tax national income
+- `sptincj992`, `p90p100`: top-10 share of pre-tax national income
+- `sdiincj992` where available: post-tax national-income distribution
 
 WID bulk documentation: https://wid.world/bulk_download/README.md
 
@@ -92,8 +92,8 @@ There is no honest universal annual rent-burden dataset. EU-SILC has high-qualit
 - Emergency-expense resilience
 
 **Global distribution source:** WID wealth series where available:
-- `shweal992j`, `p0p50`: bottom-50 net-personal-wealth share
-- `shweal992j`, `p90p100`: top-10 wealth share
+- `shwealj992`, `p0p50`: bottom-50 net-personal-wealth share
+- `shwealj992`, `p90p100`: top-10 wealth share
 
 Wealth data should always carry a data-quality warning: it is thinner, more modeled, and more sensitive to valuation and tax-haven assumptions than income data.
 
