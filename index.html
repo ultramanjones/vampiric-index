@@ -322,6 +322,20 @@
         metrics.append(card);
       });
       target.append(metrics);
+      const qsr = transmission.qsr_evidence_watch;
+      if (qsr) {
+        target.append(makeElement("h3", "section-title", "QSR physical-demand evidence watch"));
+        target.append(makeElement("p", "history-note", qsr.rule));
+        const qsrSources = makeElement("div", "watch-metrics");
+        [...qsr.sources, ...qsr.survey_sources].forEach(source => {
+          const card = makeElement("article", "watch-metric");
+          const link = makeElement("a", "", source.name);
+          link.href = source.url; link.target = "_blank"; link.rel = "noopener noreferrer";
+          card.append(link, makeElement("span", "", source.use));
+          qsrSources.append(card);
+        });
+        target.append(qsrSources);
+      }
     }
 
     function switchView(view) {

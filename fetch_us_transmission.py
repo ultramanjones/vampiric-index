@@ -40,6 +40,12 @@ SERIES = {
         "unit": "Percent of disposable income",
         "description": "Personal saving as a percentage of disposable personal income.",
     },
+    "food_away_from_home_cpi": {
+        "id": "CUUR0000SEFV",
+        "label": "Food away from home CPI",
+        "unit": "Index (1982-84=100)",
+        "description": "Consumer Price Index for food purchased away from home; used only to deflate a documented restaurant same-store sales series, never as traffic itself.",
+    },
     "high_yield_oas": {
         "id": "BAMLH0A0HYM2",
         "label": "US broad high-yield option-adjusted spread",
@@ -352,6 +358,7 @@ def build_payload(history, fetched_at, series, canaries):
         "revolving_credit": indicator_snapshot(series["revolving_credit"], 365),
         "credit_card_apr": indicator_snapshot(series["credit_card_apr"], 365),
         "personal_saving_rate": indicator_snapshot(series["personal_saving_rate"], 365),
+        "food_away_from_home_cpi": indicator_snapshot(series["food_away_from_home_cpi"], 365),
         "high_yield_oas": indicator_snapshot(series["high_yield_oas"], 30),
         "ccc_oas": indicator_snapshot(series["ccc_oas"], 30),
         "fed_assets": indicator_snapshot(series["fed_assets"], 90),
@@ -411,6 +418,55 @@ def build_payload(history, fetched_at, series, canaries):
     return {
         "schema_version": 1,
         "generated_at": fetched_at,
+        "qsr_evidence_watch": {
+            "label": "QSR physical-demand evidence watch",
+            "status": "partial_public_coverage",
+            "rule": "A real-sales proxy may be calculated only when a company publishes a dated comparable-sales growth figure. Subtract the matching-period food-away-from-home CPI change, then label the result a price-deflated same-store-sales proxy — not transactions, guest counts, or physical visits.",
+            "formula": "price-deflated comparable-sales proxy = disclosed comparable-sales growth − food-away-from-home CPI change",
+            "sources": [
+                {
+                    "name": "BLS Food Away From Home CPI via FRED",
+                    "type": "official price index",
+                    "url": series["food_away_from_home_cpi"]["source_url"],
+                    "use": "Price deflator only; not a traffic series.",
+                },
+                {
+                    "name": "Black Box Intelligence Restaurant Sales and Traffic Report",
+                    "type": "participating-operator same-store transaction/traffic benchmark",
+                    "url": "https://blackboxintelligence.com/restaurant-sales-and-traffic-report/",
+                    "use": "Method and broad coverage are public; many exact monthly values are commercial/gated.",
+                },
+                {
+                    "name": "RMS U.S. Restaurant Industry in 2023: A Year in Review",
+                    "type": "restaurant transaction-data benchmark",
+                    "url": "https://www.rmsresults.com/insights/the-u-s-restaurant-industry-in-2023-a-year-in-review/",
+                    "use": "Public directional evidence; detailed numeric category tables may be gated.",
+                },
+                {
+                    "name": "Placer.ai data methodology",
+                    "type": "modeled mobile-device visits",
+                    "url": "https://www.placer.ai/data-methodology/",
+                    "use": "A physical-visit proxy, not a POS guest/transaction count; individual reports define their own restaurant set and time window.",
+                },
+            ],
+            "survey_sources": [
+                {
+                    "name": "Census Household Pulse Survey",
+                    "url": "https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html",
+                    "use": "Probability-based survey; selected waves include food-away-from-home spending and all waves provide food-sufficiency measures.",
+                },
+                {
+                    "name": "USDA CPS Food Security Supplement",
+                    "url": "https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics/",
+                    "use": "Annual nationally representative food insecurity and meal-cutting/skipping measures.",
+                },
+                {
+                    "name": "Federal Reserve SHED",
+                    "url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
+                    "use": "Annual emergency-buffer and debt-dependence survey; not a restaurant-traffic metric.",
+                },
+            ],
+        },
         "methodology": {
             "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
             "limitations": [

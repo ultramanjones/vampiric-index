@@ -53,6 +53,11 @@ class TransmissionScoringTests(unittest.TestCase):
         self.assertLessEqual(redline_score, 4.0)
         self.assertAlmostEqual(interest, 286.6)
 
+    def test_qsr_deflator_series_is_declared(self):
+        series = transmission.SERIES["food_away_from_home_cpi"]
+        self.assertEqual(series["id"], "CUUR0000SEFV")
+        self.assertIn("deflate", series["description"].lower())
+
     def test_active_phase_uses_furthest_material_phase(self):
         phases = [
             {"number": 1, "name": "one", "score": 17.0},

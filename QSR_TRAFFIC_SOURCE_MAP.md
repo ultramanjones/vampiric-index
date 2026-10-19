@@ -21,6 +21,18 @@ That does **not** mean the demand side is unknowable. It means the dashboard mus
 2. official household surveys about food stress and food-away-from-home spending, and
 3. clearly marked commercial/public-report snapshots when they are available.
 
+## What the physical-traffic vendors actually measure
+
+The useful distinction is not rhetorical — it decides what the dashboard is allowed to say.
+
+| Provider | What the measure actually is | Publicly verifiable scope | Safe dashboard label |
+|---|---|---|---|
+| [Black Box Intelligence](https://blackboxintelligence.com/restaurant-sales-and-traffic-report/) | Participating-operator same-store transaction/guest traffic benchmark | Provider says its database covers more than 75,000 restaurant locations and about $125B annual sales; most exact monthly numbers are commercial/gated | **Participating-restaurant transaction traffic benchmark** |
+| [Revenue Management Solutions](https://www.rmsresults.com/insights/the-u-s-restaurant-industry-in-2023-a-year-in-review/) | Restaurant transaction-data benchmark that separates sales, check, and traffic in its client data | Public directional reports; detailed numeric category tables may be gated | **Restaurant transaction-data benchmark; public directional evidence** |
+| [Placer.ai](https://www.placer.ai/data-methodology/) | Modeled location visits inferred from a panel of mobile devices and statistical normalization | Public reports provide defined sets of chains/locations; detailed data is commercial | **Modeled mobile-device visits — not POS guest counts** |
+
+This is the branch that matters: **POS transaction traffic, physical device visits, nominal sales, and consumer survey behavior are four different instruments.** They can converge on the same phenomenon — fewer ordinary people buying food away from home — but must never be collapsed into one fake precision number.
+
 ## Tier 1 — automate these first
 
 ### 1. Census monthly restaurant-sector sales — activity proxy, not visits
@@ -88,6 +100,16 @@ That does **not** mean the demand side is unknowable. It means the dashboard mus
   - [Chipotle investor news releases](https://ir.chipotle.com/news-releases)
   - [Starbucks financial releases](https://investor.starbucks.com/press-releases/financial-releases/default.aspx)
 - These are company-specific, definitions can change, and they must be hand-curated with release dates. They are not a national QSR traffic index.
+
+## Price-deflated comparable-sales proxy — allowed, but not called traffic
+
+Where an issuer provides a dated, comparable-period same-store-sales growth figure, the dashboard may calculate:
+
+```text
+price-deflated comparable-sales proxy = disclosed comparable-sales growth − matching-period Food Away From Home CPI change
+```
+
+That comparison can expose the nominal-revenue trap: a restaurant can report positive dollar sales while price growth exceeds that sales growth. But it is **not physical traffic**. Menu mix, discounting, delivery fees, location composition, and the gap between the CPI basket and a chain's own price changes remain. It belongs beside, not instead of, true transaction or visit evidence.
 
 ## Explicit exclusions
 
