@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T04:32:52Z",
+  "generated_at": "2026-10-19T10:40:37Z",
   "methodology": {
     "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
     "limitations": [
@@ -680,6 +680,16 @@
     },
     {
       "generated_at": "2026-10-19T04:32:52Z",
+      "total_transmission_index": 19.5,
+      "phase_scores": {
+        "1": 2.5,
+        "2": 6.0,
+        "3": 2.0,
+        "4": 9.0
+      }
+    },
+    {
+      "generated_at": "2026-10-19T10:40:37Z",
       "total_transmission_index": 19.5,
       "phase_scores": {
         "1": 2.5,
