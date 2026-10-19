@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T10:40:37Z",
+  "generated_at": "2026-10-19T16:46:21Z",
   "methodology": {
     "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
     "limitations": [
@@ -9,7 +9,7 @@
       "A phase score does not establish causation between consumer stress and asset prices."
     ]
   },
-  "total_transmission_index": 19.5,
+  "total_transmission_index": 21.5,
   "active_contagion_phase": {
     "number": 4,
     "name": "Institutional asset repricing",
@@ -39,8 +39,8 @@
     {
       "number": 3,
       "name": "Corporate & regional credit stress",
-      "score": 2.0,
-      "diagnosis": "US high-yield OAS is 3.23 percentage points; the 30-day change is +0.47 points when available.",
+      "score": 4.0,
+      "diagnosis": "US high-yield OAS is 3.31 percentage points; the 30-day change is +0.61 points when available.",
       "indicator_keys": [
         "high_yield_oas"
       ]
@@ -89,12 +89,12 @@
       "unit": "Percentage points",
       "description": "ICE BofA US High Yield Index option-adjusted spread.",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLH0A0HYM2",
-      "value": 3.23,
-      "observation_date": "2026-10-15",
-      "prior_value": 2.76,
-      "prior_observation_date": "2026-09-15",
-      "change": 0.47,
-      "percent_change": 17.03
+      "value": 3.31,
+      "observation_date": "2026-10-16",
+      "prior_value": 2.7,
+      "prior_observation_date": "2026-09-16",
+      "change": 0.61,
+      "percent_change": 22.59
     },
     "fed_assets": {
       "series_id": "WALCL",
@@ -695,6 +695,16 @@
         "1": 2.5,
         "2": 6.0,
         "3": 2.0,
+        "4": 9.0
+      }
+    },
+    {
+      "generated_at": "2026-10-19T16:46:21Z",
+      "total_transmission_index": 21.5,
+      "phase_scores": {
+        "1": 2.5,
+        "2": 6.0,
+        "3": 4.0,
         "4": 9.0
       }
     }
