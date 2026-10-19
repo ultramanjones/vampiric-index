@@ -100,6 +100,11 @@
     .history-swatch { width: .7rem; height: .7rem; display: inline-block; border-radius: 50%; }
     .history-chart { width: 100%; height: auto; min-height: 13rem; border: 1px solid #352935; background: #0a0a0e; }
     .history-note { margin: .6rem 0 0; color: var(--muted); font-size: .76rem; line-height: 1.4; }
+    .squeeze-section { margin: 1.2rem 0 .25rem; padding-top: 1rem; border-top: 1px solid #4b3944; }
+    .squeeze-section h3 { margin: 0 0 .35rem; }
+    .squeeze-section p { color: var(--muted); font-size: .82rem; line-height: 1.45; margin: 0 0 .75rem; }
+    .squeeze-frame { display: block; width: 100%; min-height: 1100px; border: 1px solid #4b3944; background: #0d0d12; }
+    .squeeze-link { display: inline-block; color: var(--bone); font-size: .78rem; margin-top: .55rem; }
     ul { padding-left: 1.2rem; color: var(--muted); line-height: 1.45; }
     li + li { margin-top: .6rem; }
     .dispatch { border-top: 1px solid var(--line); padding: .8rem 0; }
@@ -340,6 +345,29 @@
       range.addEventListener("change", draw); frequency.addEventListener("change", draw); draw(); drawerContent.append(panel);
     }
 
+    window.addEventListener("message", event => {
+      if (event.origin !== window.location.origin || !event.data || event.data.type !== "the-squeeze-height") return;
+      const frame = document.querySelector(".squeeze-frame");
+      if (frame && Number.isFinite(event.data.height)) frame.style.height = `${Math.max(1100, event.data.height + 2)}px`;
+    });
+
+    function appendTheSqueeze() {
+      const section = makeElement("section", "squeeze-section");
+      section.append(makeElement("h3", "section-title", "Field Note: The Squeeze"));
+      section.append(makeElement("p", "", "A Pittsburgh model: one single adult with no car payment, mapped against benefit cutoffs and the gross income needed to cover an ordinary bare-minimum life. Read the model assumptions and source note inside the feature."));
+      const frame = makeElement("iframe", "squeeze-frame");
+      frame.src = "./the-squeeze.html";
+      frame.title = "The Squeeze: Pittsburgh benefit thresholds and cost of living";
+      frame.loading = "lazy";
+      section.append(frame);
+      const link = makeElement("a", "squeeze-link", "Open The Squeeze in its own page ↗");
+      link.href = "./the-squeeze.html";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      section.append(link);
+      drawerContent.append(section);
+    }
+
     function openDossier(country) {
       const scorecard = activeScorecard(country);
       const definition = activeDefinition();
@@ -408,6 +436,7 @@
           drawerContent.append(item);
         });
       }
+      if (country.country_code === "US") appendTheSqueeze();
       document.body.classList.add("drawer-open");
       drawer.setAttribute("aria-hidden", "false");
       document.getElementById("close-drawer").focus();

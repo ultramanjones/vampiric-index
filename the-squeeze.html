@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Squeeze — what they'll allow vs. what it costs</title>
+<style>
+  :root { color-scheme: light; }
+  .viz-root {
+    color-scheme: light;
+    --surface-1:#fcfcfb; --page:#f9f9f7;
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#898781;
+    --gridline:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,0.10);
+    --gov:#2a78d6; --exp:#eb6834; --tax:#a3232b; --critical:#d03b3b;
+    color: var(--text-primary);
+  }
+  @media (prefers-color-scheme: dark){ :root:where(:not([data-theme="light"])) .viz-root{
+    color-scheme: dark;
+    --surface-1:#1a1a19; --page:#0d0d0d;
+    --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#898781;
+    --gridline:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
+    --gov:#3987e5; --exp:#d95926; --tax:#a8264f; --critical:#d03b3b;
+  }}
+  :root[data-theme="dark"] .viz-root{
+    color-scheme: dark;
+    --surface-1:#1a1a19; --page:#0d0d0d;
+    --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#898781;
+    --gridline:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
+    --gov:#3987e5; --exp:#d95926; --tax:#a8264f; --critical:#d03b3b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--page)}
+  .viz-root{background:var(--page);min-height:100vh;padding:28px 20px 56px}
+  .viz-root h1,.viz-root h2,.viz-root h3{color:var(--text-primary)}
+  .wrap{max-width:1120px;margin:0 auto}
+  header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:4px}
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em}
+  .sub{color:var(--text-secondary);font-size:14px;line-height:1.5;margin:0;max-width:70ch}
+  .toggle{flex:none;background:var(--surface-1);color:var(--text-secondary);border:1px solid var(--border);border-radius:8px;padding:7px 12px;font:inherit;font-size:12.5px;cursor:pointer}
+  .toggle:hover{color:var(--text-primary)}
+  .card{background:var(--surface-1);border:1px solid var(--border);border-radius:14px;padding:22px 24px 20px;margin-top:22px}
+  .scroll{overflow:visible}
+  .scrollinner{min-width:0}
+  .scroll::-webkit-scrollbar{height:8px}
+  .scroll::-webkit-scrollbar-thumb{background:var(--baseline);border-radius:4px}
+
+  /* legend */
+  .legend{display:flex;gap:24px;margin:0 0 20px;font-size:12.5px;color:var(--text-secondary);flex-wrap:wrap}
+  .legend span{display:flex;align-items:center;gap:7px}
+  .sw{width:13px;height:13px;border-radius:3px;flex:none}
+
+  /* chart */
+  .heads{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:10px}
+  .heads div{font-size:12px;font-weight:650;letter-spacing:.03em;text-transform:uppercase;color:var(--text-muted)}
+  .heads .l{text-align:right;padding-right:14px}
+  .heads .r{text-align:left;padding-left:14px}
+
+  .rows{position:relative}
+  .brow{display:grid;grid-template-columns:1fr 1fr;align-items:center;margin-bottom:8px;position:relative}
+  .half{position:relative;height:30px}
+  .half.l .bar{position:absolute;right:0;top:4px;height:22px;background:var(--gov);border-radius:4px 0 0 4px}
+  .half.r .bar{position:absolute;left:0;top:4px;height:22px;background:var(--exp);border-radius:0}
+  .half.r .tax{position:absolute;top:4px;height:22px;background:var(--tax);border-radius:0 4px 4px 0}
+  .lab{position:absolute;top:50%;transform:translateY(-50%);font-size:11.5px;white-space:nowrap;color:var(--text-primary);line-height:1.15}
+  .lab .nm{font-size:12px}
+  .lab .amt{font-weight:660;font-variant-numeric:tabular-nums}
+  .lab .nm{color:var(--text-secondary)}
+  .lab .plus{color:var(--text-muted)}
+  .lab .taxamt{color:var(--tax);font-weight:600;font-variant-numeric:tabular-nums}
+  .lab .tot{font-weight:700;font-variant-numeric:tabular-nums;color:var(--text-primary)}
+  .inlab{color:#fff}
+  .inlab .nm,.inlab .plus{color:rgba(255,255,255,.75)}
+  .inlab .amt,.inlab .tot{color:#fff}
+  .inlab .taxamt{color:#ffc9c2}
+  .half.l .lab{right:0;text-align:right;padding-right:10px}
+  .half.r .lab{left:0;text-align:left;padding-left:10px}
+  .brow:hover .bar{filter:brightness(1.12)}
+
+  .spine{position:absolute;left:50%;top:-6px;bottom:-6px;width:2px;background:var(--baseline);transform:translateX(-50%)}
+
+  /* collision band */
+  .zone{position:absolute;top:-6px;bottom:-6px;background:var(--critical);opacity:.07;pointer-events:none}
+  .zonelab{position:absolute;font-size:11.5px;font-weight:650;color:var(--critical);white-space:nowrap}
+
+  .axis{display:grid;grid-template-columns:1fr 1fr;margin-top:6px;position:relative;height:20px}
+  .ax{position:relative}
+  .tk{position:absolute;font-size:11px;color:var(--text-muted);transform:translateX(-50%);font-variant-numeric:tabular-nums}
+
+  .punch{margin-top:24px;padding:18px 20px;border-left:3px solid var(--critical);background:var(--surface-1);border-radius:0 12px 12px 0;border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .punch p{margin:0 0 9px;font-size:14px;line-height:1.6;color:var(--text-secondary)}
+  .punch p:last-child{margin:0}
+  .punch strong{color:var(--text-primary)}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+  .tile{background:var(--surface-1);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
+  .hero{font-size:31px;font-weight:660;letter-spacing:-.02em;margin:0 0 2px}
+  .herolab{font-size:12.5px;color:var(--text-secondary);margin:0 0 12px}
+  .tile h3{font-size:13px;margin:0 0 8px}
+  .tile p{font-size:13px;line-height:1.55;color:var(--text-secondary);margin:0}
+  .tile strong{color:var(--text-primary)}
+  @media(max-width:1060px){.lab{font-size:10.3px}.lab .nm{font-size:10.6px}}
+  @media(max-width:860px){.lab{font-size:9.4px}.lab .nm{font-size:9.6px}}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr}.heads div{font-size:10px}}
+
+  #tip{position:fixed;pointer-events:none;opacity:0;transition:opacity .1s;background:var(--surface-1);border:1px solid var(--border);border-radius:9px;padding:9px 12px;font-size:12.5px;line-height:1.45;box-shadow:0 6px 22px rgba(0,0,0,.14);max-width:280px;z-index:50;color:var(--text-primary)}
+  #tip .t{font-weight:650;display:block;margin-bottom:3px}
+  #tip .a{color:var(--text-secondary)}
+
+  details{margin-top:20px}
+  summary{cursor:pointer;font-size:12.5px;color:var(--text-secondary)}
+  table{border-collapse:collapse;width:100%;font-size:12.5px;margin-top:8px}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--gridline)}
+  th{color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+  footer{margin-top:26px;font-size:11.5px;color:var(--text-muted);line-height:1.6}
+</style>
+</head>
+<body>
+<div class="viz-root">
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>The Squeeze</h1>
+      <p class="sub">What the government permits a single adult to earn, against what it costs that adult to live in Pittsburgh. <strong>Both sides are gross monthly income</strong> — the expense side is grossed up for federal, FICA, PA and local tax, so the two wings are directly comparable. Single adult, no dependents, 2026. <em>A model built from published averages — not anyone's personal budget.</em></p>
+    </div>
+    <button class="toggle" id="tt">Dark</button>
+  </header>
+
+  <div class="card">
+    <div class="legend">
+      <span><i class="sw" style="background:var(--gov)"></i> What the government allows before it takes something away</span>
+      <span><i class="sw" style="background:var(--exp)"></i> <strong>SPENT</strong> — money that actually pays a bill</span>
+      <span><i class="sw" style="background:var(--tax)"></i> <strong>TAX</strong> — earned and handed over, never spent</span>
+      <span style="color:var(--text-primary);font-weight:600">Every label reads: spent + tax = what must be earned</span>
+      <span style="color:var(--critical);font-weight:600">⚠ = this cost exists only because the benefit on the left just died</span>
+    </div>
+
+    <div class="heads">
+      <div class="l">← Benefits die going this way</div>
+      <div class="r">Gross income required →</div>
+    </div>
+
+    <div class="scroll"><div class="scrollinner">
+      <div class="rows" id="rows"><div class="spine"></div></div>
+      <div class="axis">
+        <div class="ax" id="axL"></div>
+        <div class="ax" id="axR"></div>
+      </div>
+    </div></div>
+    
+  </div>
+
+  <div class="punch">
+    <p><strong>The right wing is longer than the left on every single row.</strong> Not at the end — at the beginning, in the middle, and at the end. There is no step at which the income a person is permitted to earn covers what that step costs.</p>
+    <p><strong>Row one.</strong> Rent alone — one bedroom, Pittsburgh average, nothing else — already requires more income than the level at which SNAP considers a person employed. No lights on yet.</p>
+    <p><strong>Row three.</strong> Rent, utilities, and a phone. That's it. The income needed has already passed the point where <em>an SSDI claim dies</em>.</p>
+    <p><strong>Stress-tested against the whole rent range,</strong> not just one number. At the low end of the published Pittsburgh one-bedroom average ($1,334/mo) this life needs <strong>$5,273/mo ($63,281/yr)</strong>. At the high end ($1,457/mo), <strong>$5,435/mo ($65,216/yr)</strong>. The 400% cliff sits at <strong>$5,320/mo ($63,840/yr)</strong> — <em>inside that band</em>. Which side of a <strong>$570/mo ($6,840/yr)</strong> penalty a person lands on is decided by which apartment they happened to rent.</p>
+    <p><strong>Rows five, seven, and eight are the cruel ones,</strong> because the cost on the right is <em>created</em> by the benefit dying on the left. Medicaid ends → a premium appears — <strong>minimum $330/mo ($3,960/yr)</strong> at what's currently on the marketplace. Cost-sharing ends → deductibles appear. The 400% subsidy ends → that premium doubles. <strong>Each blue bar's death is what makes the orange bar beside it longer.</strong> It isn't two staircases. It's one machine.</p>
+  </div>
+
+  <div class="grid2">
+    <div class="tile">
+      <p class="hero" style="color:var(--tax)">20%</p>
+      <p class="herolab">of the last bar is tax nobody ever sees</p>
+      <p>The red is the wedge — money that must be earned and immediately handed over before a single bill is paid. It starts at <strong>13%</strong> on the rent row and grows to <strong>20%</strong> by the bottom, because the brackets climb with income.</p>
+      <p style="margin-top:8px">Which is why the orange alone would have lied. Spending $4,270/mo ($51,240/yr) means <em>earning $5,360/mo ($64,320/yr)</em>.</p>
+    </div>
+    <div class="tile">
+      <h3>And there's an $842/mo ($10,101/yr) dead zone</h3>
+      <p>Cross the cliff at <strong>$5,320/mo ($63,840/yr)</strong> and the premium jumps ~$570/mo ($6,840/yr). The lost ground isn't recovered until <strong>$6,162/mo ($73,941/yr)</strong>.</p>
+      <p>Every wage in that <strong>$842/mo ($10,101/yr)</strong> band leaves <strong>less spendable money</strong> than $5,320/mo ($63,840/yr) did. At $5,500/mo ($66,000/yr) it's $434/mo worse. At $5,833/mo ($70,000/yr), $213/mo worse.</p><p style="margin-top:8px"><strong>The band to avoid: $5,320–$6,162/mo ($63,840–$73,941/yr).</strong></p>
+    </div>
+  </div>
+
+  <details>
+    <summary>Table view — both sides, and where the expense estimates came from</summary>
+    <table><thead><tr><th>Government threshold</th><th>Allowed</th><th>Cumulative expense</th><th>Spent</th><th>Tax</th><th>Must earn</th></tr></thead><tbody id="tb"></tbody></table>
+  </details>
+
+  <footer>
+    <strong>Method.</strong> Expenses are a generic single adult in Pittsburgh, not any individual's budget. Rent uses the published one-bedroom average ($1,334–$1,457; $1,400 used) per Zillow, Zumper, Apartments.com, RentCafe and Apartment List, August 2026. Groceries approximate the USDA moderate-cost plan for a man 51–70. Each cumulative net figure is grossed up to the pre-tax income required to produce it, using 2026 single-filer federal brackets, the standard deduction, FICA at 7.65%, PA income tax at 3.07%, and 1% local EIT. Health premiums are age-rated; this model prices a mid-fifties adult, subsidized silver below the cliff and full price above it. A younger adult's premiums are lower and the cliff bites less; an older one's bite harder.<br>
+    <strong>Government figures:</strong> SSA Red Book 2026 (SGA $1,690) · PA DHS (SNAP 200% FPL, Medicaid 138% FPL) · 2026 HHS poverty guidelines ($15,960/yr for a household of one). Enhanced ACA premium tax credits expired December 31, 2025, restoring the hard 400% FPL cliff.<br>
+    Tax figures are estimates, not a return. Directionally solid; check anything load-bearing.
+  </footer>
+
+</div></div>
+<div id="tip"></div>
+
+<script>
+const GOV=[
+ {n:"SNAP work requirement met",v:942,d:"At or above this, the SNAP 80-hour work requirement is satisfied through wages instead of logged hours."},
+ {n:"100% poverty line",v:1330,d:"The federal poverty line for one person, 2026. A marker, not a cliff."},
+ {n:"Disability claim dies",v:1690,d:"Substantial Gainful Activity. Earn this and SSA concludes the claimant is not disabled. The claim ends."},
+ {n:"Medicaid ends",v:1835,d:"138% FPL. Coverage stops roughly 4–8 weeks after income holds above this."},
+ {n:"Best cost-sharing tier ends",v:1995,d:"150% FPL. The richest silver cost-sharing reductions start stepping down."},
+ {n:"SNAP ends",v:2660,d:"200% FPL — Pennsylvania's gross income limit. Food benefits stop."},
+ {n:"Cost-sharing help ends",v:3325,d:"250% FPL. No more reduced deductibles or out-of-pocket caps."},
+ {n:"All ACA subsidy ends",v:5320,d:"400% FPL. The hard cliff — one dollar over and the whole premium credit vanishes."}
+];
+const EXP=[
+ {n:"Rent (Pittsburgh 1-BR avg)",net:1400,v:1617,d:"$1,400/mo of actual rent — the midpoint of the published Pittsburgh one-bedroom average, $1,334–$1,457."},
+ {n:"+ Utilities",net:1630,v:1911,d:"+$230/mo. Utilities for one person in a one-bedroom, averaged across the year."},
+ {n:"+ Phone & internet",net:1760,v:2077,d:"+$130/mo. Not optional for anyone who works, applies for work, or sees a doctor."},
+ {n:"+ Groceries",net:2120,v:2541,d:"+$360/mo. Roughly the USDA moderate-cost plan for a man over 50."},
+ {n:"+ Health premium ⚠",net:2450,v:2974,d:"+$330/mo MINIMUM — that is the cheapest thing currently on the marketplace, not a typical plan. This cost DID NOT EXIST one row ago; it appeared the moment Medicaid ended."},
+ {n:"+ Car & insurance",net:3100,v:3826,d:"+$650/mo. Pittsburgh transit does not reach most employers, doctors, or interviews."},
+ {n:"+ Deductibles & Rx ⚠",net:3300,v:4088,d:"+$200/mo. Silver plans without cost-sharing reductions carry deductibles in the thousands."},
+ {n:"+ Household ⚠",net:4270,v:5360,d:"+$970/mo, of which $570 is the premium DOUBLING because the 400% cliff was just crossed."}
+];
+const MAX=7600;
+const rows=document.getElementById('rows');
+const N=Math.max(GOV.length,EXP.length);
+const pct=v=>v/MAX*100;
+
+for(let i=0;i<N;i++){
+  const g=GOV[i],e=EXP[i];
+  const r=document.createElement('div'); r.className='brow';
+  const IN=47; // beyond this % the label moves inside the bar
+  let lh='';
+  if(g){ const w=pct(g.v), inside=w>IN;
+    lh='<div class="bar" style="width:'+w+'%"></div><div class="lab" style="right:'+(inside?'auto':w+'%')+';'+(inside?'left:'+(100-w+1.4)+'%;text-align:left;padding-left:0;padding-right:0;color:#fff;':'')+'"><span class="amt">$'+g.v.toLocaleString()+'</span> <span class="nm"'+(inside?' style="color:rgba(255,255,255,.85)"':'')+'>'+g.n+'</span></div>'; }
+  let rh='';
+  if(e){ const w=pct(e.v), wn=pct(e.net), fits=wn>30;
+    const math='<span class="amt">$'+e.net.toLocaleString()+'</span>'+
+               '<span class="plus"> + </span><span class="taxamt">$'+(e.v-e.net).toLocaleString()+' tax</span>'+
+               '<span class="plus"> = </span><span class="tot">$'+e.v.toLocaleString()+'</span>';
+    rh='<div class="bar" style="width:calc('+wn+'% - 2px)"></div>'+
+       '<div class="tax" style="left:'+wn+'%;width:calc('+(w-wn)+'% + 2px)"></div>'+
+       (fits ? '<div class="lab inlab" style="right:'+(100-wn+1.6)+'%;left:auto;text-align:right;padding:0">'+math+'</div>' : '')+
+       '<div class="lab" style="left:'+w+'%;padding-left:11px"><span class="nm">'+e.n+'</span>'+(fits?'':' '+math)+'</div>'; }
+  r.innerHTML='<div class="half l">'+lh+'</div><div class="half r">'+rh+'</div>';
+  if(g){const h=r.querySelector('.half.l');h.addEventListener('mousemove',ev=>tipOn(ev,g.n,g.v,g.d));h.addEventListener('mouseleave',tipOff);}
+  if(e){const h=r.querySelector('.half.r');const dd='<b>$'+e.net.toLocaleString()+' spent</b> + <b>$'+(e.v-e.net).toLocaleString()+' tax</b> = must earn <b>$'+e.v.toLocaleString()+'</b> ('+Math.round((e.v-e.net)/e.v*100)+'% goes to tax).<br>'+e.d;h.addEventListener('mousemove',ev=>tipOn(ev,e.n,e.v,dd));h.addEventListener('mouseleave',tipOff);}
+  rows.appendChild(r);
+}
+
+function fitLabels(){
+  const rows=document.getElementById('rows');
+  const box=rows.getBoundingClientRect();
+  document.querySelectorAll('.half.r .lab:not(.inlab)').forEach(l=>{
+    l.style.left=l.dataset.left; l.style.right='auto';
+    l.style.paddingLeft='11px'; l.style.textAlign='left';
+    const r=l.getBoundingClientRect();
+    if(r.right>box.right-4){
+      l.style.left='auto'; l.style.right='0px';
+      l.style.paddingLeft='0'; l.style.textAlign='right';
+    }
+  });
+}
+requestAnimationFrame(fitLabels);
+addEventListener('resize',fitLabels);
+
+// axes: 0 at centre, growing outward
+const mk=(el,dir)=>{[0,1000,2000,3000,4000,5000].forEach(t=>{
+  const d=document.createElement('div');d.className='tk';
+  d.style[dir==='l'?'right':'left']=pct(t)+'%';
+  d.style.transform='translateX('+(dir==='l'?'50%':'-50%')+')';
+  d.textContent=t===0?'$0':'$'+t/1000+'k';el.appendChild(d);});};
+mk(document.getElementById('axL'),'l');
+mk(document.getElementById('axR'),'r');
+
+document.getElementById('tb').innerHTML=Array.from({length:N}).map((_,i)=>{
+ const g=GOV[i],e=EXP[i];
+ return '<tr><td>'+(g?g.n:'')+'</td><td class="num">'+(g?'$'+g.v.toLocaleString():'')+'</td><td>'+(e?e.n:'')+'</td><td class="num">'+(e?'$'+e.net.toLocaleString():'')+'</td><td class="num">'+(e?'$'+(e.v-e.net).toLocaleString():'')+'</td><td class="num">'+(e?'$'+e.v.toLocaleString():'')+'</td></tr>';
+}).join('');
+
+const tip=document.getElementById('tip');
+function tipOn(ev,n,v,d){
+  tip.innerHTML='<span class="t">'+n+' — $'+v.toLocaleString()+'/mo</span><span class="a">'+d+'</span>';
+  tip.style.opacity=1;const p=14;let x=ev.clientX+p,y=ev.clientY+p;const r=tip.getBoundingClientRect();
+  if(x+r.width>innerWidth-8)x=ev.clientX-r.width-p; if(y+r.height>innerHeight-8)y=ev.clientY-r.height-p;
+  tip.style.left=x+'px';tip.style.top=y+'px';
+}
+function tipOff(){tip.style.opacity=0}
+
+const btn=document.getElementById('tt');
+const cur=()=>document.documentElement.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+const sync=()=>btn.textContent=cur()==='dark'?'Light':'Dark';
+btn.onclick=()=>{document.documentElement.setAttribute('data-theme',cur()==='dark'?'light':'dark');sync()};
+sync();
+
+// When embedded in the United States dossier, report the real document height to
+// the parent. Standalone viewing is unchanged.
+function reportHeight(){
+  if (window.parent === window) return;
+  window.parent.postMessage({ type: 'the-squeeze-height', height: Math.ceil(document.documentElement.scrollHeight) }, window.location.origin);
+}
+new ResizeObserver(reportHeight).observe(document.body);
+addEventListener('load', reportHeight);
+</script>
+</body>
+</html>
