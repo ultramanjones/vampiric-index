@@ -675,6 +675,9 @@
           fetch("./us_history.json").then(response => {
             if (!response.ok) throw new Error(`us_history.json returned HTTP ${response.status}`);
             return response.json();
+          }).catch(error => {
+            console.warn("Optional US history chart unavailable:", error);
+            return null;
           })
         ]);
         if (!Array.isArray(dataResponse.countries)) throw new Error("data.json does not contain a countries array");
@@ -683,9 +686,8 @@
         scorecards = dataResponse.metadata.scorecards;
         if (!activeDefinition()) throw new Error(`Unknown active scorecard: ${activeScorecardKey}`);
         if (!Array.isArray(transmissionResponse.phases)) throw new Error("us_transmission.json does not contain transmission phases");
-        if (!Array.isArray(historyResponse.series)) throw new Error("us_history.json does not contain time series");
         transmissionData = transmissionResponse;
-        usHistoryData = historyResponse;
+        usHistoryData = historyResponse && Array.isArray(historyResponse.series) ? historyResponse : null;
         renderMap(world, dataResponse.countries);
         renderSummary(dataResponse.countries);
         renderUSWatch(transmissionData);
@@ -697,7 +699,8 @@
 
     document.querySelectorAll(".top-tab").forEach(tab => tab.addEventListener("click", () => switchView(tab.dataset.view)));
     document.getElementById("close-drawer").addEventListener("click", closeDrawer);
-    document.getElementById("drawer-backdrop").addEventListener("click", closeDrawer);
+    const drawerBackdrop = document.getElementById("drawer-backdrop");
+    if (drawerBackdrop) drawerBackdrop.addEventListener("click", closeDrawer);
     document.addEventListener("keydown", event => { if (event.key === "Escape") closeDrawer(); });
     initialize();
   </script>
