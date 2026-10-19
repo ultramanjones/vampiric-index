@@ -41,6 +41,18 @@ class TransmissionScoringTests(unittest.TestCase):
         self.assertEqual(calm_score, 2.0)
         self.assertEqual(stressed_score, 23.0)
 
+    def test_predatory_extraction_has_non_linear_apr_redline(self):
+        normal_score, _, _ = transmission.score_predatory_extraction(
+            {"value": 17.0}, {"value": 700000.0}
+        )
+        redline_score, _, interest = transmission.score_predatory_extraction(
+            {"value": 21.2}, {"value": 1352000.0}
+        )
+
+        self.assertGreater(normal_score, 15.0)
+        self.assertLessEqual(redline_score, 4.0)
+        self.assertAlmostEqual(interest, 286.6)
+
     def test_active_phase_uses_furthest_material_phase(self):
         phases = [
             {"number": 1, "name": "one", "score": 17.0},

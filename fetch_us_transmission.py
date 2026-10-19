@@ -22,17 +22,35 @@ SERIES = {
         "unit": "Percent of loans",
         "description": "Delinquency rate on credit cards at all commercial banks.",
     },
-    "consumer_credit": {
-        "id": "TOTALSL",
-        "label": "Total consumer credit",
+    "revolving_credit": {
+        "id": "REVOLSL",
+        "label": "Revolving consumer credit",
         "unit": "Millions of dollars",
-        "description": "Consumer credit owned and securitized, seasonally adjusted.",
+        "description": "Revolving consumer credit owned and securitized, seasonally adjusted; primarily credit-card balances.",
+    },
+    "credit_card_apr": {
+        "id": "TERMCBCCALLNS",
+        "label": "Commercial-bank credit-card APR",
+        "unit": "Percent",
+        "description": "Interest rate on credit-card plans, all accounts, at commercial banks.",
+    },
+    "personal_saving_rate": {
+        "id": "PSAVERT",
+        "label": "Personal saving rate",
+        "unit": "Percent of disposable income",
+        "description": "Personal saving as a percentage of disposable personal income.",
     },
     "high_yield_oas": {
         "id": "BAMLH0A0HYM2",
-        "label": "US high-yield option-adjusted spread",
+        "label": "US broad high-yield option-adjusted spread",
         "unit": "Percentage points",
         "description": "ICE BofA US High Yield Index option-adjusted spread.",
+    },
+    "ccc_oas": {
+        "id": "BAMLH0A3HYC",
+        "label": "CCC-and-lower high-yield spread",
+        "unit": "Percentage points",
+        "description": "ICE BofA US High Yield CCC or Below Index option-adjusted spread.",
     },
     "fed_assets": {
         "id": "WALCL",
@@ -181,19 +199,47 @@ def clamp_score(value):
     return round(max(0.0, min(25.0, value)), 1)
 
 
-def score_consumer_exhaustion(canaries):
-    """Score title-level distress signals without pretending they are audited sales figures."""
-    signal_hits = sum(len(item["matched_signals"]) for item in canaries)
-    score = clamp_score(signal_hits * 2.5)
+def clamp_unit(value):
+    return max(0.0, min(1.0, value))
+
+
+def score_predatory_extraction(card_apr, revolving_credit):
+    """Return a 0-20 household safety score, with a nonlinear redline above 18% APR.
+
+    This is a disclosed stress rule, not an estimate of actual interest paid: APR and
+    total revolving balances are separate series with different populations.
+    """
+    apr = card_apr["value"]
+    debt_billions = revolving_credit["value"] / 1000
+    apr_redline = clamp_unit(((apr - 18.0) / 3.0) ** 2) if apr > 18 else 0.0
+    volume_redline = clamp_unit((debt_billions - 750.0) / 350.0)
+    stress = 0.60 * apr_redline + 0.40 * volume_redline
+    safety = round(20 * (1 - 0.90 * stress), 1)
+    annualized_interest_billions = round(apr / 100 * debt_billions, 1)
     diagnosis = (
-        f"{signal_hits} qualifying distress-language matches appeared across {len(canaries)} "
-        "consumer-canary headlines. This is a qualitative early-warning proxy, not company-reported traffic or unit-sales data."
+        f"Card APR is {apr:.2f}% against ${debt_billions:,.0f}B in revolving credit. "
+        f"At that posted APR, the simple annualized interest-equivalent is about ${annualized_interest_billions:,.0f}B; "
+        "actual payments differ because balances, grace periods, and rates vary. Above 18%, APR pressure rises nonlinearly."
     )
-    return score, diagnosis
+    return safety, diagnosis, annualized_interest_billions
+
+
+def score_breathing_room(saving_rate, delinquency):
+    """Return a 0-20 household breathing-room score; lower is less room."""
+    savings = saving_rate["value"]
+    delinquency_rate = delinquency["value"]
+    savings_stress = clamp_unit((7.0 - savings) / 4.0)
+    delinquency_stress = clamp_unit((delinquency_rate - 2.0) / 4.0)
+    safety = round(20 * (1 - (0.70 * savings_stress + 0.30 * delinquency_stress)), 1)
+    diagnosis = (
+        f"Personal saving is {savings:.2f}% of disposable income and card delinquency is {delinquency_rate:.2f}%. "
+        "This is a buffer measure: low saving and missed card payments reduce room to absorb the next shock."
+    )
+    return safety, diagnosis
 
 
 def score_debt_saturation(delinquency, consumer_credit):
-    """Score card delinquency level, trend, and annual consumer-credit growth."""
+    """Legacy stress helper retained for deterministic compatibility tests."""
     level = delinquency["value"]
     if level < 2.0:
         score = 3.0
@@ -214,11 +260,7 @@ def score_debt_saturation(delinquency, consumer_credit):
         score += 3.0
     elif credit_growth >= 3:
         score += 1.5
-    diagnosis = (
-        f"Credit-card delinquency is {level:.2f}%; annual consumer-credit change is "
-        f"{credit_growth:+.2f}% when a comparable prior observation is available."
-    )
-    return clamp_score(score), diagnosis
+    return clamp_score(score), "Legacy compatibility helper."
 
 
 def score_corporate_stress(high_yield):
@@ -307,33 +349,42 @@ def build_payload(history, fetched_at, series, canaries):
     """Build the complete JSON payload from live source data and prior snapshots."""
     indicators = {
         "credit_card_delinquency": indicator_snapshot(series["credit_card_delinquency"], 365),
-        "consumer_credit": indicator_snapshot(series["consumer_credit"], 365),
+        "revolving_credit": indicator_snapshot(series["revolving_credit"], 365),
+        "credit_card_apr": indicator_snapshot(series["credit_card_apr"], 365),
+        "personal_saving_rate": indicator_snapshot(series["personal_saving_rate"], 365),
         "high_yield_oas": indicator_snapshot(series["high_yield_oas"], 30),
+        "ccc_oas": indicator_snapshot(series["ccc_oas"], 30),
         "fed_assets": indicator_snapshot(series["fed_assets"], 90),
         "reverse_repo": indicator_snapshot(series["reverse_repo"], 365),
     }
-    phase_1_score, phase_1_diagnosis = score_consumer_exhaustion(canaries)
-    phase_2_score, phase_2_diagnosis = score_debt_saturation(
-        indicators["credit_card_delinquency"], indicators["consumer_credit"]
+    extraction_safety, extraction_diagnosis, annualized_interest = score_predatory_extraction(
+        indicators["credit_card_apr"], indicators["revolving_credit"]
     )
-    phase_3_score, phase_3_diagnosis = score_corporate_stress(indicators["high_yield_oas"])
+    breathing_safety, breathing_diagnosis = score_breathing_room(
+        indicators["personal_saving_rate"], indicators["credit_card_delinquency"]
+    )
+    phase_1_score = clamp_score(25 - extraction_safety / 20 * 25)
+    phase_1_diagnosis = extraction_diagnosis
+    phase_2_score = clamp_score(25 - breathing_safety / 20 * 25)
+    phase_2_diagnosis = breathing_diagnosis
+    phase_3_score, phase_3_diagnosis = score_corporate_stress(indicators["ccc_oas"])
     phase_4_score, phase_4_diagnosis = score_asset_repricing(
         series["fed_assets"], series["reverse_repo"]
     )
     phases = [
         {
             "number": 1,
-            "name": "Floor: QSR & discount traffic exhaustion",
+            "name": "Predatory extraction redline",
             "score": phase_1_score,
             "diagnosis": phase_1_diagnosis,
-            "indicator_keys": ["consumer_canaries"],
+            "indicator_keys": ["credit_card_apr", "revolving_credit"],
         },
         {
             "number": 2,
-            "name": "Debt saturation & essentials borrowing",
+            "name": "Household buffer & payment failure",
             "score": phase_2_score,
             "diagnosis": phase_2_diagnosis,
-            "indicator_keys": ["credit_card_delinquency", "consumer_credit"],
+            "indicator_keys": ["personal_saving_rate", "credit_card_delinquency"],
         },
         {
             "number": 3,
@@ -363,10 +414,28 @@ def build_payload(history, fetched_at, series, canaries):
         "methodology": {
             "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
             "limitations": [
-                "Phase 1 uses title-level news canaries because free, comparable QSR transaction data is not consistently available.",
+                "The household-safety panels use a disclosed nonlinear redline rule for APR above 18% and revolving credit above $750B; they are stress classifications, not measured household interest payments.",
+                "Qualitative consumer-canary headlines are retained as context only; they are not phase inputs.",
                 "The index is a monitoring instrument, not a recession forecast or investment recommendation.",
                 "A phase score does not establish causation between consumer stress and asset prices.",
             ],
+        },
+        "household_safety": {
+            "predatory_extraction": {
+                "label": "Predatory extraction safety",
+                "score": extraction_safety,
+                "max_score": 20,
+                "direction": "Higher is safer. The score drops nonlinearly once card APR exceeds 18% and revolving credit exceeds $750B.",
+                "annualized_interest_equivalent_billions": annualized_interest,
+                "diagnosis": extraction_diagnosis,
+            },
+            "breathing_room": {
+                "label": "Household breathing-room safety",
+                "score": breathing_safety,
+                "max_score": 20,
+                "direction": "Higher is safer. The score falls as saving buffers shrink and card delinquency rises.",
+                "diagnosis": breathing_diagnosis,
+            },
         },
         "total_transmission_index": total,
         "active_contagion_phase": active_phase(phases),

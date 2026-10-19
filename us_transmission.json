@@ -1,46 +1,65 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T16:46:21Z",
+  "generated_at": "2026-10-19T21:44:03Z",
   "methodology": {
     "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
     "limitations": [
-      "Phase 1 uses title-level news canaries because free, comparable QSR transaction data is not consistently available.",
+      "The household-safety panels use a disclosed nonlinear redline rule for APR above 18% and revolving credit above $750B; they are stress classifications, not measured household interest payments.",
+      "Qualitative consumer-canary headlines are retained as context only; they are not phase inputs.",
       "The index is a monitoring instrument, not a recession forecast or investment recommendation.",
       "A phase score does not establish causation between consumer stress and asset prices."
     ]
   },
-  "total_transmission_index": 21.5,
+  "household_safety": {
+    "predatory_extraction": {
+      "label": "Predatory extraction safety",
+      "score": 2.0,
+      "max_score": 20,
+      "direction": "Higher is safer. The score drops nonlinearly once card APR exceeds 18% and revolving credit exceeds $750B.",
+      "annualized_interest_equivalent_billions": 286.6,
+      "diagnosis": "Card APR is 21.19% against $1,352B in revolving credit. At that posted APR, the simple annualized interest-equivalent is about $287B; actual payments differ because balances, grace periods, and rates vary. Above 18%, APR pressure rises nonlinearly."
+    },
+    "breathing_room": {
+      "label": "Household breathing-room safety",
+      "score": 8.6,
+      "max_score": 20,
+      "direction": "Higher is safer. The score falls as saving buffers shrink and card delinquency rises.",
+      "diagnosis": "Personal saving is 4.10% of disposable income and card delinquency is 2.85%. This is a buffer measure: low saving and missed card payments reduce room to absorb the next shock."
+    }
+  },
+  "total_transmission_index": 68.7,
   "active_contagion_phase": {
-    "number": 4,
-    "name": "Institutional asset repricing",
-    "score": 9.0,
-    "status": "monitoring signal"
+    "number": 3,
+    "name": "Corporate & regional credit stress",
+    "score": 25.0,
+    "status": "material signal"
   },
   "phases": [
     {
       "number": 1,
-      "name": "Floor: QSR & discount traffic exhaustion",
-      "score": 2.5,
-      "diagnosis": "1 qualifying distress-language matches appeared across 8 consumer-canary headlines. This is a qualitative early-warning proxy, not company-reported traffic or unit-sales data.",
+      "name": "Predatory extraction redline",
+      "score": 22.5,
+      "diagnosis": "Card APR is 21.19% against $1,352B in revolving credit. At that posted APR, the simple annualized interest-equivalent is about $287B; actual payments differ because balances, grace periods, and rates vary. Above 18%, APR pressure rises nonlinearly.",
       "indicator_keys": [
-        "consumer_canaries"
+        "credit_card_apr",
+        "revolving_credit"
       ]
     },
     {
       "number": 2,
-      "name": "Debt saturation & essentials borrowing",
-      "score": 6.0,
-      "diagnosis": "Credit-card delinquency is 2.85%; annual consumer-credit change is +2.73% when a comparable prior observation is available.",
+      "name": "Household buffer & payment failure",
+      "score": 14.2,
+      "diagnosis": "Personal saving is 4.10% of disposable income and card delinquency is 2.85%. This is a buffer measure: low saving and missed card payments reduce room to absorb the next shock.",
       "indicator_keys": [
-        "credit_card_delinquency",
-        "consumer_credit"
+        "personal_saving_rate",
+        "credit_card_delinquency"
       ]
     },
     {
       "number": 3,
       "name": "Corporate & regional credit stress",
-      "score": 4.0,
-      "diagnosis": "US high-yield OAS is 3.31 percentage points; the 30-day change is +0.61 points when available.",
+      "score": 25.0,
+      "diagnosis": "US high-yield OAS is 12.97 percentage points; the 30-day change is +2.21 points when available.",
       "indicator_keys": [
         "high_yield_oas"
       ]
@@ -48,8 +67,8 @@
     {
       "number": 4,
       "name": "Institutional asset repricing",
-      "score": 9.0,
-      "diagnosis": "The overnight reverse-repo balance is 1.4% of its year-earlier level; Federal Reserve total assets changed +0.00% over the prior 90 days when comparable observations are available.",
+      "score": 7.0,
+      "diagnosis": "The overnight reverse-repo balance is 8.0% of its year-earlier level; Federal Reserve total assets changed +0.00% over the prior 90 days when comparable observations are available.",
       "indicator_keys": [
         "fed_assets",
         "reverse_repo"
@@ -70,22 +89,48 @@
       "change": -0.19,
       "percent_change": -6.25
     },
-    "consumer_credit": {
-      "series_id": "TOTALSL",
-      "label": "Total consumer credit",
+    "revolving_credit": {
+      "series_id": "REVOLSL",
+      "label": "Revolving consumer credit",
       "unit": "Millions of dollars",
-      "description": "Consumer credit owned and securitized, seasonally adjusted.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TOTALSL",
-      "value": 5196778.44,
+      "description": "Revolving consumer credit owned and securitized, seasonally adjusted; primarily credit-card balances.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=REVOLSL",
+      "value": 1352414.0,
       "observation_date": "2026-08-01",
-      "prior_value": 5058589.77,
+      "prior_value": 1308311.66,
       "prior_observation_date": "2025-08-01",
-      "change": 138188.67,
-      "percent_change": 2.73
+      "change": 44102.34,
+      "percent_change": 3.37
+    },
+    "credit_card_apr": {
+      "series_id": "TERMCBCCALLNS",
+      "label": "Commercial-bank credit-card APR",
+      "unit": "Percent",
+      "description": "Interest rate on credit-card plans, all accounts, at commercial banks.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TERMCBCCALLNS",
+      "value": 21.19,
+      "observation_date": "2026-08-01",
+      "prior_value": 21.39,
+      "prior_observation_date": "2025-08-01",
+      "change": -0.2,
+      "percent_change": -0.94
+    },
+    "personal_saving_rate": {
+      "series_id": "PSAVERT",
+      "label": "Personal saving rate",
+      "unit": "Percent of disposable income",
+      "description": "Personal saving as a percentage of disposable personal income.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PSAVERT",
+      "value": 4.1,
+      "observation_date": "2026-08-01",
+      "prior_value": 5.2,
+      "prior_observation_date": "2025-08-01",
+      "change": -1.1,
+      "percent_change": -21.15
     },
     "high_yield_oas": {
       "series_id": "BAMLH0A0HYM2",
-      "label": "US high-yield option-adjusted spread",
+      "label": "US broad high-yield option-adjusted spread",
       "unit": "Percentage points",
       "description": "ICE BofA US High Yield Index option-adjusted spread.",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLH0A0HYM2",
@@ -95,6 +140,19 @@
       "prior_observation_date": "2026-09-16",
       "change": 0.61,
       "percent_change": 22.59
+    },
+    "ccc_oas": {
+      "series_id": "BAMLH0A3HYC",
+      "label": "CCC-and-lower high-yield spread",
+      "unit": "Percentage points",
+      "description": "ICE BofA US High Yield CCC or Below Index option-adjusted spread.",
+      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLH0A3HYC",
+      "value": 12.97,
+      "observation_date": "2026-10-16",
+      "prior_value": 10.76,
+      "prior_observation_date": "2026-09-16",
+      "change": 2.21,
+      "percent_change": 20.54
     },
     "fed_assets": {
       "series_id": "WALCL",
@@ -115,12 +173,12 @@
       "unit": "Billions of dollars",
       "description": "Fed overnight reverse-repurchase agreements, a liquidity-buffer proxy.",
       "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RRPONTSYD",
-      "value": 0.1,
-      "observation_date": "2026-10-16",
-      "prior_value": 6.96,
-      "prior_observation_date": "2025-10-16",
-      "change": -6.86,
-      "percent_change": -98.56
+      "value": 0.33,
+      "observation_date": "2026-10-19",
+      "prior_value": 4.102,
+      "prior_observation_date": "2025-10-17",
+      "change": -3.772,
+      "percent_change": -91.96
     }
   },
   "consumer_canaries": {
@@ -706,6 +764,26 @@
         "2": 6.0,
         "3": 4.0,
         "4": 9.0
+      }
+    },
+    {
+      "generated_at": "2026-10-19T21:42:30Z",
+      "total_transmission_index": 68.7,
+      "phase_scores": {
+        "1": 22.5,
+        "2": 14.2,
+        "3": 25.0,
+        "4": 7.0
+      }
+    },
+    {
+      "generated_at": "2026-10-19T21:44:03Z",
+      "total_transmission_index": 68.7,
+      "phase_scores": {
+        "1": 22.5,
+        "2": 14.2,
+        "3": 25.0,
+        "4": 7.0
       }
     }
   ]

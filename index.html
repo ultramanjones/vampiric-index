@@ -41,6 +41,36 @@
     h1 { margin: .4rem 0; color: #f5e8e8; font-size: clamp(2.5rem, 8vw, 5.7rem); font-weight: 700; letter-spacing: .035em; line-height: .92; text-shadow: 0 0 24px #8a030370; }
     .subtitle { max-width: 50rem; margin: 1rem auto 0; color: var(--muted); font-size: 1.05rem; line-height: 1.55; }
     .rule { width: min(30rem, 85%); height: 2px; margin: 1.8rem auto 0; background: linear-gradient(90deg, transparent, var(--blood), transparent); }
+    .top-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: .55rem; margin: 1.35rem auto 0; }
+    .top-tab { border: 1px solid #5e414d; padding: .55rem .8rem; color: var(--muted); background: #100d10; cursor: pointer; font: 700 .72rem/1 ui-monospace, monospace; letter-spacing: .07em; text-transform: uppercase; }
+    .top-tab:hover, .top-tab:focus, .top-tab.active { border-color: #dfb9b9; color: #fff; background: #43131a; }
+    .view[hidden] { display: none; }
+    .watch-lede { max-width: 54rem; margin: 0 auto 1.2rem; color: var(--muted); font-size: 1rem; line-height: 1.5; text-align: center; }
+    .watch-shell { margin: 1rem 0 3rem; padding: clamp(1rem, 3vw, 2rem); border: 1px solid #70414b; background: linear-gradient(135deg, #210d12, #100d10 64%); box-shadow: 0 1.5rem 4rem #0008; }
+    .watch-head { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+    .watch-head h2 { margin: .3rem 0 0; font-size: clamp(1.7rem, 4vw, 3rem); }
+    .watch-updated { color: var(--muted); font: .7rem/1.4 ui-monospace, monospace; }
+    .safety-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.3rem 0; }
+    .tachometer { position: relative; min-height: 15rem; padding: 1.1rem; overflow: hidden; border: 1px solid #78434c; background: #120b0e; }
+    .tachometer::before { content: ""; position: absolute; left: -15%; right: -15%; bottom: -10rem; height: 17rem; border: 1.3rem solid #342425; border-top-color: #5f542d; border-right-color: #883920; border-bottom-color: transparent; border-left-color: #4c8063; border-radius: 50%; transform: rotate(-14deg); opacity: .9; }
+    .tachometer h3, .tachometer p, .tachometer .tach-score { position: relative; }
+    .tachometer h3 { margin: 0; color: #e9c4c4; font: 700 .78rem/1.3 ui-monospace, monospace; text-transform: uppercase; }
+    .tach-score { display: block; margin-top: 1.25rem; color: #fff0f0; font: 700 clamp(3.2rem, 9vw, 5.6rem)/.8 ui-monospace, monospace; text-shadow: 0 0 18px #8a0303aa; }
+    .tach-score small { color: var(--muted); font-size: 1rem; }
+    .tach-label { display: inline-block; margin-top: .7rem; padding: .28rem .45rem; background: #7b1116; color: #fff; font: 700 .7rem/1 ui-monospace, monospace; letter-spacing: .08em; }
+    .tachometer p { max-width: 34rem; margin: .75rem 0 0; color: var(--muted); font-size: .85rem; line-height: 1.45; }
+    .watch-phase-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .7rem; margin: 1.3rem 0; }
+    .watch-phase { min-height: 12rem; padding: .8rem; border: 1px solid #4b3944; background: #0d0d12; }
+    .watch-phase.critical { border-color: #b62d2d; background: #351014; }
+    .watch-phase.elevated { border-color: #b7782d; }
+    .watch-phase.contained { border-color: #4c8063; }
+    .phase-pill { display: inline-block; margin: .5rem 0; padding: .24rem .4rem; color: #fff; font: 700 .67rem/1 ui-monospace, monospace; letter-spacing: .06em; }
+    .critical .phase-pill { background: #a30e16; } .elevated .phase-pill { background: #9a5c1a; } .contained .phase-pill { background: #37664e; }
+    .watch-phase h3 { margin: 0; color: #f0d5d5; font-size: .92rem; } .watch-phase p { margin: .35rem 0; color: var(--muted); font-size: .77rem; line-height: 1.4; }
+    .watch-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; margin-top: 1.2rem; }
+    .watch-metric { padding: .75rem; border: 1px solid var(--line); background: #0d0d12; } .watch-metric strong, .watch-metric span { display:block; } .watch-metric strong { color:#e9c4c4; font:.7rem/1.35 ui-monospace,monospace; } .watch-metric span { margin-top:.35rem; font:.95rem/1.25 ui-monospace,monospace; }
+    .methodology-sheet { max-width: 56rem; margin: 1rem auto 3rem; padding: clamp(1.2rem, 4vw, 2.5rem); border: 1px solid var(--line); background: #120e12; color: var(--muted); line-height: 1.6; }
+    .methodology-sheet h2, .methodology-sheet h3 { color: #f0d5d5; }
     .notice { border: 1px solid var(--line); border-left: 4px solid var(--blood); padding: .85rem 1rem; color: var(--muted); background: #120e12cc; font-size: .9rem; }
     .notice[hidden] { display: none; }
     .map-panel { position: relative; margin-top: 1rem; overflow: hidden; border: 1px solid var(--line); background: #0d0d10; box-shadow: 0 1.5rem 4rem #0008; }
@@ -111,7 +141,7 @@
     .dispatch a { color: #e1b0b0; font-weight: 700; text-decoration-color: var(--blood); }
     .dispatch-meta { margin-top: .35rem; color: var(--muted); font: .72rem/1.35 ui-monospace, monospace; }
     footer { padding-top: .5rem; padding-bottom: 2.5rem; color: #77727b; font-size: .8rem; text-align: center; }
-    @media (max-width: 640px) { .masthead, main, footer { padding-inline: 1rem; } .summary { grid-template-columns: repeat(2, 1fr); } .drawer { padding: 1rem; } .phase-progress, .metric-list { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { .masthead, main, footer { padding-inline: 1rem; } .summary { grid-template-columns: repeat(2, 1fr); } .drawer { padding: 1rem; } .phase-progress, .metric-list, .safety-grid, .watch-phase-grid, .watch-metrics { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -120,9 +150,14 @@
     <h1>Vampiric Index</h1>
     <p class="subtitle">Can households still cover the basics, retain leverage, and keep consumer demand alive? Provisional v2 uses transparent World Bank source proxies and exposes its data gaps.</p>
     <div class="rule"></div>
+    <nav class="top-tabs" aria-label="Dashboard views">
+      <button class="top-tab active" type="button" data-view="map">Global Map</button>
+      <button class="top-tab" type="button" data-view="watch">US Transmission Engine</button>
+      <button class="top-tab" type="button" data-view="methodology">Methodology</button>
+    </nav>
   </header>
 
-  <main>
+  <main id="map-view" class="view">
     <p id="status" class="notice">Loading pilot dossier data and world geometry…</p>
     <section class="map-panel" aria-label="Interactive Host Viability Index world map">
       <svg id="world-map" role="img" aria-label="World map with tracked countries colored by HVI grade"></svg>
@@ -138,7 +173,22 @@
     <section id="country-summary" class="summary" aria-label="Tracked country dossiers"></section>
   </main>
 
-  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+  <main id="watch-view" class="view" hidden>
+    <p class="watch-lede">A U.S.-only early-warning view: household extraction, buffer failure, weak-company credit stress, and institutional liquidity. It tracks measured strain; it does not claim to predict a specific recession, revolt, or market move.</p>
+    <section id="us-watch" class="watch-shell" aria-live="polite"></section>
+  </main>
+
+  <main id="methodology-view" class="view" hidden>
+    <article class="methodology-sheet">
+      <p class="eyebrow">How to read this site</p>
+      <h2>Household conditions first. Aggregate theater second.</h2>
+      <p>The global map is a provisional country-comparison layer. The U.S. Transmission Engine is different: it follows the path from high-cost revolving debt and thin savings, into missed payments, corporate-credit stress, and damaged everyday demand.</p>
+      <h3>Nonlinear debt redline</h3>
+      <p>On the U.S. page, credit-card APR above 18% is treated as a redline rather than a gentle linear change. The household-safety score also considers revolving-credit volume. The formula, raw source values, dates, and limitations appear in the dashboard data.</p>
+      <h3>Do not mistake a gauge for a prophecy</h3>
+      <p>A single bad number is not a collapse forecast. Meaning comes when household strain, credit stress, and real-economy weakness deteriorate together over more than one release.</p>
+    </article>
+  </main>
   <aside id="drawer" class="drawer" aria-label="Country dossier" aria-hidden="true" role="dialog">
     <div class="drawer-header">
       <div><p id="drawer-code" class="eyebrow"></p><h2 id="drawer-name"></h2></div>
@@ -147,7 +197,7 @@
     <div id="drawer-content"></div>
   </aside>
 
-  <footer>Data refreshes through the project’s Google News RSS pipeline. Scores are deterministic pilot baseline values.</footer>
+  <footer>Global map sources are documented in each dossier. USA Watch uses source-linked Federal Reserve/FRED observations and a disclosed stress model.</footer>
 
   <script>
     const countryIds = {
@@ -214,6 +264,71 @@
     function formatMetric(indicator) {
       const value = Number(indicator.value).toLocaleString(undefined, { maximumFractionDigits: 2 });
       return `${value} ${indicator.unit} · ${indicator.observation_date}`;
+    }
+
+    function phaseStatus(score) {
+      if (score >= 18) return ["critical", "TRIGGERED · CRITICAL"];
+      if (score >= 9) return ["elevated", "ELEVATED"];
+      return ["contained", "CONTAINED"];
+    }
+
+    function renderUSWatch(transmission) {
+      const target = document.getElementById("us-watch");
+      target.replaceChildren();
+      if (!transmission || !transmission.household_safety) {
+        target.append(makeElement("p", "notice", "The U.S. transmission data could not be loaded."));
+        return;
+      }
+      const head = makeElement("div", "watch-head");
+      const title = makeElement("div");
+      title.append(makeElement("p", "eyebrow", "USA Watch"));
+      title.append(makeElement("h2", "", "The Transmission Engine"));
+      head.append(title, makeElement("p", "watch-updated", `Latest data pull: ${transmission.generated_at}`));
+      target.append(head);
+
+      const safetyGrid = makeElement("div", "safety-grid");
+      ["predatory_extraction", "breathing_room"].forEach(key => {
+        const item = transmission.household_safety[key];
+        const card = makeElement("article", "tachometer");
+        card.append(makeElement("h3", "", item.label));
+        const score = makeElement("span", "tach-score", item.score.toFixed(1));
+        score.append(makeElement("small", "", ` / ${item.max_score}`));
+        card.append(score, makeElement("span", "tach-label", item.score <= 4 ? "HOST DEPLETION / REDLINE" : "THINNING BUFFER"));
+        if (item.annualized_interest_equivalent_billions) card.append(makeElement("p", "", `$${item.annualized_interest_equivalent_billions.toFixed(0)}B annualized interest-equivalent on the reported revolving-credit balance at the posted APR. This is an illustrative multiplication, not actual aggregate payments.`));
+        card.append(makeElement("p", "", item.diagnosis));
+        safetyGrid.append(card);
+      });
+      target.append(safetyGrid);
+      target.append(makeElement("h3", "section-title", "The canary cascade"));
+      const phases = makeElement("div", "watch-phase-grid");
+      transmission.phases.forEach(phase => {
+        const [kind, label] = phaseStatus(Number(phase.score));
+        const card = makeElement("article", `watch-phase ${kind}`);
+        card.append(makeElement("h3", "", `Phase ${phase.number}: ${phase.name}`));
+        card.append(makeElement("span", "phase-pill", label));
+        card.append(makeElement("p", "", `${Number(phase.score).toFixed(1)} / 25 stress`));
+        card.append(makeElement("p", "", phase.diagnosis));
+        phases.append(card);
+      });
+      target.append(phases);
+      target.append(makeElement("h3", "section-title", "Raw readings — source-linked in the data feed"));
+      const metrics = makeElement("div", "watch-metrics");
+      ["credit_card_apr", "revolving_credit", "personal_saving_rate", "credit_card_delinquency", "ccc_oas", "high_yield_oas", "fed_assets", "reverse_repo"].forEach(key => {
+        const indicator = transmission.indicators[key];
+        if (!indicator) return;
+        const card = makeElement("article", "watch-metric");
+        card.append(makeElement("strong", "", indicator.label));
+        card.append(makeElement("span", "", formatMetric(indicator)));
+        metrics.append(card);
+      });
+      target.append(metrics);
+    }
+
+    function switchView(view) {
+      ["map", "watch", "methodology"].forEach(name => document.getElementById(`${name}-view`).hidden = name !== view);
+      document.querySelectorAll(".top-tab").forEach(tab => tab.classList.toggle("active", tab.dataset.view === view));
+      closeDrawer();
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     function appendTransmissionGauge(transmission) {
@@ -424,11 +539,6 @@
       const legacy = country.scorecards && country.scorecards.legacy_four_pillar_v1;
       if (legacy) drawerContent.append(makeElement("p", "dispatch-meta", `Legacy four-pillar v1 baseline: ${legacy.hvi_score.toFixed(1)} / 100 · Grade ${legacy.grade}. It is retained for comparison, not mixed into v2.`));
 
-      if (country.country_code === "US") {
-        appendTransmissionGauge(transmissionData);
-        appendUSHistoricalChart(usHistoryData);
-      }
-
       drawerContent.append(makeElement("h3", "section-title", "Chronic pathologies"));
       const pathologies = makeElement("ul");
       country.chronic_pathologies.forEach(item => pathologies.append(makeElement("li", "", item)));
@@ -449,7 +559,6 @@
           drawerContent.append(item);
         });
       }
-      if (country.country_code === "US") appendTheSqueeze();
       document.body.classList.add("drawer-open");
       drawer.setAttribute("aria-hidden", "false");
       document.getElementById("close-drawer").focus();
@@ -552,12 +661,14 @@
         usHistoryData = historyResponse;
         renderMap(world, dataResponse.countries);
         renderSummary(dataResponse.countries);
+        renderUSWatch(transmissionData);
         status.hidden = true;
       } catch (error) {
         status.textContent = `Dashboard data could not be loaded: ${error.message}. Serve this directory over HTTP rather than opening index.html directly.`;
       }
     }
 
+    document.querySelectorAll(".top-tab").forEach(tab => tab.addEventListener("click", () => switchView(tab.dataset.view)));
     document.getElementById("close-drawer").addEventListener("click", closeDrawer);
     document.getElementById("drawer-backdrop").addEventListener("click", closeDrawer);
     document.addEventListener("keydown", event => { if (event.key === "Escape") closeDrawer(); });
