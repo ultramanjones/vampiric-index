@@ -1047,7 +1047,7 @@
           "grade": "C"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -1064,6 +1064,14 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 100.06666,
+              "observation_year": 2024,
+              "indicator_id": "IMF DataMapper HH_LS",
+              "source_label": "IMF household loans (% of GDP)",
+              "url": "https://www.imf.org/external/datamapper/api/v1/HH_LS",
+              "source_tier": "IMF international fallback"
+            },
             "labor_leverage": {
               "value": 60.627,
               "observation_year": 2024,
@@ -1079,9 +1087,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt"
-          ]
+          "modules": {
+            "pay_reaching_households": 20.0,
+            "cost_of_staying_alive": 19.2,
+            "breathing_room_debt": 10.0,
+            "labor_leverage": 12.1,
+            "customer_cash": 13.3
+          },
+          "hvi_score": 74.6,
+          "grade": "C"
         }
       }
     },
@@ -3956,7 +3970,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -3973,6 +3987,14 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 36.6037094731315,
+              "observation_year": 2018,
+              "indicator_id": "IMF FAS FCSODCG_GDP_PT",
+              "source_label": "IMF Financial Access Survey: outstanding loans from commercial banks (% of GDP) — latest published Iranian observation is 2018",
+              "url": "https://api.imf.org/external/sdmx/2.1/data/FAS/A.IR.FCSODCG_GDP_PT",
+              "source_tier": "IMF international fallback; stale observation disclosed"
+            },
             "labor_leverage": {
               "value": 37.905,
               "observation_year": 2024,
@@ -3988,9 +4010,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt"
-          ]
+          "modules": {
+            "pay_reaching_households": 2.1,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 16.3,
+            "labor_leverage": 7.6,
+            "customer_cash": 1.3
+          },
+          "hvi_score": 27.3,
+          "grade": "F"
         }
       }
     },
@@ -6377,7 +6405,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -6407,11 +6435,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 2324.59702394542,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.7,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 18.7,
+            "labor_leverage": 16.0,
+            "customer_cash": 1.2
+          },
+          "hvi_score": 36.6,
+          "grade": "F"
         }
       }
     },
@@ -6974,7 +7016,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -6991,6 +7033,14 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 26.8257348313042,
+              "observation_year": 2022,
+              "indicator_id": "IMF FAS FCSODCG_GDP_PT",
+              "source_label": "IMF Financial Access Survey: outstanding loans from commercial banks (% of GDP)",
+              "url": "https://api.imf.org/external/sdmx/2.1/data/FAS/A.ET.FCSODCG_GDP_PT",
+              "source_tier": "IMF international fallback"
+            },
             "labor_leverage": {
               "value": 66.168,
               "observation_year": 2024,
@@ -7006,9 +7056,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.4,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 17.3,
+            "labor_leverage": 13.2,
+            "customer_cash": 0.3
+          },
+          "hvi_score": 31.2,
+          "grade": "F"
         }
       }
     },
@@ -7571,7 +7627,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -7581,19 +7637,47 @@
               "source_label": "GNI per capita, Atlas method (current US$)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NY.GNP.PCAP.CD?date=2020:2024&format=json&per_page=2000"
             },
+            "cost_of_staying_alive": {
+              "value": 49.4,
+              "observation_year": 2024,
+              "indicator_id": "IMF WEO PCPIPCH",
+              "source_label": "IMF World Economic Outlook: inflation, average consumer prices (annual %)",
+              "url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH",
+              "source_tier": "IMF international fallback"
+            },
+            "breathing_room_debt": {
+              "value": 23.9318515900636,
+              "observation_year": 2015,
+              "indicator_id": "WDI FD.AST.PRVT.GD.ZS",
+              "source_label": "World Bank domestic credit provided by banking sector (% of GDP) — latest published Venezuelan observation is 2015",
+              "url": "https://api.worldbank.org/v2/country/VEN/indicator/FD.AST.PRVT.GD.ZS?format=json&per_page=100",
+              "source_tier": "WDI historical fallback; stale observation disclosed"
+            },
             "labor_leverage": {
               "value": 49.28,
               "observation_year": 2024,
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 1501.22207949327,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "cost_of_staying_alive",
-            "breathing_room_debt",
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 1.5,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 17.6,
+            "labor_leverage": 9.9,
+            "customer_cash": 0.8
+          },
+          "hvi_score": 29.8,
+          "grade": "F"
         }
       }
     },
@@ -8278,7 +8362,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -8295,6 +8379,14 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 36.3889173136525,
+              "observation_year": 2023,
+              "indicator_id": "IMF FAS FCSODCG_GDP_PT",
+              "source_label": "IMF Financial Access Survey: outstanding loans from commercial banks (% of GDP)",
+              "url": "https://api.imf.org/external/sdmx/2.1/data/FAS/A.LK.FCSODCG_GDP_PT",
+              "source_tier": "IMF international fallback"
+            },
             "labor_leverage": {
               "value": 46.54,
               "observation_year": 2024,
@@ -8310,9 +8402,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt"
-          ]
+          "modules": {
+            "pay_reaching_households": 1.5,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 16.4,
+            "labor_leverage": 9.3,
+            "customer_cash": 1.4
+          },
+          "hvi_score": 48.6,
+          "grade": "F"
         }
       }
     },
@@ -9363,7 +9461,7 @@
           "grade": "C"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -9393,11 +9491,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 19024.1204266155,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 8.8,
+            "cost_of_staying_alive": 14.3,
+            "breathing_room_debt": 16.9,
+            "labor_leverage": 11.9,
+            "customer_cash": 9.5
+          },
+          "hvi_score": 61.4,
+          "grade": "D"
         }
       }
     },
@@ -9716,7 +9828,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -9725,6 +9837,14 @@
               "indicator_id": "NY.GNP.PCAP.CD",
               "source_label": "GNI per capita, Atlas method (current US$)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NY.GNP.PCAP.CD?date=2020:2024&format=json&per_page=2000"
+            },
+            "cost_of_staying_alive": {
+              "value": 17.7,
+              "observation_year": 2024,
+              "indicator_id": "IMF WEO PCPIPCH",
+              "source_label": "IMF World Economic Outlook: inflation, average consumer prices (annual %)",
+              "url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH",
+              "source_tier": "IMF international fallback"
             },
             "breathing_room_debt": {
               "value": 11.2863136949008,
@@ -9748,9 +9868,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "cost_of_staying_alive"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.3,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 18.9,
+            "labor_leverage": 12.3,
+            "customer_cash": 0.2
+          },
+          "hvi_score": 31.7,
+          "grade": "F"
         }
       }
     },
@@ -9825,7 +9951,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -9855,11 +9981,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 5876.03295533913,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 2.9,
+            "cost_of_staying_alive": 19.6,
+            "breathing_room_debt": 17.4,
+            "labor_leverage": 12.1,
+            "customer_cash": 2.9
+          },
+          "hvi_score": 54.9,
+          "grade": "D"
         }
       }
     },
@@ -9934,7 +10074,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -9943,6 +10083,14 @@
               "indicator_id": "NY.GNP.PCAP.CD",
               "source_label": "GNI per capita, Atlas method (current US$)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NY.GNP.PCAP.CD?date=2020:2024&format=json&per_page=2000"
+            },
+            "cost_of_staying_alive": {
+              "value": 29.6,
+              "observation_year": 2024,
+              "indicator_id": "IMF WEO PCPIPCH",
+              "source_label": "IMF World Economic Outlook: inflation, average consumer prices (annual %)",
+              "url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH",
+              "source_tier": "IMF international fallback"
             },
             "breathing_room_debt": {
               "value": 28.9828999467009,
@@ -9957,12 +10105,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 1158.47928097728,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "cost_of_staying_alive",
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.5,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 17.1,
+            "labor_leverage": 10.7,
+            "customer_cash": 0.6
+          },
+          "hvi_score": 28.9,
+          "grade": "F"
         }
       }
     },
@@ -10159,7 +10320,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -10189,11 +10350,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 4441.03974922351,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 2.0,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 12.7,
+            "labor_leverage": 6.7,
+            "customer_cash": 2.2
+          },
+          "hvi_score": 43.6,
+          "grade": "F"
         }
       }
     },
@@ -10512,7 +10687,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -10529,6 +10704,14 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 15.6910425449205,
+              "observation_year": 2020,
+              "indicator_id": "IMF FAS FCSODCG_GDP_PT",
+              "source_label": "IMF Financial Access Survey: outstanding loans from commercial banks (% of GDP)",
+              "url": "https://api.imf.org/external/sdmx/2.1/data/FAS/A.CM.FCSODCG_GDP_PT",
+              "source_tier": "IMF international fallback"
+            },
             "labor_leverage": {
               "value": 63.168,
               "observation_year": 2024,
@@ -10544,9 +10727,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.7,
+            "cost_of_staying_alive": 14.9,
+            "breathing_room_debt": 18.4,
+            "labor_leverage": 12.6,
+            "customer_cash": 0.5
+          },
+          "hvi_score": 47.1,
+          "grade": "F"
         }
       }
     },
@@ -10865,7 +11054,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -10882,6 +11071,14 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 69.8097365331999,
+              "observation_year": 2024,
+              "indicator_id": "IMF FAS FCSODCG_GDP_PT",
+              "source_label": "IMF Financial Access Survey: outstanding loans from commercial banks (% of GDP)",
+              "url": "https://api.imf.org/external/sdmx/2.1/data/FAS/A.BH.FCSODCG_GDP_PT",
+              "source_tier": "IMF international fallback"
+            },
             "labor_leverage": {
               "value": 69.804,
               "observation_year": 2024,
@@ -10897,9 +11094,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt"
-          ]
+          "modules": {
+            "pay_reaching_households": 11.3,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 13.0,
+            "labor_leverage": 14.0,
+            "customer_cash": 5.8
+          },
+          "hvi_score": 64.1,
+          "grade": "D"
         }
       }
     },
@@ -11228,18 +11431,32 @@
               "source_label": "GNI per capita, Atlas method (current US$)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NY.GNP.PCAP.CD?date=2020:2024&format=json&per_page=2000"
             },
+            "cost_of_staying_alive": {
+              "value": 4.6,
+              "observation_year": 2024,
+              "indicator_id": "IMF WEO PCPIPCH",
+              "source_label": "IMF World Economic Outlook: inflation, average consumer prices (annual %)",
+              "url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH",
+              "source_tier": "IMF international fallback"
+            },
             "labor_leverage": {
               "value": 40.473,
               "observation_year": 2024,
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 8229.67261114232,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
           "missing_modules": [
-            "cost_of_staying_alive",
-            "breathing_room_debt",
-            "customer_cash"
+            "breathing_room_debt"
           ]
         }
       }
@@ -12535,7 +12752,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -12565,11 +12782,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 2566.91067057792,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 1.1,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 18.4,
+            "labor_leverage": 10.1,
+            "customer_cash": 1.3
+          },
+          "hvi_score": 50.9,
+          "grade": "D"
         }
       }
     },
@@ -13132,7 +13363,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -13162,11 +13393,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 16312.4849555716,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 7.7,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 15.2,
+            "labor_leverage": 11.2,
+            "customer_cash": 8.2
+          },
+          "hvi_score": 62.3,
+          "grade": "D"
         }
       }
     },
@@ -13241,7 +13486,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -13271,11 +13516,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 1343.38966380353,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.5,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 18.3,
+            "labor_leverage": 11.7,
+            "customer_cash": 0.7
+          },
+          "hvi_score": 31.2,
+          "grade": "F"
         }
       }
     },
@@ -13594,7 +13853,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -13624,11 +13883,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 33034.948872927,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 10.6,
+            "cost_of_staying_alive": 18.2,
+            "breathing_room_debt": 18.5,
+            "labor_leverage": 9.7,
+            "customer_cash": 16.5
+          },
+          "hvi_score": 73.5,
+          "grade": "C"
         }
       }
     },
@@ -14191,7 +14464,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -14221,11 +14494,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 6096.4327030963,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 2.9,
+            "cost_of_staying_alive": 13.2,
+            "breathing_room_debt": 15.5,
+            "labor_leverage": 13.5,
+            "customer_cash": 3.0
+          },
+          "hvi_score": 48.1,
+          "grade": "F"
         }
       }
     },
@@ -14422,7 +14709,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -14439,6 +14726,14 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 13.3764779657931,
+              "observation_year": 2019,
+              "indicator_id": "WDI FS.AST.PRVT.GD.ZS",
+              "source_label": "World Bank domestic credit to private sector (% of GDP) — latest published Gabon observation is 2019",
+              "url": "https://api.worldbank.org/v2/country/GAB/indicator/FS.AST.PRVT.GD.ZS?format=json&per_page=100",
+              "source_tier": "WDI historical fallback; stale observation disclosed"
+            },
             "labor_leverage": {
               "value": 41.005,
               "observation_year": 2024,
@@ -14454,9 +14749,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt"
-          ]
+          "modules": {
+            "pay_reaching_households": 3.1,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 18.7,
+            "labor_leverage": 8.2,
+            "customer_cash": 1.1
+          },
+          "hvi_score": 51.1,
+          "grade": "D"
         }
       }
     },
@@ -15263,7 +15564,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -15293,11 +15594,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 374.37669620849,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.2,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 19.7,
+            "labor_leverage": 6.5,
+            "customer_cash": 0.2
+          },
+          "hvi_score": 46.6,
+          "grade": "F"
         }
       }
     },
@@ -15616,7 +15931,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -15633,18 +15948,39 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 59.2653624487854,
+              "observation_year": 2023,
+              "indicator_id": "IMF FAS FCSODCG_GDP_PT",
+              "source_label": "IMF Financial Access Survey: outstanding loans from commercial banks (% of GDP)",
+              "url": "https://api.imf.org/external/sdmx/2.1/data/FAS/A.LA.FCSODCG_GDP_PT",
+              "source_tier": "IMF international fallback"
+            },
             "labor_leverage": {
               "value": 65.215,
               "observation_year": 2024,
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 2721.07810663122,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt",
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.8,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 14.1,
+            "labor_leverage": 13.0,
+            "customer_cash": 1.4
+          },
+          "hvi_score": 29.3,
+          "grade": "F"
         }
       }
     },
@@ -16695,7 +17031,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -16704,6 +17040,14 @@
               "indicator_id": "NY.GNP.PCAP.CD",
               "source_label": "GNI per capita, Atlas method (current US$)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NY.GNP.PCAP.CD?date=2020:2024&format=json&per_page=2000"
+            },
+            "cost_of_staying_alive": {
+              "value": 5.5,
+              "observation_year": 2024,
+              "indicator_id": "IMF WEO PCPIPCH",
+              "source_label": "IMF World Economic Outlook: inflation, average consumer prices (annual %)",
+              "url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH",
+              "source_tier": "IMF international fallback"
             },
             "breathing_room_debt": {
               "value": 5.43098050942767,
@@ -16727,9 +17071,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "cost_of_staying_alive"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.2,
+            "cost_of_staying_alive": 13.0,
+            "breathing_room_debt": 19.5,
+            "labor_leverage": 5.5,
+            "customer_cash": 0.3
+          },
+          "hvi_score": 38.5,
+          "grade": "F"
         }
       }
     },
@@ -16804,7 +17154,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -16834,11 +17184,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 551.95152347056,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.2,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 19.2,
+            "labor_leverage": 11.9,
+            "customer_cash": 0.3
+          },
+          "hvi_score": 31.6,
+          "grade": "F"
         }
       }
     },
@@ -16913,7 +17277,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -16930,6 +17294,14 @@
               "source_label": "Inflation, consumer prices (annual %)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/FP.CPI.TOTL.ZG?date=2020:2024&format=json&per_page=2000"
             },
+            "breathing_room_debt": {
+              "value": 232.805074861383,
+              "observation_year": 2024,
+              "indicator_id": "IMF FAS FCSODCG_GDP_PT",
+              "source_label": "IMF Financial Access Survey: outstanding loans from commercial banks (% of GDP)",
+              "url": "https://api.imf.org/external/sdmx/2.1/data/FAS/A.MR.FCSODCG_GDP_PT",
+              "source_tier": "IMF international fallback"
+            },
             "labor_leverage": {
               "value": 36.701,
               "observation_year": 2024,
@@ -16945,9 +17317,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "breathing_room_debt"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.8,
+            "cost_of_staying_alive": 19.0,
+            "breathing_room_debt": 0.0,
+            "labor_leverage": 7.3,
+            "customer_cash": 0.5
+          },
+          "hvi_score": 27.6,
+          "grade": "F"
         }
       }
     },
@@ -17266,7 +17644,7 @@
           "grade": "C"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -17296,11 +17674,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 22421.5333611295,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 10.1,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 14.0,
+            "labor_leverage": 12.2,
+            "customer_cash": 11.2
+          },
+          "hvi_score": 67.5,
+          "grade": "C"
         }
       }
     },
@@ -17619,7 +18011,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -17649,11 +18041,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 5935.20895738332,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 2.3,
+            "cost_of_staying_alive": 16.2,
+            "breathing_room_debt": 8.5,
+            "labor_leverage": 10.8,
+            "customer_cash": 3.0
+          },
+          "hvi_score": 40.8,
+          "grade": "F"
         }
       }
     },
@@ -17728,7 +18134,7 @@
           "grade": "F"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -17737,6 +18143,14 @@
               "indicator_id": "NY.GNP.PCAP.CD",
               "source_label": "GNI per capita, Atlas method (current US$)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NY.GNP.PCAP.CD?date=2020:2024&format=json&per_page=2000"
+            },
+            "cost_of_staying_alive": {
+              "value": 4.0,
+              "observation_year": 2024,
+              "indicator_id": "IMF WEO PCPIPCH",
+              "source_label": "IMF World Economic Outlook: inflation, average consumer prices (annual %)",
+              "url": "https://www.imf.org/external/datamapper/api/v1/PCPIPCH",
+              "source_tier": "IMF international fallback"
             },
             "breathing_room_debt": {
               "value": 21.6231408755943,
@@ -17760,9 +18174,15 @@
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/NE.CON.PRVT.PC.KD?date=2020:2024&format=json&per_page=2000"
             }
           },
-          "missing_modules": [
-            "cost_of_staying_alive"
-          ]
+          "modules": {
+            "pay_reaching_households": 1.4,
+            "cost_of_staying_alive": 16.0,
+            "breathing_room_debt": 17.8,
+            "labor_leverage": 6.7,
+            "customer_cash": 1.1
+          },
+          "hvi_score": 43.0,
+          "grade": "F"
         }
       }
     },
@@ -17837,7 +18257,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -17867,11 +18287,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 665.101337624192,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 0.3,
+            "cost_of_staying_alive": 7.6,
+            "breathing_room_debt": 18.3,
+            "labor_leverage": 14.9,
+            "customer_cash": 0.3
+          },
+          "hvi_score": 41.4,
+          "grade": "F"
         }
       }
     },
@@ -17946,7 +18380,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -17976,11 +18410,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 7246.25768221495,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 2.3,
+            "cost_of_staying_alive": 0.0,
+            "breathing_room_debt": 18.3,
+            "labor_leverage": 9.9,
+            "customer_cash": 3.6
+          },
+          "hvi_score": 34.1,
+          "grade": "F"
         }
       }
     },
@@ -18787,7 +19235,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -18817,11 +19265,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 12190.7970890156,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 5.1,
+            "cost_of_staying_alive": 20.0,
+            "breathing_room_debt": 15.0,
+            "labor_leverage": 12.3,
+            "customer_cash": 6.1
+          },
+          "hvi_score": 58.5,
+          "grade": "D"
         }
       }
     },
@@ -19872,7 +20334,7 @@
           "grade": "D"
         },
         "household_circulation_v2": {
-          "status": "unavailable",
+          "status": "complete",
           "retrieved_at": "2026-10-18",
           "observed_readings": {
             "pay_reaching_households": {
@@ -19902,11 +20364,25 @@
               "indicator_id": "SL.EMP.TOTL.SP.ZS",
               "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
               "url": "https://api.worldbank.org/v2/country/USA;CHN;DEU;JPN;IND;GBR;FRA;ITA;CAN;RUS;BRA;KOR;MEX;AUS;ESP;IDN;TUR;SAU;NLD;CHE;POL;BEL;ARG;IRL;SWE;SGP;ARE;ISR;AUT;THA;NOR;VNM;IRN;PHL;BGD;DNK;MYS;COL;ZAF;EGY;ROU;PAK;CZE;CHL;PRT;FIN;PER;KAZ;IRQ;DZA;NZL;GRC;NGA;HUN;QAT;KWT;MAR;ETH;SVK;DOM;ECU;UZB;VEN;KEN;BGR;GTM;OMN;AGO;LKA;CRI;LUX;HRV;SRB;CIV;PAN;LTU;GHA;URY;TZA;BLR;COD;AZE;MMR;SVN;JOR;BOL;UGA;CMR;TUN;LBY;BHR;KHM;PRY;TKM;LVA;NPL;EST;ZWE;CYP;HND;SLV;GEO;ISL;SEN;PNG;BIH;ALB;MLI;ARM;TTO;ZMB;MLT;GIN;GUY;HTI;MNG;BFA;MOZ;JAM;BEN;GAB;TCD;NER;NIC;BWA;MDA;KGZ;AFG;MDG;MKD;LAO;BHS;COG;BRN;RWA;MUS;TJK;NAM;GNQ;SOM;MWI;MRT;TGO;MNE;BRB;MDV;SLE;FJI;SWZ;LBR;SUR;DJI;BTN;BLZ;BDI;CAF;CPV;LCA;GMB;LSO;GNB;TLS;COM;SLB;VUT;WSM;VCT;STP;TON/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2024&format=json&per_page=2000"
+            },
+            "customer_cash": {
+              "value": 9485.18771201686,
+              "observation_year": 2024,
+              "indicator_id": "NY.GDP.PCAP.KD",
+              "source_label": "GDP per capita (constant 2015 US$), used only where household-consumption data is unavailable",
+              "url": "https://api.worldbank.org/v2/country/NGA;VEN;URY;AZE;MMR;JOR;TKM;PNG;TTO;ZMB;GUY;JAM;AFG;LAO;MWI;BRB;FJI;LBR;SUR;LCA;VCT/indicator/NY.GDP.PCAP.KD?date=2020:2024&format=json&per_page=2000",
+              "source_tier": "WDI last-resort spending-capacity proxy"
             }
           },
-          "missing_modules": [
-            "customer_cash"
-          ]
+          "modules": {
+            "pay_reaching_households": 4.5,
+            "cost_of_staying_alive": 16.7,
+            "breathing_room_debt": 16.3,
+            "labor_leverage": 11.1,
+            "customer_cash": 4.7
+          },
+          "hvi_score": 53.3,
+          "grade": "D"
         }
       }
     },
@@ -21837,7 +22313,7 @@
             "formula": "clamp(value / 2000, 0, 20)"
           }
         },
-        "rule": "A score is published only when all five source readings are available. Missing data is not imputed. The pipeline first checks documented same-family WDI fallback series for private credit and consumption per person.",
+        "rule": "A score is published only when all five source readings are available. Missing data is not imputed. The pipeline uses World Bank primary series, documented same-family WDI fallbacks, then named IMF international fallbacks where WDI has no coverage. Each observed reading retains its source, series, URL, and observation year; a stale Iranian 2018 credit observation is explicitly labeled in its source record.",
         "warning": "This is a provisional source-backed model, not a verdict on whether people in a country are doing well. It lacks globally comparable rent burden, household debt-service, disposable-income, wage, underemployment, and multiple-jobholding data."
       }
     },

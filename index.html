@@ -132,6 +132,7 @@
         <span><i class="swatch" style="background: var(--grade-c)"></i>C 66–84.9</span>
         <span><i class="swatch" style="background: var(--grade-d)"></i>D 50–65.9</span>
         <span><i class="swatch" style="background: var(--grade-f)"></i>F &lt;50</span>
+        <span><i class="swatch" style="background: #464c5d"></i>Source gap — no score, not zero</span>
       </div>
     </section>
     <section id="country-summary" class="summary" aria-label="Tracked country dossiers"></section>
@@ -404,6 +405,18 @@
           gauge.append(makeElement("span", "", `${value.toFixed(1)}/${definition.module_max}`));
           drawerContent.append(gauge);
           drawerContent.append(makeElement("p", "dispatch-meta", module.description));
+          const reading = scorecard.observed_readings && scorecard.observed_readings[key];
+          if (reading) {
+            const provenance = makeElement("p", "dispatch-meta", `Source: ${reading.source_label || reading.indicator_id} · ${reading.observation_year}`);
+            if (reading.url) {
+              const sourceLink = makeElement("a", "", " source ↗");
+              sourceLink.href = reading.url;
+              sourceLink.target = "_blank";
+              sourceLink.rel = "noopener noreferrer";
+              provenance.append(sourceLink);
+            }
+            drawerContent.append(provenance);
+          }
         });
         drawerContent.append(makeElement("p", "notice", definition.warning));
       }
@@ -478,7 +491,7 @@
         .attr("fill", feature => {
           const country = trackedByMapId.get(String(feature.id));
           const scorecard = country && activeScorecard(country);
-          return scorecard && scorecard.status === "complete" ? gradeColors[scorecard.grade] : null;
+          return scorecard ? (scorecard.status === "complete" ? gradeColors[scorecard.grade] : "#464c5d") : null;
         })
         .attr("d", path)
         .attr("tabindex", feature => trackedByMapId.has(String(feature.id)) ? 0 : null)
