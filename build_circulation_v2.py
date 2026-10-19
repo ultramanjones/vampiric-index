@@ -25,7 +25,7 @@ MODULES = {
         "description": "A broad income-per-person proxy: it does not measure wages, take-home pay, inequality, or household disposable income.",
         "indicator_id": "NY.GNP.PCAP.CD",
         "source_label": "GNI per capita, Atlas method (current US$)",
-        "formula": "clamp(value / 2500, 0, 20)",
+        "formula": "clamp(value / 5000, 0, 20)",
     },
     "cost_of_staying_alive": {
         "label": "Cost of staying alive",
@@ -57,7 +57,7 @@ MODULES = {
         "description": "Household/NPISH consumption per-person proxy: it is spending, not cash balances, disposable income, consumer credit, or purchasing-power parity.",
         "indicator_id": "NE.CON.PRVT.PC.KD",
         "source_label": "Households and NPISHs final consumption expenditure per capita (constant 2015 US$)",
-        "formula": "clamp(value / 2000, 0, 20)",
+        "formula": "clamp(value / 2500, 0, 20)",
     },
 }
 ORDER = list(MODULES)
@@ -170,7 +170,7 @@ def grade(score):
 
 def score_module(key, value):
     if key == "pay_reaching_households":
-        return round(clamp(value / 2500), 1)
+        return round(clamp(value / 5000), 1)
     if key == "cost_of_staying_alive":
         return round(clamp(20 - 2 * max(value - 2, 0)), 1)
     if key == "breathing_room_debt":
@@ -178,7 +178,7 @@ def score_module(key, value):
     if key == "labor_leverage":
         return round(clamp(value / 5), 1)
     if key == "customer_cash":
-        return round(clamp(value / 2000), 1)
+        return round(clamp(value / 2500), 1)
     raise KeyError(key)
 
 

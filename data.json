@@ -72,7 +72,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 82910,
@@ -111,14 +111,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 16.6,
             "cost_of_staying_alive": 18.1,
             "breathing_room_debt": 0.4,
             "labor_leverage": 11.9,
-            "customer_cash": 20.0
+            "customer_cash": 18.4
           },
-          "hvi_score": 70.4,
-          "grade": "C"
+          "hvi_score": 65.4,
+          "grade": "D"
         }
       }
     },
@@ -194,7 +194,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 13660,
@@ -233,13 +233,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 5.5,
+            "pay_reaching_households": 2.7,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 0.6,
             "labor_leverage": 12.4,
-            "customer_cash": 2.7
+            "customer_cash": 2.1
           },
-          "hvi_score": 41.2,
+          "hvi_score": 37.8,
           "grade": "F"
         }
       }
@@ -316,7 +316,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 55090,
@@ -355,14 +355,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 11.0,
             "cost_of_staying_alive": 19.5,
             "breathing_room_debt": 12.3,
             "labor_leverage": 11.8,
-            "customer_cash": 11.9
+            "customer_cash": 9.5
           },
-          "hvi_score": 75.5,
-          "grade": "C"
+          "hvi_score": 64.1,
+          "grade": "D"
         }
       }
     },
@@ -438,7 +438,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 37170,
@@ -477,14 +477,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 14.9,
+            "pay_reaching_households": 7.4,
             "cost_of_staying_alive": 18.5,
             "breathing_room_debt": 1.2,
             "labor_leverage": 12.3,
-            "customer_cash": 9.9
+            "customer_cash": 7.9
           },
-          "hvi_score": 56.8,
-          "grade": "D"
+          "hvi_score": 47.3,
+          "grade": "F"
         }
       }
     },
@@ -560,7 +560,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2550,
@@ -599,13 +599,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.0,
+            "pay_reaching_households": 0.5,
             "cost_of_staying_alive": 14.1,
             "breathing_room_debt": 15.8,
             "labor_leverage": 10.7,
-            "customer_cash": 0.7
+            "customer_cash": 0.6
           },
-          "hvi_score": 42.3,
+          "hvi_score": 41.7,
           "grade": "F"
         }
       }
@@ -682,7 +682,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 49320,
@@ -721,14 +721,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 19.7,
+            "pay_reaching_households": 9.9,
             "cost_of_staying_alive": 17.5,
             "breathing_room_debt": 8.8,
             "labor_leverage": 11.8,
-            "customer_cash": 14.7
+            "customer_cash": 11.8
           },
-          "hvi_score": 72.5,
-          "grade": "C"
+          "hvi_score": 59.8,
+          "grade": "D"
         }
       }
     },
@@ -804,7 +804,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 45160,
@@ -843,14 +843,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 18.1,
+            "pay_reaching_households": 9.0,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 9.2,
             "labor_leverage": 10.3,
-            "customer_cash": 10.6
+            "customer_cash": 8.5
           },
-          "hvi_score": 68.2,
-          "grade": "C"
+          "hvi_score": 57.0,
+          "grade": "D"
         }
       }
     },
@@ -926,7 +926,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 38640,
@@ -965,14 +965,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 15.5,
+            "pay_reaching_households": 7.7,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 14.0,
             "labor_leverage": 9.3,
-            "customer_cash": 9.9
+            "customer_cash": 7.9
           },
-          "hvi_score": 68.7,
-          "grade": "C"
+          "hvi_score": 58.9,
+          "grade": "D"
         }
       }
     },
@@ -1048,7 +1048,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 54110,
@@ -1088,14 +1088,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 10.8,
             "cost_of_staying_alive": 19.2,
             "breathing_room_debt": 10.0,
             "labor_leverage": 12.1,
-            "customer_cash": 13.3
+            "customer_cash": 10.6
           },
-          "hvi_score": 74.6,
-          "grade": "C"
+          "hvi_score": 62.7,
+          "grade": "D"
         }
       }
     },
@@ -1171,7 +1171,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 15330,
@@ -1210,13 +1210,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 6.1,
+            "pay_reaching_households": 3.1,
             "cost_of_staying_alive": 7.1,
             "breathing_room_debt": 14.5,
             "labor_leverage": 12.1,
-            "customer_cash": 3.2
+            "customer_cash": 2.5
           },
-          "hvi_score": 43.0,
+          "hvi_score": 39.3,
           "grade": "F"
         }
       }
@@ -1293,7 +1293,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 9930,
@@ -1332,13 +1332,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.0,
+            "pay_reaching_households": 2.0,
             "cost_of_staying_alive": 15.3,
             "breathing_room_debt": 12.4,
             "labor_leverage": 11.8,
-            "customer_cash": 3.1
+            "customer_cash": 2.5
           },
-          "hvi_score": 46.6,
+          "hvi_score": 44.0,
           "grade": "F"
         }
       }
@@ -1415,7 +1415,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 36750,
@@ -1454,13 +1454,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 14.7,
+            "pay_reaching_households": 7.3,
             "cost_of_staying_alive": 19.4,
             "breathing_room_debt": 4.0,
             "labor_leverage": 12.5,
-            "customer_cash": 8.8
+            "customer_cash": 7.0
           },
-          "hvi_score": 59.4,
+          "hvi_score": 50.2,
           "grade": "D"
         }
       }
@@ -1537,7 +1537,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 12760,
@@ -1576,14 +1576,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 5.1,
+            "pay_reaching_households": 2.6,
             "cost_of_staying_alive": 14.6,
             "breathing_room_debt": 16.5,
             "labor_leverage": 12.0,
-            "customer_cash": 3.7
+            "customer_cash": 3.0
           },
-          "hvi_score": 51.9,
-          "grade": "D"
+          "hvi_score": 48.7,
+          "grade": "F"
         }
       }
     },
@@ -1659,7 +1659,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 62680,
@@ -1698,14 +1698,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 12.5,
             "cost_of_staying_alive": 17.7,
             "breathing_room_debt": 7.1,
             "labor_leverage": 12.8,
-            "customer_cash": 16.9
+            "customer_cash": 13.5
           },
-          "hvi_score": 74.5,
-          "grade": "C"
+          "hvi_score": 63.6,
+          "grade": "D"
         }
       }
     },
@@ -1781,7 +1781,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 33550,
@@ -1820,13 +1820,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 13.4,
+            "pay_reaching_households": 6.7,
             "cost_of_staying_alive": 18.5,
             "breathing_room_debt": 12.6,
             "labor_leverage": 10.2,
-            "customer_cash": 8.1
+            "customer_cash": 6.5
           },
-          "hvi_score": 62.8,
+          "hvi_score": 54.5,
           "grade": "D"
         }
       }
@@ -1903,7 +1903,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 4920,
@@ -1942,13 +1942,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.0,
+            "pay_reaching_households": 1.0,
             "cost_of_staying_alive": 19.6,
             "breathing_room_debt": 16.4,
             "labor_leverage": 13.1,
-            "customer_cash": 1.2
+            "customer_cash": 1.0
           },
-          "hvi_score": 52.3,
+          "hvi_score": 51.1,
           "grade": "D"
         }
       }
@@ -2025,7 +2025,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 13430,
@@ -2064,13 +2064,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 5.4,
+            "pay_reaching_households": 2.7,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 15.7,
             "labor_leverage": 9.9,
-            "customer_cash": 5.3
+            "customer_cash": 4.2
           },
-          "hvi_score": 36.3,
+          "hvi_score": 32.5,
           "grade": "F"
         }
       }
@@ -2147,7 +2147,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 35990,
@@ -2186,14 +2186,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 14.4,
+            "pay_reaching_households": 7.2,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 14.0,
             "labor_leverage": 12.6,
-            "customer_cash": 6.0
+            "customer_cash": 4.8
           },
-          "hvi_score": 67.0,
-          "grade": "C"
+          "hvi_score": 58.6,
+          "grade": "D"
         }
       }
     },
@@ -2269,7 +2269,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 62500,
@@ -2308,14 +2308,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 12.5,
             "cost_of_staying_alive": 17.3,
             "breathing_room_debt": 11.8,
             "labor_leverage": 13.0,
-            "customer_cash": 11.2
+            "customer_cash": 8.9
           },
-          "hvi_score": 73.3,
-          "grade": "C"
+          "hvi_score": 63.5,
+          "grade": "D"
         }
       }
     },
@@ -2391,7 +2391,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 99920,
@@ -2434,9 +2434,9 @@
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 5.0,
             "labor_leverage": 12.8,
-            "customer_cash": 20.0
+            "customer_cash": 18.3
           },
-          "hvi_score": 77.8,
+          "hvi_score": 76.1,
           "grade": "C"
         }
       }
@@ -2513,7 +2513,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 21590,
@@ -2552,13 +2552,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 8.6,
+            "pay_reaching_households": 4.3,
             "cost_of_staying_alive": 16.4,
             "breathing_room_debt": 16.6,
             "labor_leverage": 11.4,
-            "customer_cash": 5.1
+            "customer_cash": 4.1
           },
-          "hvi_score": 58.1,
+          "hvi_score": 52.8,
           "grade": "D"
         }
       }
@@ -2635,7 +2635,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 55290,
@@ -2674,14 +2674,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 11.1,
             "cost_of_staying_alive": 17.7,
             "breathing_room_debt": 13.2,
             "labor_leverage": 10.3,
-            "customer_cash": 11.4
+            "customer_cash": 9.1
           },
-          "hvi_score": 72.6,
-          "grade": "C"
+          "hvi_score": 61.4,
+          "grade": "D"
         }
       }
     },
@@ -2757,7 +2757,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 13530,
@@ -2796,13 +2796,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 5.4,
+            "pay_reaching_households": 2.7,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 18.5,
             "labor_leverage": 11.5,
-            "customer_cash": 4.2
+            "customer_cash": 3.4
           },
-          "hvi_score": 39.6,
+          "hvi_score": 36.1,
           "grade": "F"
         }
       }
@@ -2879,7 +2879,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 80650,
@@ -2918,13 +2918,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 16.1,
             "cost_of_staying_alive": 19.8,
             "breathing_room_debt": 17.6,
             "labor_leverage": 12.4,
-            "customer_cash": 12.1
+            "customer_cash": 9.7
           },
-          "hvi_score": 81.9,
+          "hvi_score": 75.6,
           "grade": "C"
         }
       }
@@ -3001,7 +3001,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 58510,
@@ -3040,14 +3040,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 11.7,
             "cost_of_staying_alive": 18.3,
             "breathing_room_debt": 7.5,
             "labor_leverage": 11.9,
-            "customer_cash": 12.5
+            "customer_cash": 10.0
           },
-          "hvi_score": 70.2,
-          "grade": "C"
+          "hvi_score": 59.4,
+          "grade": "D"
         }
       }
     },
@@ -3117,7 +3117,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 75820,
@@ -3156,14 +3156,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 15.2,
             "cost_of_staying_alive": 19.2,
             "breathing_room_debt": 7.2,
             "labor_leverage": 13.5,
-            "customer_cash": 12.3
+            "customer_cash": 9.8
           },
-          "hvi_score": 72.2,
-          "grade": "C"
+          "hvi_score": 64.9,
+          "grade": "D"
         }
       }
     },
@@ -3233,7 +3233,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 51550,
@@ -3272,13 +3272,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 10.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 13.5,
             "labor_leverage": 15.4,
-            "customer_cash": 11.5
+            "customer_cash": 9.2
           },
-          "hvi_score": 80.4,
+          "hvi_score": 68.4,
           "grade": "C"
         }
       }
@@ -3355,7 +3355,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 53090,
@@ -3394,14 +3394,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 10.6,
             "cost_of_staying_alive": 17.9,
             "breathing_room_debt": 13.0,
             "labor_leverage": 12.6,
-            "customer_cash": 10.9
+            "customer_cash": 8.7
           },
-          "hvi_score": 74.4,
-          "grade": "C"
+          "hvi_score": 62.8,
+          "grade": "D"
         }
       }
     },
@@ -3477,7 +3477,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 54760,
@@ -3516,14 +3516,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 11.0,
             "cost_of_staying_alive": 18.1,
             "breathing_room_debt": 11.8,
             "labor_leverage": 11.5,
-            "customer_cash": 11.7
+            "customer_cash": 9.4
           },
-          "hvi_score": 73.1,
-          "grade": "C"
+          "hvi_score": 61.8,
+          "grade": "D"
         }
       }
     },
@@ -3599,7 +3599,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7130,
@@ -3638,13 +3638,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.9,
+            "pay_reaching_households": 1.4,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 5.4,
             "labor_leverage": 13.3,
-            "customer_cash": 2.0
+            "customer_cash": 1.6
           },
-          "hvi_score": 43.6,
+          "hvi_score": 41.7,
           "grade": "F"
         }
       }
@@ -3721,7 +3721,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 100030,
@@ -3764,9 +3764,9 @@
             "cost_of_staying_alive": 17.6,
             "breathing_room_debt": 7.6,
             "labor_leverage": 12.6,
-            "customer_cash": 19.5
+            "customer_cash": 15.6
           },
-          "hvi_score": 77.3,
+          "hvi_score": 73.4,
           "grade": "C"
         }
       }
@@ -3843,7 +3843,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 4490,
@@ -3882,13 +3882,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.8,
+            "pay_reaching_households": 0.9,
             "cost_of_staying_alive": 16.8,
             "breathing_room_debt": 7.5,
             "labor_leverage": 14.4,
-            "customer_cash": 1.1
+            "customer_cash": 0.9
           },
-          "hvi_score": 41.6,
+          "hvi_score": 40.5,
           "grade": "F"
         }
       }
@@ -3965,7 +3965,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5130,
@@ -4005,13 +4005,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.1,
+            "pay_reaching_households": 1.0,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 16.3,
             "labor_leverage": 7.6,
-            "customer_cash": 1.3
+            "customer_cash": 1.0
           },
-          "hvi_score": 27.3,
+          "hvi_score": 25.9,
           "grade": "F"
         }
       }
@@ -4088,7 +4088,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 4470,
@@ -4127,13 +4127,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.8,
+            "pay_reaching_households": 0.9,
             "cost_of_staying_alive": 17.6,
             "breathing_room_debt": 15.0,
             "labor_leverage": 12.0,
-            "customer_cash": 1.4
+            "customer_cash": 1.1
           },
-          "hvi_score": 47.8,
+          "hvi_score": 46.6,
           "grade": "F"
         }
       }
@@ -4210,7 +4210,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2820,
@@ -4249,13 +4249,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.1,
+            "pay_reaching_households": 0.6,
             "cost_of_staying_alive": 3.1,
             "breathing_room_debt": 16.4,
             "labor_leverage": 11.4,
-            "customer_cash": 0.7
+            "customer_cash": 0.5
           },
-          "hvi_score": 32.7,
+          "hvi_score": 32.0,
           "grade": "F"
         }
       }
@@ -4332,7 +4332,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 72540,
@@ -4371,14 +4371,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 14.5,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 5.6,
             "labor_leverage": 12.3,
-            "customer_cash": 13.4
+            "customer_cash": 10.7
           },
-          "hvi_score": 71.3,
-          "grade": "C"
+          "hvi_score": 63.1,
+          "grade": "D"
         }
       }
     },
@@ -4448,7 +4448,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 11650,
@@ -4487,13 +4487,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.7,
+            "pay_reaching_households": 2.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 8.4,
             "labor_leverage": 12.7,
-            "customer_cash": 3.6
+            "customer_cash": 2.9
           },
-          "hvi_score": 49.4,
+          "hvi_score": 46.3,
           "grade": "F"
         }
       }
@@ -4570,7 +4570,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7090,
@@ -4609,13 +4609,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.8,
+            "pay_reaching_households": 1.4,
             "cost_of_staying_alive": 10.8,
             "breathing_room_debt": 16.1,
             "labor_leverage": 11.5,
-            "customer_cash": 2.6
+            "customer_cash": 2.1
           },
-          "hvi_score": 43.8,
+          "hvi_score": 41.9,
           "grade": "F"
         }
       }
@@ -4692,7 +4692,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 6110,
@@ -4731,13 +4731,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.4,
+            "pay_reaching_households": 1.2,
             "cost_of_staying_alive": 15.3,
             "breathing_room_debt": 11.1,
             "labor_leverage": 7.5,
-            "customer_cash": 1.9
+            "customer_cash": 1.5
           },
-          "hvi_score": 38.2,
+          "hvi_score": 36.6,
           "grade": "F"
         }
       }
@@ -4814,7 +4814,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3510,
@@ -4853,13 +4853,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.4,
+            "pay_reaching_households": 0.7,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 17.2,
             "labor_leverage": 8.3,
-            "customer_cash": 1.7
+            "customer_cash": 1.4
           },
-          "hvi_score": 28.6,
+          "hvi_score": 27.6,
           "grade": "F"
         }
       }
@@ -4936,7 +4936,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 17600,
@@ -4975,14 +4975,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 7.0,
+            "pay_reaching_households": 3.5,
             "cost_of_staying_alive": 12.6,
             "breathing_room_debt": 17.7,
             "labor_leverage": 9.7,
-            "customer_cash": 4.5
+            "customer_cash": 3.6
           },
-          "hvi_score": 51.5,
-          "grade": "D"
+          "hvi_score": 47.1,
+          "grade": "F"
         }
       }
     },
@@ -5058,7 +5058,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1430,
@@ -5097,13 +5097,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.6,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 18.9,
             "labor_leverage": 9.9,
-            "customer_cash": 0.8
+            "customer_cash": 0.6
           },
-          "hvi_score": 30.2,
+          "hvi_score": 29.7,
           "grade": "F"
         }
       }
@@ -5180,7 +5180,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 29570,
@@ -5219,13 +5219,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 11.8,
+            "pay_reaching_households": 5.9,
             "cost_of_staying_alive": 19.1,
             "breathing_room_debt": 15.2,
             "labor_leverage": 11.8,
-            "customer_cash": 4.7
+            "customer_cash": 3.8
           },
-          "hvi_score": 62.6,
+          "hvi_score": 55.8,
           "grade": "D"
         }
       }
@@ -5302,7 +5302,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 15840,
@@ -5341,13 +5341,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 6.3,
+            "pay_reaching_households": 3.2,
             "cost_of_staying_alive": 15.4,
             "breathing_room_debt": 9.5,
             "labor_leverage": 11.4,
-            "customer_cash": 4.6
+            "customer_cash": 3.7
           },
-          "hvi_score": 47.2,
+          "hvi_score": 43.2,
           "grade": "F"
         }
       }
@@ -5424,7 +5424,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 26940,
@@ -5463,13 +5463,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 10.8,
+            "pay_reaching_households": 5.4,
             "cost_of_staying_alive": 19.2,
             "breathing_room_debt": 12.3,
             "labor_leverage": 10.9,
-            "customer_cash": 7.3
+            "customer_cash": 5.9
           },
-          "hvi_score": 60.5,
+          "hvi_score": 53.7,
           "grade": "D"
         }
       }
@@ -5546,7 +5546,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 51710,
@@ -5585,14 +5585,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 10.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 10.8,
             "labor_leverage": 11.0,
-            "customer_cash": 11.7
+            "customer_cash": 9.4
           },
-          "hvi_score": 73.5,
-          "grade": "C"
+          "hvi_score": 61.5,
+          "grade": "D"
         }
       }
     },
@@ -5668,7 +5668,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7530,
@@ -5707,13 +5707,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 3.0,
+            "pay_reaching_households": 1.5,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 16.0,
             "labor_leverage": 13.8,
-            "customer_cash": 2.2
+            "customer_cash": 1.8
           },
-          "hvi_score": 55.0,
+          "hvi_score": 53.1,
           "grade": "D"
         }
       }
@@ -5790,7 +5790,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 12100,
@@ -5829,13 +5829,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.8,
+            "pay_reaching_households": 2.4,
             "cost_of_staying_alive": 6.6,
             "breathing_room_debt": 17.3,
             "labor_leverage": 13.4,
-            "customer_cash": 3.4
+            "customer_cash": 2.7
           },
-          "hvi_score": 45.5,
+          "hvi_score": 42.4,
           "grade": "F"
         }
       }
@@ -5912,7 +5912,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 6030,
@@ -5951,13 +5951,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.4,
+            "pay_reaching_households": 1.2,
             "cost_of_staying_alive": 18.8,
             "breathing_room_debt": 18.6,
             "labor_leverage": 7.0,
-            "customer_cash": 1.3
+            "customer_cash": 1.0
           },
-          "hvi_score": 48.1,
+          "hvi_score": 46.6,
           "grade": "F"
         }
       }
@@ -6034,7 +6034,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5370,
@@ -6073,13 +6073,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.1,
+            "pay_reaching_households": 1.1,
             "cost_of_staying_alive": 15.9,
             "breathing_room_debt": 18.1,
             "labor_leverage": 7.3,
-            "customer_cash": 1.0
+            "customer_cash": 0.8
           },
-          "hvi_score": 44.4,
+          "hvi_score": 43.2,
           "grade": "F"
         }
       }
@@ -6156,7 +6156,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 47070,
@@ -6195,14 +6195,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 18.8,
+            "pay_reaching_households": 9.4,
             "cost_of_staying_alive": 18.2,
             "breathing_room_debt": 5.8,
             "labor_leverage": 13.4,
-            "customer_cash": 12.7
+            "customer_cash": 10.2
           },
-          "hvi_score": 68.9,
-          "grade": "C"
+          "hvi_score": 57.0,
+          "grade": "D"
         }
       }
     },
@@ -6278,7 +6278,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 22730,
@@ -6317,13 +6317,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 9.1,
+            "pay_reaching_households": 4.5,
             "cost_of_staying_alive": 18.5,
             "breathing_room_debt": 15.1,
             "labor_leverage": 9.4,
-            "customer_cash": 7.8
+            "customer_cash": 6.2
           },
-          "hvi_score": 59.9,
+          "hvi_score": 53.7,
           "grade": "D"
         }
       }
@@ -6400,7 +6400,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1710,
@@ -6440,13 +6440,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.7,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 18.7,
             "labor_leverage": 16.0,
-            "customer_cash": 1.2
+            "customer_cash": 0.9
           },
-          "hvi_score": 36.6,
+          "hvi_score": 35.9,
           "grade": "F"
         }
       }
@@ -6523,7 +6523,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 20800,
@@ -6562,13 +6562,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 8.3,
+            "pay_reaching_households": 4.2,
             "cost_of_staying_alive": 16.6,
             "breathing_room_debt": 16.8,
             "labor_leverage": 11.6,
-            "customer_cash": 4.6
+            "customer_cash": 3.7
           },
-          "hvi_score": 57.9,
+          "hvi_score": 52.9,
           "grade": "D"
         }
       }
@@ -6645,7 +6645,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 76570,
@@ -6684,13 +6684,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 15.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 7.9,
             "labor_leverage": 17.4,
-            "customer_cash": 6.7
+            "customer_cash": 5.4
           },
-          "hvi_score": 72.0,
+          "hvi_score": 66.0,
           "grade": "C"
         }
       }
@@ -6767,7 +6767,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 41110,
@@ -6806,14 +6806,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 16.4,
+            "pay_reaching_households": 8.2,
             "cost_of_staying_alive": 18.2,
             "breathing_room_debt": 19.6,
             "labor_leverage": 14.4,
-            "customer_cash": 5.5
+            "customer_cash": 4.4
           },
-          "hvi_score": 74.1,
-          "grade": "C"
+          "hvi_score": 64.8,
+          "grade": "D"
         }
       }
     },
@@ -6889,7 +6889,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3840,
@@ -6928,13 +6928,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.5,
+            "pay_reaching_households": 0.8,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 12.2,
             "labor_leverage": 8.0,
-            "customer_cash": 1.0
+            "customer_cash": 0.8
           },
-          "hvi_score": 42.7,
+          "hvi_score": 41.8,
           "grade": "F"
         }
       }
@@ -7011,7 +7011,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1100,
@@ -7051,13 +7051,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.4,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 17.3,
             "labor_leverage": 13.2,
             "customer_cash": 0.3
           },
-          "hvi_score": 31.2,
+          "hvi_score": 31.0,
           "grade": "F"
         }
       }
@@ -7134,7 +7134,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 23560,
@@ -7173,13 +7173,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 9.4,
+            "pay_reaching_households": 4.7,
             "cost_of_staying_alive": 18.5,
             "breathing_room_debt": 14.0,
             "labor_leverage": 11.5,
-            "customer_cash": 5.6
+            "customer_cash": 4.5
           },
-          "hvi_score": 59.0,
+          "hvi_score": 53.2,
           "grade": "D"
         }
       }
@@ -7256,7 +7256,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 10310,
@@ -7295,13 +7295,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.1,
+            "pay_reaching_households": 2.1,
             "cost_of_staying_alive": 17.4,
             "breathing_room_debt": 16.8,
             "labor_leverage": 12.2,
-            "customer_cash": 3.2
+            "customer_cash": 2.5
           },
-          "hvi_score": 53.7,
+          "hvi_score": 51.0,
           "grade": "D"
         }
       }
@@ -7378,7 +7378,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 6400,
@@ -7417,14 +7417,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.6,
+            "pay_reaching_households": 1.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 14.3,
             "labor_leverage": 12.5,
-            "customer_cash": 1.9
+            "customer_cash": 1.6
           },
-          "hvi_score": 51.3,
-          "grade": "D"
+          "hvi_score": 49.7,
+          "grade": "F"
         }
       }
     },
@@ -7500,7 +7500,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3170,
@@ -7539,13 +7539,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.3,
+            "pay_reaching_households": 0.6,
             "cost_of_staying_alive": 4.7,
             "breathing_room_debt": 16.9,
             "labor_leverage": 11.0,
-            "customer_cash": 1.7
+            "customer_cash": 1.4
           },
-          "hvi_score": 35.6,
+          "hvi_score": 34.6,
           "grade": "F"
         }
       }
@@ -7622,7 +7622,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3840,
@@ -7664,13 +7664,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.5,
+            "pay_reaching_households": 0.8,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 17.6,
             "labor_leverage": 9.9,
-            "customer_cash": 0.8
+            "customer_cash": 0.6
           },
-          "hvi_score": 29.8,
+          "hvi_score": 28.9,
           "grade": "F"
         }
       }
@@ -7747,7 +7747,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2070,
@@ -7786,13 +7786,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.8,
+            "pay_reaching_households": 0.4,
             "cost_of_staying_alive": 15.0,
             "breathing_room_debt": 17.0,
             "labor_leverage": 12.7,
-            "customer_cash": 0.7
+            "customer_cash": 0.6
           },
-          "hvi_score": 46.2,
+          "hvi_score": 45.7,
           "grade": "F"
         }
       }
@@ -7869,7 +7869,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 15370,
@@ -7908,13 +7908,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 6.1,
+            "pay_reaching_households": 3.1,
             "cost_of_staying_alive": 19.1,
             "breathing_room_debt": 15.3,
             "labor_leverage": 10.8,
-            "customer_cash": 3.5
+            "customer_cash": 2.8
           },
-          "hvi_score": 54.8,
+          "hvi_score": 51.1,
           "grade": "D"
         }
       }
@@ -7991,7 +7991,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5780,
@@ -8030,14 +8030,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.3,
+            "pay_reaching_households": 1.2,
             "cost_of_staying_alive": 18.3,
             "breathing_room_debt": 16.3,
             "labor_leverage": 11.6,
-            "customer_cash": 2.0
+            "customer_cash": 1.6
           },
-          "hvi_score": 50.5,
-          "grade": "D"
+          "hvi_score": 49.0,
+          "grade": "F"
         }
       }
     },
@@ -8113,7 +8113,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 19520,
@@ -8152,13 +8152,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 7.8,
+            "pay_reaching_households": 3.9,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 13.7,
             "labor_leverage": 13.2,
-            "customer_cash": 3.9
+            "customer_cash": 3.1
           },
-          "hvi_score": 58.6,
+          "hvi_score": 53.9,
           "grade": "D"
         }
       }
@@ -8235,7 +8235,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2850,
@@ -8274,13 +8274,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.1,
+            "pay_reaching_households": 0.6,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 19.3,
             "labor_leverage": 12.9,
-            "customer_cash": 1.4
+            "customer_cash": 1.1
           },
-          "hvi_score": 34.7,
+          "hvi_score": 33.9,
           "grade": "F"
         }
       }
@@ -8357,7 +8357,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3870,
@@ -8397,13 +8397,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.5,
+            "pay_reaching_households": 0.8,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 16.4,
             "labor_leverage": 9.3,
-            "customer_cash": 1.4
+            "customer_cash": 1.1
           },
-          "hvi_score": 48.6,
+          "hvi_score": 47.6,
           "grade": "F"
         }
       }
@@ -8480,7 +8480,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 15710,
@@ -8519,13 +8519,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 6.3,
+            "pay_reaching_households": 3.1,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 14.9,
             "labor_leverage": 10.7,
-            "customer_cash": 4.7
+            "customer_cash": 3.8
           },
-          "hvi_score": 56.6,
+          "hvi_score": 52.5,
           "grade": "D"
         }
       }
@@ -8602,7 +8602,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 84650,
@@ -8641,13 +8641,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 16.9,
             "cost_of_staying_alive": 19.9,
             "breathing_room_debt": 11.5,
             "labor_leverage": 11.6,
-            "customer_cash": 19.0
+            "customer_cash": 15.2
           },
-          "hvi_score": 82.0,
+          "hvi_score": 75.1,
           "grade": "C"
         }
       }
@@ -8724,7 +8724,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 22230,
@@ -8763,13 +8763,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 8.9,
+            "pay_reaching_households": 4.4,
             "cost_of_staying_alive": 18.1,
             "breathing_room_debt": 15.3,
             "labor_leverage": 9.9,
-            "customer_cash": 5.4
+            "customer_cash": 4.3
           },
-          "hvi_score": 57.6,
+          "hvi_score": 52.0,
           "grade": "D"
         }
       }
@@ -8846,7 +8846,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 11610,
@@ -8885,13 +8885,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.6,
+            "pay_reaching_households": 2.3,
             "cost_of_staying_alive": 14.7,
             "breathing_room_debt": 16.7,
             "labor_leverage": 11.0,
-            "customer_cash": 2.8
+            "customer_cash": 2.2
           },
-          "hvi_score": 49.8,
+          "hvi_score": 46.9,
           "grade": "F"
         }
       }
@@ -8968,7 +8968,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2520,
@@ -9007,13 +9007,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.0,
+            "pay_reaching_households": 0.5,
             "cost_of_staying_alive": 17.1,
             "breathing_room_debt": 17.7,
             "labor_leverage": 13.1,
-            "customer_cash": 0.7
+            "customer_cash": 0.6
           },
-          "hvi_score": 49.6,
+          "hvi_score": 49.0,
           "grade": "F"
         }
       }
@@ -9090,7 +9090,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 17950,
@@ -9129,13 +9129,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 7.2,
+            "pay_reaching_households": 3.6,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 12.3,
             "labor_leverage": 12.1,
-            "customer_cash": 4.2
+            "customer_cash": 3.4
           },
-          "hvi_score": 55.8,
+          "hvi_score": 51.4,
           "grade": "D"
         }
       }
@@ -9212,7 +9212,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 27110,
@@ -9251,13 +9251,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 10.8,
+            "pay_reaching_households": 5.4,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 16.4,
             "labor_leverage": 11.8,
-            "customer_cash": 5.5
+            "customer_cash": 4.4
           },
-          "hvi_score": 64.5,
+          "hvi_score": 58.0,
           "grade": "D"
         }
       }
@@ -9334,7 +9334,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2260,
@@ -9373,13 +9373,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.9,
+            "pay_reaching_households": 0.5,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 19.1,
             "labor_leverage": 11.5,
-            "customer_cash": 0.9
+            "customer_cash": 0.7
           },
-          "hvi_score": 32.4,
+          "hvi_score": 31.8,
           "grade": "F"
         }
       }
@@ -9456,7 +9456,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 22000,
@@ -9496,13 +9496,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 8.8,
+            "pay_reaching_households": 4.4,
             "cost_of_staying_alive": 14.3,
             "breathing_room_debt": 16.9,
             "labor_leverage": 11.9,
-            "customer_cash": 9.5
+            "customer_cash": 7.6
           },
-          "hvi_score": 61.4,
+          "hvi_score": 55.1,
           "grade": "D"
         }
       }
@@ -9579,7 +9579,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1210,
@@ -9618,13 +9618,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.5,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 17.9,
             "breathing_room_debt": 18.3,
             "labor_leverage": 16.5,
-            "customer_cash": 0.3
+            "customer_cash": 0.2
           },
-          "hvi_score": 53.5,
+          "hvi_score": 53.1,
           "grade": "D"
         }
       }
@@ -9701,7 +9701,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 8380,
@@ -9740,13 +9740,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 3.4,
+            "pay_reaching_households": 1.7,
             "cost_of_staying_alive": 12.4,
             "breathing_room_debt": 17.1,
             "labor_leverage": 12.2,
-            "customer_cash": 2.4
+            "customer_cash": 1.9
           },
-          "hvi_score": 47.5,
+          "hvi_score": 45.3,
           "grade": "F"
         }
       }
@@ -9823,7 +9823,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 680,
@@ -9863,13 +9863,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.3,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 18.9,
             "labor_leverage": 12.3,
-            "customer_cash": 0.2
+            "customer_cash": 0.1
           },
-          "hvi_score": 31.7,
+          "hvi_score": 31.4,
           "grade": "F"
         }
       }
@@ -9946,7 +9946,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7340,
@@ -9986,13 +9986,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.9,
+            "pay_reaching_households": 1.5,
             "cost_of_staying_alive": 19.6,
             "breathing_room_debt": 17.4,
             "labor_leverage": 12.1,
-            "customer_cash": 2.9
+            "customer_cash": 2.4
           },
-          "hvi_score": 54.9,
+          "hvi_score": 53.0,
           "grade": "D"
         }
       }
@@ -10069,7 +10069,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1210,
@@ -10110,13 +10110,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.5,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 17.1,
             "labor_leverage": 10.7,
-            "customer_cash": 0.6
+            "customer_cash": 0.5
           },
-          "hvi_score": 28.9,
+          "hvi_score": 28.5,
           "grade": "F"
         }
       }
@@ -10193,7 +10193,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 31790,
@@ -10232,14 +10232,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 12.7,
+            "pay_reaching_households": 6.4,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 16.5,
             "labor_leverage": 11.2,
-            "customer_cash": 7.0
+            "customer_cash": 5.6
           },
-          "hvi_score": 67.4,
-          "grade": "C"
+          "hvi_score": 59.7,
+          "grade": "D"
         }
       }
     },
@@ -10315,7 +10315,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 4880,
@@ -10355,13 +10355,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.0,
+            "pay_reaching_households": 1.0,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 12.7,
             "labor_leverage": 6.7,
-            "customer_cash": 2.2
+            "customer_cash": 1.8
           },
-          "hvi_score": 43.6,
+          "hvi_score": 42.2,
           "grade": "F"
         }
       }
@@ -10438,7 +10438,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 4160,
@@ -10477,13 +10477,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.7,
+            "pay_reaching_households": 0.8,
             "cost_of_staying_alive": 13.8,
             "breathing_room_debt": 14.1,
             "labor_leverage": 15.2,
-            "customer_cash": 1.1
+            "customer_cash": 0.9
           },
-          "hvi_score": 45.9,
+          "hvi_score": 44.8,
           "grade": "F"
         }
       }
@@ -10560,7 +10560,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1010,
@@ -10599,13 +10599,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.4,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 17.4,
             "breathing_room_debt": 18.6,
             "labor_leverage": 15.6,
             "customer_cash": 0.3
           },
-          "hvi_score": 52.3,
+          "hvi_score": 52.1,
           "grade": "D"
         }
       }
@@ -10682,7 +10682,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1690,
@@ -10722,13 +10722,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.7,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 14.9,
             "breathing_room_debt": 18.4,
             "labor_leverage": 12.6,
-            "customer_cash": 0.5
+            "customer_cash": 0.4
           },
-          "hvi_score": 47.1,
+          "hvi_score": 46.6,
           "grade": "F"
         }
       }
@@ -10805,7 +10805,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3880,
@@ -10844,13 +10844,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.6,
+            "pay_reaching_households": 0.8,
             "cost_of_staying_alive": 9.6,
             "breathing_room_debt": 13.9,
             "labor_leverage": 7.7,
-            "customer_cash": 1.5
+            "customer_cash": 1.2
           },
-          "hvi_score": 34.3,
+          "hvi_score": 33.2,
           "grade": "F"
         }
       }
@@ -10927,7 +10927,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 6790,
@@ -10966,14 +10966,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.7,
+            "pay_reaching_households": 1.4,
             "cost_of_staying_alive": 19.7,
             "breathing_room_debt": 18.7,
             "labor_leverage": 7.8,
-            "customer_cash": 1.3
+            "customer_cash": 1.0
           },
-          "hvi_score": 50.2,
-          "grade": "D"
+          "hvi_score": 48.6,
+          "grade": "F"
         }
       }
     },
@@ -11049,7 +11049,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 28170,
@@ -11089,13 +11089,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 11.3,
+            "pay_reaching_households": 5.6,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 13.0,
             "labor_leverage": 14.0,
-            "customer_cash": 5.8
+            "customer_cash": 4.6
           },
-          "hvi_score": 64.1,
+          "hvi_score": 57.2,
           "grade": "D"
         }
       }
@@ -11172,7 +11172,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2550,
@@ -11211,13 +11211,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.0,
+            "pay_reaching_households": 0.5,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 7.5,
             "labor_leverage": 16.4,
-            "customer_cash": 0.7
+            "customer_cash": 0.5
           },
-          "hvi_score": 45.6,
+          "hvi_score": 44.9,
           "grade": "F"
         }
       }
@@ -11294,7 +11294,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 6290,
@@ -11333,13 +11333,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.5,
+            "pay_reaching_households": 1.3,
             "cost_of_staying_alive": 16.3,
             "breathing_room_debt": 14.3,
             "labor_leverage": 13.3,
-            "customer_cash": 2.2
+            "customer_cash": 1.8
           },
-          "hvi_score": 48.6,
+          "hvi_score": 47.0,
           "grade": "F"
         }
       }
@@ -11416,7 +11416,7 @@
         },
         "household_circulation_v2": {
           "status": "unavailable",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5640,
@@ -11527,7 +11527,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 21520,
@@ -11566,13 +11566,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 8.6,
+            "pay_reaching_households": 4.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 17.1,
             "labor_leverage": 11.3,
-            "customer_cash": 4.9
+            "customer_cash": 3.9
           },
-          "hvi_score": 61.9,
+          "hvi_score": 56.6,
           "grade": "D"
         }
       }
@@ -11649,7 +11649,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1480,
@@ -11688,13 +11688,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.6,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 14.6,
             "breathing_room_debt": 10.9,
             "labor_leverage": 7.0,
-            "customer_cash": 0.5
+            "customer_cash": 0.4
           },
-          "hvi_score": 33.6,
+          "hvi_score": 33.2,
           "grade": "F"
         }
       }
@@ -11771,7 +11771,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 28880,
@@ -11810,13 +11810,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 11.6,
+            "pay_reaching_households": 5.8,
             "cost_of_staying_alive": 17.0,
             "breathing_room_debt": 13.9,
             "labor_leverage": 12.1,
-            "customer_cash": 5.6
+            "customer_cash": 4.5
           },
-          "hvi_score": 60.2,
+          "hvi_score": 53.3,
           "grade": "D"
         }
       }
@@ -11893,7 +11893,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2400,
@@ -11932,13 +11932,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.0,
+            "pay_reaching_households": 0.5,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 19.4,
             "labor_leverage": 12.3,
-            "customer_cash": 0.4
+            "customer_cash": 0.3
           },
-          "hvi_score": 33.1,
+          "hvi_score": 32.5,
           "grade": "F"
         }
       }
@@ -12015,7 +12015,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 32870,
@@ -12054,14 +12054,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 13.1,
+            "pay_reaching_households": 6.6,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 14.3,
             "labor_leverage": 12.8,
-            "customer_cash": 9.9
+            "customer_cash": 7.9
           },
-          "hvi_score": 70.1,
-          "grade": "C"
+          "hvi_score": 61.6,
+          "grade": "D"
         }
       }
     },
@@ -12137,7 +12137,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3020,
@@ -12176,13 +12176,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.2,
+            "pay_reaching_households": 0.6,
             "cost_of_staying_alive": 14.8,
             "breathing_room_debt": 12.2,
             "labor_leverage": 10.8,
-            "customer_cash": 1.1
+            "customer_cash": 0.9
           },
-          "hvi_score": 40.1,
+          "hvi_score": 39.3,
           "grade": "F"
         }
       }
@@ -12259,7 +12259,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5070,
@@ -12298,13 +12298,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.0,
+            "pay_reaching_households": 1.0,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 13.7,
             "labor_leverage": 12.0,
-            "customer_cash": 1.8
+            "customer_cash": 1.4
           },
-          "hvi_score": 49.5,
+          "hvi_score": 48.1,
           "grade": "F"
         }
       }
@@ -12381,7 +12381,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7870,
@@ -12420,14 +12420,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 3.1,
+            "pay_reaching_households": 1.6,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 13.2,
             "labor_leverage": 11.4,
-            "customer_cash": 2.4
+            "customer_cash": 1.9
           },
-          "hvi_score": 50.1,
-          "grade": "D"
+          "hvi_score": 48.1,
+          "grade": "F"
         }
       }
     },
@@ -12503,7 +12503,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 80910,
@@ -12542,13 +12542,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 20.0,
+            "pay_reaching_households": 16.2,
             "cost_of_staying_alive": 12.3,
             "breathing_room_debt": 10.9,
             "labor_leverage": 14.5,
-            "customer_cash": 15.3
+            "customer_cash": 12.2
           },
-          "hvi_score": 73.0,
+          "hvi_score": 66.1,
           "grade": "C"
         }
       }
@@ -12625,7 +12625,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1630,
@@ -12664,13 +12664,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.7,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 17.0,
             "labor_leverage": 10.1,
-            "customer_cash": 0.5
+            "customer_cash": 0.4
           },
-          "hvi_score": 48.3,
+          "hvi_score": 47.8,
           "grade": "F"
         }
       }
@@ -12747,7 +12747,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2860,
@@ -12787,13 +12787,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.1,
+            "pay_reaching_households": 0.6,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 18.4,
             "labor_leverage": 10.1,
-            "customer_cash": 1.3
+            "customer_cash": 1.0
           },
-          "hvi_score": 50.9,
+          "hvi_score": 50.1,
           "grade": "D"
         }
       }
@@ -12870,7 +12870,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 8810,
@@ -12909,14 +12909,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 3.5,
+            "pay_reaching_households": 1.8,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 15.2,
             "labor_leverage": 8.8,
-            "customer_cash": 2.6
+            "customer_cash": 2.1
           },
-          "hvi_score": 50.1,
-          "grade": "D"
+          "hvi_score": 47.9,
+          "grade": "F"
         }
       }
     },
@@ -12992,7 +12992,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 9910,
@@ -13031,13 +13031,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.0,
+            "pay_reaching_households": 2.0,
             "cost_of_staying_alive": 19.6,
             "breathing_room_debt": 16.6,
             "labor_leverage": 11.4,
-            "customer_cash": 2.3
+            "customer_cash": 1.9
           },
-          "hvi_score": 53.9,
+          "hvi_score": 51.5,
           "grade": "D"
         }
       }
@@ -13114,7 +13114,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1030,
@@ -13153,13 +13153,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.4,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 17.6,
             "breathing_room_debt": 17.8,
             "labor_leverage": 13.0,
             "customer_cash": 0.3
           },
-          "hvi_score": 49.1,
+          "hvi_score": 48.9,
           "grade": "F"
         }
       }
@@ -13236,7 +13236,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7810,
@@ -13275,13 +13275,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 3.1,
+            "pay_reaching_households": 1.6,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 13.6,
             "labor_leverage": 10.5,
-            "customer_cash": 1.9
+            "customer_cash": 1.5
           },
-          "hvi_score": 49.1,
+          "hvi_score": 47.2,
           "grade": "F"
         }
       }
@@ -13358,7 +13358,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 19290,
@@ -13398,13 +13398,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 7.7,
+            "pay_reaching_households": 3.9,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 15.2,
             "labor_leverage": 11.2,
-            "customer_cash": 8.2
+            "customer_cash": 6.5
           },
-          "hvi_score": 62.3,
+          "hvi_score": 56.8,
           "grade": "D"
         }
       }
@@ -13481,7 +13481,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1190,
@@ -13521,13 +13521,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.5,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 18.3,
             "labor_leverage": 11.7,
-            "customer_cash": 0.7
+            "customer_cash": 0.5
           },
-          "hvi_score": 31.2,
+          "hvi_score": 30.7,
           "grade": "F"
         }
       }
@@ -13604,7 +13604,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 36540,
@@ -13643,14 +13643,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 14.6,
+            "pay_reaching_households": 7.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 13.8,
             "labor_leverage": 12.4,
-            "customer_cash": 8.2
+            "customer_cash": 6.5
           },
-          "hvi_score": 69.0,
-          "grade": "C"
+          "hvi_score": 60.0,
+          "grade": "D"
         }
       }
     },
@@ -13726,7 +13726,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1440,
@@ -13765,13 +13765,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.6,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 7.8,
             "breathing_room_debt": 18.9,
             "labor_leverage": 10.0,
-            "customer_cash": 0.4
+            "customer_cash": 0.3
           },
-          "hvi_score": 37.7,
+          "hvi_score": 37.3,
           "grade": "F"
         }
       }
@@ -13848,7 +13848,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 26400,
@@ -13888,14 +13888,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 10.6,
+            "pay_reaching_households": 5.3,
             "cost_of_staying_alive": 18.2,
             "breathing_room_debt": 18.5,
             "labor_leverage": 9.7,
-            "customer_cash": 16.5
+            "customer_cash": 13.2
           },
-          "hvi_score": 73.5,
-          "grade": "C"
+          "hvi_score": 64.9,
+          "grade": "D"
         }
       }
     },
@@ -13971,7 +13971,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1730,
@@ -14010,13 +14010,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.7,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 19.6,
             "labor_leverage": 10.9,
-            "customer_cash": 0.6
+            "customer_cash": 0.5
           },
-          "hvi_score": 31.8,
+          "hvi_score": 31.3,
           "grade": "F"
         }
       }
@@ -14093,7 +14093,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5380,
@@ -14132,13 +14132,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.2,
+            "pay_reaching_households": 1.1,
             "cost_of_staying_alive": 11.6,
             "breathing_room_debt": 15.5,
             "labor_leverage": 11.4,
-            "customer_cash": 1.7
+            "customer_cash": 1.3
           },
-          "hvi_score": 42.4,
+          "hvi_score": 40.9,
           "grade": "F"
         }
       }
@@ -14215,7 +14215,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 850,
@@ -14254,13 +14254,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.3,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 15.6,
             "breathing_room_debt": 17.3,
             "labor_leverage": 13.5,
-            "customer_cash": 0.3
+            "customer_cash": 0.2
           },
-          "hvi_score": 47.0,
+          "hvi_score": 46.8,
           "grade": "F"
         }
       }
@@ -14337,7 +14337,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 550,
@@ -14376,13 +14376,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.2,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 15.8,
             "breathing_room_debt": 18.2,
             "labor_leverage": 14.7,
             "customer_cash": 0.2
           },
-          "hvi_score": 49.1,
+          "hvi_score": 49.0,
           "grade": "F"
         }
       }
@@ -14459,7 +14459,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7190,
@@ -14499,13 +14499,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.9,
+            "pay_reaching_households": 1.4,
             "cost_of_staying_alive": 13.2,
             "breathing_room_debt": 15.5,
             "labor_leverage": 13.5,
-            "customer_cash": 3.0
+            "customer_cash": 2.4
           },
-          "hvi_score": 48.1,
+          "hvi_score": 46.0,
           "grade": "F"
         }
       }
@@ -14582,7 +14582,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1430,
@@ -14621,13 +14621,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.6,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 18.1,
             "labor_leverage": 15.0,
-            "customer_cash": 0.4
+            "customer_cash": 0.3
           },
-          "hvi_score": 54.1,
+          "hvi_score": 53.7,
           "grade": "D"
         }
       }
@@ -14704,7 +14704,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7870,
@@ -14744,14 +14744,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 3.1,
+            "pay_reaching_households": 1.6,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 18.7,
             "labor_leverage": 8.2,
-            "customer_cash": 1.1
+            "customer_cash": 0.9
           },
-          "hvi_score": 51.1,
-          "grade": "D"
+          "hvi_score": 49.4,
+          "grade": "F"
         }
       }
     },
@@ -14827,7 +14827,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 930,
@@ -14866,13 +14866,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.4,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 6.2,
             "breathing_room_debt": 19.2,
             "labor_leverage": 11.8,
-            "customer_cash": 0.3
+            "customer_cash": 0.2
           },
-          "hvi_score": 37.9,
+          "hvi_score": 37.6,
           "grade": "F"
         }
       }
@@ -14949,7 +14949,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 670,
@@ -14988,13 +14988,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.3,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 5.9,
             "breathing_room_debt": 19.0,
             "labor_leverage": 15.9,
             "customer_cash": 0.2
           },
-          "hvi_score": 41.3,
+          "hvi_score": 41.1,
           "grade": "F"
         }
       }
@@ -15071,7 +15071,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2510,
@@ -15110,13 +15110,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.0,
+            "pay_reaching_households": 0.5,
             "cost_of_staying_alive": 14.8,
             "breathing_room_debt": 16.8,
             "labor_leverage": 12.5,
-            "customer_cash": 0.9
+            "customer_cash": 0.7
           },
-          "hvi_score": 46.0,
+          "hvi_score": 45.3,
           "grade": "F"
         }
       }
@@ -15193,7 +15193,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7610,
@@ -15232,14 +15232,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 3.0,
+            "pay_reaching_households": 1.5,
             "cost_of_staying_alive": 18.4,
             "breathing_room_debt": 16.7,
             "labor_leverage": 10.4,
-            "customer_cash": 1.6
+            "customer_cash": 1.3
           },
-          "hvi_score": 50.1,
-          "grade": "D"
+          "hvi_score": 48.3,
+          "grade": "F"
         }
       }
     },
@@ -15315,7 +15315,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 6890,
@@ -15354,14 +15354,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.8,
+            "pay_reaching_households": 1.4,
             "cost_of_staying_alive": 14.6,
             "breathing_room_debt": 17.1,
             "labor_leverage": 14.2,
-            "customer_cash": 1.7
+            "customer_cash": 1.4
           },
-          "hvi_score": 50.4,
-          "grade": "D"
+          "hvi_score": 48.7,
+          "grade": "F"
         }
       }
     },
@@ -15437,7 +15437,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2260,
@@ -15476,13 +15476,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.9,
+            "pay_reaching_households": 0.5,
             "cost_of_staying_alive": 14.0,
             "breathing_room_debt": 17.8,
             "labor_leverage": 11.1,
-            "customer_cash": 0.8
+            "customer_cash": 0.7
           },
-          "hvi_score": 44.6,
+          "hvi_score": 44.1,
           "grade": "F"
         }
       }
@@ -15559,7 +15559,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 390,
@@ -15599,13 +15599,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.2,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 19.7,
             "labor_leverage": 6.5,
-            "customer_cash": 0.2
+            "customer_cash": 0.1
           },
-          "hvi_score": 46.6,
+          "hvi_score": 46.4,
           "grade": "F"
         }
       }
@@ -15682,7 +15682,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 520,
@@ -15721,13 +15721,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.2,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 8.8,
             "breathing_room_debt": 18.4,
             "labor_leverage": 16.6,
-            "customer_cash": 0.2
+            "customer_cash": 0.1
           },
-          "hvi_score": 44.2,
+          "hvi_score": 44.0,
           "grade": "F"
         }
       }
@@ -15804,7 +15804,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 8300,
@@ -15843,13 +15843,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 3.3,
+            "pay_reaching_households": 1.7,
             "cost_of_staying_alive": 17.0,
             "breathing_room_debt": 14.6,
             "labor_leverage": 9.2,
-            "customer_cash": 2.5
+            "customer_cash": 2.0
           },
-          "hvi_score": 46.6,
+          "hvi_score": 44.5,
           "grade": "F"
         }
       }
@@ -15926,7 +15926,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2000,
@@ -15967,13 +15967,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.8,
+            "pay_reaching_households": 0.4,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 14.1,
             "labor_leverage": 13.0,
-            "customer_cash": 1.4
+            "customer_cash": 1.1
           },
-          "hvi_score": 29.3,
+          "hvi_score": 28.6,
           "grade": "F"
         }
       }
@@ -16050,7 +16050,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 37020,
@@ -16089,14 +16089,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 14.8,
+            "pay_reaching_households": 7.4,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 16.0,
             "labor_leverage": 13.5,
-            "customer_cash": 10.5
+            "customer_cash": 8.4
           },
-          "hvi_score": 74.8,
-          "grade": "C"
+          "hvi_score": 65.3,
+          "grade": "D"
         }
       }
     },
@@ -16172,7 +16172,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2270,
@@ -16211,13 +16211,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.9,
+            "pay_reaching_households": 0.5,
             "cost_of_staying_alive": 17.8,
             "breathing_room_debt": 18.6,
             "labor_leverage": 10.9,
-            "customer_cash": 0.4
+            "customer_cash": 0.3
           },
-          "hvi_score": 48.6,
+          "hvi_score": 48.1,
           "grade": "F"
         }
       }
@@ -16294,7 +16294,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 36020,
@@ -16333,14 +16333,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 14.4,
+            "pay_reaching_households": 7.2,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 16.2,
             "labor_leverage": 12.2,
-            "customer_cash": 5.0
+            "customer_cash": 4.0
           },
-          "hvi_score": 67.8,
-          "grade": "C"
+          "hvi_score": 59.6,
+          "grade": "D"
         }
       }
     },
@@ -16416,7 +16416,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1070,
@@ -16455,13 +16455,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.4,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 17.9,
             "labor_leverage": 11.3,
-            "customer_cash": 0.3
+            "customer_cash": 0.2
           },
-          "hvi_score": 49.9,
+          "hvi_score": 49.6,
           "grade": "F"
         }
       }
@@ -16538,7 +16538,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 12960,
@@ -16577,13 +16577,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 5.2,
+            "pay_reaching_households": 2.6,
             "cost_of_staying_alive": 16.8,
             "breathing_room_debt": 13.0,
             "labor_leverage": 11.1,
-            "customer_cash": 3.8
+            "customer_cash": 3.1
           },
-          "hvi_score": 49.9,
+          "hvi_score": 46.6,
           "grade": "F"
         }
       }
@@ -16660,7 +16660,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1650,
@@ -16699,13 +16699,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.7,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 17.0,
             "breathing_room_debt": 18.8,
             "labor_leverage": 7.1,
-            "customer_cash": 0.6
+            "customer_cash": 0.5
           },
-          "hvi_score": 44.2,
+          "hvi_score": 43.7,
           "grade": "F"
         }
       }
@@ -16782,7 +16782,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 4290,
@@ -16821,13 +16821,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.7,
+            "pay_reaching_households": 0.9,
             "cost_of_staying_alive": 15.5,
             "breathing_room_debt": 14.5,
             "labor_leverage": 9.5,
-            "customer_cash": 1.9
+            "customer_cash": 1.5
           },
-          "hvi_score": 43.1,
+          "hvi_score": 41.9,
           "grade": "F"
         }
       }
@@ -16904,7 +16904,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 6050,
@@ -16943,13 +16943,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.4,
+            "pay_reaching_households": 1.2,
             "cost_of_staying_alive": 18.2,
             "breathing_room_debt": 19.4,
             "labor_leverage": 11.2,
-            "customer_cash": 1.6
+            "customer_cash": 1.3
           },
-          "hvi_score": 52.8,
+          "hvi_score": 51.3,
           "grade": "D"
         }
       }
@@ -17026,7 +17026,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 620,
@@ -17066,13 +17066,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.2,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 13.0,
             "breathing_room_debt": 19.5,
             "labor_leverage": 5.5,
             "customer_cash": 0.3
           },
-          "hvi_score": 38.5,
+          "hvi_score": 38.4,
           "grade": "F"
         }
       }
@@ -17149,7 +17149,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 570,
@@ -17189,13 +17189,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.2,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 19.2,
             "labor_leverage": 11.9,
-            "customer_cash": 0.3
+            "customer_cash": 0.2
           },
-          "hvi_score": 31.6,
+          "hvi_score": 31.4,
           "grade": "F"
         }
       }
@@ -17272,7 +17272,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2110,
@@ -17312,13 +17312,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.8,
+            "pay_reaching_households": 0.4,
             "cost_of_staying_alive": 19.0,
             "breathing_room_debt": 0.0,
             "labor_leverage": 7.3,
-            "customer_cash": 0.5
+            "customer_cash": 0.4
           },
-          "hvi_score": 27.6,
+          "hvi_score": 27.1,
           "grade": "F"
         }
       }
@@ -17395,7 +17395,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1220,
@@ -17434,13 +17434,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.5,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 18.3,
             "breathing_room_debt": 17.5,
             "labor_leverage": 11.4,
-            "customer_cash": 0.4
+            "customer_cash": 0.3
           },
-          "hvi_score": 48.1,
+          "hvi_score": 47.7,
           "grade": "F"
         }
       }
@@ -17517,7 +17517,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 12210,
@@ -17556,14 +17556,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.9,
+            "pay_reaching_households": 2.4,
             "cost_of_staying_alive": 17.3,
             "breathing_room_debt": 15.5,
             "labor_leverage": 10.1,
-            "customer_cash": 4.1
+            "customer_cash": 3.3
           },
-          "hvi_score": 51.9,
-          "grade": "D"
+          "hvi_score": 48.6,
+          "grade": "F"
         }
       }
     },
@@ -17639,7 +17639,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 25360,
@@ -17679,14 +17679,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 10.1,
+            "pay_reaching_households": 5.1,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 14.0,
             "labor_leverage": 12.2,
-            "customer_cash": 11.2
+            "customer_cash": 9.0
           },
-          "hvi_score": 67.5,
-          "grade": "C"
+          "hvi_score": 60.3,
+          "grade": "D"
         }
       }
     },
@@ -17762,7 +17762,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 11540,
@@ -17801,13 +17801,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.6,
+            "pay_reaching_households": 2.3,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 16.4,
             "labor_leverage": 12.1,
-            "customer_cash": 3.0
+            "customer_cash": 2.4
           },
-          "hvi_score": 56.1,
+          "hvi_score": 53.2,
           "grade": "D"
         }
       }
@@ -17884,7 +17884,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 820,
@@ -17923,13 +17923,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.3,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 19.6,
             "labor_leverage": 10.4,
-            "customer_cash": 0.5
+            "customer_cash": 0.4
           },
-          "hvi_score": 30.8,
+          "hvi_score": 30.6,
           "grade": "F"
         }
       }
@@ -18006,7 +18006,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5820,
@@ -18046,13 +18046,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.3,
+            "pay_reaching_households": 1.2,
             "cost_of_staying_alive": 16.2,
             "breathing_room_debt": 8.5,
             "labor_leverage": 10.8,
-            "customer_cash": 3.0
+            "customer_cash": 2.4
           },
-          "hvi_score": 40.8,
+          "hvi_score": 39.1,
           "grade": "F"
         }
       }
@@ -18129,7 +18129,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3440,
@@ -18169,13 +18169,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.4,
+            "pay_reaching_households": 0.7,
             "cost_of_staying_alive": 16.0,
             "breathing_room_debt": 17.8,
             "labor_leverage": 6.7,
-            "customer_cash": 1.1
+            "customer_cash": 0.9
           },
-          "hvi_score": 43.0,
+          "hvi_score": 42.1,
           "grade": "F"
         }
       }
@@ -18252,7 +18252,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 750,
@@ -18292,13 +18292,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.3,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 7.6,
             "breathing_room_debt": 18.3,
             "labor_leverage": 14.9,
             "customer_cash": 0.3
           },
-          "hvi_score": 41.4,
+          "hvi_score": 41.2,
           "grade": "F"
         }
       }
@@ -18375,7 +18375,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5690,
@@ -18415,13 +18415,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.3,
+            "pay_reaching_households": 1.1,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 18.3,
             "labor_leverage": 9.9,
-            "customer_cash": 3.6
+            "customer_cash": 2.9
           },
-          "hvi_score": 34.1,
+          "hvi_score": 32.2,
           "grade": "F"
         }
       }
@@ -18498,7 +18498,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3640,
@@ -18537,13 +18537,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.5,
+            "pay_reaching_households": 0.7,
             "cost_of_staying_alive": 19.8,
             "breathing_room_debt": 17.7,
             "labor_leverage": 4.7,
-            "customer_cash": 1.3
+            "customer_cash": 1.0
           },
-          "hvi_score": 45.0,
+          "hvi_score": 43.9,
           "grade": "F"
         }
       }
@@ -18620,7 +18620,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 3910,
@@ -18659,13 +18659,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.6,
+            "pay_reaching_households": 0.8,
             "cost_of_staying_alive": 18.5,
             "breathing_room_debt": 13.2,
             "labor_leverage": 12.6,
-            "customer_cash": 0.8
+            "customer_cash": 0.6
           },
-          "hvi_score": 46.7,
+          "hvi_score": 45.7,
           "grade": "F"
         }
       }
@@ -18742,7 +18742,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 7150,
@@ -18781,13 +18781,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.9,
+            "pay_reaching_households": 1.4,
             "cost_of_staying_alive": 17.4,
             "breathing_room_debt": 15.9,
             "labor_leverage": 10.4,
-            "customer_cash": 2.1
+            "customer_cash": 1.6
           },
-          "hvi_score": 48.7,
+          "hvi_score": 46.7,
           "grade": "F"
         }
       }
@@ -18864,7 +18864,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 250,
@@ -18986,7 +18986,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 510,
@@ -19025,13 +19025,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.2,
+            "pay_reaching_households": 0.1,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 18.7,
             "labor_leverage": 13.8,
             "customer_cash": 0.2
           },
-          "hvi_score": 52.9,
+          "hvi_score": 52.8,
           "grade": "D"
         }
       }
@@ -19108,7 +19108,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 4940,
@@ -19147,13 +19147,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.0,
+            "pay_reaching_households": 1.0,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 14.5,
             "labor_leverage": 10.1,
-            "customer_cash": 1.6
+            "customer_cash": 1.3
           },
-          "hvi_score": 48.2,
+          "hvi_score": 46.9,
           "grade": "F"
         }
       }
@@ -19230,7 +19230,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 12840,
@@ -19270,13 +19270,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 5.1,
+            "pay_reaching_households": 2.6,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 15.0,
             "labor_leverage": 12.3,
-            "customer_cash": 6.1
+            "customer_cash": 4.9
           },
-          "hvi_score": 58.5,
+          "hvi_score": 54.8,
           "grade": "D"
         }
       }
@@ -19353,7 +19353,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 880,
@@ -19392,13 +19392,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.4,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 0.9,
             "breathing_room_debt": 19.1,
             "labor_leverage": 8.9,
-            "customer_cash": 0.3
+            "customer_cash": 0.2
           },
-          "hvi_score": 29.6,
+          "hvi_score": 29.3,
           "grade": "F"
         }
       }
@@ -19475,7 +19475,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1240,
@@ -19514,13 +19514,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.5,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 11.8,
             "breathing_room_debt": 17.6,
             "labor_leverage": 9.6,
-            "customer_cash": 0.4
+            "customer_cash": 0.3
           },
-          "hvi_score": 39.9,
+          "hvi_score": 39.5,
           "grade": "F"
         }
       }
@@ -19597,7 +19597,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 980,
@@ -19636,13 +19636,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.4,
+            "pay_reaching_households": 0.2,
             "cost_of_staying_alive": 16.5,
             "breathing_room_debt": 18.9,
             "labor_leverage": 12.6,
-            "customer_cash": 0.3
+            "customer_cash": 0.2
           },
-          "hvi_score": 48.7,
+          "hvi_score": 48.4,
           "grade": "F"
         }
       }
@@ -19719,7 +19719,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1650,
@@ -19758,13 +19758,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.7,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 19.9,
             "breathing_room_debt": 16.5,
             "labor_leverage": 13.1,
             "customer_cash": 0.4
           },
-          "hvi_score": 50.6,
+          "hvi_score": 50.2,
           "grade": "D"
         }
       }
@@ -19841,7 +19841,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1730,
@@ -19880,13 +19880,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.7,
+            "pay_reaching_households": 0.3,
             "cost_of_staying_alive": 13.9,
             "breathing_room_debt": 18.5,
             "labor_leverage": 10.7,
-            "customer_cash": 0.7
+            "customer_cash": 0.6
           },
-          "hvi_score": 44.5,
+          "hvi_score": 44.0,
           "grade": "F"
         }
       }
@@ -19963,7 +19963,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 1910,
@@ -20002,14 +20002,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 0.8,
+            "pay_reaching_households": 0.4,
             "cost_of_staying_alive": 15.4,
             "breathing_room_debt": 16.6,
             "labor_leverage": 16.6,
-            "customer_cash": 0.7
+            "customer_cash": 0.6
           },
-          "hvi_score": 50.1,
-          "grade": "D"
+          "hvi_score": 49.6,
+          "grade": "F"
         }
       }
     },
@@ -20085,7 +20085,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 4130,
@@ -20124,14 +20124,14 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.7,
+            "pay_reaching_households": 0.8,
             "cost_of_staying_alive": 20.0,
             "breathing_room_debt": 15.1,
             "labor_leverage": 11.1,
-            "customer_cash": 2.9
+            "customer_cash": 2.3
           },
-          "hvi_score": 50.8,
-          "grade": "D"
+          "hvi_score": 49.3,
+          "grade": "F"
         }
       }
     },
@@ -20207,7 +20207,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 5040,
@@ -20246,13 +20246,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.0,
+            "pay_reaching_households": 1.0,
             "cost_of_staying_alive": 19.7,
             "breathing_room_debt": 13.0,
             "labor_leverage": 8.2,
-            "customer_cash": 1.8
+            "customer_cash": 1.5
           },
-          "hvi_score": 44.7,
+          "hvi_score": 43.4,
           "grade": "F"
         }
       }
@@ -20329,7 +20329,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 11210,
@@ -20369,13 +20369,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 4.5,
+            "pay_reaching_households": 2.2,
             "cost_of_staying_alive": 16.7,
             "breathing_room_debt": 16.3,
             "labor_leverage": 11.1,
-            "customer_cash": 4.7
+            "customer_cash": 3.8
           },
-          "hvi_score": 53.3,
+          "hvi_score": 50.1,
           "grade": "D"
         }
       }
@@ -20452,7 +20452,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 2910,
@@ -20491,13 +20491,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 1.2,
+            "pay_reaching_households": 0.6,
             "cost_of_staying_alive": 0.0,
             "breathing_room_debt": 19.2,
             "labor_leverage": 4.3,
-            "customer_cash": 0.8
+            "customer_cash": 0.7
           },
-          "hvi_score": 25.5,
+          "hvi_score": 24.8,
           "grade": "F"
         }
       }
@@ -20574,7 +20574,7 @@
         },
         "household_circulation_v2": {
           "status": "complete",
-          "retrieved_at": "2026-10-18",
+          "retrieved_at": "2026-10-19",
           "observed_readings": {
             "pay_reaching_households": {
               "value": 6270,
@@ -20613,13 +20613,13 @@
             }
           },
           "modules": {
-            "pay_reaching_households": 2.5,
+            "pay_reaching_households": 1.3,
             "cost_of_staying_alive": 17.6,
             "breathing_room_debt": 16.5,
             "labor_leverage": 9.8,
-            "customer_cash": 2.4
+            "customer_cash": 1.9
           },
-          "hvi_score": 48.8,
+          "hvi_score": 47.1,
           "grade": "F"
         }
       }
@@ -22272,7 +22272,7 @@
             "description": "A broad income-per-person proxy: it does not measure wages, take-home pay, inequality, or household disposable income.",
             "indicator_id": "NY.GNP.PCAP.CD",
             "source_label": "GNI per capita, Atlas method (current US$)",
-            "formula": "clamp(value / 2500, 0, 20)"
+            "formula": "clamp(value / 5000, 0, 20)"
           },
           "cost_of_staying_alive": {
             "label": "Cost of staying alive",
@@ -22304,7 +22304,7 @@
             "description": "Household/NPISH consumption per-person proxy: it is spending, not cash balances, disposable income, consumer credit, or purchasing-power parity.",
             "indicator_id": "NE.CON.PRVT.PC.KD",
             "source_label": "Households and NPISHs final consumption expenditure per capita (constant 2015 US$)",
-            "formula": "clamp(value / 2000, 0, 20)"
+            "formula": "clamp(value / 2500, 0, 20)"
           }
         },
         "rule": "A score is published only when all five source readings are available. Missing data is not imputed. The pipeline uses World Bank primary series, documented same-family WDI fallbacks, then named IMF international fallbacks where WDI has no coverage. Each observed reading retains its source, series, URL, and observation year; a stale Iranian 2018 credit observation is explicitly labeled in its source record.",
