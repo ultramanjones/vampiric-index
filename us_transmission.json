@@ -10,32 +10,32 @@
       {
         "name": "BLS Food Away From Home CPI via FRED",
         "type": "official price index",
-        "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CUUR0000SEFV",
+        "url": "https://fred.stlouisfed.org/series/CUUR0000SEFV",
         "use": "Price deflator only; not a traffic series."
       },
       {
-        "name": "Black Box Intelligence Restaurant Sales and Traffic Report",
-        "type": "participating-operator same-store transaction/traffic benchmark",
-        "url": "https://blackboxintelligence.com/restaurant-sales-and-traffic-report/",
-        "use": "Method and broad coverage are public; many exact monthly values are commercial/gated."
+        "name": "OpenTable State of the Industry",
+        "type": "seated-diner / reservation-activity benchmark",
+        "url": "https://www.opentable.com/restaurant-solutions/resources/state-of-the-industry/",
+        "use": "Public seated-diner activity, not all restaurant transactions or QSR visits; use the page's stated coverage and comparison period."
       },
       {
-        "name": "RMS U.S. Restaurant Industry in 2023: A Year in Review",
-        "type": "restaurant transaction-data benchmark",
-        "url": "https://www.rmsresults.com/insights/the-u-s-restaurant-industry-in-2023-a-year-in-review/",
-        "use": "Public directional evidence; detailed numeric category tables may be gated."
+        "name": "Fiserv Small Business Index",
+        "type": "merchant-payment sales, transaction, and ticket benchmark",
+        "url": "https://www.fiserv.com/en-us/insights/small-business-index.html",
+        "use": "Public payment-network index; use only its stated industry, geography, and release period. It is not a national restaurant visit count."
       },
       {
         "name": "Placer.ai data methodology",
         "type": "modeled mobile-device visits",
-        "url": "https://www.placer.ai/data-methodology/",
+        "url": "https://www.placer.ai/data/",
         "use": "A physical-visit proxy, not a POS guest/transaction count; individual reports define their own restaurant set and time window."
       }
     ],
     "survey_sources": [
       {
         "name": "Census Household Pulse Survey",
-        "url": "https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html",
+        "url": "https://www.census.gov/programs-surveys/household-pulse-survey/data.html",
         "use": "Probability-based survey; selected waves include food-away-from-home spending and all waves provide food-sufficiency measures."
       },
       {
@@ -130,7 +130,7 @@
       "label": "Credit-card delinquency rate",
       "unit": "Percent of loans",
       "description": "Delinquency rate on credit cards at all commercial banks.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DRCCLACBS",
+      "source_url": "https://fred.stlouisfed.org/series/DRCCLACBS",
       "value": 2.85,
       "observation_date": "2026-04-01",
       "prior_value": 3.04,
@@ -143,7 +143,7 @@
       "label": "Revolving consumer credit",
       "unit": "Millions of dollars",
       "description": "Revolving consumer credit owned and securitized, seasonally adjusted; primarily credit-card balances.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=REVOLSL",
+      "source_url": "https://fred.stlouisfed.org/series/REVOLSL",
       "value": 1352414.0,
       "observation_date": "2026-08-01",
       "prior_value": 1308311.66,
@@ -156,7 +156,7 @@
       "label": "Commercial-bank credit-card APR",
       "unit": "Percent",
       "description": "Interest rate on credit-card plans, all accounts, at commercial banks.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TERMCBCCALLNS",
+      "source_url": "https://fred.stlouisfed.org/series/TERMCBCCALLNS",
       "value": 21.19,
       "observation_date": "2026-08-01",
       "prior_value": 21.39,
@@ -169,7 +169,7 @@
       "label": "Personal saving rate",
       "unit": "Percent of disposable income",
       "description": "Personal saving as a percentage of disposable personal income.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PSAVERT",
+      "source_url": "https://fred.stlouisfed.org/series/PSAVERT",
       "value": 4.1,
       "observation_date": "2026-08-01",
       "prior_value": 5.2,
@@ -182,7 +182,7 @@
       "label": "Food away from home CPI",
       "unit": "Index (1982-84=100)",
       "description": "Consumer Price Index for food purchased away from home; used only to deflate a documented restaurant same-store sales series, never as traffic itself.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CUUR0000SEFV",
+      "source_url": "https://fred.stlouisfed.org/series/CUUR0000SEFV",
       "value": 398.783,
       "observation_date": "2026-09-01",
       "prior_value": 385.451,
@@ -195,7 +195,7 @@
       "label": "US broad high-yield option-adjusted spread",
       "unit": "Percentage points",
       "description": "ICE BofA US High Yield Index option-adjusted spread.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLH0A0HYM2",
+      "source_url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
       "value": 3.31,
       "observation_date": "2026-10-16",
       "prior_value": 2.7,
@@ -208,7 +208,7 @@
       "label": "CCC-and-lower high-yield spread",
       "unit": "Percentage points",
       "description": "ICE BofA US High Yield CCC or Below Index option-adjusted spread.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLH0A3HYC",
+      "source_url": "https://fred.stlouisfed.org/series/BAMLH0A3HYC",
       "value": 12.97,
       "observation_date": "2026-10-16",
       "prior_value": 10.76,
@@ -221,7 +221,7 @@
       "label": "Federal Reserve total assets",
       "unit": "Millions of dollars",
       "description": "Total assets held by the Federal Reserve.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WALCL",
+      "source_url": "https://fred.stlouisfed.org/series/WALCL",
       "value": 6755639.0,
       "observation_date": "2026-10-14",
       "prior_value": 6743028.0,
@@ -234,7 +234,7 @@
       "label": "Overnight reverse-repo facility balance",
       "unit": "Billions of dollars",
       "description": "Fed overnight reverse-repurchase agreements, a liquidity-buffer proxy.",
-      "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=RRPONTSYD",
+      "source_url": "https://fred.stlouisfed.org/series/RRPONTSYD",
       "value": 0.33,
       "observation_date": "2026-10-19",
       "prior_value": 4.102,

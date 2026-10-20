@@ -97,6 +97,11 @@ def fred_url(series_id):
     return f"{FRED_BASE_URL}{urllib.parse.quote(series_id)}"
 
 
+def fred_series_page_url(series_id):
+    """Return the human-facing FRED series page, rather than a downloaded CSV."""
+    return f"https://fred.stlouisfed.org/series/{urllib.parse.quote(series_id)}"
+
+
 def fetch_url(url):
     """Fetch bytes with a stable project user agent."""
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -132,7 +137,7 @@ def fetch_series(spec):
         "label": spec["label"],
         "unit": spec["unit"],
         "description": spec["description"],
-        "source_url": fred_url(series_id),
+        "source_url": fred_series_page_url(series_id),
         "points": points,
     }
 
@@ -427,32 +432,32 @@ def build_payload(history, fetched_at, series, canaries):
                 {
                     "name": "BLS Food Away From Home CPI via FRED",
                     "type": "official price index",
-                    "url": series["food_away_from_home_cpi"]["source_url"],
+                    "url": fred_series_page_url(SERIES["food_away_from_home_cpi"]["id"]),
                     "use": "Price deflator only; not a traffic series.",
                 },
                 {
-                    "name": "Black Box Intelligence Restaurant Sales and Traffic Report",
-                    "type": "participating-operator same-store transaction/traffic benchmark",
-                    "url": "https://blackboxintelligence.com/restaurant-sales-and-traffic-report/",
-                    "use": "Method and broad coverage are public; many exact monthly values are commercial/gated.",
+                    "name": "OpenTable State of the Industry",
+                    "type": "seated-diner / reservation-activity benchmark",
+                    "url": "https://www.opentable.com/restaurant-solutions/resources/state-of-the-industry/",
+                    "use": "Public seated-diner activity, not all restaurant transactions or QSR visits; use the page's stated coverage and comparison period.",
                 },
                 {
-                    "name": "RMS U.S. Restaurant Industry in 2023: A Year in Review",
-                    "type": "restaurant transaction-data benchmark",
-                    "url": "https://www.rmsresults.com/insights/the-u-s-restaurant-industry-in-2023-a-year-in-review/",
-                    "use": "Public directional evidence; detailed numeric category tables may be gated.",
+                    "name": "Fiserv Small Business Index",
+                    "type": "merchant-payment sales, transaction, and ticket benchmark",
+                    "url": "https://www.fiserv.com/en-us/insights/small-business-index.html",
+                    "use": "Public payment-network index; use only its stated industry, geography, and release period. It is not a national restaurant visit count.",
                 },
                 {
                     "name": "Placer.ai data methodology",
                     "type": "modeled mobile-device visits",
-                    "url": "https://www.placer.ai/data-methodology/",
+                    "url": "https://www.placer.ai/data/",
                     "use": "A physical-visit proxy, not a POS guest/transaction count; individual reports define their own restaurant set and time window.",
                 },
             ],
             "survey_sources": [
                 {
                     "name": "Census Household Pulse Survey",
-                    "url": "https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html",
+                    "url": "https://www.census.gov/programs-surveys/household-pulse-survey/data.html",
                     "use": "Probability-based survey; selected waves include food-away-from-home spending and all waves provide food-sufficiency measures.",
                 },
                 {

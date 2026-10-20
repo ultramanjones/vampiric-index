@@ -27,9 +27,9 @@ The useful distinction is not rhetorical — it decides what the dashboard is al
 
 | Provider | What the measure actually is | Publicly verifiable scope | Safe dashboard label |
 |---|---|---|---|
-| [Black Box Intelligence](https://blackboxintelligence.com/restaurant-sales-and-traffic-report/) | Participating-operator same-store transaction/guest traffic benchmark | Provider says its database covers more than 75,000 restaurant locations and about $125B annual sales; most exact monthly numbers are commercial/gated | **Participating-restaurant transaction traffic benchmark** |
-| [Revenue Management Solutions](https://www.rmsresults.com/insights/the-u-s-restaurant-industry-in-2023-a-year-in-review/) | Restaurant transaction-data benchmark that separates sales, check, and traffic in its client data | Public directional reports; detailed numeric category tables may be gated | **Restaurant transaction-data benchmark; public directional evidence** |
-| [Placer.ai](https://www.placer.ai/data-methodology/) | Modeled location visits inferred from a panel of mobile devices and statistical normalization | Public reports provide defined sets of chains/locations; detailed data is commercial | **Modeled mobile-device visits — not POS guest counts** |
+| [OpenTable State of the Industry](https://www.opentable.com/restaurant-solutions/resources/state-of-the-industry/) | Seated-diner / reservation activity in OpenTable's network | Public resource; its geographic and restaurant coverage is not all restaurants or QSR | **Seated-diner activity — not all restaurant transactions or visits** |
+| [Fiserv Small Business Index](https://www.fiserv.com/en-us/insights/small-business-index.html) | Merchant-payment sales, transaction, and ticket index | Public releases define industry, geography, and period; it is not a national restaurant-visit count | **Payment-network activity benchmark** |
+| [Placer.ai data](https://www.placer.ai/data/) | Modeled location visits inferred from a panel of mobile devices and statistical normalization | Public reports provide defined sets of chains/locations; detailed data is commercial | **Modeled mobile-device visits — not POS guest counts** |
 
 This is the branch that matters: **POS transaction traffic, physical device visits, nominal sales, and consumer survey behavior are four different instruments.** They can converge on the same phenomenon — fewer ordinary people buying food away from home — but must never be collapsed into one fake precision number.
 
@@ -57,7 +57,7 @@ This is the branch that matters: **POS transaction traffic, physical device visi
 ### 3. Census Household Pulse Survey — direct household survey signal
 
 - **Metric:** Food sufficiency in the prior seven days. Selected questionnaire phases also include household spending on food prepared away from home, including restaurants, fast food, and takeout.
-- **Sources:** [Household Pulse Survey](https://www.census.gov/programs-surveys/household-pulse-survey.html), [datasets and tables](https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html), [technical documentation](https://www.census.gov/programs-surveys/household-pulse-survey/technical-documentation.html).
+- **Sources:** [Household Pulse Survey](https://www.census.gov/programs-surveys/household-pulse-survey.html), [data and releases](https://www.census.gov/programs-surveys/household-pulse-survey/data.html), [technical documentation](https://www.census.gov/programs-surveys/household-pulse-survey/technical-documentation.html).
 - **Cadence:** Fielded in published phases/cycles, not one perfectly uninterrupted monthly line.
 - **Method:** Probability-based Census household sample with weights and nonresponse adjustment; still an online-response instrument with response-rate limitations.
 - **What it proves:** Direct, high-frequency household reports of food insufficiency; where the module exists, reported food-away-from-home spending.
