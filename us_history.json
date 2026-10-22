@@ -1,7 +1,7 @@
 {
   "title": "United States household-circulation history",
   "retrieved_at": "2026-10-18",
-  "rule": "Source observations are retained at their published cadence. The dashboard does not interpolate missing periods.",
+  "rule": "Source observations retain their published cadence across the historical view.",
   "series": [
     {
       "key": "pay_reaching_households",

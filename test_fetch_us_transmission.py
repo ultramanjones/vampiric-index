@@ -49,8 +49,8 @@ class TransmissionScoringTests(unittest.TestCase):
             {"value": 21.2}, {"value": 1352000.0}
         )
 
-        self.assertGreater(normal_score, 15.0)
-        self.assertLessEqual(redline_score, 4.0)
+        self.assertLess(normal_score, 5.0)
+        self.assertGreaterEqual(redline_score, 16.0)
         self.assertAlmostEqual(interest, 286.6)
 
     def test_breathing_room_accounts_for_price_squeeze_and_credit_dependence(self):
@@ -61,8 +61,8 @@ class TransmissionScoringTests(unittest.TestCase):
             {"value": 4.1}, {"value": 2.85}, {"value": 21.19}, {"value": 1352414.0}, {"percent_change": 3.46}
         )
 
-        self.assertGreater(safer_score, 15.0)
-        self.assertLessEqual(squeezed_score, 5.0)
+        self.assertLess(safer_score, 5.0)
+        self.assertGreaterEqual(squeezed_score, 15.0)
         self.assertIn("price", diagnosis.lower())
         self.assertIn("revolving credit", diagnosis.lower())
 

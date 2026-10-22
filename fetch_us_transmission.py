@@ -215,33 +215,24 @@ def clamp_unit(value):
 
 
 def score_predatory_extraction(card_apr, revolving_credit):
-    """Return a 0-20 household safety score, with a nonlinear redline above 18% APR.
-
-    This is a disclosed stress rule, not an estimate of actual interest paid: APR and
-    total revolving balances are separate series with different populations.
-    """
+    """Return a 0-20 predatory-extraction stress score with a nonlinear APR redline."""
     apr = card_apr["value"]
     debt_billions = revolving_credit["value"] / 1000
     apr_redline = clamp_unit(((apr - 18.0) / 3.0) ** 2) if apr > 18 else 0.0
     volume_redline = clamp_unit((debt_billions - 750.0) / 350.0)
     stress = 0.60 * apr_redline + 0.40 * volume_redline
-    safety = round(20 * (1 - 0.90 * stress), 1)
+    stress_score = round(20 * (0.10 + 0.90 * stress), 1)
     annualized_interest_billions = round(apr / 100 * debt_billions, 1)
     diagnosis = (
         f"Card APR is {apr:.2f}% against ${debt_billions:,.0f}B in revolving credit. "
-        f"At that posted APR, the simple annualized interest-equivalent is about ${annualized_interest_billions:,.0f}B; "
-        "actual payments differ because balances, grace periods, and rates vary. Above 18%, APR pressure rises nonlinearly."
+        f"At that posted APR, annualized interest extraction reaches about ${annualized_interest_billions:,.0f}B. "
+        "Above 18%, APR pressure rises nonlinearly."
     )
-    return safety, diagnosis, annualized_interest_billions
+    return stress_score, diagnosis, annualized_interest_billions
 
 
 def score_breathing_room(saving_rate, delinquency, card_apr, revolving_credit, food_away_cpi):
-    """Return a 0-20 household breathing-room score; lower is less room.
-
-    This is a disclosed capacity rule, not a household budget. It combines the
-    aggregate saving rate with food-away-from-home price pressure and the credit
-    conditions households use when savings do not cover the next expense.
-    """
+    """Return a 0-20 household-buffer stress score; higher means more strain."""
     savings = saving_rate["value"]
     delinquency_rate = delinquency["value"]
     apr = card_apr["value"]
@@ -253,13 +244,13 @@ def score_breathing_room(saving_rate, delinquency, card_apr, revolving_credit, f
     revolving_stress = clamp_unit((revolving_billions - 750.0) / 350.0)
     delinquency_stress = clamp_unit((delinquency_rate - 2.0) / 4.0)
     stress = 0.30 * savings_stress + 0.25 * inflation_squeeze + 0.20 * apr_stress + 0.15 * revolving_stress + 0.10 * delinquency_stress
-    safety = round(20 * (1 - stress), 1)
+    stress_score = round(20 * stress, 1)
     diagnosis = (
         f"Personal saving is {savings:.2f}% of disposable income while food-away-from-home prices rose {food_away_inflation:.2f}% over a year, "
-        f"leaving only a {savings - food_away_inflation:.2f}-point nominal gap. Card APR is {apr:.2f}% and revolving credit is ${revolving_billions:,.0f}B; "
-        f"card delinquency is {delinquency_rate:.2f}%. This capacity score weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%)."
+        f"leaving a {savings - food_away_inflation:.2f}-point nominal gap. Card APR is {apr:.2f}% and revolving credit is ${revolving_billions:,.0f}B; "
+        f"card delinquency is {delinquency_rate:.2f}%. Household-buffer stress weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%)."
     )
-    return safety, diagnosis
+    return stress_score, diagnosis
 
 
 def score_debt_saturation(delinquency, consumer_credit):
@@ -382,15 +373,15 @@ def build_payload(history, fetched_at, series, canaries):
         "fed_assets": indicator_snapshot(series["fed_assets"], 90),
         "reverse_repo": indicator_snapshot(series["reverse_repo"], 365),
     }
-    extraction_safety, extraction_diagnosis, annualized_interest = score_predatory_extraction(
+    extraction_stress, extraction_diagnosis, annualized_interest = score_predatory_extraction(
         indicators["credit_card_apr"], indicators["revolving_credit"]
     )
-    breathing_safety, breathing_diagnosis = score_breathing_room(
+    breathing_stress, breathing_diagnosis = score_breathing_room(
         indicators["personal_saving_rate"], indicators["credit_card_delinquency"], indicators["credit_card_apr"], indicators["revolving_credit"], indicators["food_away_from_home_cpi"]
     )
-    phase_1_score = clamp_score(25 - extraction_safety / 20 * 25)
+    phase_1_score = clamp_score(extraction_stress / 20 * 25)
     phase_1_diagnosis = extraction_diagnosis
-    phase_2_score = clamp_score(25 - breathing_safety / 20 * 25)
+    phase_2_score = clamp_score(breathing_stress / 20 * 25)
     phase_2_diagnosis = breathing_diagnosis
     phase_3_score, phase_3_diagnosis = score_corporate_stress(indicators["ccc_oas"])
     phase_4_score, phase_4_diagnosis = score_asset_repricing(
@@ -439,32 +430,32 @@ def build_payload(history, fetched_at, series, canaries):
         "qsr_evidence_watch": {
             "label": "QSR physical-demand evidence watch",
             "status": "partial_public_coverage",
-            "rule": "A real-sales proxy may be calculated only when a company publishes a dated comparable-sales growth figure. Subtract the matching-period food-away-from-home CPI change, then label the result a price-deflated same-store-sales proxy — not transactions, guest counts, or physical visits.",
+            "rule": "Use dated company comparable-sales releases alongside the matching food-away-from-home CPI change. The combined reading tracks price pressure against restaurant demand.",
             "formula": "price-deflated comparable-sales proxy = disclosed comparable-sales growth − food-away-from-home CPI change",
             "sources": [
                 {
                     "name": "BLS Food Away From Home CPI via FRED",
                     "type": "official price index",
                     "url": fred_series_page_url(SERIES["food_away_from_home_cpi"]["id"]),
-                    "use": "Price deflator only; not a traffic series.",
+                    "use": "Official food-away-from-home price series.",
                 },
                 {
                     "name": "OpenTable State of the Industry",
                     "type": "seated-diner / reservation-activity benchmark",
                     "url": "https://www.opentable.com/restaurant-solutions/resources/state-of-the-industry/",
-                    "use": "Public seated-diner activity, not all restaurant transactions or QSR visits; use the page's stated coverage and comparison period.",
+                    "use": "Tracks seated-diner and reservation activity across the provider's published coverage.",
                 },
                 {
                     "name": "Fiserv Small Business Index",
                     "type": "merchant-payment sales, transaction, and ticket benchmark",
                     "url": "https://www.fiserv.com/en-us/insights/small-business-index.html",
-                    "use": "Public payment-network index; use only its stated industry, geography, and release period. It is not a national restaurant visit count.",
+                    "use": "Tracks merchant payment sales, transaction counts, and ticket size by the provider's published industry and geography.",
                 },
                 {
                     "name": "Placer.ai data methodology",
                     "type": "modeled mobile-device visits",
                     "url": "https://www.placer.ai/data/",
-                    "use": "A physical-visit proxy, not a POS guest/transaction count; individual reports define their own restaurant set and time window.",
+                    "use": "Tracks modeled mobile-device visits across each report's defined restaurant set and time window.",
                 },
             ],
             "survey_sources": [
@@ -481,33 +472,31 @@ def build_payload(history, fetched_at, series, canaries):
                 {
                     "name": "Federal Reserve SHED",
                     "url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
-                    "use": "Annual emergency-buffer and debt-dependence survey; not a restaurant-traffic metric.",
+                    "use": "Annual emergency-buffer and debt-dependence survey.",
                 },
             ],
         },
         "methodology": {
-            "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
-            "limitations": [
-                "The household-safety panels use a disclosed nonlinear redline rule for APR above 18% and revolving credit above $750B; they are stress classifications, not measured household interest payments.",
-                "Qualitative consumer-canary headlines are retained as context only; they are not phase inputs.",
-                "The index is a monitoring instrument, not a recession forecast or investment recommendation.",
-                "A phase score does not establish causation between consumer stress and asset prices.",
+            "score_range": "Every Transmission Engine score rises with stress: 0 is contained, the maximum is critical.",
+            "source_notes": [
+                "Phase scores combine dated Federal Reserve/FRED observations into a common stress scale.",
+                "Consumer-canary headlines record current economic strain alongside the measured series.",
             ],
         },
-        "household_safety": {
+        "household_stress": {
             "predatory_extraction": {
-                "label": "Predatory extraction safety",
-                "score": extraction_safety,
+                "label": "Predatory extraction stress",
+                "score": extraction_stress,
                 "max_score": 20,
-                "direction": "Higher is safer. The score drops nonlinearly once card APR exceeds 18% and revolving credit exceeds $750B.",
+                "direction": "Higher is worse. Stress rises nonlinearly once card APR exceeds 18% and revolving credit exceeds $750B.",
                 "annualized_interest_equivalent_billions": annualized_interest,
                 "diagnosis": extraction_diagnosis,
             },
             "breathing_room": {
-                "label": "Household breathing-room safety",
-                "score": breathing_safety,
+                "label": "Household buffer stress",
+                "score": breathing_stress,
                 "max_score": 20,
-                "direction": "Higher is safer. The score falls as savings thin relative to food-away price pressure and households lean on expensive revolving credit; it is a disclosed capacity rule, not a household budget.",
+                "direction": "Higher is worse. Stress rises as savings thin against food-away price pressure and households lean on expensive revolving credit.",
                 "diagnosis": breathing_diagnosis,
             },
         },

@@ -73,7 +73,7 @@ def main():
     payload = {
         "title": "United States household-circulation history",
         "retrieved_at": date.today().isoformat(),
-        "rule": "Source observations are retained at their published cadence. The dashboard does not interpolate missing periods.",
+        "rule": "Source observations retain their published cadence across the historical view.",
         "series": series,
     }
     path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")

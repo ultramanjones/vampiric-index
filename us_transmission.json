@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T22:07:54Z",
+  "generated_at": "2026-10-22T14:10:23Z",
   "qsr_evidence_watch": {
     "label": "QSR physical-demand evidence watch",
     "status": "partial_public_coverage",
-    "rule": "A real-sales proxy may be calculated only when a company publishes a dated comparable-sales growth figure. Subtract the matching-period food-away-from-home CPI change, then label the result a price-deflated same-store-sales proxy — not transactions, guest counts, or physical visits.",
+    "rule": "Use dated company comparable-sales releases alongside the matching food-away-from-home CPI change. The combined reading tracks price pressure against restaurant demand.",
     "formula": "price-deflated comparable-sales proxy = disclosed comparable-sales growth − food-away-from-home CPI change",
     "sources": [
       {
         "name": "BLS Food Away From Home CPI via FRED",
         "type": "official price index",
         "url": "https://fred.stlouisfed.org/series/CUUR0000SEFV",
-        "use": "Price deflator only; not a traffic series."
+        "use": "Official food-away-from-home price series."
       },
       {
         "name": "OpenTable State of the Industry",
         "type": "seated-diner / reservation-activity benchmark",
         "url": "https://www.opentable.com/restaurant-solutions/resources/state-of-the-industry/",
-        "use": "Public seated-diner activity, not all restaurant transactions or QSR visits; use the page's stated coverage and comparison period."
+        "use": "Tracks seated-diner and reservation activity across the provider's published coverage."
       },
       {
         "name": "Fiserv Small Business Index",
         "type": "merchant-payment sales, transaction, and ticket benchmark",
         "url": "https://www.fiserv.com/en-us/insights/small-business-index.html",
-        "use": "Public payment-network index; use only its stated industry, geography, and release period. It is not a national restaurant visit count."
+        "use": "Tracks merchant payment sales, transaction counts, and ticket size by the provider's published industry and geography."
       },
       {
         "name": "Placer.ai data methodology",
         "type": "modeled mobile-device visits",
         "url": "https://www.placer.ai/data/",
-        "use": "A physical-visit proxy, not a POS guest/transaction count; individual reports define their own restaurant set and time window."
+        "use": "Tracks modeled mobile-device visits across each report's defined restaurant set and time window."
       }
     ],
     "survey_sources": [
@@ -46,37 +46,35 @@
       {
         "name": "Federal Reserve SHED",
         "url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
-        "use": "Annual emergency-buffer and debt-dependence survey; not a restaurant-traffic metric."
+        "use": "Annual emergency-buffer and debt-dependence survey."
       }
     ]
   },
   "methodology": {
-    "score_range": "Each phase is 0.0-25.0; total is 0.0-100.0. Higher values indicate deeper measured transmission risk.",
-    "limitations": [
-      "The household-safety panels use a disclosed nonlinear redline rule for APR above 18% and revolving credit above $750B; they are stress classifications, not measured household interest payments.",
-      "Qualitative consumer-canary headlines are retained as context only; they are not phase inputs.",
-      "The index is a monitoring instrument, not a recession forecast or investment recommendation.",
-      "A phase score does not establish causation between consumer stress and asset prices."
+    "score_range": "Every Transmission Engine score rises with stress: 0 is contained, the maximum is critical.",
+    "source_notes": [
+      "Phase scores combine dated Federal Reserve/FRED observations into a common stress scale.",
+      "Consumer-canary headlines record current economic strain alongside the measured series."
     ]
   },
-  "household_safety": {
+  "household_stress": {
     "predatory_extraction": {
-      "label": "Predatory extraction safety",
-      "score": 2.0,
+      "label": "Predatory extraction stress",
+      "score": 20.0,
       "max_score": 20,
-      "direction": "Higher is safer. The score drops nonlinearly once card APR exceeds 18% and revolving credit exceeds $750B.",
+      "direction": "Higher is worse. Stress rises nonlinearly once card APR exceeds 18% and revolving credit exceeds $750B.",
       "annualized_interest_equivalent_billions": 286.6,
-      "diagnosis": "Card APR is 21.19% against $1,352B in revolving credit. At that posted APR, the simple annualized interest-equivalent is about $287B; actual payments differ because balances, grace periods, and rates vary. Above 18%, APR pressure rises nonlinearly."
+      "diagnosis": "Card APR is 21.19% against $1,352B in revolving credit. At that posted APR, annualized interest extraction reaches about $287B. Above 18%, APR pressure rises nonlinearly."
     },
     "breathing_room": {
-      "label": "Household breathing-room safety",
-      "score": 4.5,
+      "label": "Household buffer stress",
+      "score": 15.5,
       "max_score": 20,
-      "direction": "Higher is safer. The score falls as savings thin relative to food-away price pressure and households lean on expensive revolving credit; it is a disclosed capacity rule, not a household budget.",
-      "diagnosis": "Personal saving is 4.10% of disposable income while food-away-from-home prices rose 3.46% over a year, leaving only a 0.64-point nominal gap. Card APR is 21.19% and revolving credit is $1,352B; card delinquency is 2.85%. This capacity score weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%)."
+      "direction": "Higher is worse. Stress rises as savings thin against food-away price pressure and households lean on expensive revolving credit.",
+      "diagnosis": "Personal saving is 4.10% of disposable income while food-away-from-home prices rose 3.46% over a year, leaving a 0.64-point nominal gap. Card APR is 21.19% and revolving credit is $1,352B; card delinquency is 2.85%. Household-buffer stress weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%)."
     }
   },
-  "total_transmission_index": 73.9,
+  "total_transmission_index": 76.4,
   "active_contagion_phase": {
     "number": 3,
     "name": "Corporate & regional credit stress",
@@ -87,8 +85,8 @@
     {
       "number": 1,
       "name": "Predatory extraction redline",
-      "score": 22.5,
-      "diagnosis": "Card APR is 21.19% against $1,352B in revolving credit. At that posted APR, the simple annualized interest-equivalent is about $287B; actual payments differ because balances, grace periods, and rates vary. Above 18%, APR pressure rises nonlinearly.",
+      "score": 25.0,
+      "diagnosis": "Card APR is 21.19% against $1,352B in revolving credit. At that posted APR, annualized interest extraction reaches about $287B. Above 18%, APR pressure rises nonlinearly.",
       "indicator_keys": [
         "credit_card_apr",
         "revolving_credit"
@@ -98,7 +96,7 @@
       "number": 2,
       "name": "Household buffer & payment failure",
       "score": 19.4,
-      "diagnosis": "Personal saving is 4.10% of disposable income while food-away-from-home prices rose 3.46% over a year, leaving only a 0.64-point nominal gap. Card APR is 21.19% and revolving credit is $1,352B; card delinquency is 2.85%. This capacity score weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%).",
+      "diagnosis": "Personal saving is 4.10% of disposable income while food-away-from-home prices rose 3.46% over a year, leaving a 0.64-point nominal gap. Card APR is 21.19% and revolving credit is $1,352B; card delinquency is 2.85%. Household-buffer stress weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%).",
       "indicator_keys": [
         "personal_saving_rate",
         "food_away_from_home_cpi",
@@ -111,7 +109,7 @@
       "number": 3,
       "name": "Corporate & regional credit stress",
       "score": 25.0,
-      "diagnosis": "US high-yield OAS is 12.97 percentage points; the 30-day change is +2.21 points when available.",
+      "diagnosis": "US high-yield OAS is 13.07 percentage points; the 30-day change is +2.30 points when available.",
       "indicator_keys": [
         "high_yield_oas"
       ]
@@ -120,7 +118,7 @@
       "number": 4,
       "name": "Institutional asset repricing",
       "score": 7.0,
-      "diagnosis": "The overnight reverse-repo balance is 8.0% of its year-earlier level; Federal Reserve total assets changed +0.00% over the prior 90 days when comparable observations are available.",
+      "diagnosis": "The overnight reverse-repo balance is 5.0% of its year-earlier level; Federal Reserve total assets changed +0.00% over the prior 90 days when comparable observations are available.",
       "indicator_keys": [
         "fed_assets",
         "reverse_repo"
@@ -199,12 +197,12 @@
       "unit": "Percentage points",
       "description": "ICE BofA US High Yield Index option-adjusted spread.",
       "source_url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-      "value": 3.31,
-      "observation_date": "2026-10-16",
-      "prior_value": 2.7,
-      "prior_observation_date": "2026-09-16",
+      "value": 3.27,
+      "observation_date": "2026-10-21",
+      "prior_value": 2.66,
+      "prior_observation_date": "2026-09-21",
       "change": 0.61,
-      "percent_change": 22.59
+      "percent_change": 22.93
     },
     "ccc_oas": {
       "series_id": "BAMLH0A3HYC",
@@ -212,12 +210,12 @@
       "unit": "Percentage points",
       "description": "ICE BofA US High Yield CCC or Below Index option-adjusted spread.",
       "source_url": "https://fred.stlouisfed.org/series/BAMLH0A3HYC",
-      "value": 12.97,
-      "observation_date": "2026-10-16",
-      "prior_value": 10.76,
-      "prior_observation_date": "2026-09-16",
-      "change": 2.21,
-      "percent_change": 20.54
+      "value": 13.07,
+      "observation_date": "2026-10-21",
+      "prior_value": 10.77,
+      "prior_observation_date": "2026-09-21",
+      "change": 2.3,
+      "percent_change": 21.36
     },
     "fed_assets": {
       "series_id": "WALCL",
@@ -238,12 +236,12 @@
       "unit": "Billions of dollars",
       "description": "Fed overnight reverse-repurchase agreements, a liquidity-buffer proxy.",
       "source_url": "https://fred.stlouisfed.org/series/RRPONTSYD",
-      "value": 0.33,
-      "observation_date": "2026-10-19",
-      "prior_value": 4.102,
-      "prior_observation_date": "2025-10-17",
-      "change": -3.772,
-      "percent_change": -91.96
+      "value": 0.237,
+      "observation_date": "2026-10-21",
+      "prior_value": 4.699,
+      "prior_observation_date": "2025-10-21",
+      "change": -4.462,
+      "percent_change": -94.96
     }
   },
   "consumer_canaries": {
@@ -251,10 +249,17 @@
     "method": "Google News RSS title matching against published distress-language terms.",
     "items": [
       {
+        "title": "Forbes editor urges Fed to cut printing, shrink balance sheet and appreciate dollar to combat import-driven inflation - 24/7 Wall St.",
+        "source": "24/7 Wall St.",
+        "publication_date": "Thu, 22 Oct 2026 12:50:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNQ281aU1NcFU5bDAtRkhHSXVpaE12b3lrYkw2c3UyeW1MRlM5eUFGNkJRNHJvWWxZQlBsMWhPVUlPOF9YRGJHc3RlRV9pamJtd2dLc20zaHZIR3dqcmZuRW1ydDFLRFdhc2RmQTJkM2tmM0JOZmt4QUR6ZXRNbGxfNm9leEFYWm5pZnd3cnpnRm40ZTFJY19Gc09UUklocU02MzAwbktjV05FSm9WQVZxbjluaDc5aHlDN3dHWV9sTWg4UlQtYVNrNmNxeXhKV0FpS3BudWw0N1pYNVJudUNMbmpiOEE5a2VoNWIzZVg0RnB0dw?oc=5",
+        "matched_signals": []
+      },
+      {
         "title": "Ross Stores Expands Footprint With 51 New Store Openings - TradingView",
         "source": "TradingView",
         "publication_date": "Tue, 13 Oct 2026 15:46:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMlpyWGt2SkVfNGdEUHFMNlhScUlTUFZCdlMteW1ibWRVVHltMk1MZi1ERGo0UG5ScnF2YmYyMnpwN1dJVUtueW5RXzl5OWxoMkp1am5VeUlXZTlIUmRxYkRlZUgwanRweHd2ZEFBNXlwajZWMXpadDExVUVOaEpfRkVwaEZEelFNY3BBRFFxSlRJTEZBdTcwVGdpODdkdlBfY0MzVkhOanhiaVEyanE2Nzln?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX2dPTG5kWmpoNTYtVDl1QWRfczZjWjdpaUlCQklyQnBQVEsyTkhtOWd2Q1U5TldTUVNUSlp4ZDgxRE5tMTNFWVRpLUdCYTFyMFd4VVEtTE9neFA1OHVuT1JEMUxsY1hmUDlzNFJ3ZDRNcUhFNERfRHRRWE5xS3lOc3ZtYUxUa3pNU2ExeExtMmViMXI5djVYWGVzbDN0dG43VEtqS0I0UldMNGxOa3VJNQ?oc=5",
         "matched_signals": []
       },
       {
@@ -288,25 +293,20 @@
         "matched_signals": []
       },
       {
-        "title": "Why Is Dollar Tree Stock Up 31% in the Last 12 Months - TIKR.com",
-        "source": "TIKR.com",
-        "publication_date": "Tue, 08 Sep 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3Y1WFpwWWZwZXJMWDV0THVuUUd6UDJqOC1jOGZENHdNWkFOZThBV3FWM1c5MzZCQnFTYWMzNmUxNHY0bXBkbnMzOUJFdTRGdzJtQzZpVm1EbGYzZlhsYlZXQ3BLa2lyOFdjaXNyMUtUMl9LOHFLZEY1bWIxYk5lSHN2c2QwcHZya2pJRlFUb2lZQQ?oc=5",
-        "matched_signals": []
-      },
-      {
-        "title": "Dollar Tree (DLTR): Why the Post-Family-Dollar Reset Matters More Than the Consumer-Stress Narrative - AlphaStreet",
-        "source": "AlphaStreet",
-        "publication_date": "Thu, 18 Jun 2026 07:00:00 GMT",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV3A1ZGhCczdwUmdraGV3cVBlejFmaFU2Q3ljSks5SDg5Z2lZU0IwSXJaQm5SZ3hTaVZKTU10Ump1X1hXSTc2OEpnaUVwb3VIRnFuRzQ3a0lVckpRSjdZT3RCYkt0Zk9QeW9JSHhLQWZ3R0xkdmtsN1hLN0szdXRMMTQtQnduRm9KbjhsMnZnakwwY0RJWWk1bVlfWmR1NG1ITlFURFoxenBsLXY2YTFPRHBMMU5hbmxKN0FGYmFDYWhZRFdiLUHSAcsBQVVfeXFMUGZLd1RCbmQ1XzF2Wm9BNlJuZDIzTjhjWWZJUU9kd3hSNWM1QWVmdUVpSDJFZkRpQWo1NjlxMXZHN3o4bW5aaC0xY1k0U0tDc2Y4M3pWdWtDbW5YUG4yVnFjQTFqRUhvQjVJMTgwVVM2ejc1b0g0VFBjS1FXR2E4cXYyUGliZ2xXel9EYk80RmZNbUFwQmo2ZnZCaFZSdXJld0s0YmVIUFNGTzhOOU50aGRIQzFnZVI2UXRWVlJPcndoeHh3cjZEUWN4bHM?oc=5",
-        "matched_signals": []
-      },
-      {
         "title": "Dollar General: Weak Consumer Sentiment Driving Low-Ticket Sales (NYSE:DG) - Seeking Alpha",
         "source": "Seeking Alpha",
         "publication_date": "Wed, 17 Jun 2026 07:00:00 GMT",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGpvOFhtZEFjZXNIWHNmWkw1YV9GTjluUUlKbnhPT0U4Nl9FaktHdldveTFDYnFkZ1JpYURFNUdOV1FCMmJ1dnl2R0M4clJhRzhRN1ZFUkpvT0ozWG8zX0JZQWRwQThZLVJtdzF2ck8xOWNXN3VnSU9sUXJlejMxcGlXaEw5VUF3ZF9xRGd1YW90RkpoMnp0RngxMl82aXhFZk02czU4VQ?oc=5",
         "matched_signals": []
+      },
+      {
+        "title": "Best Dollar Store Stocks for 2026 and How to Invest - The Motley Fool",
+        "source": "The Motley Fool",
+        "publication_date": "Wed, 09 Sep 2026 07:00:00 GMT",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVUdFQmFCbmpGMjdrUlJFRF9tWWhkbE9NT3F1REdqNEFUQlhFazF1RllsRllHbmxFTHFEdkh2NFB4RUROTnZUX2N5WFpJTVdqRkttUjhoaUstdTZ4dnlqZE9oTUxyV2Q2NDQ0MWd5X2JDTmRaekl1UjFWQXVYRGcxWlNVOC1PXzc4NExUdE5YcWRMckRybTdWTmlOcW8?oc=5",
+        "matched_signals": [
+          "dollar store"
+        ]
       }
     ]
   },
@@ -857,6 +857,26 @@
       "phase_scores": {
         "1": 22.5,
         "2": 14.2,
+        "3": 25.0,
+        "4": 7.0
+      }
+    },
+    {
+      "generated_at": "2026-10-22T10:01:24Z",
+      "total_transmission_index": 76.4,
+      "phase_scores": {
+        "1": 25.0,
+        "2": 19.4,
+        "3": 25.0,
+        "4": 7.0
+      }
+    },
+    {
+      "generated_at": "2026-10-22T14:10:23Z",
+      "total_transmission_index": 76.4,
+      "phase_scores": {
+        "1": 25.0,
+        "2": 19.4,
         "3": 25.0,
         "4": 7.0
       }

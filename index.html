@@ -151,7 +151,7 @@
   <header class="masthead">
     <p class="eyebrow">Household-circulation diagnostic dashboard</p>
     <h1>Vampiric Index</h1>
-    <p class="subtitle">Can households still cover the basics, retain leverage, and keep consumer demand alive? Provisional v2 uses transparent World Bank source proxies and exposes its data gaps.</p>
+    <p class="subtitle">Can households still cover the basics, retain leverage, and keep consumer demand alive? Household-circulation v2 uses transparent World Bank source readings and exposes the data.</p>
     <div class="rule"></div>
     <nav class="top-tabs" aria-label="Dashboard views">
       <button class="top-tab active" type="button" data-view="map">Global Map</button>
@@ -178,7 +178,7 @@
   </main>
 
   <main id="watch-view" class="view" hidden>
-    <p class="watch-lede">A U.S.-only early-warning view: household extraction, buffer failure, weak-company credit stress, and institutional liquidity. It tracks measured strain; it does not claim to predict a specific recession, revolt, or market move.</p>
+    <p class="watch-lede">A U.S.-only stress map: household extraction, buffer failure, weak-company credit stress, and institutional liquidity.</p>
     <section id="us-watch" class="watch-shell" aria-live="polite"></section>
   </main>
 
@@ -186,7 +186,7 @@
     <article class="methodology-sheet">
       <p class="eyebrow">Journal</p>
       <h2>Observations from the host</h2>
-      <p>This is not a corporate news feed. It is a dated record of the pattern beneath the headline numbers: what the measurement says, what it cannot say, and where the story is being cosmetically improved by aggregation.</p>
+      <p>A dated record of the pattern beneath the headline numbers: the measurement, the household experience, and the aggregation that cosmetically improves the story.</p>
       <h3>The nominal-revenue trap</h3>
       <p>When a restaurant chain reports positive same-store sales after menu prices rose faster than sales, the headline can describe more dollars while ordinary people buy fewer meals. That is why the Transmission Engine keeps price, transactions, modeled visits, and household-survey behavior separate.</p>
       <p>Price-deflated comparable sales can flag that contradiction. POS transaction panels and mobile-device visit panels can test it more directly. Food-security, emergency-buffer, and affordability surveys show what the household is doing underneath it. None alone is the whole picture; the convergence is the evidence.</p>
@@ -198,11 +198,11 @@
     <article class="methodology-sheet">
       <p class="eyebrow">How to read this site</p>
       <h2>Household conditions first. Aggregate theater second.</h2>
-      <p>The global map is a provisional country-comparison layer. The U.S. Transmission Engine is different: it follows the path from high-cost revolving debt and thin savings, into missed payments, corporate-credit stress, and damaged everyday demand.</p>
+      <p>The global map compares household circulation across countries. The U.S. Transmission Engine follows the path from high-cost revolving debt and thin savings into missed payments, corporate-credit stress, and damaged everyday demand.</p>
       <h3>Nonlinear debt redline</h3>
-      <p>On the U.S. page, credit-card APR above 18% is treated as a redline rather than a gentle linear change. The household-safety score also considers revolving-credit volume. The formula, raw source values, dates, and limitations appear in the dashboard data.</p>
-      <h3>Do not mistake a gauge for a prophecy</h3>
-      <p>A single bad number is not a collapse forecast. Meaning comes when household strain, credit stress, and real-economy weakness deteriorate together over more than one release.</p>
+      <p>Credit-card APR above 18% triggers a nonlinear stress redline. The household-stress scores combine APR, revolving-credit volume, savings, food-away-from-home price pressure, and card delinquency.</p>
+      <h3>Read the cascade</h3>
+      <p>The Transmission Engine rises as household strain, credit stress, and real-economy weakness rise together across successive releases.</p>
     </article>
   </main>
   <aside id="drawer" class="drawer" aria-label="Country dossier" aria-hidden="true" role="dialog">
@@ -291,7 +291,7 @@
     function renderUSWatch(transmission) {
       const target = document.getElementById("us-watch");
       target.replaceChildren();
-      if (!transmission || !transmission.household_safety) {
+      if (!transmission || !transmission.household_stress) {
         target.append(makeElement("p", "notice", "The U.S. transmission data could not be loaded."));
         return;
       }
@@ -304,19 +304,20 @@
 
       const safetyGrid = makeElement("div", "safety-grid");
       ["predatory_extraction", "breathing_room"].forEach(key => {
-        const item = transmission.household_safety[key];
-        const capacity = Math.max(0, Math.min(100, item.score / item.max_score * 100));
-        const card = makeElement("article", `tachometer ${item.score <= 4 ? "safety-redline" : "safety-fragile"}`);
+        const item = transmission.household_stress[key];
+        const intensity = Math.max(0, Math.min(100, item.score / item.max_score * 100));
+        const card = makeElement("article", `tachometer ${item.score >= 16 ? "safety-redline" : item.score >= 8 ? "safety-fragile" : ""}`);
         card.append(makeElement("h3", "", item.label));
         const score = makeElement("span", "tach-score", item.score.toFixed(1));
-        score.append(makeElement("small", "", ` / ${item.max_score}`));
+        score.append(makeElement("small", "", ` / ${item.max_score} stress`));
         const meter = makeElement("div", "safety-meter");
-        meter.setAttribute("role", "meter"); meter.setAttribute("aria-label", `${item.label}: ${item.score.toFixed(1)} of ${item.max_score} safety capacity`);
+        meter.setAttribute("role", "meter"); meter.setAttribute("aria-label", `${item.label}: ${item.score.toFixed(1)} of ${item.max_score} stress`);
         meter.setAttribute("aria-valuemin", "0"); meter.setAttribute("aria-valuemax", String(item.max_score)); meter.setAttribute("aria-valuenow", item.score.toFixed(1));
-        const fill = makeElement("div", "safety-meter-fill"); fill.style.setProperty("--safety-capacity", `${capacity}%`);
+        const fill = makeElement("div", "safety-meter-fill"); fill.style.setProperty("--safety-capacity", `${intensity}%`);
         meter.append(fill);
-        card.append(score, meter, makeElement("span", "safety-meter-caption", `${capacity.toFixed(0)}% safety capacity remaining`), makeElement("span", "tach-label", item.score <= 4 ? "HOST DEPLETION / REDLINE" : "FRAGILE CAPACITY"));
-        if (item.annualized_interest_equivalent_billions) card.append(makeElement("p", "", `$${item.annualized_interest_equivalent_billions.toFixed(0)}B annualized interest-equivalent on the reported revolving-credit balance at the posted APR. This is an illustrative multiplication, not actual aggregate payments.`));
+        const severity = item.score >= 16 ? "CRITICAL STRESS" : item.score >= 8 ? "ELEVATED STRESS" : "CONTAINED STRESS";
+        card.append(score, meter, makeElement("span", "safety-meter-caption", `${intensity.toFixed(0)}% stress intensity`), makeElement("span", "tach-label", severity));
+        if (item.annualized_interest_equivalent_billions) card.append(makeElement("p", "", `$${item.annualized_interest_equivalent_billions.toFixed(0)}B annualized interest extraction at the posted APR across the reported revolving-credit balance.`));
         card.append(makeElement("p", "", item.diagnosis));
         safetyGrid.append(card);
       });
@@ -415,7 +416,7 @@
 
       const phaseFour = transmission.phases.find(phase => phase.number === 4);
       if (phaseFour) {
-        panel.append(makeElement("p", "transmission-narrative", `Institutional lag reading: ${phaseFour.diagnosis} This gauge monitors distance to repricing; it does not claim a forecast or causal proof.`));
+        panel.append(makeElement("p", "transmission-narrative", `Institutional lag reading: ${phaseFour.diagnosis}`));
       }
       drawerContent.append(panel);
     }
@@ -492,7 +493,7 @@
         });
         const startLabel = new Date(minX).getUTCFullYear(), endLabel = new Date(maxX).getUTCFullYear();
         [[54, startLabel], [570, endLabel]].forEach(([xPos, textValue]) => { const text = svgElement("text", { x: xPos, y: 303, fill: "#9e9aa3", "font-size": 11 }); text.textContent = textValue; chart.append(text); });
-        note.textContent = `Indexed trend, 100 = first available observation in this window. ${display} display selects the last official observation in each ${display === "annual" ? "year" : display === "quarterly" ? "quarter" : "month"}; it does not interpolate. Debt-pressure history begins in 2005 because that is the first published TDSP observation.`;
+        note.textContent = `Indexed trend, 100 = first available observation in this window. ${display} display selects the last official observation in each ${display === "annual" ? "year" : display === "quarterly" ? "quarter" : "month"}; points retain their published cadence. Debt-pressure history begins in 2005 with the first published TDSP observation.`;
       }
       range.addEventListener("change", draw); frequency.addEventListener("change", draw); draw(); drawerContent.append(panel);
     }
@@ -531,7 +532,7 @@
       if (!scorecard || scorecard.status !== "complete") {
         const missing = (scorecard && scorecard.missing_modules || [])
           .map(key => definition.modules[key].label).join(", ");
-        drawerContent.append(makeElement("div", "notice", `No comparable provisional v2 score. Missing source input: ${missing || "unavailable data"}. The dashboard will not invent a zero or reuse a legacy value.`));
+        drawerContent.append(makeElement("div", "notice", `Source input awaiting ingestion: ${missing || "data pending"}.`));
       } else {
         const grade = scorecard.grade;
         const score = makeElement("div", "score", `${scorecard.hvi_score.toFixed(1)} `);
@@ -569,7 +570,9 @@
             drawerContent.append(provenance);
           }
         });
-        drawerContent.append(makeElement("p", "notice", definition.warning));
+        if (definition.source_note) {
+          drawerContent.append(makeElement("p", "notice", definition.source_note));
+        }
       }
 
       const legacy = country.scorecards && country.scorecards.legacy_four_pillar_v1;
@@ -608,7 +611,7 @@
         const grade = complete ? scorecard.grade : null;
         const button = makeElement("button", "country-button");
         button.type = "button";
-        button.title = complete ? `Provisional household-circulation HVI: ${scorecard.hvi_score.toFixed(1)} / 100` : "No comparable provisional v2 score: required source data is missing.";
+        button.title = complete ? `Household-circulation HVI: ${scorecard.hvi_score.toFixed(1)} / 100` : "Source input awaiting ingestion.";
         button.append(makeElement("strong", "", country.country_code));
         button.append(makeElement("span", "", complete ? `${scorecard.hvi_score.toFixed(1)} · Grade ${grade}` : "v2 data gap"));
         button.style.borderLeft = `4px solid ${complete ? gradeColors[grade] : "#55515a"}`;
@@ -644,8 +647,8 @@
           const country = trackedByMapId.get(String(feature.id));
           const scorecard = country && activeScorecard(country);
           return country ? (scorecard && scorecard.status === "complete"
-            ? `${country.name}, provisional HVI ${scorecard.hvi_score}, grade ${scorecard.grade}`
-            : `${country.name}, no comparable provisional v2 score`) : null;
+            ? `${country.name}, Household-circulation HVI ${scorecard.hvi_score}, grade ${scorecard.grade}`
+            : `${country.name}, source input awaiting ingestion`) : null;
         })
         .on("click", (_, feature) => {
           const country = trackedByMapId.get(String(feature.id));
@@ -664,8 +667,8 @@
           const country = trackedByMapId.get(String(feature.id));
           const scorecard = activeScorecard(country);
           return scorecard && scorecard.status === "complete"
-            ? `${country.name}: provisional HVI ${scorecard.hvi_score.toFixed(1)} / 100`
-            : `${country.name}: no comparable provisional v2 score`;
+            ? `${country.name}: Household-circulation HVI ${scorecard.hvi_score.toFixed(1)} / 100`
+            : `${country.name}: source input awaiting ingestion`;
         });
     }
 

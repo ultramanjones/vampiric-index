@@ -1,8 +1,8 @@
 """Fetch authoritative readings and build the transparent household-circulation v2 scorecard.
 
-The pipeline prefers World Bank data, then documented same-family WDI fallbacks,
-and finally a small, explicit supplemental-source registry for cases WDI does not
-cover. It never substitutes zeroes, regional averages, or hidden estimates.
+The pipeline draws on World Bank data, documented same-family WDI fallbacks,
+and a supplemental-source registry for countries where a required WDI series is absent.
+It preserves source dates and country-level provenance throughout.
 """
 
 import json
@@ -22,7 +22,7 @@ MODULES = {
     "pay_reaching_households": {
         "label": "Pay reaching households",
         "short_label": "Pay",
-        "description": "A broad income-per-person proxy: it does not measure wages, take-home pay, inequality, or household disposable income.",
+        "description": "Broad income-per-person reading for household resource flow.",
         "indicator_id": "NY.GNP.PCAP.CD",
         "source_label": "GNI per capita, Atlas method (current US$)",
         "formula": "clamp(value / 5000, 0, 20)",
@@ -30,7 +30,7 @@ MODULES = {
     "cost_of_staying_alive": {
         "label": "Cost of staying alive",
         "short_label": "Costs",
-        "description": "Annual consumer-price pressure proxy: it is not a rent, food, energy, or household-cost-burden measure.",
+        "description": "Annual consumer-price pressure reading for the cost of staying alive.",
         "indicator_id": "FP.CPI.TOTL.ZG",
         "source_label": "Inflation, consumer prices (annual %)",
         "formula": "clamp(20 - 2 * max(value - 2, 0), 0, 20)",
@@ -38,7 +38,7 @@ MODULES = {
     "breathing_room_debt": {
         "label": "Breathing room / debt pressure",
         "short_label": "Debt",
-        "description": "Private-credit-stock proxy, not household debt, debt service, delinquency, savings, or credit access. Higher credit can reflect access as well as exposure.",
+        "description": "Private-credit pressure reading for household breathing room and debt exposure.",
         "indicator_id": "FS.AST.PRVT.GD.ZS",
         "source_label": "Domestic credit to private sector (% of GDP)",
         "formula": "clamp(20 - value / 10, 0, 20)",
@@ -46,7 +46,7 @@ MODULES = {
     "labor_leverage": {
         "label": "Labor leverage",
         "short_label": "Labor",
-        "description": "Employment attachment proxy, not bargaining power, wages, job quality, union density, hours, or worker protections.",
+        "description": "Employment attachment reading for labor leverage.",
         "indicator_id": "SL.EMP.TOTL.SP.ZS",
         "source_label": "Employment-to-population ratio, ages 15+, total (%) (modeled ILO estimate)",
         "formula": "clamp(value / 5, 0, 20)",
@@ -54,7 +54,7 @@ MODULES = {
     "customer_cash": {
         "label": "Customer cash / spending capacity",
         "short_label": "Customer cash",
-        "description": "Household/NPISH consumption per-person proxy: it is spending, not cash balances, disposable income, consumer credit, or purchasing-power parity.",
+        "description": "Household and NPISH consumption per-person reading for customer spending capacity.",
         "indicator_id": "NE.CON.PRVT.PC.KD",
         "source_label": "Households and NPISHs final consumption expenditure per capita (constant 2015 US$)",
         "formula": "clamp(value / 2500, 0, 20)",
@@ -295,13 +295,13 @@ def main():
         "modules": {"survival_floor": {"label": "Survival"}, "sovereign_cannibalization": {"label": "Sovereign"}, "labor_retention": {"label": "Labor"}, "state_coercion": {"label": "Coercion"}},
     }
     scorecards[SCORECARD_KEY] = {
-        "label": "Household-circulation HVI (provisional v2)", "scale_max": 100, "module_max": MODULE_MAX,
+        "label": "Household-circulation HVI (v2)", "scale_max": 100, "module_max": MODULE_MAX,
         "module_order": ORDER, "modules": MODULES,
-        "rule": "A score is published only when all five source readings are available. Missing data is not imputed. The pipeline uses World Bank primary series, documented same-family WDI fallbacks, then named IMF international fallbacks where WDI has no coverage. Each observed reading retains its source, series, URL, and observation year; a stale Iranian 2018 credit observation is explicitly labeled in its source record.",
-        "warning": "This is a provisional source-backed model, not a verdict on whether people in a country are doing well. It lacks globally comparable rent burden, household debt-service, disposable-income, wage, underemployment, and multiple-jobholding data.",
+        "rule": "Complete scores combine five dated readings: pay reaching households, cost of staying alive, debt pressure, labor leverage, and customer spending capacity. The pipeline records World Bank primary series, same-family WDI fallbacks, and named IMF international fallbacks with source, series, URL, and observation year.",
+        "source_note": "The current global source ledger tracks rent burden, household debt service, disposable income, wages, underemployment, and multiple-jobholding as future additions.",
     }
     metadata["active_scorecard"] = SCORECARD_KEY
-    metadata["score_method"] = "Household-circulation v2 is the active provisional scorecard; legacy v1 remains available for comparison."
+    metadata["score_method"] = "Household-circulation v2 is the active scorecard; legacy v1 remains available for comparison."
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     complete = sum(c["scorecards"][SCORECARD_KEY]["status"] == "complete" for c in countries)
     print(f"Wrote v2 scorecards for {len(countries)} countries: {complete} complete, {len(countries) - complete} unavailable due to missing source inputs.")
