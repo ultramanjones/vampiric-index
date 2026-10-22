@@ -235,16 +235,29 @@ def score_predatory_extraction(card_apr, revolving_credit):
     return safety, diagnosis, annualized_interest_billions
 
 
-def score_breathing_room(saving_rate, delinquency):
-    """Return a 0-20 household breathing-room score; lower is less room."""
+def score_breathing_room(saving_rate, delinquency, card_apr, revolving_credit, food_away_cpi):
+    """Return a 0-20 household breathing-room score; lower is less room.
+
+    This is a disclosed capacity rule, not a household budget. It combines the
+    aggregate saving rate with food-away-from-home price pressure and the credit
+    conditions households use when savings do not cover the next expense.
+    """
     savings = saving_rate["value"]
     delinquency_rate = delinquency["value"]
+    apr = card_apr["value"]
+    revolving_billions = revolving_credit["value"] / 1000
+    food_away_inflation = food_away_cpi.get("percent_change", 0.0)
     savings_stress = clamp_unit((7.0 - savings) / 4.0)
+    inflation_squeeze = clamp_unit((4.0 - (savings - food_away_inflation)) / 4.0)
+    apr_stress = clamp_unit((apr - 15.0) / 7.0)
+    revolving_stress = clamp_unit((revolving_billions - 750.0) / 350.0)
     delinquency_stress = clamp_unit((delinquency_rate - 2.0) / 4.0)
-    safety = round(20 * (1 - (0.70 * savings_stress + 0.30 * delinquency_stress)), 1)
+    stress = 0.30 * savings_stress + 0.25 * inflation_squeeze + 0.20 * apr_stress + 0.15 * revolving_stress + 0.10 * delinquency_stress
+    safety = round(20 * (1 - stress), 1)
     diagnosis = (
-        f"Personal saving is {savings:.2f}% of disposable income and card delinquency is {delinquency_rate:.2f}%. "
-        "This is a buffer measure: low saving and missed card payments reduce room to absorb the next shock."
+        f"Personal saving is {savings:.2f}% of disposable income while food-away-from-home prices rose {food_away_inflation:.2f}% over a year, "
+        f"leaving only a {savings - food_away_inflation:.2f}-point nominal gap. Card APR is {apr:.2f}% and revolving credit is ${revolving_billions:,.0f}B; "
+        f"card delinquency is {delinquency_rate:.2f}%. This capacity score weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%)."
     )
     return safety, diagnosis
 
@@ -373,7 +386,7 @@ def build_payload(history, fetched_at, series, canaries):
         indicators["credit_card_apr"], indicators["revolving_credit"]
     )
     breathing_safety, breathing_diagnosis = score_breathing_room(
-        indicators["personal_saving_rate"], indicators["credit_card_delinquency"]
+        indicators["personal_saving_rate"], indicators["credit_card_delinquency"], indicators["credit_card_apr"], indicators["revolving_credit"], indicators["food_away_from_home_cpi"]
     )
     phase_1_score = clamp_score(25 - extraction_safety / 20 * 25)
     phase_1_diagnosis = extraction_diagnosis
@@ -396,7 +409,7 @@ def build_payload(history, fetched_at, series, canaries):
             "name": "Household buffer & payment failure",
             "score": phase_2_score,
             "diagnosis": phase_2_diagnosis,
-            "indicator_keys": ["personal_saving_rate", "credit_card_delinquency"],
+            "indicator_keys": ["personal_saving_rate", "food_away_from_home_cpi", "credit_card_apr", "revolving_credit", "credit_card_delinquency"],
         },
         {
             "number": 3,
@@ -494,7 +507,7 @@ def build_payload(history, fetched_at, series, canaries):
                 "label": "Household breathing-room safety",
                 "score": breathing_safety,
                 "max_score": 20,
-                "direction": "Higher is safer. The score falls as saving buffers shrink and card delinquency rises.",
+                "direction": "Higher is safer. The score falls as savings thin relative to food-away price pressure and households lean on expensive revolving credit; it is a disclosed capacity rule, not a household budget.",
                 "diagnosis": breathing_diagnosis,
             },
         },

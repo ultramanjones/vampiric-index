@@ -70,13 +70,13 @@
     },
     "breathing_room": {
       "label": "Household breathing-room safety",
-      "score": 8.6,
+      "score": 4.5,
       "max_score": 20,
-      "direction": "Higher is safer. The score falls as saving buffers shrink and card delinquency rises.",
-      "diagnosis": "Personal saving is 4.10% of disposable income and card delinquency is 2.85%. This is a buffer measure: low saving and missed card payments reduce room to absorb the next shock."
+      "direction": "Higher is safer. The score falls as savings thin relative to food-away price pressure and households lean on expensive revolving credit; it is a disclosed capacity rule, not a household budget.",
+      "diagnosis": "Personal saving is 4.10% of disposable income while food-away-from-home prices rose 3.46% over a year, leaving only a 0.64-point nominal gap. Card APR is 21.19% and revolving credit is $1,352B; card delinquency is 2.85%. This capacity score weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%)."
     }
   },
-  "total_transmission_index": 68.7,
+  "total_transmission_index": 73.9,
   "active_contagion_phase": {
     "number": 3,
     "name": "Corporate & regional credit stress",
@@ -97,10 +97,13 @@
     {
       "number": 2,
       "name": "Household buffer & payment failure",
-      "score": 14.2,
-      "diagnosis": "Personal saving is 4.10% of disposable income and card delinquency is 2.85%. This is a buffer measure: low saving and missed card payments reduce room to absorb the next shock.",
+      "score": 19.4,
+      "diagnosis": "Personal saving is 4.10% of disposable income while food-away-from-home prices rose 3.46% over a year, leaving only a 0.64-point nominal gap. Card APR is 21.19% and revolving credit is $1,352B; card delinquency is 2.85%. This capacity score weights savings (30%), price squeeze (25%), APR (20%), revolving-credit load (15%), and missed payments (10%).",
       "indicator_keys": [
         "personal_saving_rate",
+        "food_away_from_home_cpi",
+        "credit_card_apr",
+        "revolving_credit",
         "credit_card_delinquency"
       ]
     },

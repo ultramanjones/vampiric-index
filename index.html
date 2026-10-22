@@ -51,13 +51,16 @@
     .watch-head h2 { margin: .3rem 0 0; font-size: clamp(1.7rem, 4vw, 3rem); }
     .watch-updated { color: var(--muted); font: .7rem/1.4 ui-monospace, monospace; }
     .safety-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.3rem 0; }
-    .tachometer { position: relative; min-height: 15rem; padding: 1.1rem; overflow: hidden; border: 1px solid #78434c; background: #120b0e; }
-    .tachometer::before { content: ""; position: absolute; left: -15%; right: -15%; bottom: -10rem; height: 17rem; border: 1.3rem solid #342425; border-top-color: #5f542d; border-right-color: #883920; border-bottom-color: transparent; border-left-color: #4c8063; border-radius: 50%; transform: rotate(-14deg); opacity: .9; }
-    .tachometer h3, .tachometer p, .tachometer .tach-score { position: relative; }
+    .tachometer { min-height: 15rem; padding: 1.1rem; border: 1px solid #78434c; background: #120b0e; }
+    .tachometer.safety-redline { border-color: #b62d2d; background: linear-gradient(135deg, #2b0b0e, #120b0e 70%); }
+    .tachometer.safety-fragile { border-color: #ad6428; background: linear-gradient(135deg, #25150c, #120b0e 70%); }
     .tachometer h3 { margin: 0; color: #e9c4c4; font: 700 .78rem/1.3 ui-monospace, monospace; text-transform: uppercase; }
     .tach-score { display: block; margin-top: 1.25rem; color: #fff0f0; font: 700 clamp(3.2rem, 9vw, 5.6rem)/.8 ui-monospace, monospace; text-shadow: 0 0 18px #8a0303aa; }
     .tach-score small { color: var(--muted); font-size: 1rem; }
     .tach-label { display: inline-block; margin-top: .7rem; padding: .28rem .45rem; background: #7b1116; color: #fff; font: 700 .7rem/1 ui-monospace, monospace; letter-spacing: .08em; }
+    .safety-meter { position: relative; height: 1rem; margin-top: 1.25rem; overflow: hidden; border: 1px solid #62414a; background: repeating-linear-gradient(90deg, #30272d 0 calc(5% - 1px), #160f13 calc(5% - 1px) 5%); }
+    .safety-meter-fill { height: 100%; width: var(--safety-capacity); min-width: 2px; background: linear-gradient(90deg, #b5101d, #db7332); box-shadow: 0 0 12px #b5101daa; }
+    .safety-meter-caption { display: block; margin-top: .45rem; color: #d6b1b1; font: 700 .64rem/1.2 ui-monospace, monospace; letter-spacing: .07em; }
     .tachometer p { max-width: 34rem; margin: .75rem 0 0; color: var(--muted); font-size: .85rem; line-height: 1.45; }
     .watch-phase-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .7rem; margin: 1.3rem 0; }
     .watch-phase { min-height: 12rem; padding: .8rem; border: 1px solid #4b3944; background: #0d0d12; }
@@ -302,11 +305,17 @@
       const safetyGrid = makeElement("div", "safety-grid");
       ["predatory_extraction", "breathing_room"].forEach(key => {
         const item = transmission.household_safety[key];
-        const card = makeElement("article", "tachometer");
+        const capacity = Math.max(0, Math.min(100, item.score / item.max_score * 100));
+        const card = makeElement("article", `tachometer ${item.score <= 4 ? "safety-redline" : "safety-fragile"}`);
         card.append(makeElement("h3", "", item.label));
         const score = makeElement("span", "tach-score", item.score.toFixed(1));
         score.append(makeElement("small", "", ` / ${item.max_score}`));
-        card.append(score, makeElement("span", "tach-label", item.score <= 4 ? "HOST DEPLETION / REDLINE" : "THINNING BUFFER"));
+        const meter = makeElement("div", "safety-meter");
+        meter.setAttribute("role", "meter"); meter.setAttribute("aria-label", `${item.label}: ${item.score.toFixed(1)} of ${item.max_score} safety capacity`);
+        meter.setAttribute("aria-valuemin", "0"); meter.setAttribute("aria-valuemax", String(item.max_score)); meter.setAttribute("aria-valuenow", item.score.toFixed(1));
+        const fill = makeElement("div", "safety-meter-fill"); fill.style.setProperty("--safety-capacity", `${capacity}%`);
+        meter.append(fill);
+        card.append(score, meter, makeElement("span", "safety-meter-caption", `${capacity.toFixed(0)}% safety capacity remaining`), makeElement("span", "tach-label", item.score <= 4 ? "HOST DEPLETION / REDLINE" : "FRAGILE CAPACITY"));
         if (item.annualized_interest_equivalent_billions) card.append(makeElement("p", "", `$${item.annualized_interest_equivalent_billions.toFixed(0)}B annualized interest-equivalent on the reported revolving-credit balance at the posted APR. This is an illustrative multiplication, not actual aggregate payments.`));
         card.append(makeElement("p", "", item.diagnosis));
         safetyGrid.append(card);

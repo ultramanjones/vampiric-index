@@ -53,6 +53,19 @@ class TransmissionScoringTests(unittest.TestCase):
         self.assertLessEqual(redline_score, 4.0)
         self.assertAlmostEqual(interest, 286.6)
 
+    def test_breathing_room_accounts_for_price_squeeze_and_credit_dependence(self):
+        safer_score, _ = transmission.score_breathing_room(
+            {"value": 8.0}, {"value": 1.5}, {"value": 14.0}, {"value": 700000.0}, {"percent_change": 2.0}
+        )
+        squeezed_score, diagnosis = transmission.score_breathing_room(
+            {"value": 4.1}, {"value": 2.85}, {"value": 21.19}, {"value": 1352414.0}, {"percent_change": 3.46}
+        )
+
+        self.assertGreater(safer_score, 15.0)
+        self.assertLessEqual(squeezed_score, 5.0)
+        self.assertIn("price", diagnosis.lower())
+        self.assertIn("revolving credit", diagnosis.lower())
+
     def test_qsr_deflator_series_is_declared(self):
         series = transmission.SERIES["food_away_from_home_cpi"]
         self.assertEqual(series["id"], "CUUR0000SEFV")
